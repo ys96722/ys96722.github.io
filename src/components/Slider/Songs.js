@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Coverflow from "react-coverflow";
 
 class Songs extends Component {
-  state = {};
+  state = {
+    active: 0
+  };
   render() {
     return (
       <Coverflow
@@ -13,24 +15,23 @@ class Songs extends Component {
         enableScroll={false}
         enableHeading={false}
         clickable={true}
-        active={0}
+        active={this.state.active}
         currentFigureScale={1.5}
         otherFigureScale={0.8}
       >
-        <div role="menuitem" tabIndex="0">
-          <img
-            src={require("../../assets/song_banners/happier_cover.jpeg")}
-            alt="Native Roots Design"
-            style={{ display: "block", width: "100%" }}
-          />
-        </div>
-        <div role="menuitem" tabIndex="1">
-          <img
-            src={require("../../assets/song_banners/forever.jpeg")}
-            alt="Native Roots Design"
-            style={{ display: "block", width: "100%" }}
-          />
-        </div>
+        <img
+          src={require("../../assets/song_banners/happier_cover.jpeg")}
+          alt="Happier"
+          data-action="https://soundcloud.com/yooni-verse/happier"
+          style={{ display: "block", width: "100%" }}
+        />
+
+        <img
+          src={require("../../assets/song_banners/forever.jpeg")}
+          alt="Forever"
+          data-action="https://soundcloud.com/yooni-verse/forever"
+          style={{ display: "block", width: "100%" }}
+        />
       </Coverflow>
     );
   }

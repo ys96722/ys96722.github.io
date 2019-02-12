@@ -45,6 +45,8 @@ export const Hero = styled.div`
 
 export const RevealP = styled.p`
   position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   &:after {
     /* Sets the cover */
     content: " ";
