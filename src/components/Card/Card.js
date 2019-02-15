@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import {
-  CardContainer,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardImage,
-  CardLink
-} from "./Card.style";
+import { CardContainer, CardFront, CardBack, Inner } from "./Card.style";
 
 // React component for the card (main component)
 class Card extends Component {
@@ -15,11 +8,17 @@ class Card extends Component {
   render() {
     return (
       <CardContainer>
-        <CardImage />
-        <CardTitle />
-        <CardHeader />
-        <CardContent />
-        <CardLink />
+        <CardFront>
+          <Inner>
+            <p>Native Roots</p>
+            <span>Lorem Ipsum</span>
+          </Inner>
+        </CardFront>
+        <CardBack>
+          <Inner>
+            <p>Lorem Ipsum blah blah hah hah</p>
+          </Inner>
+        </CardBack>
       </CardContainer>
     );
   }

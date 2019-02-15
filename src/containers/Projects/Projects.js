@@ -3,9 +3,9 @@ import React, { Component } from "react";
 import "./Projects.css";
 // Import Styled Components
 import { Relative, Flex } from "../../style/grid";
-import { A } from "../../style/types";
-import { Index } from "./Projects.style";
-import { Title } from "../../style/variables";
+// import { A } from "../../style/types";
+// import { Index } from "./Projects.style";
+// import { Title } from "../../style/variables";
 import Categories from "../../components/Slider/Categories";
 
 export default class Projects extends Component {

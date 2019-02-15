@@ -6,11 +6,19 @@ const GlobalStyle = createGlobalStyle`
   /* Import Fonts*/
   /* font-family: 'VT323', monospace; */
   @import url('https://fonts.googleapis.com/css?family=VT323');  
-
-  * {
+  /*
+   * {
       padding: 0;
       margin: 0;
-      /* border: 1px solid red !important; */
+      border: 1px solid red !important; 
+  } 
+  */
+
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   *:focus{
