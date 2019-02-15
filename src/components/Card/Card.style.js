@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 
+
 // export const CardContainer = styled.div`
 //   position: relative;
 //   z-index: 1;
@@ -19,6 +20,8 @@ export const CardTitle = styled.h1``;
 export const CardHeader = styled.h2``;
 export const CardContent = styled.p``;
 export const CardLink = styled.a``;
+
+
 
 export const Inner = styled.div`
   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
@@ -53,7 +56,7 @@ export const CardFront = styled.div`
   border-radius: 10px;
   color: #fff;
   font-size: 1.5rem;
-
+  background-image: url("src/assets/website_banners/native_hero.png");
   &::after {
     position: absolute;
     top: 0;
@@ -130,8 +133,13 @@ export const CardContainer = styled.div`
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   perspective: 1000px;
-  width: calc(25% - 2rem);
-  /* background-color: red; */
+  width: calc(31%);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-color: black;
+  border-width: 1rem;
 
   &:hover ${CardFront}, ${CardBack} {
     -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
