@@ -5,12 +5,6 @@ import { Container } from "../../style/grid";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import ReallySmoothScroll from "really-smooth-scroll";
 import { hashHistory } from "react-router";
-// Importing Font Awesome
-import { library } from '@fortawesome/fontawesome-svg-core'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTree } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faTree)
 
 // All I Got
 

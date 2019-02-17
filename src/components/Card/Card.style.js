@@ -1,6 +1,5 @@
 import styled, { css } from "styled-components";
 
-
 // export const CardContainer = styled.div`
 //   position: relative;
 //   z-index: 1;
@@ -21,8 +20,6 @@ export const CardHeader = styled.h2``;
 export const CardContent = styled.p``;
 export const CardLink = styled.a``;
 
-
-
 export const Inner = styled.div`
   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
   transform: translateY(-50%) translateZ(60px) scale(0.94);
@@ -42,6 +39,7 @@ export const Inner = styled.div`
 export const CardFront = styled.div`
   background-size: cover;
   background-position: center;
+  /* background: url("src/assets/website_banners/native_hero.png"); */
   -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -56,7 +54,6 @@ export const CardFront = styled.div`
   border-radius: 10px;
   color: #fff;
   font-size: 1.5rem;
-  background-image: url("src/assets/website_banners/native_hero.png");
   &::after {
     position: absolute;
     top: 0;
@@ -68,6 +65,7 @@ export const CardFront = styled.div`
     display: block;
     opacity: 0.6;
     background-color: #000;
+    /* background: url("/Users/yoonchang/Desktop/Repository/Portfolio/src/assets/website_banners/native_hero.png"); */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 10px;
@@ -138,8 +136,8 @@ export const CardContainer = styled.div`
   margin-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-color: black;
-  border-width: 1rem;
+  /* border-color: black;
+  border-width: 1rem; */
 
   &:hover ${CardFront}, ${CardBack} {
     -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
