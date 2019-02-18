@@ -27,6 +27,7 @@ export const Inner = styled.div`
   position: absolute;
   left: 0;
   width: 100%;
+  /* height: 100%; */
   padding: 2rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -34,6 +35,8 @@ export const Inner = styled.div`
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
+  /* background-color: black; */
+  /* opacity: 0.6; */
 `;
 
 export const CardFront = styled.div`
@@ -54,6 +57,19 @@ export const CardFront = styled.div`
   border-radius: 10px;
   color: #fff;
   font-size: 1.5rem;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index:2;
+    border-radius: 10px;
+  }
+
   &::after {
     position: absolute;
     top: 0;
@@ -63,9 +79,13 @@ export const CardFront = styled.div`
     height: 100%;
     content: "";
     display: block;
-    opacity: 0.6;
-    background-color: #000;
-    /* background: url("/Users/yoonchang/Desktop/Repository/Portfolio/src/assets/website_banners/native_hero.png"); */
+    /* background:linear-gradient(0deg,rgba(255,255,255,0.6),rgba(200,200,200,0.6)),url(${props => props.imgPath}); */
+    /* background-color: rgba(255,255,255,7); */
+    background-image: url(${props => props.imgPath});
+    /* background: rgba(0,0,0,0.5); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 10px;
@@ -115,10 +135,10 @@ export const CardBack = styled.div`
   color: #fff;
   font-size: 1.5rem;
 
-  background: #cedce7;
+  /* background: #cedce7;
   background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
   background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+  background: linear-gradient(45deg, #cedce7 0%, #596a72 100%); */
 
   position: absolute;
   top: 0;

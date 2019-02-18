@@ -8,13 +8,13 @@ export const card = props => {
 
   return (
     <CardContainer>
-      <CardFront>
+      <CardFront imgPath={props.imgPath}>
         <Inner>
           <p>{props.name}</p>
           <span>{props.tool}</span>
         </Inner>
       </CardFront>
-      <CardBack>
+      <CardBack imgPath={props.imgPath}>
         <Inner>
           <p>Lorem Ipsum blah blah hah hah</p>
         </Inner>
