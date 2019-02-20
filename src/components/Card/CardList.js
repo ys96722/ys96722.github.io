@@ -2,12 +2,50 @@ import React from "react";
 import Card from "../../components/Card/Card";
 import { Flex, Div } from "../../style/grid";
 
-const cardList = () => {
-  return (
-    <Div marginTop="4rem">
+const cardList = props => {
+  const numCols = Number(props.numCols);
+  const numRows = Number(props.numRows);
+  const cardWidth = props.cardWidth;
+
+  // 1. Create Cards
+  const cards = [];
+  for (let item of props.infos) {
+    cards.push(
+      <Card
+        name={item.name}
+        tool={item.tool}
+        content={item.content}
+        link={item.link}
+        imgPath={item.imgPath}
+        bgSize={item.bgSize}
+        cardWidth={cardWidth}
+      />
+    );
+  }
+  // console.log(numRows, cards);
+
+  // 2. Generate rows
+  const rows = [];
+  let counter = 0;
+  for (let curRow = 1; curRow <= numRows; curRow++) {
+    rows.push(
       <Flex row justify="center">
+        {cards.slice(counter, counter + numCols)}
+      </Flex>
+    );
+    console.log("Counter before:", counter);
+    counter += numCols;
+    console.log("Counter after:", counter);
+  }
+  counter = 0;
+  // console.log(rows, counter);
+
+  return (
+    <Div marginTop="4rem" marginBottom="4rem">
+      {rows}
+      {/* <Flex row justify="center">
         <Card
-          name="Native Roots"
+          name={props.infos[0].name}
           tool="WordPress"
           imgPath={require("../../assets/website_banners/native_hero.png")}
           bgSize="cover"
@@ -44,7 +82,7 @@ const cardList = () => {
           imgPath={require("../../assets/website_banners/kojobs_hero2.png")}
           bgSize="cover"
         />
-      </Flex>
+      </Flex> */}
     </Div>
   );
 };

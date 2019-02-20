@@ -2,48 +2,64 @@
 import React, { Component } from "react";
 import "./Projects.css";
 // Import Styled Components
-import { Relative, Flex } from "../../style/grid";
-// import { A } from "../../style/types";
-// import { Index } from "./Projects.style";
-// import { Title } from "../../style/variables";
-import Categories from "../../components/Slider/Categories";
+import { Button } from "./Projects.style";
+import Websites from "../../components/Slider/Websites";
+import Games from "../../components/Slider/Games";
+import Songs from "../../components/Slider/Songs";
+import Analytics from "../../components/Slider/Analytics";
+import { Div, Flex } from "../../style/grid";
+
+const projects = [<Websites />, <Analytics />, <Games />, <Songs />];
 
 export default class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      visibleIndex: 0
+    };
+
+    this.setVisible = this.setVisible.bind(this);
+  }
+
+  setVisible = (index = 0) => {
+    this.setState({
+      visibleIndex: index
+    });
+  };
+
   render() {
     return (
-      <>
-        {/* <Title>This is Projects.</Title> */}
-
-        {/* <Relative marginBottom="50px" marginTop="100px">
-          <Index>
-            <h1>01</h1>
-          </Index>
-          <h1>Project A</h1>
-        </Relative> */}
-        <Flex justify={"center"} marginBottom="5em">
-          <Categories />
+      <Div width="100%">
+        {/* List that captures Active */}
+        <Flex column justify="center">
+          <Button
+            onClick={e => this.setVisible(0, e)}
+            active={this.state.visibleIndex === 0}
+          >
+            Websites
+          </Button>
+          <Button
+            onClick={e => this.setVisible(1, e)}
+            active={this.state.visibleIndex === 1}
+          >
+            Analytics
+          </Button>
+          <Button
+            onClick={e => this.setVisible(2, e)}
+            active={this.state.visibleIndex === 2}
+          >
+            Games
+          </Button>
+          <Button
+            onClick={e => this.setVisible(3, e)}
+            active={this.state.visibleIndex === 3}
+          >
+            Songs
+          </Button>
         </Flex>
-
-        {/* <Relative marginBottom="50px">
-          <Index>
-            <h1>02</h1>
-          </Index>
-          <h1>Project B</h1>
-        </Relative>
-        <Flex justify={"center"} marginBottom="5em">
-          <h1> Content B</h1>
-        </Flex>
-
-        <Relative marginBottom="50px">
-          <Index>
-            <h1>03</h1>
-          </Index>
-          <h1>Project C</h1>
-        </Relative>
-        <Flex justify={"center"} marginBottom="5em">
-          <h1> Content C</h1>
-        </Flex> */}
-      </>
+        {/* Render Active */}
+        {projects[this.state.visibleIndex]}
+      </Div>
     );
   }
 }

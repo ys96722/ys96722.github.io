@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import {
   yellow,
   red,
@@ -27,4 +27,27 @@ export const ImageContainer = styled.div`
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+`;
+
+export const Button = styled.button`
+  background-color: ${black};
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+
+  &:hover {
+    /* background-color: ${blue}; */
+    background-color: black;
+  }
+
+  ${({ active }) =>
+    active &&
+    css`
+      background-color: black;
+      color: white;
+    `}
 `;

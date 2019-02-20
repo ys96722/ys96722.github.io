@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { blue, red, black, yellow, green } from "../../style/variables";
 
 // export const CardContainer = styled.div`
 //   position: relative;
@@ -56,7 +57,8 @@ export const CardFront = styled.div`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-align: center;
-  min-height: 280px;
+  min-height: 300px;
+  max-height: 380px;
   height: auto;
   border-radius: 10px;
   color: #fff;
@@ -84,6 +86,7 @@ export const CardFront = styled.div`
     content: "";
     display: block;
     background-image: url(${props => props.imgPath});
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center;
     ${({ bgSize }) =>
@@ -117,8 +120,36 @@ export const CardFront = styled.div`
 
   ${Inner} span {
     color: rgba(255, 255, 255, 0.7);
-    font-family: "Montserrat";
-    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    /* font-weight: 300; */
+    font-weight: 400;
+    transition: color 0.6s;
+
+    ${({ tool }) =>
+      tool === "WordPress" &&
+      css`
+        color: ${blue};
+      `}
+
+    ${({ tool }) =>
+      tool === "React" &&
+      css`
+        color: ${red};
+      `}
+
+    ${({ tool }) =>
+      tool === "Python" &&
+      css`
+        color: ${yellow};
+      `}
+
+    ${({ tool }) =>
+      tool === "Unity" &&
+      css`
+        color: ${green};
+      `}
+
   }
 `;
 
@@ -134,7 +165,8 @@ export const CardBack = styled.div`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-align: center;
-  min-height: 280px;
+  min-height: 300px;
+  max-height: 380px;
   height: auto;
   border-radius: 10px;
   color: #fff;
@@ -156,7 +188,13 @@ export const CardContainer = styled.div`
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   perspective: 1000px;
-  width: calc(31%);
+
+  ${({ cardWidth }) =>
+    cardWidth &&
+    css`
+      width: calc(${cardWidth}%);
+    `}
+  /* width: calc(31%); */
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
@@ -199,6 +237,10 @@ export const CardContainer = styled.div`
     transform: rotateY(-180deg);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+
+    ${Inner} span {
+      color: white;
+    }
   }
 
   /* Figure out how to do descendent selectors */
