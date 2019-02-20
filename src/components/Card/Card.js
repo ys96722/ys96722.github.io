@@ -3,12 +3,12 @@ import { CardContainer, CardFront, CardBack, Inner } from "./Card.style";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // React component for the card (main component)
-export const card = props => {
+const card = props => {
   // Props: (wp or react), img, title, header, content, link
 
   return (
     <CardContainer>
-      <CardFront imgPath={props.imgPath}>
+      <CardFront imgPath={props.imgPath} bgSize={props.bgSize}>
         <Inner>
           <p>{props.name}</p>
           <span>{props.tool}</span>

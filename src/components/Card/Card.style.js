@@ -40,9 +40,13 @@ export const Inner = styled.div`
 `;
 
 export const CardFront = styled.div`
-  background-size: cover;
-  background-position: center;
-  /* background: url("src/assets/website_banners/native_hero.png"); */
+
+  /* ${({ padding }) =>
+    padding &&
+    css`
+      padding: ${padding};
+    `} */
+
   -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -65,7 +69,7 @@ export const CardFront = styled.div`
     right: 0;
     top: 0; 
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     z-index:2;
     border-radius: 10px;
   }
@@ -79,13 +83,14 @@ export const CardFront = styled.div`
     height: 100%;
     content: "";
     display: block;
-    /* background:linear-gradient(0deg,rgba(255,255,255,0.6),rgba(200,200,200,0.6)),url(${props => props.imgPath}); */
-    /* background-color: rgba(255,255,255,7); */
     background-image: url(${props => props.imgPath});
-    /* background: rgba(0,0,0,0.5); */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    ${({ bgSize }) =>
+      bgSize &&
+      css`
+        background-size: ${bgSize};
+      `}
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 10px;

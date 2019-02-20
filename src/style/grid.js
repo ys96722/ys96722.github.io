@@ -25,6 +25,11 @@ export const Div = styled.div`
       margin-right: ${marginRight};
     `}
 
+  ${({ width }) =>
+    width &&
+    css`
+      width: ${width};
+    `}
 
 `;
 

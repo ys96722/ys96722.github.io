@@ -26,7 +26,7 @@ class Categories extends Component {
 
   render() {
     return (
-      <Div>
+      <Div width="100%">
         {/* List that captures Active */}
         <Flex column justify="center">
           <Button
