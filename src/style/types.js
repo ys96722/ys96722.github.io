@@ -6,7 +6,7 @@ export const A = styled.a`
   text-decoration: none;
   position: relative;
 
-  &:after {
+  &::after {
     content: " ";
     position: absolute;
     left: 0;
@@ -18,7 +18,7 @@ export const A = styled.a`
     transition: height 0.2s;
   }
 
-  &:hover:after {
+  &:hover::after {
     height: 40%;
     background-color: ${yellow};
   }

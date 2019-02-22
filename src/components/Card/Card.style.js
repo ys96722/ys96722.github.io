@@ -1,25 +1,17 @@
 import styled, { css } from "styled-components";
-import { blue, red, black, yellow, green } from "../../style/variables";
+import {
+  blue,
+  red,
+  lightblue,
+  yellow,
+  green,
+  lightgreen
+} from "../../style/variables";
+import { A } from "../../style/types";
 
-// export const CardContainer = styled.div`
-//   position: relative;
-//   z-index: 1;
-//   /* margin: 32px auto; */
-//   margin: auto;
-//   max-width: 400px;
-//   height: 500px;
-//   perspective: 1000px;
-//   background-color: black;
-// `;
-export const CardImage = styled.img`
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-`;
-export const CardTitle = styled.h1``;
-export const CardHeader = styled.h2``;
-export const CardContent = styled.p``;
-export const CardLink = styled.a``;
+// BEGIN CONSTANTS
+const paddingValue = "2rem";
+// END CONSTANTS
 
 export const Inner = styled.div`
   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
@@ -29,7 +21,7 @@ export const Inner = styled.div`
   left: 0;
   width: 100%;
   /* height: 100%; */
-  padding: 2rem;
+  padding: ${paddingValue};
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: 1px solid transparent;
@@ -129,7 +121,7 @@ export const CardFront = styled.div`
     ${({ tool }) =>
       tool === "WordPress" &&
       css`
-        color: ${blue};
+        color: ${lightblue};
       `}
 
     ${({ tool }) =>
@@ -147,7 +139,7 @@ export const CardFront = styled.div`
     ${({ tool }) =>
       tool === "Unity" &&
       css`
-        color: ${green};
+        color: ${lightgreen};
       `}
 
   }
@@ -165,7 +157,7 @@ export const CardBack = styled.div`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-align: center;
-  min-height: 340px;
+  min-height: 320px;
   max-height: 380px;
   height: auto;
   border-radius: 10px;
@@ -181,6 +173,34 @@ export const CardBack = styled.div`
   top: 0;
   left: 0;
   width: 100%;
+
+  ${Inner} {
+    -webkit-transform: translateY(0%) translateZ(60px) scale(0.94);
+    transform: translateY(0%) translateZ(60px) scale(0.94);
+    /* top: 50%; */
+    /* position: absolute; */
+    height: 100%;
+    top: 0;
+    text-align: left;
+
+    ${A} {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: ${paddingValue};
+    }
+    /* left: 0; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* padding: 2rem; */
+    /* -webkit-box-sizing: border-box; */
+    /* box-sizing: border-box; */
+    /* outline: 1px solid transparent; */
+    /* -webkit-perspective: inherit; */
+    /* perspective: inherit; */
+    /* z-index: 2; */
+  }
 `;
 
 export const CardContainer = styled.div`

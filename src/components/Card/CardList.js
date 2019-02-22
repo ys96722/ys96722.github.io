@@ -12,6 +12,7 @@ const cardList = props => {
   for (let item of props.infos) {
     cards.push(
       <Card
+        key={item.name}
         name={item.name}
         tool={item.tool}
         content={item.content}
@@ -29,13 +30,13 @@ const cardList = props => {
   let counter = 0;
   for (let curRow = 1; curRow <= numRows; curRow++) {
     rows.push(
-      <Flex row justify="center">
+      <Flex row justify="center" key={curRow}>
         {cards.slice(counter, counter + numCols)}
       </Flex>
     );
-    console.log("Counter before:", counter);
+    // console.log("Counter before:", counter);
     counter += numCols;
-    console.log("Counter after:", counter);
+    // console.log("Counter after:", counter);
   }
   counter = 0;
   // console.log(rows, counter);
