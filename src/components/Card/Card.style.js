@@ -57,7 +57,7 @@ export const CardFront = styled.div`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-align: center;
-  min-height: 300px;
+  min-height: 320px;
   max-height: 380px;
   height: auto;
   border-radius: 10px;
@@ -165,7 +165,7 @@ export const CardBack = styled.div`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-align: center;
-  min-height: 300px;
+  min-height: 340px;
   max-height: 380px;
   height: auto;
   border-radius: 10px;
@@ -188,6 +188,7 @@ export const CardContainer = styled.div`
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  max-width: 450px;
 
   ${({ cardWidth }) =>
     cardWidth &&
