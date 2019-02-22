@@ -13,7 +13,7 @@ export default class Websites extends Component {
       {
         name: "Native Roots",
         tool: "WordPress",
-        content: "A landscaping company",
+        content: "A website for Native Rootslandscaping company",
         link: "https://nativerootsdesign.org/",
         imgPath: require("../../assets/website_banners/native_hero.png"),
         bgSize: "cover"
