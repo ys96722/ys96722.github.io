@@ -20,6 +20,7 @@ const cardList = props => {
         imgPath={item.imgPath}
         bgSize={item.bgSize}
         cardWidth={cardWidth}
+        togglePopup={props.togglePopup}
       />
     );
   }

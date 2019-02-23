@@ -6,9 +6,11 @@ import React, { Component } from "react";
 // import Card from "../Card/Card";
 // import { Div, Flex } from "../../style/grid";
 import CardList from "../Card/CardList";
+import Popup from "../Popup/Popup";
 
 export default class Websites extends Component {
   state = {
+    showPopup: false,
     website_infos: [
       {
         name: "Native Roots",
@@ -61,56 +63,29 @@ export default class Websites extends Component {
     ]
   };
 
+  togglePopup = () => {
+    // console.log(this);
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
+  };
+
   render() {
     return (
-      // <Div marginTop="3rem" marginBottom="3rem">
-      //   <Flex row justify="center">
-      //     <Card
-      //       name={this.state.website_infos[0].name}
-      //       tool={this.state.website_infos[0].tool}
-      //       imgPath={this.state.website_infos[0].imgPath}
-      //       bgSize={this.state.website_infos[0].bgSize}
-      //     />
-      //     <Card
-      //       name={this.state.website_infos[1].name}
-      //       tool={this.state.website_infos[1].tool}
-      //       imgPath={this.state.website_infos[1].imgPath}
-      //       bgSize={this.state.website_infos[1].bgSize}
-      //     />
-      //     <Card
-      //       name={this.state.website_infos[2].name}
-      //       tool={this.state.website_infos[2].tool}
-      //       imgPath={this.state.website_infos[2].imgPath}
-      //       bgSize={this.state.website_infos[2].bgSize}
-      //     />
-      //   </Flex>
-      //   <Flex row justify="center">
-      //     <Card
-      //       name={this.state.website_infos[3].name}
-      //       tool={this.state.website_infos[3].tool}
-      //       imgPath={this.state.website_infos[3].imgPath}
-      //       bgSize={this.state.website_infos[3].bgSize}
-      //     />
-      //     <Card
-      //       name={this.state.website_infos[4].name}
-      //       tool={this.state.website_infos[4].tool}
-      //       imgPath={this.state.website_infos[4].imgPath}
-      //       bgSize={this.state.website_infos[4].bgSize}
-      //     />
-      //     <Card
-      //       name={this.state.website_infos[5].name}
-      //       tool={this.state.website_infos[5].tool}
-      //       imgPath={this.state.website_infos[5].imgPath}
-      //       bgSize={this.state.website_infos[5].bgSize}
-      //     />
-      //   </Flex>
-      // </Div>
-      <CardList
-        infos={this.state.website_infos}
-        numCols="3"
-        numRows="2"
-        cardWidth="50"
-      />
+      <>
+        {/* <button onClick={this.togglePopup}>show popup</button> */}
+        <CardList
+          infos={this.state.website_infos}
+          numCols="3"
+          numRows="2"
+          cardWidth="50"
+          togglePopup={this.togglePopup.bind(this)}
+        />
+
+        {this.state.showPopup ? (
+          <Popup text="Close Me" closePopup={this.togglePopup} />
+        ) : null}
+      </>
     );
   }
 }

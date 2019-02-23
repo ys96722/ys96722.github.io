@@ -1,6 +1,6 @@
 import React from "react";
 import { CardContainer, CardFront, CardBack, Inner } from "./Card.style";
-import { A } from "../../style/types";
+import { A, OpenButton } from "../../style/types";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // React component for the card (main component)
@@ -22,9 +22,10 @@ const card = props => {
       <CardBack imgPath={props.imgPath}>
         <Inner>
           <p>{props.content}</p>
-          <A href={props.link} target="_blank">
+          <OpenButton onClick={props.togglePopup}>Read more</OpenButton>
+          {/* <A href={props.link} target="_blank">
             Take a look!
-          </A>
+          </A> */}
         </Inner>
       </CardBack>
     </CardContainer>

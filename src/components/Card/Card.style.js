@@ -7,7 +7,7 @@ import {
   green,
   lightgreen
 } from "../../style/variables";
-import { A } from "../../style/types";
+import { A, OpenButton } from "../../style/types";
 
 // BEGIN CONSTANTS
 const paddingValue = "2rem";
@@ -183,7 +183,7 @@ export const CardBack = styled.div`
     top: 0;
     text-align: left;
 
-    ${A} {
+    ${A}, ${OpenButton} {
       position: absolute;
       left: 50%;
       -webkit-transform: translateX(-50%);
