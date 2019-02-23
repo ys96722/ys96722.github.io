@@ -49,14 +49,14 @@ const HapFrame = ({ doesShow }) => (
     show={doesShow ? "initial" : "none"}
     animateIn={doesShow}
     animateOut={!doesShow}
-  >
+    >
     <iframe
       title="happier"
       width="100%"
       height="100%"
       scrolling="no"
       frameborder="no"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/512176407&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/512176407&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
     />
   </SongDiv>
 );
@@ -73,7 +73,7 @@ const ForFrame = ({ doesShow }) => (
       height="100%"
       scrolling="no"
       frameborder="no"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/528417867&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/528417867&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
     />
   </SongDiv>
 );
@@ -84,18 +84,7 @@ export default class Songs extends Component {
     isHover: undefined
   };
 
-  // handleClick = index => {
-  //   this.setState({
-  //     isActive: index
-  //   });
-  // };
-
-  handleClick(e) {
-    var number = Number(e.currentTarget.id);
-    this.setState({
-      isActive: number
-    });
-  }
+ 
 
   handleCarousal(e) {
     // console.log(e.currentTarget.id);
@@ -132,7 +121,7 @@ export default class Songs extends Component {
         currentFigureScale={1.5}
         otherFigureScale={0.8}
       >
-        {/* <CoverComponent index="0" active={this.state.active}> */}
+
         <Flex
           onClick={this.handleCarousal.bind(this)}
           onKeyDown={this.handleCarousal.bind(this)}
@@ -165,11 +154,14 @@ export default class Songs extends Component {
         >
           <ForFrame
             doesShow={this.state.isActive === 1 && this.state.isHover === 1}
+            style={{ width: "100%", height: "100%" }}
           />
           <ForImg
             doesShow={this.state.isActive !== 1 || this.state.isHover !== 1}
+            style={{ width: "100%", height: "100%" }}
           />
         </Flex>
+        
       </Coverflow>
     );
   }

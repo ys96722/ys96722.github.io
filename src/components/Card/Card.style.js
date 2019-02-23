@@ -116,7 +116,7 @@ export const CardFront = styled.div`
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     /* font-weight: 300; */
     font-weight: 400;
-    transition: color 0.6s;
+    transition: color 0.4s;
 
     ${({ tool }) =>
       tool === "WordPress" &&
