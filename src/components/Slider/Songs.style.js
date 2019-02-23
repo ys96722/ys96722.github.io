@@ -20,19 +20,24 @@ export const fade_out = keyframes`
   
 `;
 
-// const HapFrame = ({ show }) => (
-//     <div className="frame" style={{ display: show ? "initial" : "none" }}>
-
-//     </div>
-// );
-
 export const SongDiv = styled.div`
-  display: ${props => props.show};
+  /* display: ${props => props.show} ; */
+  visibility: ${props => props.show};
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   /* justify-content: center;
   align-items: center;
   overflow: hidden */
 
   /* animation: ${props => props.animation}; */
+  ${({ zVal }) =>
+    zVal &&
+    css`
+      z-index: ${zVal};
+    `}
 
   ${({ animateIn }) =>
     animateIn &&

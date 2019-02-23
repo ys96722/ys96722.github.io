@@ -1,16 +1,14 @@
 import React, { Component } from "react";
 import Coverflow from "react-coverflow";
 import { Flex } from "../../style/grid";
-// import styled, { css, keyframes } from "styled-components";
 import { SongDiv } from "./Songs.style.js";
-
-// const CoverComponent = props => {};
 
 const HapImg = ({ doesShow }) => (
   <SongDiv
-    show={doesShow ? "initial" : "none"}
+    show={doesShow ? "initial" : "hidden"}
     animateIn={doesShow}
     animateOut={!doesShow}
+    zVal="1"
   >
     <img
       src={require("../../assets/song_banners/happier_cover.jpeg")}
@@ -27,9 +25,10 @@ const HapImg = ({ doesShow }) => (
 
 const ForImg = ({ doesShow }) => (
   <SongDiv
-    show={doesShow ? "initial" : "none"}
+    show={doesShow ? "initial" : "hidden"}
     animateIn={doesShow}
     animateOut={!doesShow}
+    zVal="1"
   >
     <img
       src={require("../../assets/song_banners/forever.jpeg")}
@@ -46,10 +45,11 @@ const ForImg = ({ doesShow }) => (
 
 const HapFrame = ({ doesShow }) => (
   <SongDiv
-    show={doesShow ? "initial" : "none"}
+    show={doesShow ? "initial" : "hidden"}
     animateIn={doesShow}
     animateOut={!doesShow}
-    >
+    zVal="-1"
+  >
     <iframe
       title="happier"
       width="100%"
@@ -63,9 +63,10 @@ const HapFrame = ({ doesShow }) => (
 
 const ForFrame = ({ doesShow }) => (
   <SongDiv
-    show={doesShow ? "initial" : "none"}
+    show={doesShow ? "initial" : "hidden"}
     animateIn={doesShow}
     animateOut={!doesShow}
+    zVal="-1"
   >
     <iframe
       title="forever"
@@ -83,8 +84,6 @@ export default class Songs extends Component {
     isActive: 1,
     isHover: undefined
   };
-
- 
 
   handleCarousal(e) {
     // console.log(e.currentTarget.id);
@@ -121,7 +120,6 @@ export default class Songs extends Component {
         currentFigureScale={1.5}
         otherFigureScale={0.8}
       >
-
         <Flex
           onClick={this.handleCarousal.bind(this)}
           onKeyDown={this.handleCarousal.bind(this)}
@@ -133,8 +131,8 @@ export default class Songs extends Component {
           style={{ width: "100%", height: "200px" }}
         >
           <HapFrame
-            doesShow={this.state.isActive === 0 && this.state.isHover === 0}
             style={{ width: "100%", height: "100%" }}
+            doesShow={this.state.isActive === 0 && this.state.isHover === 0}
           />
           <HapImg
             doesShow={this.state.isActive !== 0 || this.state.isHover !== 0}
@@ -150,18 +148,23 @@ export default class Songs extends Component {
           role="menuitem"
           tabIndex="1"
           id="1"
-          style={{ width: "100%", height: "200px" }}
+          style={{ width: "100%", height: "200px", position: "relative" }}
         >
           <ForFrame
             doesShow={this.state.isActive === 1 && this.state.isHover === 1}
-            style={{ width: "100%", height: "100%" }}
+            style={{
+              width: "100%",
+              height: "100%"
+            }}
           />
           <ForImg
             doesShow={this.state.isActive !== 1 || this.state.isHover !== 1}
-            style={{ width: "100%", height: "100%" }}
+            style={{
+              width: "100%",
+              height: "100%"
+            }}
           />
         </Flex>
-        
       </Coverflow>
     );
   }
