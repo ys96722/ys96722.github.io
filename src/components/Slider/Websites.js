@@ -16,7 +16,13 @@ export default class Websites extends Component {
         content: "A website for Native Rootslandscaping company",
         imgPath: require("../../assets/website_banners/native_hero.png"),
         bgSize: "cover",
-        popupInfo: { title: "Native Roots", link: "https://nativerootsdesign.org/"}
+        popupInfo: { title: "Native Roots", link: "https://nativerootsdesign.org/",
+          images: [
+            require("../../assets/hero.jpeg"),
+            require("../../assets/hero.JPG"),
+            require("../../assets/hero.JPG")
+          ]
+        }
       },
       {
         name: "Ability Marketplace",
@@ -24,7 +30,13 @@ export default class Websites extends Component {
         content: "A landscaping company",
         imgPath: require("../../assets/website_banners/ability_logo.png"),
         bgSize: "cover",
-        popupInfo: { title: "Ability Marketplace", link: "https://abilitymarketplace.com/"}
+        popupInfo: { title: "Ability Marketplace", link: "https://abilitymarketplace.com/",
+          images: [
+            require("../../assets/hero.jpeg"),
+            require("../../assets/hero.JPG"),
+            require("../../assets/hero.JPG")
+          ]
+        }
       },
       {
         name: "2XL Logistics",
@@ -32,7 +44,13 @@ export default class Websites extends Component {
         content: "A landscaping company",
         imgPath: require("../../assets/website_banners/2xl_blue_logo.png"),
         bgSize: "contain",
-        popupInfo: { title: "2XL Logistics", link: "https://2xllogistics.com/"}
+        popupInfo: { title: "2XL Logistics", link: "https://2xllogistics.com/",
+          images: [
+            require("../../assets/hero.jpeg"),
+            require("../../assets/hero.JPG"),
+            require("../../assets/hero.JPG")
+          ]
+        }
       },
       {
         name: "Simbiosys",
@@ -40,7 +58,13 @@ export default class Websites extends Component {
         content: "A landscaping company",
         imgPath: require("../../assets/website_banners/simbiosys_hero.png"),
         bgSize: "cover",
-        popupInfo: { title: "Simbiosys", link: "https://simbiosys.tech/"}
+        popupInfo: { title: "Simbiosys", link: "https://simbiosys.tech/",
+          images: [
+            require("../../assets/hero.jpeg"),
+            require("../../assets/hero.JPG"),
+            require("../../assets/hero.JPG")
+          ]
+        }
       },
       {
         name: "Traverse Science",
@@ -48,7 +72,13 @@ export default class Websites extends Component {
         content: "A landscaping company",
         imgPath: require("../../assets/website_banners/traverse_logo.png"),
         bgSize: "contain",
-        popupInfo: { title: "Traverse Science", link: "https://traversescience.com/"}
+        popupInfo: { title: "Traverse Science", link: "https://traversescience.com/",
+          images: [
+            require("../../assets/hero.jpeg"),
+            require("../../assets/hero.JPG"),
+            require("../../assets/hero.JPG")
+          ]
+        }
       },
       {
         name: "KoJobs",
@@ -56,7 +86,13 @@ export default class Websites extends Component {
         content: "A landscaping company",
         imgPath: require("../../assets/website_banners/kojobs_hero2.png"),
         bgSize: "cover",
-        popupInfo: { title: "KoJobs", link: "https://kojobsillinois.com/"}
+        popupInfo: { title: "KoJobs", link: "https://kojobsillinois.com/",
+          images: [
+            require("../../assets/hero.jpeg"),
+            require("../../assets/hero.JPG"),
+            require("../../assets/hero.JPG")
+          ]
+        }
       }
     ]
   };

@@ -11,7 +11,13 @@ export default class Games extends Component {
         content: "A landscaping company",
         imgPath: require("../../assets/game_banners/tanks.png"),
         bgSize: "cover",
-        popupInfo: { title: "Tanks!", link: "http://yooniverse.me/Tanks/"}
+        popupInfo: { title: "Tanks!", link: "http://yooniverse.me/Tanks/",
+          images: [
+            require("../../assets/hero.jpeg"),
+            require("../../assets/hero.JPG"),
+            require("../../assets/hero.JPG")
+          ]
+        }
       },
       {
         name: "Space Shooter",
@@ -19,7 +25,13 @@ export default class Games extends Component {
         content: "A landscaping company",
         imgPath: require("../../assets/game_banners/spaceshooter.jpg"),
         bgSize: "cover",
-        popupInfo: { title: "Space Shooter", link: "http://yooniverse.me/Space-Shooter-V2/"}
+        popupInfo: { title: "Space Shooter", link: "http://yooniverse.me/Space-Shooter-V2/",
+          images: [
+            require("../../assets/hero.jpeg"),
+            require("../../assets/hero.JPG"),
+            require("../../assets/hero.JPG")
+          ]
+        }
       }
     ]
   };

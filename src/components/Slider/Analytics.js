@@ -11,7 +11,13 @@ export default class Analytics extends Component {
         content: "A landscaping company",
         imgPath: require("../../assets/hero.jpeg"),
         bgSize: "cover",
-        popupInfo: { title: "Python Hunters", link: "#" }
+        popupInfo: { title: "Python Hunters", link: "#",
+          images: [
+            require("../../assets/hero.jpeg"),
+            require("../../assets/hero.JPG"),
+            require("../../assets/hero.JPG")
+          ]
+        }
       }
     ]
   };

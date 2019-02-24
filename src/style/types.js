@@ -62,6 +62,7 @@ export const CloseButton = styled(Button)`
   height: 3rem;
   border: none;
   border-radius: 10px;
+  border-color: transparent;
 
   font-size: 1.5rem;
   transition: font-size 0.1s linear;
