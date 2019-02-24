@@ -6,86 +6,70 @@ import React, { Component } from "react";
 // import Card from "../Card/Card";
 // import { Div, Flex } from "../../style/grid";
 import CardList from "../Card/CardList";
-import Popup from "../Popup/Popup";
 
 export default class Websites extends Component {
   state = {
-    showPopup: false,
     website_infos: [
       {
         name: "Native Roots",
         tool: "WordPress",
         content: "A website for Native Rootslandscaping company",
-        link: "https://nativerootsdesign.org/",
         imgPath: require("../../assets/website_banners/native_hero.png"),
-        bgSize: "cover"
+        bgSize: "cover",
+        popupInfo: { title: "Native Roots", link: "https://nativerootsdesign.org/"}
       },
       {
         name: "Ability Marketplace",
         tool: "WordPress",
         content: "A landscaping company",
-        link: "https://abilitymarketplace.com/",
         imgPath: require("../../assets/website_banners/ability_logo.png"),
-        bgSize: "cover"
+        bgSize: "cover",
+        popupInfo: { title: "Ability Marketplace", link: "https://abilitymarketplace.com/"}
       },
       {
         name: "2XL Logistics",
         tool: "WordPress",
         content: "A landscaping company",
-        link: "https://www.2xllogistics.com/",
         imgPath: require("../../assets/website_banners/2xl_blue_logo.png"),
-        bgSize: "contain"
+        bgSize: "contain",
+        popupInfo: { title: "2XL Logistics", link: "https://2xllogistics.com/"}
       },
       {
         name: "Simbiosys",
         tool: "WordPress",
         content: "A landscaping company",
-        link: "https://simbiosys.tech/",
         imgPath: require("../../assets/website_banners/simbiosys_hero.png"),
-        bgSize: "cover"
+        bgSize: "cover",
+        popupInfo: { title: "Simbiosys", link: "https://simbiosys.tech/"}
       },
       {
         name: "Traverse Science",
         tool: "WordPress",
         content: "A landscaping company",
-        link: "https://traversescience.com/",
         imgPath: require("../../assets/website_banners/traverse_logo.png"),
-        bgSize: "contain"
+        bgSize: "contain",
+        popupInfo: { title: "Traverse Science", link: "https://traversescience.com/"}
       },
       {
         name: "KoJobs",
         tool: "WordPress",
         content: "A landscaping company",
-        link: "https://kojobsillinois.com/",
         imgPath: require("../../assets/website_banners/kojobs_hero2.png"),
-        bgSize: "cover"
+        bgSize: "cover",
+        popupInfo: { title: "KoJobs", link: "https://kojobsillinois.com/"}
       }
     ]
   };
 
-  togglePopup = () => {
-    // console.log(this);
-    this.setState({
-      showPopup: !this.state.showPopup
-    });
-  };
-
   render() {
     return (
-      <>
-        {/* <button onClick={this.togglePopup}>show popup</button> */}
         <CardList
           infos={this.state.website_infos}
           numCols="3"
           numRows="2"
-          cardWidth="50"
-          togglePopup={this.togglePopup.bind(this)}
+          cardWidth="31"
+          togglePopup={this.props.togglePopup}
         />
-
-        {this.state.showPopup ? (
-          <Popup text="Close Me" closePopup={this.togglePopup} />
-        ) : null}
-      </>
     );
   }
 }

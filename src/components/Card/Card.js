@@ -22,7 +22,7 @@ const card = props => {
       <CardBack imgPath={props.imgPath}>
         <Inner>
           <p>{props.content}</p>
-          <OpenButton onClick={props.togglePopup}>Read more</OpenButton>
+          <OpenButton onClick={() => props.togglePopup(props.popupInfo)}>Read more</OpenButton>
           {/* <A href={props.link} target="_blank">
             Take a look!
           </A> */}

@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+export const fontSize = "1.5rem";
+export const paddingValue = "2rem";
+
 export const yellow = "#fdee6c";
 export const red = "#f25f5c";
 export const blue = "#247ba0";

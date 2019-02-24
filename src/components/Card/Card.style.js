@@ -5,13 +5,13 @@ import {
   lightblue,
   yellow,
   green,
-  lightgreen
+  lightgreen,
+  paddingValue,
+  fontSize
 } from "../../style/variables";
 import { A, OpenButton } from "../../style/types";
 
-// BEGIN CONSTANTS
-const paddingValue = "2rem";
-// END CONSTANTS
+
 
 export const Inner = styled.div`
   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
@@ -54,7 +54,7 @@ export const CardFront = styled.div`
   height: auto;
   border-radius: 10px;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: ${fontSize};
   
   &::before {
     content: "";
@@ -162,7 +162,7 @@ export const CardBack = styled.div`
   height: auto;
   border-radius: 10px;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: ${fontSize};
 
   /* background: #cedce7;
   background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);

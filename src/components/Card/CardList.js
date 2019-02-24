@@ -21,6 +21,7 @@ const cardList = props => {
         bgSize={item.bgSize}
         cardWidth={cardWidth}
         togglePopup={props.togglePopup}
+        popupInfo={item.popupInfo}
       />
     );
   }

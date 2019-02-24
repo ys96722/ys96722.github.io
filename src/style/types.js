@@ -1,11 +1,14 @@
 import styled from "styled-components";
-import { blue, yellow, black } from "./variables";
+import { blue, yellow, black, fontSize } from "./variables";
 import { Button } from "reactstrap";
 
+
 export const A = styled.a`
+  font-Size: ${fontSize};
   color: ${blue};
   text-decoration: none;
   position: relative;
+  z-index: 1;
 
   &::after {
     content: " ";
@@ -26,7 +29,7 @@ export const A = styled.a`
 `;
 
 export const OpenButton = styled.button`
-  font-size: 1.5rem;
+  font-Size: ${fontSize};
   color: ${blue};
   text-decoration: none;
   position: relative;
@@ -58,12 +61,20 @@ export const CloseButton = styled(Button)`
   width: 3rem;
   height: 3rem;
   border: none;
+  border-radius: 10px;
+
+  font-size: 1.5rem;
+  transition: font-size 0.1s linear;
   background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.1s linear;
   color: rgba(255, 255, 255, 1);
   transition: color 0.1s linear;
 
   &:hover {
+    font-size: 1.8rem;
+    background-color: rgba(0,0,0,0.79);
     color: ${blue};
+
   }
 `;
 
