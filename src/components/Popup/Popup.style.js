@@ -29,12 +29,6 @@ export const PopupInner = styled(Flex)`
   overflow: hidden;
 `;
 
-export const PopupSlide = styled.div`
-  position: relative;
-  height: 100%;
-  width: 50%;
-`;
-
 export const PopupContent = styled.div`
   position: relative;
   height: 100%;
@@ -43,10 +37,10 @@ export const PopupContent = styled.div`
   padding: ${paddingValue};
 
   ${A} {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      bottom: ${paddingValue};
-    }
-`
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: ${paddingValue};
+  }
+`;
