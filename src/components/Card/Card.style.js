@@ -11,8 +11,6 @@ import {
 } from "../../style/variables";
 import { A, OpenButton } from "../../style/types";
 
-
-
 export const Inner = styled.div`
   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
   transform: translateY(-50%) translateZ(60px) scale(0.94);
@@ -89,6 +87,10 @@ export const CardFront = styled.div`
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 10px;
+
+    /* -moz-transform: scale(0.9,0.9);
+    -webkit-transform: scale(0.9,0.9);
+    transform: scale(0.9,0.9);  */
   }
 
   ${Inner} p {
@@ -181,7 +183,11 @@ export const CardBack = styled.div`
     /* position: absolute; */
     height: 100%;
     top: 0;
-    text-align: left;
+    text-align: center;
+    white-space: pre-wrap;
+    p {
+      margin: 0 auto;
+    }
 
     ${A}, ${OpenButton} {
       position: absolute;
