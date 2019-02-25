@@ -21,7 +21,8 @@ export default class Websites extends Component {
             require("../../assets/hero.jpeg"),
             require("../../assets/hero.JPG"),
             require("../../assets/hero.JPG")
-          ]
+          ],
+          content: "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum."
         }
       },
       {
@@ -35,7 +36,8 @@ export default class Websites extends Component {
             require("../../assets/hero.jpeg"),
             require("../../assets/hero.JPG"),
             require("../../assets/hero.JPG")
-          ]
+          ],
+          content: "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum."
         }
       },
       {
@@ -49,7 +51,8 @@ export default class Websites extends Component {
             require("../../assets/hero.jpeg"),
             require("../../assets/hero.JPG"),
             require("../../assets/hero.JPG")
-          ]
+          ],
+          content: "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum."
         }
       },
       {
@@ -63,7 +66,8 @@ export default class Websites extends Component {
             require("../../assets/hero.jpeg"),
             require("../../assets/hero.JPG"),
             require("../../assets/hero.JPG")
-          ]
+          ],
+          content: "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum."
         }
       },
       {
@@ -77,7 +81,8 @@ export default class Websites extends Component {
             require("../../assets/hero.jpeg"),
             require("../../assets/hero.JPG"),
             require("../../assets/hero.JPG")
-          ]
+          ],
+          content: "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum."
         }
       },
       {
@@ -91,7 +96,8 @@ export default class Websites extends Component {
             require("../../assets/hero.jpeg"),
             require("../../assets/hero.JPG"),
             require("../../assets/hero.JPG")
-          ]
+          ],
+          content: "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum."
         }
       }
     ]

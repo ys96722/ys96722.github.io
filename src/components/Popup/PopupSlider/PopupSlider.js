@@ -55,7 +55,7 @@ export default class PopupSlider extends Component {
         <SlideWrapper translateValue={this.state.translateValue}>
             { this.state.image_paths.map((image, index) => (
               <PopupSlide className="slide" key={index} image={image}>
-                <SlideIndex>[ {index + 1} ]</SlideIndex>
+                <SlideIndex>[ {index + 1}/{this.state.image_paths.length} ]</SlideIndex>
               </PopupSlide>
               ))
             }

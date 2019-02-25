@@ -11,6 +11,7 @@ const popup = props => {
         <PopupContent>
           <h1>{props.text}</h1>
           <h1>{props.popupInfo.title}</h1>
+          <p>{props.popupInfo.content}</p>
           <A href={props.popupInfo.link} target="_blank">
             Take a look!
           </A>

@@ -43,4 +43,8 @@ export const PopupContent = styled.div`
     transform: translateX(-50%);
     bottom: ${paddingValue};
   }
+
+  p {
+    margin-top: 1rem;
+  }
 `;
