@@ -185,8 +185,34 @@ export const CardBack = styled.div`
     top: 0;
     text-align: center;
     white-space: pre-wrap;
+
+    h3 {
+      margin-bottom: 1rem;
+      
+      > span {
+      /* font-size: ${fontSize}; */
+      /* color: white; */
+      color: ${blue};
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+      /* &::after {
+        background-color: white;
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 10%;
+        width: 100%;
+        z-index: -1;
+      } */
+      }
+    }
+
     p {
+      text-align: left;
       margin: 0 auto;
+      line-height: 1.8rem;
     }
 
     ${A}, ${OpenButton} {

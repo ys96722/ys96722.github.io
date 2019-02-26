@@ -15,7 +15,7 @@ const cardList = props => {
         key={item.name}
         name={item.name}
         tool={item.tool}
-        content={item.content}
+        tools={item.tools}
         link={item.link}
         imgPath={item.imgPath}
         bgSize={item.bgSize}

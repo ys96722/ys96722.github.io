@@ -1,5 +1,6 @@
 // Import Dependencies
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import "./Projects.css";
 // Import Styled Components
 import { Button } from "./Projects.style";
@@ -10,8 +11,6 @@ import Analytics from "../../components/Slider/Analytics";
 import { Div, Flex } from "../../style/grid";
 import Popup from "../../components/Popup/Popup";
 
-
-
 export default class Projects extends Component {
   constructor(props) {
     super(props);
@@ -19,13 +18,39 @@ export default class Projects extends Component {
       visibleIndex: 0,
       showPopup: false,
       popupInfo: undefined,
-      projects: [<Websites togglePopup={this.togglePopup} />, <Analytics togglePopup={this.togglePopup} />,
-      <Games togglePopup={this.togglePopup} />, <Songs togglePopup={this.togglePopup} />]
+      wrapperRef: undefined,
+      projects: [
+        <Websites togglePopup={this.togglePopup} />,
+        <Analytics togglePopup={this.togglePopup} />,
+        <Games togglePopup={this.togglePopup} />,
+        <Songs togglePopup={this.togglePopup} />
+      ]
     };
 
     this.setVisible = this.setVisible.bind(this);
     this.togglePopup = this.togglePopup.bind(this);
+
+    // this.setWrapperRef = this.setWrapperRef.bind(this);
+    // this.handleClickOutside = this.handleClickOutside.bind(this);
   }
+
+  // componentDidMount() {
+  //   document.addEventListener("mousedown", this.handleClickOutside);
+  // }
+
+  // componentWillUnmount() {
+  //   document.removeEventListener("mousedown", this.handleClickOutside);
+  // }
+
+  // handleClickOutside = event => {
+  //   if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+  //     alert("You clicked outside of me!");
+  //   }
+  // };
+
+  // setWrapperRef = node => {
+  //   this.wrapperRef = node;
+  // };
 
   setVisible = (index = 0) => {
     this.setState({
@@ -74,7 +99,11 @@ export default class Projects extends Component {
         {/* Render Active */}
         {this.state.projects[this.state.visibleIndex]}
         {this.state.showPopup ? (
-          <Popup closePopup={this.togglePopup} popupInfo={this.state.popupInfo}/>
+          <Popup
+            closePopup={this.togglePopup}
+            popupInfo={this.state.popupInfo}
+            // ref={this.setWrapperRef}
+          />
         ) : null}
       </Div>
     );

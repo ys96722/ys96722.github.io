@@ -35,6 +35,7 @@ export const PopupContent = styled.div`
   width: 50%;
   text-align: center;
   padding: ${paddingValue};
+  white-space: pre-wrap;
 
   ${A} {
     position: absolute;
@@ -43,8 +44,18 @@ export const PopupContent = styled.div`
     transform: translateX(-50%);
     bottom: ${paddingValue};
   }
+`;
 
-  p {
-    margin-top: 1rem;
-  }
+export const Content = styled.p`
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-top: 1rem;
+`;
+
+export const People = styled.p`
+  position: relative;
+  margin-top: 2rem;
+  font-size: ${fontSize};
+  text-align: left;
 `;

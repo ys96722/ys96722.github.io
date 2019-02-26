@@ -8,6 +8,8 @@ export default class Analytics extends Component {
       {
         name: "Python Hunters",
         tool: "Python",
+        tools:
+          "Language: Python\nWrangling: Pandas, Numpy\nVisualization: PyPlot, MatPlot",
         content:
           "A series of Python tutorials I have created to teach basics of Python.",
         imgPath: require("../../assets/analytic_banners/python.png"),
