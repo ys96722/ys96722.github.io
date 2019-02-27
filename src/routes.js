@@ -8,7 +8,6 @@ import Home from "./containers/Home/Home";
 import Projects from "./containers/Projects/Projects";
 import Resume from "./containers/Resume/Resume";
 // import LoadingPage from "./containers/Loader/LoadingPage"
-
 export default (
   <Router history={hashHistory}>
     <Route path="/" component={App}>

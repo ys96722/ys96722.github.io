@@ -43,6 +43,12 @@ export const Hero = styled.div`
   }
 `;
 
+export const SubHeader = styled.h2`
+  font-size: ${subtitle_header}
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+`;
+
 export const RevealP = styled.p`
   position: relative;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

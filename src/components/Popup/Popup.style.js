@@ -41,31 +41,31 @@ export const PopupContent = styled.div`
 `;
 
 export const Content = styled.p`
-  font-size: ${fontSize};
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
   margin-top: 1rem;
 `;
 
 export const People = styled.p`
   position: relative;
   margin-top: 2rem;
-  font-size: ${fontSize};
   text-align: left;
 `;
 
 export const PopupFooter = styled.div`
+  font-size: 1.2rem;
   margin-top: auto;
   width: 100%;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
   display: flex;
   bottom: ${paddingValue};
   flex-direction: column;
 
   ${A} {
-    margin-top: 2rem;
+    margin-top: 5%;
     align-self: center;
   }
-`
+`;

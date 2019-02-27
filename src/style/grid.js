@@ -38,6 +38,7 @@ export const Container = styled(Div)`
   padding-right: 120px;
   /* padding-top: 30px; */
   padding-top: 120px;
+  padding-bottom: 120px;
   ${media.tablet`
     padding-left: 30px;
     padding-right: 30px;

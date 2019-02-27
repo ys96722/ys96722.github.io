@@ -16,7 +16,6 @@ const popup = props => {
       <PopupInner>
         <PopupSlider imagePaths={props.popupInfo.images} />
         <PopupContent>
-          <h1>{props.text}</h1>
           <h1>{props.popupInfo.title}</h1>
           <Content>{props.popupInfo.content}</Content>
           <PopupFooter>

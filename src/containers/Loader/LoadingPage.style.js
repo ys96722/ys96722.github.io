@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import { blue, yellow } from '../../theme/variables';
+import styled, { css } from "styled-components";
+import { blue, yellow } from "../../style/variables";
 
 export const Container = styled.div`
   display: flex;
@@ -22,44 +22,82 @@ export const Headline = styled.h1`
 
 export const AbsoluteText = styled.p`
   position: absolute;
-  ${({ top }) => top ? css`
-    top: ${top};
-  ` : ''}
-  ${({ bottom }) => bottom ? css`
-    bottom: ${bottom};
-  ` : ''}
-  ${({ left }) => left ? css`
-    left: ${left};
-  ` : ''}
-  ${({ right }) => right ? css`
-    right: ${right};
-  ` : ''}
-  ${({ fontSize }) => fontSize ? css`
-    font-size: ${fontSize};
-  ` : ''}
-  ${({ margin }) => margin ? css`
-    margin: ${margin};
-  ` : ''}
-  ${({ nowrap }) => nowrap ? css`white-space: nowrap;` : ''}
+  ${({ top }) =>
+    top
+      ? css`
+          top: ${top};
+        `
+      : ""}
+  ${({ bottom }) =>
+    bottom
+      ? css`
+          bottom: ${bottom};
+        `
+      : ""}
+  ${({ left }) =>
+    left
+      ? css`
+          left: ${left};
+        `
+      : ""}
+  ${({ right }) =>
+    right
+      ? css`
+          right: ${right};
+        `
+      : ""}
+  ${({ fontSize }) =>
+    fontSize
+      ? css`
+          font-size: ${fontSize};
+        `
+      : ""}
+  ${({ margin }) =>
+    margin
+      ? css`
+          margin: ${margin};
+        `
+      : ""}
+  ${({ nowrap }) =>
+    nowrap
+      ? css`
+          white-space: nowrap;
+        `
+      : ""}
 `;
 
 export const AbsoluteDiv = styled.div`
   position: absolute;
-  ${({ top }) => top ? css`
-    top: ${top};
-  ` : ''}
-  ${({ bottom }) => bottom ? css`
-    bottom: ${bottom};
-  ` : ''}
-  ${({ left }) => left ? css`
-    left: ${left};
-  ` : ''}
-  ${({ right }) => right ? css`
-    right: ${right};
-  ` : ''}
-  ${({ fontSize }) => fontSize ? css`
-    font-size: ${fontSize};
-  ` : ''}
+  ${({ top }) =>
+    top
+      ? css`
+          top: ${top};
+        `
+      : ""}
+  ${({ bottom }) =>
+    bottom
+      ? css`
+          bottom: ${bottom};
+        `
+      : ""}
+  ${({ left }) =>
+    left
+      ? css`
+          left: ${left};
+        `
+      : ""}
+  ${({ right }) =>
+    right
+      ? css`
+          right: ${right};
+        `
+      : ""}
+  ${({ fontSize }) =>
+    fontSize
+      ? css`
+          font-size: ${fontSize};
+        `
+      : ""}
 `;
 
 export const RelativeDiv = styled.div`
