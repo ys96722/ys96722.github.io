@@ -15,6 +15,7 @@ export default class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isLoading: true,
       visibleIndex: 0,
       showPopup: false,
       popupInfo: undefined,
@@ -32,6 +33,12 @@ export default class Projects extends Component {
 
     // this.setWrapperRef = this.setWrapperRef.bind(this);
     // this.handleClickOutside = this.handleClickOutside.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({
+      isLoading: false
+    })
   }
 
   // componentDidMount() {

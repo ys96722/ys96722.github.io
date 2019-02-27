@@ -6,14 +6,15 @@ import { Route, Router, IndexRoute, hashHistory } from "react-router";
 import App from "./containers/App/App";
 import Home from "./containers/Home/Home";
 import Projects from "./containers/Projects/Projects";
-import About from "./containers/About/About";
+import Resume from "./containers/Resume/Resume";
+// import LoadingPage from "./containers/Loader/LoadingPage"
 
 export default (
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/projects" component={Projects} />
-      <Route path="/about" component={About} />
+      <Route path="/resume" component={Resume} />
     </Route>
   </Router>
 );

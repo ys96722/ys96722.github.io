@@ -4,7 +4,8 @@ import {
   PopupInner,
   PopupContent,
   Content,
-  People
+  People,
+  PopupFooter
 } from "./Popup.style";
 import PopupSlider from "./PopupSlider/PopupSlider";
 import { CloseButton, A } from "../../style/types";
@@ -18,10 +19,12 @@ const popup = props => {
           <h1>{props.text}</h1>
           <h1>{props.popupInfo.title}</h1>
           <Content>{props.popupInfo.content}</Content>
-          <People>{props.popupInfo.people}</People>
-          <A href={props.popupInfo.link} target="_blank">
-            Take a look!
-          </A>
+          <PopupFooter>
+            <People>{props.popupInfo.people}</People>
+            <A href={props.popupInfo.link} target="_blank">
+              <span>Take a look!</span>
+            </A>
+          </PopupFooter>
         </PopupContent>
         <CloseButton close onClick={props.closePopup} />
       </PopupInner>

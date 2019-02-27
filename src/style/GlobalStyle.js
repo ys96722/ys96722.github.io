@@ -14,12 +14,15 @@ const GlobalStyle = createGlobalStyle`
   } 
   */
 
-  * {
+
+
+  *, *:before, *:after {
     margin: 0;
     padding: 0;
+    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
+    }
 
   *:focus{
     outline: none;

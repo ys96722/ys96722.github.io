@@ -21,8 +21,8 @@ class NavigationBar extends Component {
           activeClassName="activeNavItem"
         />
         <NavigationItem
-          to="/about"
-          title="About"
+          to="/resume"
+          title="Resume"
           activeClassName="activeNavItem"
         />
       </NavigationContainer>

@@ -7,6 +7,14 @@ import WhenInView from "../../components/WhenInView/WhenInView";
 import { Hero, RevealP } from "./Home.style";
 
 export default class Home extends Component {
+  state = {isLoading: true};
+
+  componentDidMount() {
+    this.setState({
+      isLoading: false
+    })
+  }
+
   render() {
     return (
       <>

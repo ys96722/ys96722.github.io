@@ -31,23 +31,17 @@ export const PopupInner = styled(Flex)`
 
 export const PopupContent = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 50%;
   text-align: center;
   padding: ${paddingValue};
   white-space: pre-wrap;
-
-  ${A} {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    bottom: ${paddingValue};
-  }
 `;
 
 export const Content = styled.p`
-  font-size: 1rem;
+  font-size: ${fontSize};
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin-top: 1rem;
@@ -59,3 +53,19 @@ export const People = styled.p`
   font-size: ${fontSize};
   text-align: left;
 `;
+
+export const PopupFooter = styled.div`
+  margin-top: auto;
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  display: flex;
+  bottom: ${paddingValue};
+  flex-direction: column;
+
+  ${A} {
+    margin-top: 2rem;
+    align-self: center;
+  }
+`

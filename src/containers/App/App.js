@@ -5,6 +5,7 @@ import { Container } from "../../style/grid";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import ReallySmoothScroll from "really-smooth-scroll";
 import { hashHistory } from "react-router";
+import LoadingPage from '../Loader/LoadingPage';
 
 // All I Got
 
@@ -16,12 +17,15 @@ ReallySmoothScroll.shim();
 
 class App extends Component {
   render() {
+    const { loading, doneLoading } = this.props;
+    const { waitingToFinishLoading } = this.state;
     return (
       <>
         <GlobalStyle />
         {/* <Background /> */}
         <Container>
           <NavigationBar />
+          <LoadingPage loading={waitingToFinishLoading && loading} />
           {this.props.children}
         </Container>
       </>
