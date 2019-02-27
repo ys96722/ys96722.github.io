@@ -40,12 +40,6 @@ export const PopupContent = styled.div`
   white-space: pre-wrap;
 `;
 
-export const Content = styled.p`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.1rem;
-  margin-top: 1rem;
-`;
 
 export const People = styled.p`
   position: relative;

@@ -8,7 +8,7 @@ import {
   PopupFooter
 } from "./Popup.style";
 import PopupSlider from "./PopupSlider/PopupSlider";
-import { CloseButton, A } from "../../style/types";
+import { CloseButton, A, P } from "../../style/types";
 
 const popup = props => {
   return (
@@ -17,7 +17,7 @@ const popup = props => {
         <PopupSlider imagePaths={props.popupInfo.images} />
         <PopupContent>
           <h1>{props.popupInfo.title}</h1>
-          <Content>{props.popupInfo.content}</Content>
+          <P>{props.popupInfo.content}</P>
           <PopupFooter>
             <People>{props.popupInfo.people}</People>
             <A href={props.popupInfo.link} target="_blank">

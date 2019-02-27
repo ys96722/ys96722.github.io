@@ -12,7 +12,7 @@ export const Container = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: ${yellow};
+  background-color: white;
   z-index: 97;
 `;
 

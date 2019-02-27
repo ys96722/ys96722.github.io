@@ -15,11 +15,9 @@ export default class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: true,
       visibleIndex: 0,
       showPopup: false,
       popupInfo: undefined,
-      wrapperRef: undefined,
       projects: [
         <Websites togglePopup={this.togglePopup} />,
         <Analytics togglePopup={this.togglePopup} />,
@@ -30,34 +28,7 @@ export default class Projects extends Component {
 
     this.setVisible = this.setVisible.bind(this);
     this.togglePopup = this.togglePopup.bind(this);
-
-    // this.setWrapperRef = this.setWrapperRef.bind(this);
-    // this.handleClickOutside = this.handleClickOutside.bind(this);
   }
-
-  componentDidMount() {
-    this.setState({
-      isLoading: false
-    })
-  }
-
-  // componentDidMount() {
-  //   document.addEventListener("mousedown", this.handleClickOutside);
-  // }
-
-  // componentWillUnmount() {
-  //   document.removeEventListener("mousedown", this.handleClickOutside);
-  // }
-
-  // handleClickOutside = event => {
-  //   if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-  //     alert("You clicked outside of me!");
-  //   }
-  // };
-
-  // setWrapperRef = node => {
-  //   this.wrapperRef = node;
-  // };
 
   setVisible = (index = 0) => {
     this.setState({

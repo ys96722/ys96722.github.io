@@ -5,6 +5,7 @@ import WhenInView from "../../components/WhenInView/WhenInView";
 // Import Style Components
 // import { Container } from "../../style/grid"; Moved it to App
 import { Hero, SubHeader, RevealP } from "./Home.style";
+import { P } from "../../style/types"
 
 export default class Home extends Component {
   state = { isLoading: true };
@@ -22,7 +23,14 @@ export default class Home extends Component {
           <h1>Yoon Chang</h1>
           <h2>Creator - Developer</h2>
         </Hero>
-        <WhenInView>
+        <SubHeader>Welcome! I'm Yoon.</SubHeader>
+        <P>
+                Born between an opera singer and an entrepreneur in the heat of
+    July in 1996, I aspire to live a life constantly creating new
+    things. I am annoying-curious, cynically-analytical, and
+    appropriately-sentimental.
+        </P>
+        {/* <WhenInView>
           {({ isInView }) => (
             <>
               <SubHeader>Welcome! I'm Yoon.</SubHeader>
@@ -31,7 +39,7 @@ export default class Home extends Component {
                 July in 1996, I aspire to live a life constantly creating new
                 things. I am annoying-curious, cynically-analytical, and
                 appropriately-sentimental.
-                {/* Experienced Web Developer adept in all stages of advanced web
+                Experienced Web Developer adept in all stages of advanced web
                 development. Knowledgeable in user interface, testing, and
                 debugging processes. Bringing forth expertise in design,
                 installation, testing and maintenance of web systems. Equipped
@@ -39,11 +47,11 @@ export default class Home extends Component {
                 assortment of technologies, including Java, ASP.NET, C#, IIS,
                 Tomcat, and Microsoft SQL Server. Able to effectively
                 self-manage during independent projects, as well as collaborate
-                in a team setting. */}
+                in a team setting.
               </RevealP>
             </>
           )}
-        </WhenInView>
+        </WhenInView> */}
         {/* <WhenInView>
           {({ isInView }) => (
             <>

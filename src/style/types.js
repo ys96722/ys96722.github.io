@@ -2,9 +2,15 @@ import styled from "styled-components";
 import { blue, yellow, black, fontSize } from "./variables";
 import { Button } from "reactstrap";
 
+export const P = styled.p`
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+`
 
 export const A = styled.a`
-  font-Size: ${fontSize};
+  font-size: ${fontSize};
   color: ${blue};
   text-decoration: none;
   position: relative;
