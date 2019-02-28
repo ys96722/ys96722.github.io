@@ -30,7 +30,6 @@ export const Div = styled.div`
     css`
       width: ${width};
     `}
-
 `;
 
 export const Container = styled(Div)`

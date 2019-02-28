@@ -5,7 +5,7 @@ import { Button } from "reactstrap";
 export const P = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
 `
 

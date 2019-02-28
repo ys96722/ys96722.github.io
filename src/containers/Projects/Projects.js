@@ -48,7 +48,7 @@ export default class Projects extends Component {
     return (
       <Div width="100%">
         {/* List that captures Active */}
-        <Flex column justify="center">
+        <Flex row justify="center">
           <Button
             onClick={e => this.setVisible(0, e)}
             active={this.state.visibleIndex === 0}

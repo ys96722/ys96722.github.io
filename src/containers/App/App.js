@@ -41,7 +41,7 @@ export default class App extends Component {
           {/* <div onLoad={({ loading }) => {
             if (!loading) doneLoading('appBackground');
           }} /> */}
-          <LoadingPage loading={waitingToFinishLoading && loading} />
+          {/* <LoadingPage loading={waitingToFinishLoading && loading} /> */}
           {this.props.children}
         </Container>
       </>

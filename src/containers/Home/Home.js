@@ -23,12 +23,10 @@ export default class Home extends Component {
           <h1>Yoon Chang</h1>
           <h2>Creator - Developer</h2>
         </Hero>
-        <SubHeader>Welcome! I'm Yoon.</SubHeader>
+        <SubHeader>Welcome! I am Yoon.</SubHeader>
         <P>
                 Born between an opera singer and an entrepreneur in the heat of
-    July in 1996, I aspire to live a life constantly creating new
-    things. I am annoying-curious, cynically-analytical, and
-    appropriately-sentimental.
+    July, I aspire to live a life full of opportunities to create new things. 
         </P>
         {/* <WhenInView>
           {({ isInView }) => (

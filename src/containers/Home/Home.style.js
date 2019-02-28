@@ -44,7 +44,7 @@ export const Hero = styled.div`
 `;
 
 export const SubHeader = styled.h2`
-  font-size: ${subtitle_header}
+  font-size: ${subtitle_header};
   margin-top: 2rem;
   margin-bottom: 2rem;
 `;
