@@ -35,7 +35,6 @@ export const Div = styled.div`
 export const Container = styled(Div)`
   padding-left: 120px;
   padding-right: 120px;
-  /* padding-top: 30px; */
   padding-top: 120px;
   padding-bottom: 120px;
   ${media.tablet`

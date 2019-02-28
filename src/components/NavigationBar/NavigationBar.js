@@ -25,6 +25,11 @@ class NavigationBar extends Component {
           title="Resume"
           activeClassName="activeNavItem"
         />
+        <NavigationItem
+          to="/jurumable"
+          title="주루마블"
+          activeClassName="activeNavItem"
+        />
       </NavigationContainer>
     );
   }
