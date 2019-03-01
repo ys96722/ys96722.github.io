@@ -5,30 +5,22 @@ export const MableContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: yellow;
-`;
-
-export const Square = styled.div`
-  position: relative;
-  background-color: blue;
-  display: block;
-  color: yellow;
-  width: 12.5%;
-  height: 50px;
-  border: 5px solid black;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
 `;
 
 export const Row = styled.div`
   align-self: flex-start;
   display: flex;
+  flex-grow: 1;
   width: 100%;
   flex-direction: row;
 `;
 
-export const EndRow = styled.div`
-  align-self: flex-end;
+export const Filler = styled.div`
   display: flex;
-  width: 100%;
-  margin-top: auto;
-  flex-direction: row;
+  width: ${100 / 12}%;
+  /* flex-grow: 1; */
 `;
+
