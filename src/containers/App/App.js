@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import GlobalStyle from "../../style/GlobalStyle";
 // import { Background } from "./App.style";
 import { Container } from "../../style/grid";
+import SideBar from "../../components/SideBar/SideBar";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import LoadingPage from "../Loader/LoadingPage";
 import {
@@ -41,7 +42,8 @@ export default class App extends Component {
         <GlobalStyle />
         {/* <Background /> */}
         <Container>
-          {/* <NavigationBar /> */}
+          <NavigationBar />
+          <SideBar />
           {/* <div onLoad={({ loading }) => {
             if (!loading) doneLoading('appBackground');
           }} /> */}

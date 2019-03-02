@@ -5,7 +5,7 @@ import WhenInView from "../../components/WhenInView/WhenInView";
 // Import Style Components
 // import { Container } from "../../style/grid"; Moved it to App
 import { Hero, SubHeader, RevealP } from "./Home.style";
-import { P } from "../../style/types"
+import { P } from "../../style/types";
 
 export default class Home extends Component {
   state = { isLoading: true };
@@ -25,8 +25,10 @@ export default class Home extends Component {
         </Hero>
         <SubHeader>Welcome! I am Yoon.</SubHeader>
         <P>
-                Born between an opera singer and an entrepreneur in the heat of
-    July, I aspire to live a life full of opportunities to create new things. 
+          I am a front-end developer currently living in Champaign-Urbana,
+          Illinois. Born between an opera singer and an entrepreneur in the heat
+          of July, I aspire to live a life full of opportunities to create new
+          things.
         </P>
         {/* <WhenInView>
           {({ isInView }) => (

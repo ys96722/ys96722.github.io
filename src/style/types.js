@@ -3,11 +3,12 @@ import { blue, yellow, black, fontSize } from "./variables";
 import { Button } from "reactstrap";
 
 export const P = styled.p`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+  font-size: 1.8rem;
   margin-top: 1rem;
-`
+  line-height: 2rem;
+`;
 
 export const A = styled.a`
   font-size: ${fontSize};
@@ -35,7 +36,7 @@ export const A = styled.a`
 `;
 
 export const OpenButton = styled.button`
-  font-Size: ${fontSize};
+  font-size: ${fontSize};
   color: ${blue};
   text-decoration: none;
   position: relative;
@@ -79,9 +80,8 @@ export const CloseButton = styled(Button)`
 
   &:hover {
     font-size: 1.8rem;
-    background-color: rgba(0,0,0,0.79);
+    background-color: rgba(0, 0, 0, 0.79);
     color: ${blue};
-
   }
 `;
 

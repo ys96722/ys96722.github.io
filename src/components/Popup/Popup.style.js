@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { Flex } from "../../style/grid";
-import { A } from "../../style/types";
+import { A, P } from "../../style/types";
 import { fontSize, paddingValue } from "../../style/variables";
 // import { blue, yellow } from "../../style/variables";
 
@@ -38,8 +38,12 @@ export const PopupContent = styled.div`
   text-align: center;
   padding: ${paddingValue};
   white-space: pre-wrap;
-`;
 
+  ${P} {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+`;
 
 export const People = styled.p`
   position: relative;
@@ -48,8 +52,11 @@ export const People = styled.p`
 `;
 
 export const PopupFooter = styled.div`
-  font-size: 1.2rem;
   margin-top: auto;
+  position: relative;
+  font-size: 1.2rem;
+  /* align-self: flex-end; */
+  /* justify-self: flex-end; */
   width: 100%;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -59,7 +66,7 @@ export const PopupFooter = styled.div`
   flex-direction: column;
 
   ${A} {
-    margin-top: 5%;
+    margin-top: auto;
     align-self: center;
   }
 `;
