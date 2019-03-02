@@ -4,9 +4,13 @@ import GlobalStyle from "../../style/GlobalStyle";
 import { Container } from "../../style/grid";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import LoadingPage from "../Loader/LoadingPage";
-import { registerItem, isLoading, doneLoading } from '../../redux/modules/loadingStatus';
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router';
+import {
+  registerItem,
+  isLoading,
+  doneLoading
+} from "../../redux/modules/loadingStatus";
+import { connect } from "react-redux";
+import { withRouter } from "react-router";
 
 export default class App extends Component {
   state = {
@@ -37,7 +41,7 @@ export default class App extends Component {
         <GlobalStyle />
         {/* <Background /> */}
         <Container>
-          <NavigationBar />
+          {/* <NavigationBar /> */}
           {/* <div onLoad={({ loading }) => {
             if (!loading) doneLoading('appBackground');
           }} /> */}

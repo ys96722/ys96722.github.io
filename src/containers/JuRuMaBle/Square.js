@@ -17,9 +17,15 @@ class Square extends Component {
       bgColor = "white";
       fontColor = katalkGreen;
     }
+    let backTrack = Math.sign(Number(this.props.index)) === -1;
     return (
       <>
-        <SquareContainer bgColor={bgColor} fontColor={fontColor}>
+        <SquareContainer
+          bgColor={bgColor}
+          fontColor={fontColor}
+          form={this.props.form}
+          backTrack={backTrack}
+        >
           {this.props.children}
         </SquareContainer>
       </>

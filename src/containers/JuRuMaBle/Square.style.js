@@ -17,6 +17,18 @@ export const SquareContainer = styled.div`
   text-align: center;
 
   h1 {
+    font-size: 1.3rem;
     color: ${props => props.fontColor};
+    ${({ form }) =>
+      form &&
+      css`
+        font-size: 0.8rem;
+      `}
+
+    ${({ backTrack }) =>
+      backTrack &&
+      css`
+        font-size: 2rem;
+      `}
   }
 `;

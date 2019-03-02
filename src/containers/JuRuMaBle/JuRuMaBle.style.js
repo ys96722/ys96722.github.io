@@ -1,16 +1,21 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import Square from "./Square";
 import { blue } from "../../style/variables";
 
 // const illinoisBlue = "#13294b";
 // const illinoisOrange = "#E84A27";
 
+const pastelBlue = "#D2EFFE";
+const unofficialGreen = "#008A2B";
+const katalkGreen = "#86D1D6";
+
 export const MableContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   background-color: transparent;
+  /* background-color: ${unofficialGreen}; */
   overflow: hidden;
   border: 2px solid black;
   /* outline: 1px solid black; */
@@ -62,13 +67,55 @@ export const DiceSquare = styled(Filler)`
   }
 `;
 
+const rotate = keyframes`
+
+  0%   {opacity:1; }
+  25%  {opacity:0.75;}
+  50%  {opacity:0.5;}
+  75%  {opacity:0.75;}
+  100% {opacity:1; }
+
+  /* from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  } */
+`;
+
 export const CountSquare = styled(Filler)`
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background-color: black;
+  background-color: ${katalkGreen};
+  /* opacity: 0.6; */
+  /* background-color: ${unofficialGreen}; */
   border-radius: 20px;
   perspective: 1000px;
-  box-shadow: 10px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+  transition: color 0.5s;
+
+  h1 {
+    font-size: 4.5rem;
+    animation: ${rotate} 2s linear infinite;
+  }
+
+  ${({ currentTurn }) => {
+    let val = currentTurn + 1;
+    if (currentTurn === 2) {
+      return css`
+        color: red;
+      `;
+    } else if (currentTurn === 3) {
+      return css`
+        color: blue;
+      `;
+    } else {
+      return css`
+        color: green;
+      `;
+    }
+  }}
 `;
