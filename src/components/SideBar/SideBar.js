@@ -9,7 +9,10 @@ class SideBar extends Component {
       <SideContainer>
         {/* <SocialIcon url="https://www.linkedin.com/in/yoonchang/" />
         <SocialIcon url="https://soundcloud.com/yooni-verse/" /> */}
-        <SocialButton
+        <SocialIcon style={{margin: "0.3rem"}} url="https://www.linkedin.com/in/yoonchang" target="_blank" />
+        <SocialIcon style={{margin: "0.3rem"}} url="mailto:yoonsees@gmail.com" target="_blank" />
+        <SocialIcon style={{margin: "0.3rem"}} url="https://soundcloud.com/yooni-verse" target="_blank" />
+        {/* <SocialButton
           href="https://www.linkedin.com/in/yoonchang/"
           target="_blank"
         >
@@ -17,7 +20,7 @@ class SideBar extends Component {
         </SocialButton>
         <SocialButton href="mailto:yoonsees@gmail.com" target="_blank">
           E
-        </SocialButton>
+        </SocialButton> */}
       </SideContainer>
     );
   }

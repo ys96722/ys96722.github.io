@@ -25,6 +25,7 @@ export default class Websites extends Component {
         ],
         content:
           "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
+        testimonial: "He is a great man.",
         people: `Developer: Yoon Chang`
       }
       }, {
@@ -44,6 +45,7 @@ export default class Websites extends Component {
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
+          testimonial: "He is a great man.",
           people: `Developer: Yoon Chang\nGraphic Designer: Sophia Presutti \nProject Manager: Zamar El Zimra Rimba`
         }
       }, {
@@ -63,6 +65,7 @@ export default class Websites extends Component {
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
+          testimonial: "He is a great man.",
           people: `Developer: Yoon Chang\nGraphic Designer: Ina Kang`
         }
       },
@@ -83,6 +86,7 @@ export default class Websites extends Component {
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
+          testimonial: "He is a great man.",
           people: `Developer: Yoon Chang\nGraphic Designer: Sophia Presutti \nProject Manager: Zamar El Zimra Rimba\nContent Developer: Alyson Gerdes`
         }
       },
@@ -103,6 +107,7 @@ export default class Websites extends Component {
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
+          testimonial: "He is a great man.",
           people: `Developer: Yoon Chang\nGraphic Designer: Alyssa Lenenfeld\nProject Manager: Zamar El Zimra Rimba\nContent Developer: Alyson Gerdes`
         }
       },
@@ -123,6 +128,7 @@ export default class Websites extends Component {
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
+          testimonial: "He is a great man.",
           people: `Developer: Yoon Chang\nGraphic Designer: Charlotte Peloquin & Sophia Presutti \nProject Manager: Zamar El Zimra Rimba\nContent Developer: Alia Bellwood`
         }
       },
@@ -143,6 +149,7 @@ export default class Websites extends Component {
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
+          testimonial: "He is a great man.",
           people: `Developer: Yoon Chang\nGraphic Designer: Charlotte Peloquin\nProject Manager: Zamar El Zimra Rimba\nContent Developer: Leah Lines`
         }
       }

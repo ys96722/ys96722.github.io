@@ -29,7 +29,15 @@ export const PopupInner = styled(Flex)`
   overflow: hidden;
 `;
 
-export const PopupContent = styled.div`
+export const PopupImageContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%;
+  width: 50%;
+`;
+
+export const PopupContentContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -45,16 +53,10 @@ export const PopupContent = styled.div`
   }
 `;
 
-export const People = styled.p`
-  position: relative;
-  margin-top: 2rem;
-  text-align: left;
-`;
-
 export const PopupFooter = styled.div`
   margin-top: auto;
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   /* align-self: flex-end; */
   /* justify-self: flex-end; */
   width: 100%;
@@ -66,7 +68,13 @@ export const PopupFooter = styled.div`
   flex-direction: column;
 
   ${A} {
-    margin-top: auto;
+    margin-top: 1.5rem;
     align-self: center;
   }
+`;
+
+export const People = styled.p`
+  position: relative;
+  margin-top: 1.5rem;
+  text-align: left;
 `;

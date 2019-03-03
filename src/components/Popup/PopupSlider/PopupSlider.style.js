@@ -4,7 +4,7 @@ import { blue, yellow, black, fontSize } from "../../../style/variables";
 export const PopupSliderContainer = styled.div`
   position: relative;
   height: 100%;
-  width: 50%;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
 `;
@@ -18,6 +18,7 @@ export const PopupSlide = styled.div`
   height: 100%;
   width: 100%;
 `;
+
 
 export const SlideWrapper = styled.div`
   position: relative;

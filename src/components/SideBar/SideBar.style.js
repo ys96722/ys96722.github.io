@@ -16,7 +16,8 @@ export const SocialButton = styled.a`
   text-decoration: none;
   font-size: 2rem;
   border-radius: 20px;
-  background-color: ${blue};
+  /* background-color: ${blue}; */
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 15px 15px;
   opacity: 0.9;
