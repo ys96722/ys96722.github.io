@@ -57,13 +57,13 @@ export default class Websites extends Component {
           title: "Native Roots",
           link: "https://nativerootsdesign.org/",
           images: [
-            require("../../assets/hero.jpeg"),
-            require("../../assets/hero.JPG"),
-            require("../../assets/hero.JPG")
+            require("../../assets/native/native1.png"),
+            require("../../assets/native/native2.png"),
+            require("../../assets/native/native3.png")
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
-          testimonial: `"Yoon has been tremendously helpful in every step of creating my new business website.  He was very professional, kind, and passionate during the whole process. Thank you!"\n\n- Ryan Cox, CEO of Native Roots Landscape and Design`,
+          testimonial: `"Yoon has been tremendously helpful in every step of creating my new business website.  He was very professional, kind, and passionate during the whole process. Thank you!"\n\n- Ryan Cox, Owner of Native Roots Landscape and Design`,
           people: `Developer: Yoon Chang\nGraphic Designer: Sophia Presutti \nProject Manager: Zamar El Zimra Rimba`
         }
       },

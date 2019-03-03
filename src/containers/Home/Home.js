@@ -30,6 +30,16 @@ export default class Home extends Component {
           of July, I aspire to live a life full of opportunities to create new
           things.
         </P>
+        <SubHeader>What people say about me:</SubHeader>
+        <P>
+          "One thing you can always expect from Yoon is a contagious, innovative spirit. I learned a lot when working 
+          with him on web development projects for startup companies incubating at the University of Illinois Research 
+          Park. He was always sure that the communications, graphics, and business strategy team members were heard and 
+          was careful to synthesize their materials into impressive websites. He was known for leaving work puzzled by 
+          a web development problem and coming back in the next day having already researched it thoroughly. 
+          He expects the best from himself and we could always count on him."
+        </P>
+        <P>- Alia Bellwood, Communication Consultant at Mechanodontics</P>
         {/* <WhenInView>
           {({ isInView }) => (
             <>
