@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { SideContainer, SideItem, SocialButton } from "./SideBar.style";
 import { SocialIcon } from "react-social-icons";
+import "./SideBar.css";
 
 class SideBar extends Component {
   state = {};
@@ -9,9 +10,21 @@ class SideBar extends Component {
       <SideContainer>
         {/* <SocialIcon url="https://www.linkedin.com/in/yoonchang/" />
         <SocialIcon url="https://soundcloud.com/yooni-verse/" /> */}
-        <SocialIcon style={{margin: "0.3rem"}} url="https://www.linkedin.com/in/yoonchang" target="_blank" />
-        <SocialIcon style={{margin: "0.3rem"}} url="mailto:yoonsees@gmail.com" target="_blank" />
-        <SocialIcon style={{margin: "0.3rem"}} url="https://soundcloud.com/yooni-verse" target="_blank" />
+        <SocialIcon
+          style={{ margin: "0.3rem" }}
+          url="https://www.linkedin.com/in/yoonchang"
+          target="_blank"
+        />
+        <SocialIcon
+          style={{ margin: "0.3rem" }}
+          url="mailto:yoonsees@gmail.com"
+          target="_blank"
+        />
+        <SocialIcon
+          style={{ margin: "0.3rem" }}
+          url="https://soundcloud.com/yooni-verse"
+          target="_blank"
+        />
         {/* <SocialButton
           href="https://www.linkedin.com/in/yoonchang/"
           target="_blank"

@@ -1,22 +1,19 @@
 import React, { Component } from "react";
 import { Title } from "../../style/variables";
 import { Flex, Div } from "../../style/grid";
-import { Primary, Secondary, Tertiary } from "./Resume.style"
+import { Primary, Secondary, Tertiary } from "./Resume.style";
 
 // import { Container } from "../../style/grid"; Moved it to App
 
 export default class Resume extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      
-    };
+    this.state = {};
   }
-
 
   render() {
     return (
-      <Div width="100%">
+      <Div width="100%" marginLeft="5%">
         <Div>
           <Primary>Core Qualifications</Primary>
           <Secondary>Statistical Skills</Secondary>
@@ -42,7 +39,7 @@ export default class Resume extends Component {
           <Secondary>1</Secondary>
           <Secondary>2</Secondary>
         </Div>
-      </Div> 
+      </Div>
     );
   }
 }

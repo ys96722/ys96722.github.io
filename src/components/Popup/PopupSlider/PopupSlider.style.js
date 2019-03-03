@@ -11,7 +11,9 @@ export const PopupSliderContainer = styled.div`
 
 export const PopupSlide = styled.div`
   background-image: url(${props => props.image});
+  /* background-size: 100% 100%; */
   background-size: cover;
+  /* transform: scale(0.8, 0.8); */
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: inline-block;
@@ -19,12 +21,11 @@ export const PopupSlide = styled.div`
   width: 100%;
 `;
 
-
 export const SlideWrapper = styled.div`
   position: relative;
   height: 100%;
   width: 100%;
-  transform: translateX(${ props => props.translateValue }px);
+  transform: translateX(${props => props.translateValue}px);
   transition: transform ease-out 0.45s;
 `;
 
@@ -35,34 +36,31 @@ export const SlideIndex = styled.span`
   top: 3%;
   left: 3%;
   color: white;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   border-color: transparent;
   border-radius: 10px;
-
-`
+`;
 
 export const Arrow = styled.button`
   position: absolute;
   top: 50%;
-  
-  ${({ direction }) => 
-    direction && css`
+
+  ${({ direction }) =>
+    direction &&
+    css`
       ${direction}: 5%
-    `
-  }
+    `}
 
   color: white;
   padding: 10px;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   border-color: transparent;
   border-radius: 20px;
   transition: color 0.1s linear;
   transition: background-color 0.1s linear;
 
   &:hover {
-    background-color: rgba(0,0,0,0.79);
+    background-color: rgba(0, 0, 0, 0.79);
     color: ${blue};
   }
-
-  
 `;

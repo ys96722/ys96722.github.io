@@ -1,34 +1,52 @@
 import React, { Component } from "react";
 import CardList from "../Card/CardList";
 
-
-
-
-
 export default class Websites extends Component {
   state = {
     website_infos: [
       {
-      name: "Yooniverse",
-      tool: "React",
-      tools:
-      "Front: React.js, Styled-Components\nDatabase: MySQL, PHPMyAdmin\nVersion Control: Git",
-      imgPath: require("../../assets/hero.jpeg"),
-      bgSize: "cover",
-      popupInfo: {
-        title: "Yooniverse",
-        link: "#",
-        images: [
-          require("../../assets/hero.jpeg"),
-          require("../../assets/hero.JPG"),
-          require("../../assets/hero.JPG")
-        ],
-        content:
-          "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
-        testimonial: "He is a great man.",
-        people: `Developer: Yoon Chang`
-      }
-      }, {
+        name: "Yooniverse",
+        tool: "React",
+        tools:
+          "Front: React.js, Styled-Components\nDatabase: MySQL, PHPMyAdmin\nVersion Control: Git",
+        imgPath: require("../../assets/hero.jpeg"),
+        bgSize: "cover",
+        popupInfo: {
+          title: "Yooniverse",
+          link: "#",
+          images: [
+            require("../../assets/hero.jpeg"),
+            require("../../assets/hero.JPG"),
+            require("../../assets/hero.JPG")
+          ],
+          content:
+            "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
+          testimonial: "He is a great man.",
+          people: `Developer: Yoon Chang`
+        }
+      },
+      {
+        name: "SimBioSys",
+        tool: "WordPress",
+        tools:
+          "CMS: WordPress\nFront: JavaScript, HTML5, CSS3\nServer: PHP\nDatabase: MySQL, PHPMyAdmin",
+        imgPath: require("../../assets/website_banners/simbiosys_hero.png"),
+        bgSize: "cover",
+        popupInfo: {
+          title: "SimBioSys",
+          link: "https://simbiosys.tech/",
+          images: [
+            require("../../assets/simbiosys/simbiosys1.png"),
+            require("../../assets/simbiosys/simbiosys2.png"),
+            require("../../assets/simbiosys/simbiosys3.png")
+          ],
+          content:
+            "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
+          testimonial: `"Yoon did a fantastic job translating our idea for a website into practice. He was quick and responsive, went above and beyond in the design, and offered great "after sale" services. Moreover, he took an interest in our technology above and beyond what was required for creating the website. I highly recommend him for web development.\n\n-Joseph Peterson, Co-Founder of SimBioSys Inc."`,
+          people: `Developer: Yoon Chang\nGraphic Designer: Charlotte Peloquin & Sophia Presutti \nProject Manager: Zamar El Zimra Rimba\nContent Developer: Alia Bellwood`
+        }
+      },
+      {
         name: "Native Roots",
         tool: "WordPress",
         tools:
@@ -45,10 +63,11 @@ export default class Websites extends Component {
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
-          testimonial: "He is a great man.",
+          testimonial: `"Yoon has been tremendously helpful in every step of creating my new business website.  He was very professional, kind, and passionate during the whole process. Thank you!"\n\n- Ryan Cox, CEO of Native Roots Landscape and Design`,
           people: `Developer: Yoon Chang\nGraphic Designer: Sophia Presutti \nProject Manager: Zamar El Zimra Rimba`
         }
-      }, {
+      },
+      {
         name: "KoJobs",
         tool: "WordPress",
         tools:
@@ -107,29 +126,8 @@ export default class Websites extends Component {
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
-          testimonial: "He is a great man.",
+          testimonial: `"On behalf of my brother Le'Mon Bass and myself we would like to take this opportunity to extend our sincere thanks and appreciation to you and your team for the dedication and hard work you all put into the completion of our website. It all came together in a timely fashion and we are confident that this will give our small business the extra edge to successfully compete in the extremely competitive e-commerce and logistical arena in the Midwest corridor."\n\n-LaMar Q. Bass, Owner of 2XL Logistics LLC`,
           people: `Developer: Yoon Chang\nGraphic Designer: Alyssa Lenenfeld\nProject Manager: Zamar El Zimra Rimba\nContent Developer: Alyson Gerdes`
-        }
-      },
-      {
-        name: "Simbiosys",
-        tool: "WordPress",
-        tools:
-          "CMS: WordPress\nFront: JavaScript, HTML5, CSS3\nServer: PHP\nDatabase: MySQL, PHPMyAdmin",
-        imgPath: require("../../assets/website_banners/simbiosys_hero.png"),
-        bgSize: "cover",
-        popupInfo: {
-          title: "Simbiosys",
-          link: "https://simbiosys.tech/",
-          images: [
-            require("../../assets/hero.jpeg"),
-            require("../../assets/hero.JPG"),
-            require("../../assets/hero.JPG")
-          ],
-          content:
-            "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
-          testimonial: "He is a great man.",
-          people: `Developer: Yoon Chang\nGraphic Designer: Charlotte Peloquin & Sophia Presutti \nProject Manager: Zamar El Zimra Rimba\nContent Developer: Alia Bellwood`
         }
       },
       {

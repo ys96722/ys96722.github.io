@@ -1,7 +1,24 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import media from "./media";
 
+const fadeIn = keyframes`
+  0% {
+      opacity: 0;
+      transform: translateY(10%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+`;
+
 export const Div = styled.div`
+  ${({ animation }) =>
+    animation &&
+    css`
+      animation: 1s ease-in-out 0s 1 ${fadeIn};
+    `}
+
   ${({ marginBottom }) =>
     marginBottom &&
     css`

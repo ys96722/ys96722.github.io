@@ -1,9 +1,10 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { Flex } from "../../style/grid";
 import { A, P } from "../../style/types";
-import { fontSize, paddingValue } from "../../style/variables";
+import { black, blue, fontSize, paddingValue } from "../../style/variables";
 // import { blue, yellow } from "../../style/variables";
 
+// Covers the whole screen
 export const PopupContainer = styled.div`
   position: fixed;
   width: 100%;
@@ -13,9 +14,10 @@ export const PopupContainer = styled.div`
   right: 0;
   bottom: 0;
   margin: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background-color: rgba(0, 0, 0, 0.5);
 `;
+// Isolates the content area
 export const PopupInner = styled(Flex)`
   position: absolute;
   border-radius: 10px;
@@ -28,7 +30,7 @@ export const PopupInner = styled(Flex)`
   background: white;
   overflow: hidden;
 `;
-
+// Left Half
 export const PopupImageContainer = styled.div`
   position: relative;
   overflow: hidden;
@@ -36,7 +38,7 @@ export const PopupImageContainer = styled.div`
   height: 100%;
   width: 50%;
 `;
-
+// Right Half
 export const PopupContentContainer = styled.div`
   position: relative;
   display: flex;
@@ -51,6 +53,74 @@ export const PopupContentContainer = styled.div`
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
+
+  ${Flex} {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+`;
+
+// export const TextContainer = styled(Flex)`
+//   min-height: 400px;
+//   margin-top: auto;
+//   margin-bottom: auto;
+//   overflow: visible;
+// `;
+
+export const Button = styled.button`
+  /* background-color: ${black}; */
+  background-color: transparent;
+  font-size: 1.5rem;
+  border: none;
+  /* border: 2px solid black; */
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* color: white; */
+  color: ${blue};
+  /* padding: 15px 32px; */
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 30px; */
+
+  /* transition: padding 0.2s ease-in-out; */
+
+
+
+  &:hover {
+    text-decoration: underline;
+    /* background-color: black; */
+  }
+
+  ${({ active }) =>
+    active &&
+    css`
+      text-decoration: underline;
+      /* background-color: black;
+      color: white; */
+    `}
+`;
+
+const fadeIn = keyframes`
+  0% {
+      opacity: 0;
+      transform: translateY(50%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+`;
+
+export const Text = styled.p`
+  /* margin-top: auto; */
+  /* duration, animationType, delayFromLoad, IterationCount, animationName */
+  animation: 1s ease-in-out 0s 1 ${fadeIn};
+  margin-bottom: auto;
+  width: 100%;
+  height: auto;
 `;
 
 export const PopupFooter = styled.div`

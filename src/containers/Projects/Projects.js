@@ -19,10 +19,10 @@ export default class Projects extends Component {
       showPopup: false,
       popupInfo: undefined,
       projects: [
-        <Websites togglePopup={this.togglePopup} />,
-        <Analytics togglePopup={this.togglePopup} />,
-        <Games togglePopup={this.togglePopup} />,
-        <Songs togglePopup={this.togglePopup} />
+        <Websites key="0" togglePopup={this.togglePopup} />,
+        <Analytics key="1" togglePopup={this.togglePopup} />,
+        <Games key="2" togglePopup={this.togglePopup} />,
+        <Songs key="3" togglePopup={this.togglePopup} />
       ]
     };
 
