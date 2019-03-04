@@ -15,7 +15,7 @@ export default (
       <IndexRoute component={Home} />
       <Route path="/projects" component={Projects} />
       <Route path="/resume" component={Resume} />
-      {/* <Route path="/jurumable" component={JuRuMaBle} /> */}
+      <Route path="/jurumable" component={JuRuMaBle} />
     </Route>
   </Router>
 );
