@@ -10,6 +10,11 @@ import Square from "./Square";
 import Player from "./Player";
 import { Div, Flex } from "../../style/grid";
 
+// 1. Add another player
+// 2. Two rounds to finish
+// 3. Sound when 'Roll' is clicked
+// 4. Render one move box at a time
+
 // 8 rows by 12 cols
 let squares = [];
 for (let i = 1; i <= 28; i++) {
@@ -319,7 +324,8 @@ class JuRuMaBle extends Component {
               {this.state.playerThree === 2 ? <Player color="white" /> : null}
             </Square>
             <Square index="3">
-              <h1>사회자랑 가바보</h1>
+              {/* <h1>사회자랑 가바보</h1> */}
+              <h1>김석호 마셔</h1>
               {this.state.playerOne === 3 ? <Player color="red" /> : null}
               {this.state.playerTwo === 3 ? <Player color="blue" /> : null}
               {this.state.playerThree === 3 ? <Player color="white" /> : null}
@@ -355,7 +361,8 @@ class JuRuMaBle extends Component {
               {this.state.playerThree === 8 ? <Player color="white" /> : null}
             </Square>
             <Square index="9">
-              <h1>마셔 줄거지~?</h1>
+              {/* <h1>마셔 줄거지~?</h1> */}
+              <h1>코잡 카드</h1>
               {this.state.playerOne === 9 ? <Player color="red" /> : null}
               {this.state.playerTwo === 9 ? <Player color="blue" /> : null}
               {this.state.playerThree === 9 ? <Player color="white" /> : null}
@@ -373,7 +380,8 @@ class JuRuMaBle extends Component {
               {this.state.playerThree === 11 ? <Player color="white" /> : null}
             </Square>
             <Square index="12">
-              <h1>여자 마셔</h1>
+              {/* <h1>여자 마셔</h1> */}
+              <h1>랜덤 게임</h1>
               {this.state.playerOne === 12 ? <Player color="red" /> : null}
               {this.state.playerTwo === 12 ? <Player color="blue" /> : null}
               {this.state.playerThree === 12 ? <Player color="white" /> : null}
@@ -405,12 +413,13 @@ class JuRuMaBle extends Component {
             <Filler />
             <Filler />
             <Filler />
-            <Square index="-8">
+            <Filler />
+            {/* <Square index="-8">
               <h1>술</h1>
               {this.state.playerOne === -8 ? <Player color="red" /> : null}
               {this.state.playerTwo === -8 ? <Player color="blue" /> : null}
               {this.state.playerThree === -8 ? <Player color="white" /> : null}
-            </Square>
+            </Square> */}
             <Filler />
             <Filler />
             <Filler />
@@ -435,17 +444,19 @@ class JuRuMaBle extends Component {
             <Filler />
             <Filler />
             <Filler />
-            <Square index="-7">
+            <Filler /> {/* Filler */}
+            {/* <Square index="-7">
               <h1>술</h1>
               {this.state.playerOne === -7 ? <Player color="red" /> : null}
               {this.state.playerTwo === -7 ? <Player color="blue" /> : null}
               {this.state.playerThree === -7 ? <Player color="white" /> : null}
-            </Square>
+            </Square> */}
             <Filler />
             <Filler />
             <Filler />
             <Square index="14">
-              <h1>기획/재무 마셔</h1>
+              {/* <h1>기획/재무 마셔</h1> */}
+              <h1>용시욱 마셔</h1>
               {this.state.playerOne === 14 ? <Player color="red" /> : null}
               {this.state.playerTwo === 14 ? <Player color="blue" /> : null}
               {this.state.playerThree === 14 ? <Player color="white" /> : null}
@@ -477,7 +488,6 @@ class JuRuMaBle extends Component {
               )}
             </CountSquare>
             <Filler />
-
             <DiceSquare>
               <button
                 style={{ height: "4rem" }}
@@ -486,9 +496,11 @@ class JuRuMaBle extends Component {
                 Roll
               </button>
             </DiceSquare>
-
             <Filler />
-            <Square index="-6">
+            <Filler /> {/* Filler */}
+            <Filler /> {/* Filler */}
+            <Filler /> {/* Filler */}
+            {/* <Square index="-6">
               <h1>술</h1>
               {this.state.playerOne === -6 ? <Player color="red" /> : null}
               {this.state.playerTwo === -6 ? <Player color="blue" /> : null}
@@ -505,7 +517,7 @@ class JuRuMaBle extends Component {
               {this.state.playerOne === -4 ? <Player color="red" /> : null}
               {this.state.playerTwo === -4 ? <Player color="blue" /> : null}
               {this.state.playerThree === -4 ? <Player color="white" /> : null}
-            </Square>
+            </Square> */}
             <Filler />
             <Square index="15">
               <h1>다 같이 원샷</h1>
@@ -517,7 +529,9 @@ class JuRuMaBle extends Component {
           {/* Row 5 */}
           <Row>
             <Square index="33">
-              <h1>회장/부회장 마셔</h1>
+              {/* <h1>회장/부회장 마셔</h1> */}
+              <h1>코잡 카드</h1>
+
               {this.state.playerOne === 33 ? <Player color="red" /> : null}
               {this.state.playerTwo === 33 ? <Player color="blue" /> : null}
               {this.state.playerThree === 33 ? <Player color="white" /> : null}
@@ -530,12 +544,13 @@ class JuRuMaBle extends Component {
             <Filler />
             <Filler />
             <Filler />
-            <Square index="-3">
+            {/* <Square index="-3">
               <h1>술</h1>
               {this.state.playerOne === -3 ? <Player color="red" /> : null}
               {this.state.playerTwo === -3 ? <Player color="blue" /> : null}
               {this.state.playerThree === -3 ? <Player color="white" /> : null}
-            </Square>
+            </Square> */}
+            <Filler /> {/* Filler */}
             <Filler />
             <Square index="16">
               <h1>훈민 정음</h1>
@@ -560,13 +575,14 @@ class JuRuMaBle extends Component {
             <Filler />
             <Filler />
             <Filler />
-            <Square index="-2">
+            {/* <Square index="-2">
               <h1>술</h1>
               {this.state.playerOne === -2 ? <Player color="red" /> : null}
               {this.state.playerTwo === -2 ? <Player color="blue" /> : null}
               {this.state.playerThree === -2 ? <Player color="white" /> : null}
-            </Square>
+            </Square> */}
             <Filler />
+            <Filler /> {/* Filler */}
             <Square index="17">
               <h1>의리 게임</h1>
               {this.state.playerOne === 17 ? <Player color="red" /> : null}
@@ -590,12 +606,13 @@ class JuRuMaBle extends Component {
             <Filler />
             <Filler />
             <Filler />
-            <Square index="-1">
+            <Filler /> {/* Filler */}
+            {/* <Square index="-1">
               <h1>술</h1>
               {this.state.playerOne === -1 ? <Player color="red" /> : null}
               {this.state.playerTwo === -1 ? <Player color="blue" /> : null}
               {this.state.playerThree === -1 ? <Player color="white" /> : null}
-            </Square>
+            </Square> */}
             <Filler />
             <Square index="18">
               <h1>나랑 한잔해</h1>
@@ -613,7 +630,8 @@ class JuRuMaBle extends Component {
               {this.state.playerThree === 30 ? <Player color="white" /> : null}
             </Square>
             <Square index="29">
-              <h1>남자 마셔</h1>
+              {/* <h1>남자 마셔</h1> */}
+              <h1>코잡 카드</h1>
               {this.state.playerOne === 29 ? <Player color="red" /> : null}
               {this.state.playerTwo === 29 ? <Player color="blue" /> : null}
               {this.state.playerThree === 29 ? <Player color="white" /> : null}
@@ -637,19 +655,22 @@ class JuRuMaBle extends Component {
               {this.state.playerThree === 26 ? <Player color="white" /> : null}
             </Square>
             <Square index="25">
-              <h1>연장자/연소자 마셔</h1>
+              {/* <h1>연장자/연소자 마셔</h1> */}
+              <h1>코잡 카드</h1>
               {this.state.playerOne === 25 ? <Player color="red" /> : null}
               {this.state.playerTwo === 25 ? <Player color="blue" /> : null}
               {this.state.playerThree === 25 ? <Player color="white" /> : null}
             </Square>
             <Square index="24">
-              <h1>대외/엠씨 마셔</h1>
+              {/* <h1>대외/엠씨 마셔</h1> */}
+              <h1>장기자랑</h1>
               {this.state.playerOne === 24 ? <Player color="red" /> : null}
               {this.state.playerTwo === 24 ? <Player color="blue" /> : null}
               {this.state.playerThree === 24 ? <Player color="white" /> : null}
             </Square>
             <Square index="23">
-              <h1>혼자 왔어요</h1>
+              {/* <h1>혼자 왔어요</h1> */}
+              <h1>탕수육</h1>
               {this.state.playerOne === 23 ? <Player color="red" /> : null}
               {this.state.playerTwo === 23 ? <Player color="blue" /> : null}
               {this.state.playerThree === 23 ? <Player color="white" /> : null}
@@ -661,19 +682,22 @@ class JuRuMaBle extends Component {
               {this.state.playerThree === 22 ? <Player color="white" /> : null}
             </Square>
             <Square index="21">
-              <h1>술 여행</h1>
+              {/* <h1>술 여행</h1> */}
+              <h1>코잡 카드</h1>
               {this.state.playerOne === 21 ? <Player color="red" /> : null}
               {this.state.playerTwo === 21 ? <Player color="blue" /> : null}
               {this.state.playerThree === 21 ? <Player color="white" /> : null}
             </Square>
             <Square index="20">
-              <h1>베스킨 31</h1>
+              {/* <h1>베스킨 31</h1> */}
+              <h1>최윤철 마셔</h1>
               {this.state.playerOne === 20 ? <Player color="red" /> : null}
               {this.state.playerTwo === 20 ? <Player color="blue" /> : null}
               {this.state.playerThree === 20 ? <Player color="white" /> : null}
             </Square>
             <Square index="19">
-              <h1>인사/마케팅 마셔</h1>
+              {/* <h1>인사/마케팅 마셔</h1> */}
+              <h1>하윤혜 마셔</h1>
               {this.state.playerOne === 19 ? <Player color="red" /> : null}
               {this.state.playerTwo === 19 ? <Player color="blue" /> : null}
               {this.state.playerThree === 19 ? <Player color="white" /> : null}
