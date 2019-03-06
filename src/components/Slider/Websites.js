@@ -14,11 +14,7 @@ export default class Websites extends Component {
         popupInfo: {
           title: "Yooniverse",
           link: "#",
-          images: [
-            require("../../assets/hero.jpeg"),
-            require("../../assets/hero.JPG"),
-            require("../../assets/hero.JPG")
-          ],
+          images: [require("../../assets/yooniverse/yooniverse1.png")],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
           testimonial: "He is a great man.",
@@ -59,7 +55,8 @@ export default class Websites extends Component {
           images: [
             require("../../assets/native/native1.png"),
             require("../../assets/native/native2.png"),
-            require("../../assets/native/native3.png")
+            require("../../assets/native/native3.png"),
+            require("../../assets/native/native4.png")
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
@@ -78,9 +75,11 @@ export default class Websites extends Component {
           title: "KoJobs",
           link: "https://kojobsillinois.com/",
           images: [
-            require("../../assets/hero.jpeg"),
-            require("../../assets/hero.JPG"),
-            require("../../assets/hero.JPG")
+            require("../../assets/kojobs/kojobs1.png"),
+            require("../../assets/kojobs/kojobs2.png"),
+            require("../../assets/kojobs/kojobs3.png"),
+            require("../../assets/kojobs/kojobs4.png"),
+            require("../../assets/kojobs/kojobs5.png")
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
@@ -99,9 +98,11 @@ export default class Websites extends Component {
           title: "Ability Marketplace",
           link: "https://abilitymarketplace.com/",
           images: [
-            require("../../assets/hero.jpeg"),
-            require("../../assets/hero.JPG"),
-            require("../../assets/hero.JPG")
+            require("../../assets/ability/ability1.png"),
+            require("../../assets/ability/ability2.png"),
+            require("../../assets/ability/ability3.png"),
+            require("../../assets/ability/ability4.png"),
+            require("../../assets/ability/ability5.png")
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
@@ -120,9 +121,10 @@ export default class Websites extends Component {
           title: "2XL Logistics",
           link: "https://2xllogistics.com/",
           images: [
-            require("../../assets/hero.jpeg"),
-            require("../../assets/hero.JPG"),
-            require("../../assets/hero.JPG")
+            require("../../assets/2xl/2xl1.png"),
+            require("../../assets/2xl/2xl2.png"),
+            require("../../assets/2xl/2xl3.png"),
+            require("../../assets/2xl/2xl4.png")
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
@@ -141,9 +143,11 @@ export default class Websites extends Component {
           title: "Traverse Science",
           link: "https://traversescience.com/",
           images: [
-            require("../../assets/hero.jpeg"),
-            require("../../assets/hero.JPG"),
-            require("../../assets/hero.JPG")
+            require("../../assets/traverse/traverse1.png"),
+            require("../../assets/traverse/traverse2.png"),
+            require("../../assets/traverse/traverse3.png"),
+            require("../../assets/traverse/traverse4.png"),
+            require("../../assets/traverse/traverse5.png")
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",

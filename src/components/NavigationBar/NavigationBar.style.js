@@ -47,7 +47,7 @@ export const NavigationContainer = styled(Flex)`
   position: fixed;
   right: 2em;
   top: 1.8em;
-  z-index: 100;
+  z-index: 98;
 `;
 
 export const NavigationItem = styled(Link)`

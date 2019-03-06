@@ -11,8 +11,8 @@ export const PopupSliderContainer = styled.div`
 
 export const PopupSlide = styled.div`
   background-image: url(${props => props.image});
-  /* background-size: 100% 100%; */
-  background-size: cover;
+  background-size: 100% 100%;
+  /* background-size: cover; */
   /* transform: scale(0.8, 0.8); */
   background-repeat: no-repeat;
   background-position: 50% 50%;

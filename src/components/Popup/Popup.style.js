@@ -16,16 +16,23 @@ export const PopupContainer = styled.div`
   margin: auto;
   /* border-radius: 10px; */
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 `;
 // Isolates the content area
 export const PopupInner = styled(Flex)`
   position: absolute;
   border-radius: 10px;
   flex-direction: row;
-  left: 15%;
-  right: 15%;
-  top: 15%;
-  bottom: 15%;
+  /* Height has to be 1.6 times bigger than width */
+  /* Width has to be 0.625 times smaller than height */
+  /* left: 25%;
+  right: 25%;
+  top: 10%;
+  bottom: 10%; */
+  left: 5%;
+  right: 5%;
+  top: 10%;
+  bottom: 10%;
   margin: auto;
   background: white;
   overflow: hidden;
@@ -36,7 +43,7 @@ export const PopupImageContainer = styled.div`
   overflow: hidden;
   white-space: nowrap;
   height: 100%;
-  width: 50%;
+  width: 65%;
 `;
 // Right Half
 export const PopupContentContainer = styled.div`
@@ -44,7 +51,7 @@ export const PopupContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 50%;
+  width: 35%;
   text-align: center;
   padding: ${paddingValue};
   white-space: pre-wrap;
