@@ -1,10 +1,11 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { blue, yellow, black, fontSize } from "./variables";
 import { Button } from "reactstrap";
 
 export const P = styled.p`
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+  /* font-family: Elena; */
   font-size: 1.8rem;
   margin-top: 1rem;
   line-height: 2rem;
@@ -33,6 +34,24 @@ export const A = styled.a`
     height: 40%;
     background-color: ${yellow};
   }
+
+  ${({ fontColor }) => 
+    fontColor &&
+    css`
+      color: ${ fontColor };
+
+      &::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 10%;
+        width: 100%;
+        background-color: ${ fontColor };
+        z-index: -1;
+        transition: height 0.2s;
+      }
+    `}
 `;
 
 export const OpenButton = styled.button`

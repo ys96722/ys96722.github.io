@@ -6,6 +6,7 @@ import {
   PopupImageContainer,
   Button,
   Text,
+  Title,
   TextContainer,
   Content,
   People,
@@ -45,32 +46,41 @@ class Popup extends Component {
           {/* End Left */}
           {/* Start Right */}
           <PopupContentContainer>
-            <h1>{this.props.popupInfo.title}</h1>
+            <Title fontColor={this.props.popupInfo.color}>{this.props.popupInfo.title}</Title>
             <Flex row="row" justify="center">
-              <Button
+
+              {this.props.popupInfo.content ? (<Button
                 onClick={e => this.setVisible(0, e)}
                 active={this.state.visibleIndex === 0}
+                fontColor={this.props.popupInfo.color}
               >
                 <span>About</span>
               </Button>
-              <Button
+              ) : null}
+            
+              {this.props.popupInfo.testimonial ? (<Button
                 onClick={e => this.setVisible(1, e)}
                 active={this.state.visibleIndex === 1}
+                fontColor={this.props.popupInfo.color}
               >
                 <span>Testimonial</span>
               </Button>
-              <Button
+              ) : null}
+              {this.props.popupInfo.people ? 
+              (<Button
                 onClick={e => this.setVisible(2, e)}
                 active={this.state.visibleIndex === 2}
+                fontColor={this.props.popupInfo.color}
               >
                 <span>Members</span>
               </Button>
+              ) : null}
             </Flex>
             {/* Text Content */}
             {this.state.texts[this.state.visibleIndex]}
 
             <span>
-              <A href={this.props.popupInfo.link} target="_blank">
+              <A href={this.props.popupInfo.link} target="_blank" fontColor={this.props.popupInfo.color}>
                 Take a look!
               </A>
             </span>

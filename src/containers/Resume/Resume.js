@@ -14,6 +14,14 @@ export default class Resume extends Component {
   render() {
     return (
       <Div width="100%" marginLeft="5%">
+        <Flex direction="column">
+          <Primary>Skills</Primary>
+          <Flex direction="row">
+            <Flex direction="column" style={{marginLeft: "auto", marginRight: "auto"}}><Secondary>Front-end</Secondary></Flex>
+            <Flex direction="column" style={{marginLeft: "auto", marginRight: "auto"}}><Secondary>Database</Secondary></Flex>
+            <Flex direction="column" style={{marginLeft: "auto", marginRight: "auto"}}><Secondary>Engineering</Secondary></Flex>
+          </Flex>
+        </Flex>
         <Div>
           <Primary>Core Qualifications</Primary>
           <Secondary>Statistical Skills</Secondary>

@@ -73,17 +73,12 @@ export const Relative = styled(Div)`
 export const Flex = styled(Div)`
   display: flex;
 
-  ${({ column }) =>
-    column &&
+  ${({ direction }) =>
+    direction &&
     css`
-      flex-direction: ${column};
+      flex-direction: ${direction};
     `}
 
-  ${({ row }) =>
-    row &&
-    css`
-      flex-direction: ${row};
-    `}
 
   ${({ justify }) =>
     justify &&
@@ -94,7 +89,7 @@ export const Flex = styled(Div)`
   ${({ align }) =>
     align &&
     css`
-      align-content: ${align};
+      align-items: ${align};
     `}
 
 `;

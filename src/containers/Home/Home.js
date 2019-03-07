@@ -5,7 +5,7 @@ import WhenInView from "../../components/WhenInView/WhenInView";
 // Import Style Components
 // import { Container } from "../../style/grid"; Moved it to App
 import { Hero, SubHeader, RevealP } from "./Home.style";
-import { P } from "../../style/types";
+import { P, A } from "../../style/types";
 
 export default class Home extends Component {
   state = { isLoading: true };
@@ -39,7 +39,7 @@ export default class Home extends Component {
           a web development problem and coming back in the next day having already researched it thoroughly. 
           He expects the best from himself and we could always count on him."
         </P>
-        <P>- Alia Bellwood, Communication Consultant at Mechanodontics</P>
+        <P>- <A href="https://www.linkedin.com/in/aliabellwood/" target="_blank">Alia Bellwood</A>, Communication Consultant at Mechanodontics</P>
         {/* <WhenInView>
           {({ isInView }) => (
             <>

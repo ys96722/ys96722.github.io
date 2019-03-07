@@ -14,7 +14,7 @@ const HapImg = ({ doesShow }) => (
       src={require("../../assets/song_banners/happier_cover.jpeg")}
       alt="Happier"
       style={{
-        objectFit: "cover",
+        // objectFit: "cover",
         display: "initial",
         width: "100%",
         height: "100%"
@@ -48,7 +48,7 @@ const HapFrame = ({ doesShow }) => (
     show={doesShow ? "initial" : "hidden"}
     animateIn={doesShow}
     animateOut={!doesShow}
-    zVal="-1"
+    // zVal="-1"
   >
     <iframe
       title="happier"
@@ -66,7 +66,7 @@ const ForFrame = ({ doesShow }) => (
     show={doesShow ? "initial" : "hidden"}
     animateIn={doesShow}
     animateOut={!doesShow}
-    zVal="-1"
+    // zVal="-1"
   >
     <iframe
       title="forever"
@@ -128,7 +128,7 @@ export default class Songs extends Component {
           role="menuitem"
           tabIndex="0"
           id="0"
-          style={{ width: "100%", height: "200px" }}
+          style={{ width: "100%", height: "200px", position: "relative" }}
         >
           <HapFrame
             style={{ width: "100%", height: "100%" }}

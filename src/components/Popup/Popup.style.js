@@ -1,7 +1,7 @@
 import styled, { css, keyframes } from "styled-components";
 import { Flex } from "../../style/grid";
 import { A, P } from "../../style/types";
-import { black, blue, fontSize, paddingValue } from "../../style/variables";
+import { black, blue, yellow, fontSize, paddingValue } from "../../style/variables";
 // import { blue, yellow } from "../../style/variables";
 
 // Covers the whole screen
@@ -44,6 +44,7 @@ export const PopupImageContainer = styled.div`
   white-space: nowrap;
   height: 100%;
   width: 65%;
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
 `;
 // Right Half
 export const PopupContentContainer = styled.div`
@@ -55,9 +56,10 @@ export const PopupContentContainer = styled.div`
   text-align: center;
   padding: ${paddingValue};
   white-space: pre-wrap;
+  
 
   ${P} {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 1.5rem;
   }
 
@@ -73,6 +75,14 @@ export const PopupContentContainer = styled.div`
 //   margin-bottom: auto;
 //   overflow: visible;
 // `;
+
+export const Title = styled.h1`
+  ${({ fontColor }) => 
+    fontColor &&
+    css`
+      color: ${fontColor};
+    `}
+`
 
 export const Button = styled.button`
   /* background-color: ${black}; */
@@ -90,21 +100,35 @@ export const Button = styled.button`
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+  /* z-index: 101; */
   /* font-size: 30px; */
-
   /* transition: padding 0.2s ease-in-out; */
 
-
+ 
+  z-index: 1;
 
   &:hover {
-    text-decoration: underline;
-    /* background-color: black; */
+    text-decoration: none;
+    background-color: ${props => props.fontColor};
+    color: white;
   }
 
+ 
+  ${({ fontColor }) =>
+    fontColor &&
+    css`
+      color: ${fontColor};
+      /* background-color: black;
+      color: white; */
+    `}
   ${({ active }) =>
     active &&
     css`
-      text-decoration: underline;
+      background-color: ${props => props.fontColor};
+      color: white;
+      text-decoration: none;
       /* background-color: black;
       color: white; */
     `}
@@ -124,6 +148,7 @@ const fadeIn = keyframes`
 export const Text = styled.p`
   /* margin-top: auto; */
   /* duration, animationType, delayFromLoad, IterationCount, animationName */
+  font-size: 1.4rem;
   animation: 1s ease-in-out 0s 1 ${fadeIn};
   margin-bottom: auto;
   width: 100%;
