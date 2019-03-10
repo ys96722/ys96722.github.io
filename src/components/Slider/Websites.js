@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CardList from "../Card/CardList";
-import { blue } from "../../style/variables"
+import { blue } from "../../style/variables";
 
 export default class Websites extends Component {
   state = {
@@ -15,7 +15,10 @@ export default class Websites extends Component {
         popupInfo: {
           title: "Yooniverse",
           link: "#",
-          images: [require("../../assets/yooniverse/yooniverse1.png")],
+          images: [
+            require("../../assets/yooniverse/yooniverse1.png"),
+            require("../../assets/yooniverse/yooniverse2.png")
+          ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
           // testimonial: "He is a great man.",
@@ -40,9 +43,9 @@ export default class Websites extends Component {
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
-          testimonial: `"Yoon did a fantastic job translating our idea for a website into practice. He was quick and responsive, went above and beyond in the design, and offered great "after sale" services. Moreover, he took an interest in our technology above and beyond what was required for creating the website. I highly recommend him for web development.\n\n-Joseph Peterson, Co-Founder of SimBioSys Inc."`,
+          testimonial: `"Yoon did a fantastic job translating our idea for a website into practice. He was quick and responsive, went above and beyond in the design, and offered great "after sale" services. Moreover, he took an interest in our technology above and beyond what was required for creating the website. I highly recommend him for web development."\n\n- Joseph Peterson, Co-Founder of SimBioSys Inc.`,
           people: `Developer: Yoon Chang\n\nGraphic Designer: Charlotte Peloquin & Sophia Presutti \n\nProject Manager: Zamar El Zimra Rimba\n\nContent Developer: Alia Bellwood`,
-          color: '#74A8B8'
+          color: "#74A8B8"
         }
       },
       {
@@ -63,9 +66,9 @@ export default class Websites extends Component {
           ],
           content:
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
-          testimonial: `"Yoon has been tremendously helpful in every step of creating my new business website.  He was very professional, kind, and passionate during the whole process. Thank you!"\n\n- Ryan Cox, Owner of Native Roots Landscape and Design`,
+          testimonial: `"Yoon has been tremendously helpful in every step of creating my new business website.  He was very professional, kind, and passionate during the whole process. Thank you!"\n\n- Ryan Cox, Owner of Native Roots Landscape Design`,
           people: `Developer: Yoon Chang\n\nGraphic Designer: Sophia Presutti \n\nProject Manager: Zamar El Zimra Rimba`,
-          color: '#527B5D'
+          color: "#527B5D"
         }
       },
       {
@@ -89,7 +92,7 @@ export default class Websites extends Component {
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
           testimonial: "He is a great man.",
           people: `Developer: Yoon Chang\n\nGraphic Designer: Ina Kang`,
-          color: '#174872'
+          color: "#174872"
         }
       },
       {
@@ -113,7 +116,7 @@ export default class Websites extends Component {
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
           testimonial: `"The team for the website includes Zamar El Zimra Rimba, Sophia Anne Presutti, Alyson Gerdes, and Yoon S. Chang... They spent countless hours refining the concept and the message for the website. They became very passionate about the Ability Marketplace. We are so grateful to have them on our team."\n\n-Theresa Grimaldi Olsen, COO of Ability Marketplace`,
           people: `Developer: Yoon Chang\n\nGraphic Designer: Sophia Presutti \n\nProject Manager: Zamar El Zimra Rimba\n\nContent Developer: Alyson Gerdes`,
-          color: '#E7AA22'
+          color: "#E7AA22"
         }
       },
       {
@@ -136,7 +139,7 @@ export default class Websites extends Component {
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
           testimonial: `"On behalf of my brother Le'Mon Bass and myself we would like to take this opportunity to extend our sincere thanks and appreciation to you and your team for the dedication and hard work you all put into the completion of our website. It all came together in a timely fashion and we are confident that this will give our small business the extra edge to successfully compete in the extremely competitive e-commerce and logistical arena in the Midwest corridor."\n\n-LaMar Q. Bass, Owner of 2XL Logistics LLC`,
           people: `Developer: Yoon Chang\n\nGraphic Designer: Alyssa Lenenfeld\n\nProject Manager: Zamar El Zimra Rimba\n\nContent Developer: Alyson Gerdes`,
-          color: '#806144'
+          color: "#806144"
         }
       },
       {
@@ -160,7 +163,7 @@ export default class Websites extends Component {
             "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
           testimonial: "He is a great man.",
           people: `Developer: Yoon Chang\n\nGraphic Designer: Charlotte Peloquin\n\nProject Manager: Zamar El Zimra Rimba\n\nContent Developer: Leah Lines`,
-          color: "#48AEE3"//"rgba(33,150,243,1)"
+          color: "#48AEE3" //"rgba(33,150,243,1)"
         }
       }
     ]

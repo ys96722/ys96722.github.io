@@ -1,7 +1,13 @@
 import styled, { css, keyframes } from "styled-components";
 import { Flex } from "../../style/grid";
 import { A, P } from "../../style/types";
-import { black, blue, yellow, fontSize, paddingValue } from "../../style/variables";
+import {
+  black,
+  blue,
+  yellow,
+  fontSize,
+  paddingValue
+} from "../../style/variables";
 // import { blue, yellow } from "../../style/variables";
 
 // Covers the whole screen
@@ -56,7 +62,6 @@ export const PopupContentContainer = styled.div`
   text-align: center;
   padding: ${paddingValue};
   white-space: pre-wrap;
-  
 
   ${P} {
     font-size: 1.6rem;
@@ -65,7 +70,7 @@ export const PopupContentContainer = styled.div`
 
   ${Flex} {
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
   }
 `;
 
@@ -77,12 +82,12 @@ export const PopupContentContainer = styled.div`
 // `;
 
 export const Title = styled.h1`
-  ${({ fontColor }) => 
+  ${({ fontColor }) =>
     fontColor &&
     css`
       color: ${fontColor};
     `}
-`
+`;
 
 export const Button = styled.button`
   /* background-color: ${black}; */
