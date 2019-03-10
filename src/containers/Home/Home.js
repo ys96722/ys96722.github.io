@@ -40,6 +40,24 @@ export default class Home extends Component {
           He expects the best from himself and we could always count on him."
         </P>
         <P>- <A href="https://www.linkedin.com/in/aliabellwood/" target="_blank">Alia Bellwood</A>, Communication Consultant at Mechanodontics</P>
+       <br />
+       <br />
+       <br />
+       <P>
+          "I worked with Yoon in multiple projects at EnterpriseWorks. I could go on and on to talk about great things 
+          that Yoon contributed to the team, but if I have to summarize it, I would describe Yoon as someone who is dependable, 
+          personable, and always goes above and beyond what you expect. Yoon is dependable because you know he will get 
+          the work done on time and with outstanding quality. His ability to see the big picture while paying attention 
+          to the small details never ceases to impress me. Yoon’s personality makes everyone in the team enjoy working 
+          with him. Yoon is an excellent communicator and listener. He listened to the client’s concerns and provided 
+          insights and solutions to the client. Lastly and the most critical thing, Yoon is passionate about what he is 
+          doing, and he enjoys sharing his knowledge and skills to help others. Last summer, Yoon realized that many 
+          interns at EnterpriseWorks were interested in learning web development and data analytics. Yoon not only 
+          coordinated a sharing session with other interns during work hours but also arranged a group study session 
+          twice a week after office hours for those who were interested to learn more.<br/>
+          I could not think of anyone as well-rounded as Yoon. We are grateful to have him on the team!"
+       </P>
+        <P>- <A href="https://www.linkedin.com/in/zamarrimba/" target="_blank">Zamar Rimba</A>, Project Manager at EnterpriseWorks</P>
         {/* <WhenInView>
           {({ isInView }) => (
             <>

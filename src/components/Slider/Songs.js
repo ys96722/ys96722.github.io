@@ -15,7 +15,7 @@ const HapImg = ({ doesShow }) => (
       src={require("../../assets/song_banners/happier_cover.jpeg")}
       alt="Happier"
       style={{
-        // objectFit: "cover",
+        objectFit: "cover",
         display: "initial",
         width: "100%",
         height: "100%"

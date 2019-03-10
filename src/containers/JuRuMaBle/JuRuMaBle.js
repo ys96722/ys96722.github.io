@@ -27,17 +27,17 @@ for (let i = 1; i <= 28; i++) {
 class JuRuMaBle extends Component {
   state = {
     // players: [<Player index="1"/>, <Player />, <Player />, <Player />],
-    playerOne: 26,
+    playerOne: 1,
     playerOneCount: 0,
-    playerTwo: 17,
+    playerTwo: 1,
     playerTwoCount: 0,
-    playerThree: 16,
+    playerThree: 1,
     playerThreeCount: 0,
-    playerFour: 20,
+    playerFour: 1,
     playerFourCount: 0,
 
-    currentPlayer: 3,
-    currentRoll: 2,
+    currentPlayer: 1,
+    currentRoll: 0,
     gameOver: false
     // rollSound: new Audio("../../assets/sounds/diceroll.mp3")
   };
@@ -486,18 +486,18 @@ class JuRuMaBle extends Component {
                   fontSize: "1.5rem"
                 }}
               >
-                1:용시욱: {this.state.playerOneCount}{" "}
+                Player 1: {this.state.playerOneCount}{" "}
               </h1>
               <h1 style={{ color: "blue", fontSize: "1.5rem" }}>
-                2:김석호: {this.state.playerTwoCount}{" "}
+                Player 2: {this.state.playerTwoCount}{" "}
               </h1>
             </DiceSquare>
             <DiceSquare>
               <h1 style={{ color: "green", fontSize: "1.5rem" }}>
-                3:하윤혜: {this.state.playerThreeCount}{" "}
+                Player 3: {this.state.playerThreeCount}{" "}
               </h1>
               <h1 style={{ color: "black", fontSize: "1.5rem" }}>
-                4:최윤철: {this.state.playerFourCount}{" "}
+                Player 4: {this.state.playerFourCount}{" "}
               </h1>
             </DiceSquare>
             <Filler />

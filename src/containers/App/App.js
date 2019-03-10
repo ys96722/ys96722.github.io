@@ -42,8 +42,8 @@ export default class App extends Component {
         <GlobalStyle />
         {/* <Background /> */}
         <Container>
-          {/* <NavigationBar />
-          <SideBar /> */}
+          <NavigationBar />
+          <SideBar />
           {/* <div onLoad={({ loading }) => {
             if (!loading) doneLoading('appBackground');
           }} /> */}
