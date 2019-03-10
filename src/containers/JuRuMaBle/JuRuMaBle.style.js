@@ -41,6 +41,7 @@ export const DiceSquare = styled(Filler)`
   display: flex;
   flex-direction: column;
   text-align: center;
+  flex-shrink: 1;
   justify-content: center;
   h1 {
     font-size: 1.5rem;
@@ -112,9 +113,13 @@ export const CountSquare = styled(Filler)`
       return css`
         color: blue;
       `;
-    } else {
+    } else if (currentTurn === 4) {
       return css`
         color: green;
+      `;
+    } else {
+      return css`
+        color: black;
       `;
     }
   }}
