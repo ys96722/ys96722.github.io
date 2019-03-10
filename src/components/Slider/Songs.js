@@ -3,6 +3,7 @@ import Coverflow from "react-coverflow";
 import { Flex } from "../../style/grid";
 import { SongDiv } from "./Songs.style.js";
 
+
 const HapImg = ({ doesShow }) => (
   <SongDiv
     show={doesShow ? "initial" : "hidden"}
@@ -15,6 +16,26 @@ const HapImg = ({ doesShow }) => (
       alt="Happier"
       style={{
         // objectFit: "cover",
+        display: "initial",
+        width: "100%",
+        height: "100%"
+      }}
+    />
+  </SongDiv>
+);
+
+const ChildImg = ({ doesShow }) => (
+  <SongDiv
+    show={doesShow ? "initial" : "hidden"}
+    animateIn={doesShow}
+    animateOut={!doesShow}
+    zVal="1"
+  >
+    <img
+      src={require("../../assets/song_banners/child_cover.jpeg")}
+      alt="Child"
+      style={{
+        objectFit: "cover",
         display: "initial",
         width: "100%",
         height: "100%"
@@ -58,6 +79,23 @@ const HapFrame = ({ doesShow }) => (
       frameborder="no"
       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/512176407&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
     />
+  </SongDiv>
+);
+
+const ChildFrame = ({ doesShow }) => (
+  <SongDiv
+    show={doesShow ? "initial" : "hidden"}
+    animateIn={doesShow}
+    animateOut={!doesShow}
+  // zVal="-1"
+  >
+    <iframe 
+      title = "child" 
+      width="100%" 
+      height="100%" 
+      scrolling="no" 
+      frameborder="no" 
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/586245420&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
   </SongDiv>
 );
 
@@ -128,7 +166,7 @@ export default class Songs extends Component {
           role="menuitem"
           tabIndex="0"
           id="0"
-          style={{ width: "100%", height: "200px", position: "relative" }}
+          style={{ width: "100%", height: "250px", position: "relative" }}
         >
           <HapFrame
             style={{ width: "100%", height: "100%" }}
@@ -148,17 +186,43 @@ export default class Songs extends Component {
           role="menuitem"
           tabIndex="1"
           id="1"
-          style={{ width: "100%", height: "200px", position: "relative" }}
+          style={{ width: "100%", height: "250px", position: "relative" }}
         >
-          <ForFrame
+          <ChildFrame
             doesShow={this.state.isActive === 1 && this.state.isHover === 1}
             style={{
               width: "100%",
               height: "100%"
             }}
           />
-          <ForImg
+          <ChildImg
             doesShow={this.state.isActive !== 1 || this.state.isHover !== 1}
+            style={{
+              width: "100%",
+              height: "100%"
+            }}
+          />
+        </Flex>
+
+        <Flex
+          onClick={this.handleCarousal.bind(this)}
+          onKeyDown={this.handleCarousal.bind(this)}
+          onMouseEnter={() => this.handleEnter(2)}
+          onMouseLeave={this.handleLeave}
+          role="menuitem"
+          tabIndex="2"
+          id="2"
+          style={{ width: "100%", height: "250px", position: "relative" }}
+        >
+          <ForFrame
+            doesShow={this.state.isActive === 2 && this.state.isHover === 2}
+            style={{
+              width: "100%",
+              height: "100%"
+            }}
+          />
+          <ForImg
+            doesShow={this.state.isActive !== 2 || this.state.isHover !== 2}
             style={{
               width: "100%",
               height: "100%"
