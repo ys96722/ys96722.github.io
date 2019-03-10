@@ -11,8 +11,10 @@ class Player extends Component {
       color = "blue";
     } else if (this.props.color === "red") {
       color = "red";
-    } else {
+    } else if (this.props.color === "green") {
       color = "green";
+    } else {
+      color = "black";
     }
     return <PlayerContainer color={color} />;
   }
