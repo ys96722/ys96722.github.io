@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import {
   yellow,
   red,
@@ -9,13 +9,15 @@ import {
   subtitle_header
 } from "../../style/variables";
 
+import { P } from "../../style/types";
+
 export const Image = styled.img`
   width: 100%;
 `;
 
 export const Hero = styled.div`
   height: 100vh; 
-  background-image: url('${require("../../assets/hero.jpeg")}');
+  background-image: url(${require("../../assets/hero.jpeg")});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,32 +51,20 @@ export const SubHeader = styled.h2`
   margin-bottom: 2%;
 `;
 
-export const RevealP = styled.p`
+export const RevealP = styled(P)`
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  &:after {
-    /* Sets the cover */
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
+  opacity: 1;
+  transform: translateY(0);
 
-    /* Transformation */
-    transform-origin: left;
-    transform: rotateY(90deg);
-
-    transition: transform 1s;
-  }
+  transition: all 2s;
+  transition-property: opacity, transform;
 
   ${({ hide }) =>
     hide &&
+    css`
+     opacity: 0;
+     transform: translateY(-50px)
     `
-      &:after {
-        transform: rotateY(0deg);
-      }
-    `}
+    
+  }  
 `;

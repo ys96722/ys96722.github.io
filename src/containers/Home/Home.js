@@ -24,62 +24,97 @@ export default class Home extends Component {
           <h2>Creator - Developer</h2>
         </Hero>
         <SubHeader>Welcome! I am Yoon.</SubHeader>
-        <P>
-          I am a front-end developer currently living in Champaign-Urbana,
-          Illinois. Born between an opera singer and an entrepreneur in the heat
-          of July, I aspire to live a life full of opportunities to create new
-          things.
-        </P>
+        <WhenInView>
+          {({ isInView }) => (
+            <RevealP hide={!isInView}>
+              I am a front-end developer currently living in Champaign-Urbana,
+              Illinois. Born between an opera singer and an entrepreneur in
+              the heat of July, I aspire to live a life full of opportunities
+              to create new things.
+          </RevealP>
+          )}
+        </WhenInView>
         <SubHeader>What people say about me:</SubHeader>
-        <P>
-          "One thing you can always expect from Yoon is a contagious, innovative
-          spirit. I learned a lot when working with him on web development
-          projects for startup companies incubating at the University of
-          Illinois Research Park. He was always sure that the communications,
-          graphics, and business strategy team members were heard and was
-          careful to synthesize their materials into impressive websites. He was
-          known for leaving work puzzled by a web development problem and coming
-          back in the next day having already researched it thoroughly. He
-          expects the best from himself and we could always count on him."
-        </P>
-        <P>
-          -{" "}
-          <A href="https://www.linkedin.com/in/aliabellwood/" target="_blank">
-            Alia Bellwood
-          </A>
-          , Communication Consultant at Mechanodontics
-        </P>
+        <WhenInView>
+          {({ isInView }) => (
+          
+              <RevealP hide={!isInView}>
+                "One thing you can always expect from Yoon is a contagious,
+                innovative spirit. I learned a lot when working with him on
+                web development projects for startup companies incubating at
+                the University of Illinois Research Park. He was always sure
+                that the communications, graphics, and business strategy
+                team members were heard and was careful to synthesize their
+                materials into impressive websites. He was known for leaving
+                work puzzled by a web development problem and coming back in
+                the next day having already researched it thoroughly. He
+                expects the best from himself and we could always count on
+                him."
+                <P>
+                  -{" "}
+                  <A
+                    href="https://www.linkedin.com/in/aliabellwood/"
+                    target="_blank"
+                  >
+                    Alia Bellwood
+                  </A>
+                  , Communication Consultant at Mechanodontics
+                </P>
+              </RevealP>
+            
+          )}
+        </WhenInView>
+
         <br />
         <br />
         <br />
-        <P>
-          "I worked with Yoon in multiple projects at EnterpriseWorks. I could
-          go on and on to talk about great things that Yoon contributed to the
-          team, but if I have to summarize it, I would describe Yoon as someone
-          who is dependable, personable, and always goes above and beyond what
-          you expect. Yoon is dependable because you know he will get the work
-          done on time and with outstanding quality. His ability to see the big
-          picture while paying attention to the small details never ceases to
-          impress me. Yoon’s personality makes everyone in the team enjoy
-          working with him. Yoon is an excellent communicator and listener. He
-          listened to the client’s concerns and provided insights and solutions
-          to the client. Lastly and the most critical thing, Yoon is passionate
-          about what he does , and he enjoys sharing his knowledge and skills to
-          help others. Last summer, Yoon realized that many interns at
-          EnterpriseWorks were interested in learning web development and data
-          analytics. Yoon not only coordinated a sharing session with other
-          interns during work hours but also arranged a group study session
-          twice a week after office hours for those who were interested to learn
-          more. I could not think of anyone as well-rounded as Yoon. We are
-          grateful to have him on the team!"
-        </P>
-        <P>
-          -{" "}
-          <A href="https://www.linkedin.com/in/zamarrimba/" target="_blank">
-            Zamar El Zimra Rimba
-          </A>
-          , Project Manager at EnterpriseWorks
-        </P>
+
+        <WhenInView>
+          {({ isInView }) => (
+          
+              <RevealP hide={!isInView}>
+                "I worked with Yoon in multiple projects at EnterpriseWorks.
+                I could go on and on to talk about great things that Yoon
+                contributed to the team, but if I have to summarize it, I
+                would describe Yoon as someone who is dependable,
+                personable, and always goes above and beyond what you
+                expect. Yoon is dependable because you know he will get the
+                work done on time and with outstanding quality. His ability
+                to see the big picture while paying attention to the small
+                details never ceases to impress me. Yoon’s personality makes
+                everyone in the team enjoy working with him. Yoon is an
+                excellent communicator and listener. He listened to the
+                client’s concerns and provided insights and solutions to the
+                client. Lastly and the most critical thing, Yoon is
+                passionate about what he does , and he enjoys sharing his
+                knowledge and skills to help others. Last summer, Yoon
+                realized that many interns at EnterpriseWorks were
+                interested in learning web development and data analytics.
+                Yoon not only coordinated a sharing session with other
+                interns during work hours but also arranged a group study
+                session twice a week after office hours for those who were
+                interested to learn more. I could not think of anyone as
+                well-rounded as Yoon. We are grateful to have him on the
+                team!"
+                <P>
+                  -{" "}
+                  <A
+                    href="https://www.linkedin.com/in/zamarrimba/"
+                    target="_blank"
+                  >
+                    Zamar El Zimra Rimba
+                  </A>
+                  , Project Manager at EnterpriseWorks
+                </P>
+              </RevealP>
+            
+          )}
+        </WhenInView>
+
+        <br />
+        <br />
+        <br />
+
         {/* <WhenInView>
           {({ isInView }) => (
             <>
