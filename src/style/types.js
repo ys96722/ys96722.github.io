@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { blue, yellow, black, fontSize } from "./variables";
 import { Button } from "reactstrap";
 
@@ -9,6 +9,27 @@ export const P = styled.p`
   font-size: 1.8rem;
   margin-top: 1rem;
   line-height: 2rem;
+`;
+
+const fadeIn = keyframes`
+  0% {
+      opacity: 0;
+      transform: translateY(50%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+`;
+
+export const Text = styled.p`
+  /* margin-top: auto; */
+  /* duration, animationType, delayFromLoad, IterationCount, animationName */
+  font-size: 1.4rem;
+  animation: 1s ease-in-out 0s 1 ${fadeIn};
+  margin-bottom: auto;
+  width: 100%;
+  height: auto;
 `;
 
 export const A = styled.a`
@@ -35,10 +56,10 @@ export const A = styled.a`
     background-color: ${yellow};
   }
 
-  ${({ fontColor }) => 
+  ${({ fontColor }) =>
     fontColor &&
     css`
-      color: ${ fontColor };
+      color: ${fontColor};
 
       &::after {
         content: " ";
@@ -47,7 +68,7 @@ export const A = styled.a`
         bottom: 0;
         height: 10%;
         width: 100%;
-        background-color: ${ fontColor };
+        background-color: ${fontColor};
         z-index: -1;
         transition: height 0.2s;
       }

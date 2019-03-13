@@ -16,7 +16,7 @@ export const Image = styled.img`
 `;
 
 export const Hero = styled.div`
-  height: 100vh; 
+  height: 100vh;
   background-image: url(${require("../../assets/hero.jpeg")});
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,8 @@ export const Hero = styled.div`
   color: black;
   font-size: ${section_header};
 
-  h1, h2 {
+  h1,
+  h2 {
     transform: translateY(-12vh);
   }
 
@@ -62,9 +63,7 @@ export const RevealP = styled(P)`
   ${({ hide }) =>
     hide &&
     css`
-     opacity: 0;
-     transform: translateY(-50px)
-    `
-    
-  }  
+      opacity: 0;
+      transform: translateY(-50px);
+    `}
 `;

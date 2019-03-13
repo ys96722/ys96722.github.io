@@ -139,27 +139,6 @@ export const Button = styled.button`
     `}
 `;
 
-const fadeIn = keyframes`
-  0% {
-      opacity: 0;
-      transform: translateY(50%);
-  }
-  100% {
-      opacity: 1;
-      transform: translateY(0);
-  }
-`;
-
-export const Text = styled.p`
-  /* margin-top: auto; */
-  /* duration, animationType, delayFromLoad, IterationCount, animationName */
-  font-size: 1.4rem;
-  animation: 1s ease-in-out 0s 1 ${fadeIn};
-  margin-bottom: auto;
-  width: 100%;
-  height: auto;
-`;
-
 export const PopupFooter = styled.div`
   margin-top: auto;
   position: relative;

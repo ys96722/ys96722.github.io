@@ -1,13 +1,17 @@
 import styled from "styled-components";
 import { red } from "../../style/variables";
+import { Div } from "../../style/grid";
 
 const leftAmount = 5;
 const topAmount = 8;
 const fontSize = 3.0;
 
-// export const ResumeContainer = styled.div`
-
-// `
+export const ResumeContainer = styled(Div)`
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+`;
 
 export const Primary = styled.h1`
   width: 100%;
