@@ -25,11 +25,16 @@ const fadeIn = keyframes`
 export const Text = styled.p`
   /* margin-top: auto; */
   /* duration, animationType, delayFromLoad, IterationCount, animationName */
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
+  font-size: 2.8vh;
   animation: 1s ease-in-out 0s 1 ${fadeIn};
   margin-bottom: auto;
   width: 100%;
   height: auto;
+
+  a {
+    font-size: 2.8vh;
+  }
 `;
 
 export const A = styled.a`
