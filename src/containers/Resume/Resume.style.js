@@ -25,6 +25,7 @@ export const Section = styled(Flex)`
   flex-direction: row;
   width: 100%;
   height: 100vh;
+  margin-top: 1.5rem;
   /* background-color: yellow; */
   justify-content: space-evenly;
 `;
@@ -41,15 +42,19 @@ export const Column = styled(Flex)`
   flex-direction: column;
   width: 100%;
   height: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* background-color: ${props => props.bgColor}; */
   /* align-content: space-around; */
   /* border: 2px dotted black; */
 
-  h1 {
-    border: 2px dotted black;
-  }
   /* h3 {
     text-align: left;
   } */
+`;
+
+export const ColumnTitle = styled.h1`
+  transform: translateY(-3vh);
 `;
 
 export const SubColumn = styled(Flex)`
@@ -61,10 +66,14 @@ export const SubColumn = styled(Flex)`
 export const Item = styled(Flex)`
   flex-direction: row;
   width: 100%;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
 `;
 
 export const ItemName = styled.h3`
+  width: auto;
   margin-right: auto;
+  /* color: white; */
 `;
 
 export const Primary = styled.h1`

@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import { Title } from "../../style/variables";
+import { Title, red, blue, green } from "../../style/variables";
 import {
   ResumeContainer,
   Section,
   SubColumn,
   Item,
   ItemName,
-  Column
+  Column,
+  ColumnTitle
 } from "./Resume.style";
 
 import ItemMastery from "./ItemMastery";
@@ -24,93 +25,210 @@ export default class Resume extends Component {
       <ResumeContainer animation="fadeIn">
         <Title>Skills</Title>
         <Section>
-          <Column>
-            <h1>Data</h1>
+          <Column bgColor={red}>
+            <ColumnTitle>Data</ColumnTitle>
             <br />
             <SubColumn>
               <h2>Scripts</h2>
               <Item>
                 <ItemName>Python</ItemName>
-                <ItemMastery projects={2} semesters={2} />
+                <ItemMastery projects={3} semesters={6} />
               </Item>
+
               <Item>
                 <ItemName>R</ItemName>
+                <ItemMastery semesters={6} />
+              </Item>
+
+              <Item>
+                <ItemName>SAS</ItemName>
                 <ItemMastery semesters={2} />
               </Item>
 
-              <h3>SAS</h3>
-              <h3>Pig</h3>
+              <Item>
+                <ItemName>Pig</ItemName>
+                <ItemMastery semesters={1} />
+              </Item>
             </SubColumn>
             <br />
             <SubColumn>
               <h2>Database</h2>
-              <h3>Hive</h3>
-              <h3>SQLite3</h3>
-              <h3>MySQL</h3>
-              <h3>Postgre</h3>
-              <h3>PHPMyAdmin</h3>
+              <Item>
+                <ItemName>SQLite3</ItemName>
+                <ItemMastery projects={5} semesters={2} />
+              </Item>
+              <Item>
+                <ItemName>MySQL</ItemName>
+                <ItemMastery projects={2} semesters={2} />
+              </Item>
+              <Item>
+                <ItemName>PostgreSQL</ItemName>
+                <ItemMastery projects={2} semesters={1} />
+              </Item>
+              <Item>
+                <ItemName>RSQLite</ItemName>
+                <ItemMastery semesters={2} />
+              </Item>
+              <Item>
+                <ItemName>Hive</ItemName>
+                <ItemMastery semesters={1} />
+              </Item>
             </SubColumn>
             <br />
             <SubColumn>
               <h2>Tools</h2>
-              <h3>Bash</h3>
-              <h3>Git</h3>
-              <h3>Anaconda3</h3>
-              <h3>Hadoop</h3>
-              <h3>Scikit-Learn (Python)</h3>
-              <h3>Pandas & Numpy (Python)</h3>
-              <h3>PyPlot & Seaborn (Python)</h3>
+              <Item>
+                <ItemName>Anaconda3</ItemName>
+                <ItemMastery semesters={1} projects={6} />
+              </Item>
+              <Item>
+                <ItemName>Hadoop</ItemName>
+                <ItemMastery semesters={1} />
+              </Item>
+              <Item>
+                <ItemName>Scikit</ItemName>
+                <ItemMastery semesters={2} projects={2} />
+              </Item>
+              <Item>
+                <ItemName>Pandas</ItemName>
+                <ItemMastery semesters={2} projects={5} />
+              </Item>
+
+              <Item>
+                <ItemName>Seaborn</ItemName>
+                <ItemMastery semesters={2} projects={5} />
+              </Item>
+              <Item>
+                <ItemName>PHPMyAdmin</ItemName>
+                <ItemMastery projects={7} />
+              </Item>
             </SubColumn>
           </Column>
-          <Column>
-            <h1>Front</h1>
+          <Column bgColor={blue}>
+            <ColumnTitle>Development</ColumnTitle>
             <br />
             <SubColumn>
               <h2>Scripts</h2>
-              <h3>JavaScript (ES6)</h3>
-              <h3>Ruby</h3>
-              <h3>PHP</h3>
+              <Item>
+                <ItemName>JavaScript</ItemName>
+                <ItemMastery semesters={1} projects={8} />
+              </Item>
+              <Item>
+                <ItemName>Ruby</ItemName>
+                <ItemMastery projects={2} />
+              </Item>
+              <Item>
+                <ItemName>PHP</ItemName>
+                <ItemMastery projects={7} />
+              </Item>
+              <Item>
+                <ItemName>C#</ItemName>
+                <ItemMastery semesters={1} projects={2} />
+              </Item>
+              <Item>
+                <ItemName>Java</ItemName>
+                <ItemMastery semesters={2} />
+              </Item>
             </SubColumn>
             <br />
             <SubColumn>
               <h2>Frameworks</h2>
-              <h3>React.js</h3>
-              <h3>Ruby on Rails</h3>
-              <h3>WordPress</h3>
+              <Item>
+                <ItemName>React.js</ItemName>
+                <ItemMastery semesters={2} projects={3} />
+              </Item>
+              <Item>
+                <ItemName>Ruby on Rails</ItemName>
+                <ItemMastery semesters={1} projects={2} />
+              </Item>
+              <Item>
+                <ItemName>WordPress</ItemName>
+                <ItemMastery projects={7} />
+              </Item>
+              <Item>
+                <ItemName>Unity 3D</ItemName>
+                <ItemMastery semesters={1} projects={2} />
+              </Item>
+              <Item>
+                <ItemName>Android Studio</ItemName>
+                <ItemMastery semesters={1} />
+              </Item>
             </SubColumn>
             <br />
             <SubColumn>
               <h2>Tools</h2>
-              <h3>Bash</h3>
-              <h3>Git</h3>
-              <h3>BootStrap</h3>
-              <h3>Webpack (React)</h3>
-              <h3>Redux (React)</h3>
-              <h3>Axios (React)</h3>
-              <h3>Jest (React)</h3>
+              <Item>
+                <ItemName>BootStrap</ItemName>
+                <ItemMastery projects={7} />
+              </Item>
+              <Item>
+                <ItemName>Webpack</ItemName>
+                <ItemMastery projects={2} />
+              </Item>
+              <Item>
+                <ItemName>Redux</ItemName>
+                <ItemMastery projects={2} />
+              </Item>
+              <Item>
+                <ItemName>Axios</ItemName>
+                <ItemMastery projects={2} />
+              </Item>
+              <Item>
+                <ItemName>Jest</ItemName>
+                <ItemMastery projects={2} />
+              </Item>
             </SubColumn>
           </Column>
-          <Column>
-            <h1>Other</h1>
+          <Column bgColor={green}>
+            <ColumnTitle>General</ColumnTitle>
             <br />
             <SubColumn>
               <h2>Scripts</h2>
-              <h3>Java</h3>
-              <h3>C</h3>
-              <h3>C++</h3>
-              <h3>C#</h3>
-              <h3>x82 Assembly</h3>
+              <Item>
+                <ItemName>Bash</ItemName>
+                <ItemMastery semesters={6} projects={6} />
+              </Item>
+              <Item>
+                <ItemName>C</ItemName>
+                <ItemMastery semesters={1} />
+              </Item>
+              <Item>
+                <ItemName>C++</ItemName>
+                <ItemMastery semesters={1} />
+              </Item>
+
+              <Item>
+                <ItemName>Verilog</ItemName>
+                <ItemMastery semesters={1} />
+              </Item>
             </SubColumn>
             <br />
             <SubColumn>
-              <h2>Frameworks</h2>
-              <h3>Unity 3D</h3>
-              <h3>Android Studio</h3>
+              <h2>Architectures</h2>
+              <Item>
+                <ItemName>MVC</ItemName>
+                <ItemMastery semesters={1} projects={2} />
+              </Item>
+              <Item>
+                <ItemName>OOP</ItemName>
+                <ItemMastery semesters={1} />
+              </Item>
+              <Item>
+                <ItemName>REST</ItemName>
+                <ItemMastery semesters={1} />
+              </Item>
+              <Item>
+                <ItemName>TTD</ItemName>
+                <ItemMastery semesters={1} />
+              </Item>
             </SubColumn>
             <br />
             <SubColumn>
               <h2>Tools</h2>
-              <h3>Hi</h3>
+              <Item>
+                <ItemName>Git</ItemName>
+                <ItemMastery semesters={6} projects={6} />
+              </Item>
               <h3>Hello</h3>
             </SubColumn>
           </Column>
@@ -124,41 +242,6 @@ export default class Resume extends Component {
           <Column>Hi</Column>
         </Section>
       </ResumeContainer>
-      // <Div width="100%" marginLeft="5%">
-      //   <Flex direction="column">
-      //     <Primary>Skills</Primary>
-      //     <Flex direction="row">
-      //       <Flex direction="column" style={{marginLeft: "auto", marginRight: "auto"}}><Secondary>Front-end</Secondary></Flex>
-      //       <Flex direction="column" style={{marginLeft: "auto", marginRight: "auto"}}><Secondary>Database</Secondary></Flex>
-      //       <Flex direction="column" style={{marginLeft: "auto", marginRight: "auto"}}><Secondary>Engineering</Secondary></Flex>
-      //     </Flex>
-      //   </Flex>
-      //   <Div>
-      //     <Primary>Core Qualifications</Primary>
-      //     <Secondary>Statistical Skills</Secondary>
-      //     <Tertiary>A/B Testing</Tertiary>
-      //     <Tertiary>Regression Analysis</Tertiary>
-      //     <Secondary>Technical Skills</Secondary>
-      //     <Tertiary>A/B Testing</Tertiary>
-      //     <Tertiary>Regression Analysis</Tertiary>
-      //   </Div>
-      //   <Div>
-      //     <Primary>Work Experience</Primary>
-      //     <Secondary>EnterpriseWorks</Secondary>
-      //     <Secondary>ChungHaMulSan</Secondary>
-      //   </Div>
-      //   <Div>
-      //     <Primary>Leadership</Primary>
-      //     <Secondary>KoJobs Illinois</Secondary>
-      //     <Secondary>Codable</Secondary>
-      //     <Secondary>Les Claviers</Secondary>
-      //   </Div>
-      //   <Div>
-      //     <Primary>Education</Primary>
-      //     <Secondary>1</Secondary>
-      //     <Secondary>2</Secondary>
-      //   </Div>
-      // </Div>
     );
   }
 }
