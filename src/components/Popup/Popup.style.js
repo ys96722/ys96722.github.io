@@ -1,13 +1,7 @@
 import styled, { css, keyframes } from "styled-components";
 import { Flex } from "../../style/grid";
 import { A, P } from "../../style/types";
-import {
-  black,
-  blue,
-  yellow,
-  fontSize,
-  paddingValue
-} from "../../style/variables";
+import { black, blue, paddingValue } from "../../style/variables";
 // import { blue, yellow } from "../../style/variables";
 
 // Covers the whole screen
@@ -71,6 +65,10 @@ export const PopupContentContainer = styled.div`
   ${Flex} {
     margin-top: 10%;
     margin-bottom: 8%;
+  }
+
+  span ${A} {
+    font-size: 1.8rem;
   }
 `;
 
@@ -139,28 +137,23 @@ export const Button = styled.button`
     `}
 `;
 
-export const PopupFooter = styled.div`
-  margin-top: auto;
-  position: relative;
-  font-size: 1.3rem;
-  /* align-self: flex-end; */
-  /* justify-self: flex-end; */
-  width: 100%;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box; /* Firefox, other Gecko */
-  box-sizing: border-box; /* Opera/IE 8+ */
-  display: flex;
-  bottom: ${paddingValue};
-  flex-direction: column;
+// export const PopupFooter = styled.div`
+//   margin-top: auto;
+//   position: relative;
+//   font-size: 1.3rem;
+//   /* align-self: flex-end; */
+//   /* justify-self: flex-end; */
+//   width: 100%;
+//   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+//   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+//   box-sizing: border-box; /* Opera/IE 8+ */
+//   display: flex;
+//   bottom: ${paddingValue};
+//   flex-direction: column;
+// `;
 
-  ${A} {
-    margin-top: 1.5rem;
-    align-self: center;
-  }
-`;
-
-export const People = styled.p`
-  position: relative;
-  margin-top: 1.5rem;
-  text-align: left;
-`;
+// export const People = styled.p`
+//   position: relative;
+//   margin-top: 1.5rem;
+//   text-align: left;
+// `;

@@ -15,8 +15,8 @@ const card = props => {
         tool={props.tool}
       >
         <Inner>
-          <p>{props.name}</p>
-          <span>{props.tool}</span>
+          {/* <p>{props.name}</p>
+          <span>{props.tool}</span> */}
         </Inner>
       </CardFront>
       <CardBack imgPath={props.imgPath}>

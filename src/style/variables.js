@@ -16,10 +16,23 @@ export const title_header = "3.0em";
 export const subtitle_header = "2.5em";
 
 export const Title = styled.h1`
-  color: ${red};
+  /* color: ${red}; */
+  color: ${black};
   font-weight: bold;
-  font-size: #{section_header};
+  font-size: ${section_header};
   text-align: center;
+  text-decoration: underline;
+
+  /* &::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: ${black};
+    z-index: -1;
+  } */
 `;
 
 // import { yellow, red, blue, black, section_header, title_header, subtitle_header } from;

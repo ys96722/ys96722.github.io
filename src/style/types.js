@@ -6,9 +6,10 @@ export const P = styled.p`
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
   /* font-family: Elena; */
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
   line-height: 2rem;
+  font-family: avenir;
 `;
 
 const fadeIn = keyframes`

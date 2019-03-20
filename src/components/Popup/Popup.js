@@ -5,11 +5,7 @@ import {
   PopupContentContainer,
   PopupImageContainer,
   Button,
-  Title,
-  TextContainer,
-  Content,
-  People,
-  PopupFooter
+  Title
 } from "./Popup.style";
 import PopupSlider from "./PopupSlider/PopupSlider";
 import TextSlider from "../TextSlider/TextSlider";

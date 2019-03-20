@@ -17,36 +17,36 @@ export const Div = styled.div`
     animation &&
     css`
       animation: 1s ease-in-out 0s 1 ${fadeIn};
-    `}
+    `};
 
   ${({ marginBottom }) =>
     marginBottom &&
     css`
       margin-bottom: ${marginBottom};
-    `}
+    `};
   ${({ marginTop }) =>
     marginTop &&
     css`
       margin-top: ${marginTop};
-    `}
+    `};
 
   ${({ marginLeft }) =>
     marginLeft &&
     css`
       margin-left: ${marginLeft};
-    `}
+    `};
 
   ${({ marginRight }) =>
     marginRight &&
     css`
       margin-right: ${marginRight};
-    `}
+    `};
 
   ${({ width }) =>
     width &&
     css`
       width: ${width};
-    `}
+    `};
 `;
 
 export const Container = styled(Div)`

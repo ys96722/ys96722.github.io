@@ -11,6 +11,19 @@ const NavItemCSS = css`
   color: ${black};
   text-decoration: none;
   z-index: 100;
+  border-radius: 10px;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+    border-radius: 10px;
+    z-index: -1;
+    transform: scale(1.3, 1.5);
+  }
 
   &:before {
     content: attr(title);
@@ -48,6 +61,7 @@ export const NavigationContainer = styled(Flex)`
   right: 2em;
   top: 1.8em;
   z-index: 98;
+  border-radius: 10px;
 `;
 
 export const NavigationItem = styled(Link)`

@@ -60,6 +60,11 @@ export const RevealP = styled(P)`
   transition: all 2s;
   transition-property: opacity, transform;
 
+  span {
+    font-family: "VT323", monospace;
+    font-size: 1.5rem;
+  }
+
   ${({ hide }) =>
     hide &&
     css`

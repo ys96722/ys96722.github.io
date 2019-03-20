@@ -16,7 +16,8 @@ const itemMastery = props => {
           style={{
             width: "8px",
             height: "100%",
-            backgroundColor: "red",
+            backgroundColor: "#f25f5c",
+            // backgroundColor: "#60b6db",
             marginLeft: "0.1rem",
             borderRadius: "10px"
           }}
@@ -55,7 +56,7 @@ const itemMastery = props => {
           style={{
             width: "8px",
             height: "100%",
-            backgroundColor: "blue",
+            backgroundColor: "#5baaa5",
             marginLeft: "0.1rem",
             borderRadius: "10px"
           }}

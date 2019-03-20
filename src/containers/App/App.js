@@ -44,10 +44,12 @@ export default class App extends Component {
         <Container>
           <NavigationBar />
           <SideBar />
-          {/* <div onLoad={({ loading }) => {
-            if (!loading) doneLoading('appBackground');
-          }} /> */}
-          {/* <LoadingPage loading={waitingToFinishLoading && loading} /> */}
+          {/* <div
+            onLoad={({ loading }) => {
+              if (!loading) doneLoading("appBackground");
+            }}
+          />
+          <LoadingPage loading={waitingToFinishLoading && loading} /> */}
           {this.props.children}
         </Container>
       </>
