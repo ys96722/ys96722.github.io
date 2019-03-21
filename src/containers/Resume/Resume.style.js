@@ -17,6 +17,10 @@ export const ResumeContainer = styled(Div)`
   ${Title} {
     margin-bottom: 1em;
   }
+
+  ul {
+    /* list-style-position: inside; */
+  }
 `;
 
 // export const Title = styled.h1`
@@ -29,27 +33,28 @@ export const SectionContainer = styled(Flex)`
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   border: 2px solid rgba(0, 0, 0, 0.16);
   border-radius: 10px;
-  padding-top: 20px;
+  padding: 20px;
 `;
 
 export const Section = styled(Flex)`
   /* flex-direction: row; */
-  flex-direction: row;
+  flex-direction: ${props => props.flexDirection};
   width: 100%;
   height: 110vh;
   margin-top: 1.5rem;
   /* background-color: yellow; */
-  justify-content: space-evenly;
+  justify-content: ${props => props.justifyContent};
   border-radius: 10px;
 `;
 
-// export const Row = styled(Flex)`
-//   flex-direction: row;
-//   width: 100%;
-//   background-color: blue;
-//   justify-content: space-evenly;
-//   text-align: right;
-// `;
+export const Row = styled(Flex)`
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 100px;
+  /* background-color: blue; */
+  /* justify-content: space-evenly; */
+  text-align: left;
+`;
 
 export const Column = styled(Flex)`
   flex-direction: column;
@@ -114,6 +119,37 @@ export const ItemName = styled.h3`
   margin-right: 2vw;
   text-align: left;
   /* color: white; */
+`;
+
+export const Li = styled.li`
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  font-family: avenir;
+
+  /* list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em; */
+`;
+
+export const CompanyTitle = styled.h2`
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  font-family: avenir;
+  margin-bottom: 1rem;
+`;
+
+export const CompanyInfo = styled.p`
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: avenir;
+`;
+
+export const JobTitle = styled.h2`
+  font-size: 1.4rem;
+  font-family: avenir;
+  line-height: 1.5rem;
 `;
 
 export const Primary = styled.h1`

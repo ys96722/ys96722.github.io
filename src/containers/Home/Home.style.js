@@ -32,7 +32,7 @@ export const Hero = styled.div`
 
   h1,
   h2 {
-    transform: translateY(-12vh);
+    transform: translateY(-11vh);
   }
 
   h1 {

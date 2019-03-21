@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Title, red, blue, green } from "../../style/variables";
+import { P } from "../../style/types";
 import {
   ResumeContainer,
   SectionContainer,
@@ -8,7 +9,12 @@ import {
   Item,
   ItemName,
   Column,
-  ColumnTitle
+  ColumnTitle,
+  Row,
+  Li,
+  JobTitle,
+  CompanyTitle,
+  CompanyInfo
 } from "./Resume.style";
 
 // // import ItemMastery from "./ItemMastery";
@@ -29,7 +35,7 @@ export default class Resume extends Component {
         <ResumeContainer animation="fadeIn">
           <SectionContainer>
             <Title>Skills</Title>
-            <Section>
+            <Section flexDirection="row" justifyContent="space-evenly">
               <Column bgColor={red}>
                 <ColumnTitle bgColor={red}>Data</ColumnTitle>
                 <br />
@@ -255,10 +261,51 @@ export default class Resume extends Component {
           <br />
           <SectionContainer>
             <Title>Experience</Title>
-            <Section>
-              <Column>Hi</Column>
-              <Column>Hi</Column>
-              <Column>Hi</Column>
+            <Section flexDirection="column" justifyContent="top">
+              <Row>
+                <Column width="30%" textAlign="left">
+                  <CompanyTitle>EnterpriseWorks</CompanyTitle>
+                  <CompanyInfo>May 2018 - current (10 months)</CompanyInfo>
+                  <CompanyInfo>Champaign, IL</CompanyInfo>
+                </Column>
+                <Column width="70%" textAlign="left">
+                  <JobTitle>Web Developer (Internship)</JobTitle>
+                  <ul>
+                    <Li>
+                      Develop eight websites for startups using WordPress, PHP,
+                      JavaScript, and CSS and produce tutorial videos for
+                      clients
+                    </Li>
+                    <Li>
+                      Coordinate two web development workshops to create a more
+                      cohesive workflow between designers and developers
+                    </Li>
+                    <Li>
+                      Reduce hours spent per website by approximately 10 hours
+                      by devising a new SOP for web developers and graphic
+                      designers
+                    </Li>
+                    <Li>
+                      Lead biweekly web development study group on JavaScript,
+                      CSS, and HTML5 to provide a basic development knowledge
+                    </Li>
+                  </ul>
+                </Column>
+              </Row>
+              <Row>
+                <Column width="30%" textAlign="left">
+                  <h2>EnterpriseWorks</h2>
+                  <p>May 2018 - current</p>
+                </Column>
+                <Column width="70%" textAlign="left">
+                  <h2>Web Developer (Internship)</h2>
+                  <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                  </ul>
+                </Column>
+              </Row>
             </Section>
           </SectionContainer>
           <br />
