@@ -22,7 +22,7 @@ export default class Websites extends Component {
         tool: "React",
         tools:
           "Front: React.js, Styled-Components\nDatabase: MySQL, PHPMyAdmin\nVersion Control: Git",
-        imgPath: require("../../assets/hero.jpeg"),
+        imgPath: require("../../assets/finalHero.jpeg"),
         bgSize: "cover",
         popupInfo: {
           title: "Yooniverse",

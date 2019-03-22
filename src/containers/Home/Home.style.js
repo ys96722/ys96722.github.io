@@ -17,7 +17,7 @@ export const Image = styled.img`
 
 export const Hero = styled.div`
   height: 100vh;
-  background-image: url(${require("../../assets/hero.jpeg")});
+  background-image: url(${require("../../assets/finalHero.jpeg")});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,13 +36,13 @@ export const Hero = styled.div`
   }
 
   h1 {
-    text-shadow: 1.5px 1.5px white;
+    /* text-shadow: 1.5px 1.5px white; */
     /* #247ba0 */
   }
 
   h2 {
     color: ${blue};
-    text-shadow: 1.5px 1.5px black;
+    /* text-shadow: 1.5px 1.5px black; */
   }
 `;
 
