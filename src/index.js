@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import routes from "./routes";
 import { createStore, compose, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
-import ReallySmoothScroll from "really-smooth-scroll";
+// import ReallySmoothScroll from "really-smooth-scroll";
 import { hashHistory } from "react-router";
 import rootReducer from "./redux/modules/reducer";
 // import createRoutes from "./routes";
@@ -13,18 +13,17 @@ hashHistory.listen(() => {
   window.scrollTo(0, 0);
 });
 
-ReallySmoothScroll.shim();
+// ReallySmoothScroll.shim();
 
 const store = createStore(rootReducer);
-
 
 ReactDOM.render(
   <Provider store={store}>
     {/* {createRoutes(store, history)} */}
     {routes}
   </Provider>,
-  document.getElementById('root')
-)
+  document.getElementById("root")
+);
 
 // ReactDOM.render(routes, document.getElementById("root"));
 
