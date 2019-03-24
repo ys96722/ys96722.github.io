@@ -45,7 +45,7 @@ export default class Resume extends Component {
                   <h2>Languages</h2>
                   <Item>
                     <ItemName>Python</ItemName>
-                    <ItemMastery projects={3} semesters={6} />
+                    <ItemMastery semesters={6} />
                   </Item>
 
                   <Item>
@@ -262,12 +262,63 @@ export default class Resume extends Component {
           <br />
           <br />
           <SectionContainer>
+              {/* <Row>
+                <Column width="30%" textAlign="left">
+                  <CompanyTitle>University of Illinois</CompanyTitle>
+                  <CompanyInfo>
+                    January 2016 - current (39 months)
+                  </CompanyInfo>
+                  <CompanyInfo>Urbana-Champaign, IL</CompanyInfo>
+                </Column>
+                <Column width="70%" textAlign="left">
+                  <JobTitle>Bachelors of Science in Statistics</JobTitle>
+                  <ul>
+                    <Li>
+                      Analysis: ANOVA analysis, A/B testing, correlation
+                      analysis, regression analysis, permutation testing,
+                      hypothesis testing
+                    </Li>
+                    <Li>
+                      Modeling: logistic regression, k-means, SVM, random
+                      forest, decision tree, naïve Bayes, cross-validation,
+                      XGBoost, PCA
+                    </Li>
+                    <Li>
+                      Certificates: Certificate in Data Science from
+                      University of Illinois at Urbana-Champaign, Nanodegree
+                      in Data Analytics from Udacity
+                    </Li>
+                  </ul>
+                </Column>
+              </Row> */}
+              <Title>Academic</Title>
+              <Section flexDirection="column">
+                <Row>
+                  <Column width="50%" textAlign="left">
+                    <SchoolTitle>
+                      {/* <A href="https://kojobsillinois.com/" target="_blank"> */}
+                      University of Illinois at Urbana-Champaign
+                    {/* </A> */}
+                    </SchoolTitle>
+                    <SchoolInfo>Graduatation: May 2019</SchoolInfo>
+                  </Column>
+                  <Column width="50%" textAlign="right">
+                    <SchoolTitle fontWeight="400">
+                      Bachelors of Science in Statistics
+                  </SchoolTitle>
+                    <SchoolInfo>Minor in Computer Science</SchoolInfo>
+                  </Column>
+                </Row>
+              </Section>
             <Title>Experience</Title>
             <Section flexDirection="column" justifyContent="top">
               <Row>
                 <Column width="30%" textAlign="left">
                   <CompanyTitle>
-                    <A href="http://researchpark.illinois.edu/" target="_blank">
+                    <A
+                      href="http://researchpark.illinois.edu/"
+                      target="_blank"
+                    >
                       Enterprise Works
                     </A>
                   </CompanyTitle>
@@ -278,22 +329,24 @@ export default class Resume extends Component {
                   <JobTitle>Web Developer (Internship)</JobTitle>
                   <ul>
                     <Li>
-                      Develop eight websites for startups using WordPress, PHP,
-                      JavaScript, and CSS and produce tutorial videos for
-                      clients
+                      Develop eight websites for startups using WordPress,
+                      PHP, JavaScript, and CSS and produce tutorial videos
+                      for clients
                     </Li>
                     <Li>
-                      Coordinate two web development workshops to create a more
-                      cohesive workflow between designers and developers
+                      Coordinate two web development workshops to create a
+                      more cohesive workflow between designers and
+                      developers
                     </Li>
                     <Li>
-                      Reduce hours spent per website by approximately 10 hours
-                      by devising a new SOP for web developers and graphic
-                      designers
+                      Reduce hours spent per website by approximately 10
+                      hours by devising a new SOP for web developers and
+                      graphic designers
                     </Li>
                     <Li>
-                      Lead biweekly web development study group on JavaScript,
-                      CSS, and HTML5 to provide a basic development knowledge
+                      Lead biweekly web development study group on
+                      JavaScript, CSS, and HTML5 to provide a basic
+                      development knowledge
                     </Li>
                   </ul>
                 </Column>
@@ -309,20 +362,23 @@ export default class Resume extends Component {
                   <CompanyInfo>Champaign, IL</CompanyInfo>
                 </Column>
                 <Column width="70%" textAlign="left">
-                  <JobTitle>Founding President (Student Organization)</JobTitle>
+                  <JobTitle>
+                    Founding President (Student Organization)
+                  </JobTitle>
                   <ul>
                     <Li>
                       Create operating systems and provide administrative
                       support for HR, PR, Finance, and Curriculum department
                     </Li>
                     <Li>
-                      Design a Ruby on Rails curriculum with professional full
-                      stack developers to provide an approachable program for
-                      members
+                      Design a Ruby on Rails curriculum with professional
+                      full stack developers to provide an approachable
+                      program for members
                     </Li>
                     <Li>
                       Educate members by leading weekly Ruby on Rails study
-                      groups on MVC development, RESTful API, and HTTP methods.
+                      groups on MVC development, RESTful API, and HTTP
+                      methods.
                     </Li>
                   </ul>
                 </Column>
@@ -343,18 +399,19 @@ export default class Resume extends Component {
                   <JobTitle>Vice President (Student Organization)</JobTitle>
                   <ul>
                     <Li>
-                      Facilitate workshops with start-up entrepreneurs, content
-                      creators, and web developers to offer insights into
-                      start-up industry
+                      Facilitate workshops with start-up entrepreneurs,
+                      content creators, and web developers to offer insights
+                      into start-up industry
                     </Li>
                     <Li>
-                      Arrange mock interviews, resume sessions, and office tours
-                      by contacting professionals at local corporations and
-                      start-ups
+                      Arrange mock interviews, resume sessions, and office
+                      tours by contacting professionals at local
+                      corporations and start-ups
                     </Li>
                     <Li>
-                      Educate members by leading weekly Python study groups on
-                      OOP, data wrangling, visualization, and machine learning
+                      Educate members by leading weekly Python study groups
+                      on OOP, data wrangling, visualization, and machine
+                      learning
                     </Li>
                   </ul>
                 </Column>
@@ -366,35 +423,6 @@ export default class Resume extends Component {
           <SectionContainer>
             <Title>Academic</Title>
             <Section flexDirection="column">
-              {/* <Row>
-                <Column width="30%" textAlign="left">
-                  <CompanyTitle>
-                    University of Illinois
-                  </CompanyTitle>
-                  <CompanyInfo>January 2016 - current (39 months)</CompanyInfo>
-                  <CompanyInfo>Urbana-Champaign, IL</CompanyInfo>
-                </Column>
-                <Column width="70%" textAlign="left">
-                  <JobTitle>Bachelors of Science in Statistics</JobTitle>
-                  <ul>
-                    <Li>
-                      Analysis: ANOVA analysis, A/B testing, correlation
-                      analysis, regression analysis, permutation testing,
-                      hypothesis testing
-                    </Li>
-                    <Li>
-                      Modeling: logistic regression, k-means, SVM, random
-                      forest, decision tree, naïve Bayes, cross-validation,
-                      XGBoost, PCA
-                    </Li>
-                    <Li>
-                      Certificates: Certificate in Data Science from University
-                      of Illinois at Urbana-Champaign, Nanodegree in Data
-                      Analytics from Udacity
-                    </Li>
-                  </ul>
-                </Column>
-              </Row> */}
               <Row>
                 <Column width="50%" textAlign="left">
                   <SchoolTitle>

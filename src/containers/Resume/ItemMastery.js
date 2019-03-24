@@ -22,29 +22,6 @@ const itemMastery = props => {
             borderRadius: "10px"
           }}
         />
-        // <div
-        //   style={{
-        //     // backgroundColor: "red",
-        //     // height: "100%",
-        //     // width: "1.2vw",
-        //     // borderRadius: "50%"
-        //     backgroundColor: "red",
-        //     height: "1.5vw",
-        //     width: "1.5vw",
-        //     borderRadius: "50%",
-        //     textAlign: "center",
-        //     verticalAlign: "middle"
-        //   }}
-        //   key={i}
-        // >
-        //   <h3
-        //     style={{
-        //       color: "white"
-        //     }}
-        //   >
-        //     P
-        //   </h3>
-        // </div>
       );
     }
   }
@@ -61,25 +38,6 @@ const itemMastery = props => {
             borderRadius: "10px"
           }}
         />
-        // <div
-        //   style={{
-        //     backgroundColor: "blue",
-        //     height: "1.5vw",
-        //     width: "1.5vw",
-        //     borderRadius: "50%",
-        //     textAlign: "center",
-        //     verticalAlign: "middle"
-        //   }}
-        //   key={i}
-        // >
-        //   <h3
-        //     style={{
-        //       color: "white"
-        //     }}
-        //   >
-        //     S
-        //   </h3>
-        // </div>
       );
     }
   }
