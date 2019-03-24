@@ -2,17 +2,27 @@ import React, { Component } from "react";
 import { A, OpenButton, P } from "../../style/types";
 import { Div, Flex } from "../../style/grid";
 import { red, blue, green, black } from "../../style/variables";
+import { MasteryContainer, Tooltip } from "./ItemMastery.style";
 
 // React component for the card (main component)
 export default class ItemMastery extends Component {
   // Props: (wp or react), img, title, header, content, link
   state = {
-    boxes: []
+    boxes: [],
+    hover: false
+  };
+
+  handleMouseIn = () => {
+    this.setState({ hover: true });
+  };
+
+  handleMouseOut = () => {
+    this.setState({ hover: false });
   };
 
   renderCircle = () => {
     for (let i = 0; i < 5; i++) {
-      if (i <= this.props.mastery) {
+      if (i < this.props.mastery) {
         this.setState(prevState => ({
           boxes: [
             ...prevState.boxes,
@@ -86,14 +96,28 @@ export default class ItemMastery extends Component {
 
   render() {
     return (
-      <Flex
+      <MasteryContainer
+        onMouseOver={this.handleMouseIn}
+        onMouseLeave={this.handleMouseOut}
         direction="row"
         style={{
           justifyContent: "flex-end"
         }}
       >
         {this.state.boxes}
-      </Flex>
+        <Tooltip hover={this.state.hover}>
+          {this.props.projects ? (
+            <h1 style={{ display: "inline-block" }}>
+              projects: {this.props.projects}
+            </h1>
+          ) : null}
+          {this.props.semesters ? (
+            <h1 style={{ display: "inline-block" }}>
+              semesters: {this.props.semesters}
+            </h1>
+          ) : null}
+        </Tooltip>
+      </MasteryContainer>
     );
   }
 }
