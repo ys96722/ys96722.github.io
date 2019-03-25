@@ -10,10 +10,9 @@ export const MasteryContainer = styled(Flex)`
 
 export const Tooltip = styled(Flex)`
   position: absolute;
-  right: 10%;
   bottom: 125%;
   border: 1px solid black;
-  background-color: white;
+  background-color: rgba(0,0,0,0.7);
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -22,24 +21,26 @@ export const Tooltip = styled(Flex)`
   text-align: start;
   text-shadow: none;
   text-transform: none;
-  white-space: normal;
+  /* white-space: normal;
   word-break: normal;
   word-spacing: normal;
-  word-wrap: normal;
+  word-wrap: normal; */
+  padding: 10px;
   font-size: 30px;
   border-radius: 10px;
 
   display: none;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 
   &::after {
     position: absolute;
-    right: 10%;
-    bottom: 115%;
-    width: 0;
-    border-top: 5px solid #000;
-    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
+    top: 100%;
+    left: 50%;
+    border-top: 7px solid #000;
+    border-top: 7px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
     content: " ";
     font-size: 0;
     line-height: 0;
@@ -49,9 +50,13 @@ export const Tooltip = styled(Flex)`
     hover &&
     css`
       display: block;
+      opacity: 1;
     `}
 
-  h1 {
+  p {
+    font-size: 1.5rem;
+    color: white;
     display: inline-block;
+    width: 100%;
   }
 `;

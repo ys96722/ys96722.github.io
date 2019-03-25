@@ -105,18 +105,22 @@ export default class ItemMastery extends Component {
         }}
       >
         {this.state.boxes}
-        <Tooltip hover={this.state.hover}>
-          {this.props.projects ? (
-            <h1 style={{ display: "inline-block" }}>
-              projects: {this.props.projects}
-            </h1>
-          ) : null}
-          {this.props.semesters ? (
-            <h1 style={{ display: "inline-block" }}>
-              semesters: {this.props.semesters}
-            </h1>
-          ) : null}
-        </Tooltip>
+        {this.props.projects || this.props.semesters ? (
+          <Tooltip hover={this.state.hover}>
+            {this.props.projects ? (
+              <Flex direction="row">
+                <p>Projects:{"\u00A0"}</p>
+                <p> {this.props.projects}</p>
+              </Flex>
+            ) : null}
+            {this.props.semesters ? (
+              <Flex direction="row">
+                <p>Courses:{"\u00A0"}</p>
+                <p>{this.props.semesters}</p>
+              </Flex>
+            ) : null}
+          </Tooltip>
+        ) : null}
       </MasteryContainer>
     );
   }

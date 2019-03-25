@@ -45,7 +45,7 @@ export default class Resume extends Component {
                   <h2>Languages</h2>
                   <Item>
                     <ItemName>Python</ItemName>
-                    <ItemMastery mastery={4} projects={1} semesters={2} />
+                    <ItemMastery mastery={4} projects="1" semesters="2" />
                   </Item>
 
                   <Item>
@@ -132,7 +132,7 @@ export default class Resume extends Component {
                   <h2>Languages</h2>
                   <Item>
                     <ItemName>JavaScript</ItemName>
-                    <ItemMastery mastery={5} />
+                    <ItemMastery mastery={4} />
                   </Item>
                   <Item>
                     <ItemName>Ruby</ItemName>
