@@ -9,6 +9,7 @@ import Games from "../../components/Slider/Games";
 import Songs from "../../components/Slider/Songs";
 import Analytics from "../../components/Slider/Analytics";
 import { Div, Flex } from "../../style/grid";
+import { PageTitle, PageSubTitle, A } from "../../style/types";
 import Popup from "../../components/Popup/Popup";
 
 export default class Projects extends Component {
@@ -46,8 +47,23 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <Div width="100%">
+      <Div width="100%" animation="fadeIn">
         {/* List that captures Active */}
+        <Div width="60%" marginLeft="auto" marginRight="auto">
+          <PageTitle>Recent Work</PageTitle>
+          <br />
+          <PageSubTitle>
+            Here are some of my featured projects. Got any questions? Message me
+            on{"\u00A0"}
+            <A href="https://www.linkedin.com/in/yoonchang" target="_blank">
+              LinkedIn!
+            </A>
+          </PageSubTitle>
+        </Div>
+        <br />
+        <br />
+        <br />
+
         <Flex row justify="center">
           <Button
             onClick={e => this.setVisible(0, e)}

@@ -1,5 +1,13 @@
 import styled, { css, keyframes } from "styled-components";
-import { blue, yellow, black, fontSize } from "./variables";
+import {
+  blue,
+  yellow,
+  black,
+  fontSize,
+  section_header,
+  subtitle_header,
+  title_header
+} from "./variables";
 import { Button } from "reactstrap";
 
 export const P = styled.p`
@@ -10,6 +18,16 @@ export const P = styled.p`
   margin-top: 1rem;
   line-height: 2rem;
   font-family: avenir;
+`;
+
+export const PageTitle = styled.h1`
+  font-size: 3em;
+  text-align: center;
+`;
+
+export const PageSubTitle = styled.h2`
+  font-size: 1.5em;
+  text-align: center;
 `;
 
 const fadeIn = keyframes`
@@ -27,19 +45,21 @@ export const Text = styled.p`
   /* margin-top: auto; */
   /* duration, animationType, delayFromLoad, IterationCount, animationName */
   /* font-size: 1.4rem; */
-  font-size: 2.8vh;
+  font-size: 0.9em;
   animation: 1s ease-in-out 0s 1 ${fadeIn};
   margin-bottom: auto;
   width: 100%;
   height: auto;
+  text-align: ${props => props.align};
+  font-family: avenir;
 
   a {
-    font-size: 2.8vh;
+    font-size: inherit;
   }
 `;
 
 export const A = styled.a`
-  font-size: ${fontSize};
+  font-size: inherit;
   color: ${blue};
   text-decoration: none;
   position: relative;

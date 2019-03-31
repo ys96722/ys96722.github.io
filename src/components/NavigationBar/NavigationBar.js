@@ -22,7 +22,7 @@ class NavigationBar extends Component {
         />
         <NavigationItem
           to="/resume"
-          title="Resume"
+          title="Résumé"
           activeClassName="activeNavItem"
         />
         {/* <NavigationItem

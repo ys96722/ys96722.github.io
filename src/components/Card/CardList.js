@@ -44,7 +44,8 @@ const cardList = props => {
   // console.log(rows, counter);
 
   return (
-    <Div marginTop="4rem" marginBottom="4rem" animation="fadeIn">
+    //  used to have attribute animation="fadeIn"
+    <Div marginTop="4rem" marginBottom="4rem">
       {rows}
     </Div>
   );

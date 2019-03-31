@@ -39,7 +39,10 @@ export default class Home extends Component {
               <span style={{ color: "#f25f5c" }}>opera singer</span> and an{" "}
               <span style={{ color: "#f25f5c" }}>entrepreneur</span> in the heat
               of July, I aspire to live a life full of opportunities to create
-              new things.
+              new things. To view my work,{" "}
+              <span>
+                <A href="#projects">click here!</A>
+              </span>
             </RevealP>
           )}
         </WhenInView>
@@ -143,7 +146,7 @@ export default class Home extends Component {
                 <A href="https://sophiapresutti.com/" target="_blank">
                   Sophia Presutti
                 </A>
-                , Graphic Designer at EnterpriseWorks
+                , Senior Graphic Designer at EnterpriseWorks
               </span>
             </RevealP>
           )}

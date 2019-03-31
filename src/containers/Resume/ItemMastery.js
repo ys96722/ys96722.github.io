@@ -30,8 +30,12 @@ export default class ItemMastery extends Component {
               style={{
                 width: "20px",
                 height: "20px",
-                border: "1px solid #424242",
-                backgroundColor: "#424242",
+                border: "1px solid #424242", //light black
+                // border: "1px solid #fdee6c", //yellow
+                // border: "1px solid black",
+                // backgroundColor: "#247ba0", //light blue
+                backgroundColor: "#424242", //light black
+                // backgroundColor: "black",
                 marginLeft: "0.1rem",
                 borderRadius: "50%"
               }}

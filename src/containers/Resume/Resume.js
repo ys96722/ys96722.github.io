@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Title, red, blue, green } from "../../style/variables";
-import { P, A } from "../../style/types";
+import { P, A, PageTitle, PageSubTitle } from "../../style/types";
+import { Div } from "../../style/grid";
 import {
   ResumeContainer,
   SectionContainer,
@@ -34,6 +35,21 @@ export default class Resume extends Component {
     return (
       <>
         <ResumeContainer animation="fadeIn">
+          <Div width="60%" marginLeft="auto" marginRight="auto">
+            <PageTitle>Online Résumé</PageTitle>
+            <br />
+            <PageSubTitle>
+              A summary of what I have done and what I can do. Looking for a
+              more traditional resume? Message me on{"\u00A0"}
+              <A href="https://www.linkedin.com/in/yoonchang" target="_blank">
+                LinkedIn!
+              </A>
+            </PageSubTitle>
+          </Div>
+          <br />
+          <br />
+          <br />
+
           <SectionContainer>
             <Title>Skills</Title>
             {/* <InfoIndex /> */}
@@ -45,27 +61,27 @@ export default class Resume extends Component {
                   <h2>Languages</h2>
                   <Item>
                     <ItemName>Python</ItemName>
-                    <ItemMastery mastery={4} projects="1" semesters="2" />
+                    <ItemMastery mastery={4} projects="6" semesters="6" />
                   </Item>
 
                   <Item>
                     <ItemName>SQL</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="6" semesters="4" />
                   </Item>
 
                   <Item>
                     <ItemName>R</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="2" semesters="6" />
                   </Item>
 
                   <Item>
                     <ItemName>SAS</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="2" semesters="2" />
                   </Item>
 
                   <Item>
                     <ItemName>Pig</ItemName>
-                    <ItemMastery mastery={1} />
+                    <ItemMastery mastery={1} projects="1" semesters="1" />
                   </Item>
                 </SubColumn>
                 <br />
@@ -74,29 +90,29 @@ export default class Resume extends Component {
 
                   <Item>
                     <ItemName>SQLite3</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="8" semesters="4" />
                   </Item>
 
                   <Item>
                     <ItemName>MySQL</ItemName>
-                    <ItemMastery mastery={3} />
+                    <ItemMastery mastery={3} projects="5" semesters="4" />
                   </Item>
                   <Item>
                     <ItemName>PostgreSQL</ItemName>
-                    <ItemMastery mastery={3} />
+                    <ItemMastery mastery={3} projects="4" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>Firebase</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="1" semesters="1" />
                   </Item>
 
                   <Item>
                     <ItemName>RSQLite</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="1" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>Hive</ItemName>
-                    <ItemMastery mastery={1} />
+                    <ItemMastery mastery={1} projects="1" semesters="1" />
                   </Item>
                 </SubColumn>
                 <br />
@@ -104,24 +120,24 @@ export default class Resume extends Component {
                   <h2>Tools</h2>
                   <Item>
                     <ItemName>Anaconda3</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="8" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>Pandas & Numpy</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="8" semesters="4" />
                   </Item>
                   <Item>
                     <ItemName>Hadoop</ItemName>
-                    <ItemMastery mastery={3} />
+                    <ItemMastery mastery={3} projects="3" semesters="2" />
                   </Item>
                   <Item>
                     <ItemName>Scikit-Learn</ItemName>
-                    <ItemMastery mastery={3} />
+                    <ItemMastery mastery={3} projects="5" semesters="3" />
                   </Item>
 
                   <Item>
                     <ItemName>Seaborn & PyPlot</ItemName>
-                    <ItemMastery mastery={3} />
+                    <ItemMastery mastery={3} projects="8" semesters="2" />
                   </Item>
                 </SubColumn>
               </Column>
@@ -132,23 +148,23 @@ export default class Resume extends Component {
                   <h2>Languages</h2>
                   <Item>
                     <ItemName>JavaScript</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="6" semesters="6" />
                   </Item>
                   <Item>
                     <ItemName>Ruby</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="6" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>PHP</ItemName>
-                    <ItemMastery mastery={3} />
+                    <ItemMastery mastery={3} projects="8" semesters="0" />
                   </Item>
                   <Item>
                     <ItemName>C#</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="3" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>Java</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="2" semesters="1" />
                   </Item>
                 </SubColumn>
                 <br />
@@ -156,23 +172,23 @@ export default class Resume extends Component {
                   <h2>Frameworks</h2>
                   <Item>
                     <ItemName>React.js</ItemName>
-                    <ItemMastery mastery={3} />
+                    <ItemMastery mastery={3} projects="5" semesters="2" />
                   </Item>
                   <Item>
                     <ItemName>WordPress</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="9" semesters="2" />
                   </Item>
                   <Item>
                     <ItemName>Ruby on Rails</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="5" semesters="2" />
                   </Item>
                   <Item>
                     <ItemName>Unity 3D</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="3" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>Android Studio</ItemName>
-                    <ItemMastery mastery={1} />
+                    <ItemMastery mastery={1} projects="1" semesters="1" />
                   </Item>
                 </SubColumn>
                 <br />
@@ -180,23 +196,23 @@ export default class Resume extends Component {
                   <h2>Tools</h2>
                   <Item>
                     <ItemName>BootStrap</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="6" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>Webpack</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="5" semesters="2" />
                   </Item>
                   <Item>
                     <ItemName>Redux</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="5" semesters="2" />
                   </Item>
                   <Item>
                     <ItemName>Axios</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="5" semesters="2" />
                   </Item>
                   <Item>
                     <ItemName>Jest</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="5" semesters="2" />
                   </Item>
                 </SubColumn>
               </Column>
@@ -207,20 +223,19 @@ export default class Resume extends Component {
                   <h2>Languages</h2>
                   <Item>
                     <ItemName>Bash</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="10" semesters="6" />
                   </Item>
                   <Item>
                     <ItemName>C</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="0" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>C++</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="0" semesters="1" />
                   </Item>
-
                   <Item>
                     <ItemName>Verilog</ItemName>
-                    <ItemMastery mastery={1} />
+                    <ItemMastery mastery={1} projects="0" semesters="1" />
                   </Item>
                 </SubColumn>
                 <br />
@@ -228,23 +243,23 @@ export default class Resume extends Component {
                   <h2>Architectures</h2>
                   <Item>
                     <ItemName>OOP</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="8" semesters="6" />
                   </Item>
                   <Item>
                     <ItemName>CBD</ItemName>
-                    <ItemMastery mastery={3} />
+                    <ItemMastery mastery={3} projects="5" semesters="2" />
                   </Item>
                   <Item>
                     <ItemName>MVC</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="6" semesters="2" />
                   </Item>
                   <Item>
                     <ItemName>REST API</ItemName>
-                    <ItemMastery mastery={2} />
+                    <ItemMastery mastery={2} projects="2" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>TDD</ItemName>
-                    <ItemMastery mastery={1} />
+                    <ItemMastery mastery={1} projects="1" semesters="1" />
                   </Item>
                 </SubColumn>
                 <br />
@@ -252,11 +267,11 @@ export default class Resume extends Component {
                   <h2>Tools</h2>
                   <Item>
                     <ItemName>Git</ItemName>
-                    <ItemMastery mastery={4} />
+                    <ItemMastery mastery={4} projects="many" semesters="6" />
                   </Item>
                   <Item>
                     <ItemName>VSCode</ItemName>
-                    <ItemMastery mastery={3} />
+                    <ItemMastery mastery={4} projects="many" semesters="1" />
                   </Item>
                 </SubColumn>
               </Column>
@@ -414,15 +429,13 @@ export default class Resume extends Component {
           </SectionContainer>
           <br />
           <br />
-          <SectionContainer>
+          {/* <SectionContainer>
             <Title>Academic</Title>
             <Section flexDirection="column">
               <Row>
                 <Column width="50%" textAlign="left">
                   <SchoolTitle>
-                    {/* <A href="https://kojobsillinois.com/" target="_blank"> */}
                     University of Illinois at Urbana-Champaign
-                    {/* </A> */}
                   </SchoolTitle>
                   <SchoolInfo>Graduatation: May 2019</SchoolInfo>
                 </Column>
@@ -442,7 +455,7 @@ export default class Resume extends Component {
                 </Column>
               </Row>
             </Section>
-          </SectionContainer>
+          </SectionContainer> */}
         </ResumeContainer>
       </>
     );
