@@ -5,9 +5,8 @@ import WhenInView from "../../components/WhenInView/WhenInView";
 // Import Style Components
 // import { Container } from "../../style/grid"; Moved it to App
 import { Hero, SubHeader, RevealP } from "./Home.style";
-import { A } from "../../style/types";
+import { A, NavButton, BottomDiv } from "../../style/types";
 import { Div } from "../../style/grid";
-import { blue } from "../../style/variables";
 
 export default class Home extends Component {
   state = { isLoading: true };
@@ -20,7 +19,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <>
+      <Div style={{ position: "relative" }}>
         <Hero>
           <Div animation="fadeIn">
             <h1>Yoon Chang</h1>
@@ -151,11 +150,11 @@ export default class Home extends Component {
             </RevealP>
           )}
         </WhenInView>
-
-        <br />
-        <br />
-        <br />
-
+        <BottomDiv>
+          <NavButton href="#projects" direction="right">
+            Projects >>>
+          </NavButton>
+        </BottomDiv>
         {/* <WhenInView>
           {({ isInView }) => (
             <>
@@ -252,7 +251,7 @@ export default class Home extends Component {
             </>
           )}
         </WhenInView> */}
-      </>
+      </Div>
     );
   }
 }

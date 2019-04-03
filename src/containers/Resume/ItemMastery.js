@@ -22,7 +22,7 @@ export default class ItemMastery extends Component {
 
   renderCircle = () => {
     for (let i = 0; i < 5; i++) {
-      if (i < this.props.mastery) {
+      if (this.props.mastery && i < this.props.mastery) {
         this.setState(prevState => ({
           boxes: [
             ...prevState.boxes,
@@ -111,16 +111,29 @@ export default class ItemMastery extends Component {
         {this.state.boxes}
         {this.props.projects || this.props.semesters ? (
           <Tooltip hover={this.state.hover}>
+            {this.props.certificates ? (
+              <Flex direction="row">
+                <Flex style={{ color: "white" }}>Certificates:{"\u00A0"}</Flex>
+                <Flex style={{ marginLeft: "auto", color: "white" }}>
+                  {this.props.certificates}
+                </Flex>
+              </Flex>
+            ) : null}
             {this.props.projects ? (
               <Flex direction="row">
-                <p>Projects:{"\u00A0"}</p>
-                <p> {this.props.projects}</p>
+                <Flex style={{ color: "white" }}>Projects:{"\u00A0"}</Flex>
+                <Flex style={{ marginLeft: "auto", color: "white" }}>
+                  {" "}
+                  {this.props.projects}
+                </Flex>
               </Flex>
             ) : null}
             {this.props.semesters ? (
               <Flex direction="row">
-                <p>Courses:{"\u00A0"}</p>
-                <p>{this.props.semesters}</p>
+                <Flex style={{ color: "white" }}>Courses:{"\u00A0"}</Flex>
+                <Flex style={{ marginLeft: "auto", color: "white" }}>
+                  {this.props.semesters}
+                </Flex>
               </Flex>
             ) : null}
           </Tooltip>

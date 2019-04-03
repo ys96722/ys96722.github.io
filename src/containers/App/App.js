@@ -19,7 +19,7 @@ export default class App extends Component {
   };
 
   // componentDidMount() {
-  //   this.props.registerItem('appBackground');
+  //   this.props.registerItem("appBackground");
   // }
 
   componentWillReceiveProps(nextProps) {
@@ -46,7 +46,7 @@ export default class App extends Component {
           <SideBar />
           {/* <div
             onLoad={({ loading }) => {
-              if (!loading) doneLoading("appBackground");
+              // if (!loading) doneLoading("appBackground");
             }}
           />
           <LoadingPage loading={waitingToFinishLoading && loading} /> */}

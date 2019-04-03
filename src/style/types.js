@@ -8,6 +8,7 @@ import {
   subtitle_header,
   title_header
 } from "./variables";
+import { Div } from "./grid";
 import { Button } from "reactstrap";
 
 export const P = styled.p`
@@ -47,15 +48,16 @@ export const Text = styled.p`
   /* font-size: 1.4rem; */
   font-size: 0.9em;
   animation: 1s ease-in-out 0s 1 ${fadeIn};
+  margin-top: auto;
   margin-bottom: auto;
   width: 100%;
   height: auto;
   text-align: ${props => props.align};
   font-family: avenir;
 
-  a {
+  /* a {
     font-size: inherit;
-  }
+  } */
 `;
 
 export const A = styled.a`
@@ -99,6 +101,31 @@ export const A = styled.a`
         transition: height 0.2s;
       }
     `}
+`;
+
+export const NavButton = styled(A)`
+  position: absolute;
+  bottom: 0;
+  font-size: 1.4em;
+  height: "auto";
+  width: "auto";
+  margin: "auto";
+  ${({ direction }) =>
+    direction === "left"
+      ? css`
+          left: 0;
+        `
+      : css`
+          right: 0;
+        `}
+`;
+
+export const BottomDiv = styled(Div)`
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
 `;
 
 export const OpenButton = styled.button`

@@ -1,6 +1,5 @@
 // Import Dependencies
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import "./Projects.css";
 // Import Styled Components
 import { Button } from "./Projects.style";
@@ -9,7 +8,13 @@ import Games from "../../components/Slider/Games";
 import Songs from "../../components/Slider/Songs";
 import Analytics from "../../components/Slider/Analytics";
 import { Div, Flex } from "../../style/grid";
-import { PageTitle, PageSubTitle, A } from "../../style/types";
+import {
+  PageTitle,
+  PageSubTitle,
+  A,
+  NavButton,
+  BottomDiv
+} from "../../style/types";
 import Popup from "../../components/Popup/Popup";
 
 export default class Projects extends Component {
@@ -47,14 +52,14 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <Div width="100%" animation="fadeIn">
+      <Div width="100%" animation="fadeIn" style={{ position: "relative" }}>
         {/* List that captures Active */}
         <Div width="60%" marginLeft="auto" marginRight="auto">
           <PageTitle>Recent Work</PageTitle>
           <br />
           <PageSubTitle>
-            Here are some of my featured projects. Got any questions? Message me
-            on{"\u00A0"}
+            Here are some of my featured projects that I am proud to have been
+            part of. Got any questions? Message me on{"\u00A0"}
             <A href="https://www.linkedin.com/in/yoonchang" target="_blank">
               LinkedIn!
             </A>
@@ -99,6 +104,14 @@ export default class Projects extends Component {
             // ref={this.setWrapperRef}
           />
         ) : null}
+        <BottomDiv>
+          <NavButton href="#" direction="left">
+            &lt;&lt;&lt; Home
+          </NavButton>
+          <NavButton href="#resume" direction="right">
+            Resume >>>
+          </NavButton>
+        </BottomDiv>
       </Div>
     );
   }

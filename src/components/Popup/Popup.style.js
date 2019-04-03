@@ -64,7 +64,7 @@ export const PopupContentContainer = styled.div`
 
   ${Flex} {
     margin-top: 10%;
-    margin-bottom: 8%;
+    /* margin-bottom: 8%; */
   }
 
   span ${A} {

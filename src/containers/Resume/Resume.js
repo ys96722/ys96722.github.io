@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import { Title, red, blue, green } from "../../style/variables";
-import { P, A, PageTitle, PageSubTitle } from "../../style/types";
+import {
+  A,
+  PageTitle,
+  PageSubTitle,
+  NavButton,
+  BottomDiv
+} from "../../style/types";
 import { Div } from "../../style/grid";
 import {
   ResumeContainer,
@@ -21,7 +27,6 @@ import {
 } from "./Resume.style";
 
 import ItemMastery from "./ItemMastery";
-import InfoIndex from "./InfoIndex";
 
 // import { Container } from "../../style/grid"; Moved it to App
 
@@ -33,8 +38,8 @@ export default class Resume extends Component {
 
   render() {
     return (
-      <>
-        <ResumeContainer animation="fadeIn">
+      <Div style={{ position: "relative" }}>
+        <ResumeContainer animation="fadeIn" style={{ position: "relative" }}>
           <Div width="60%" marginLeft="auto" marginRight="auto">
             <PageTitle>Online Résumé</PageTitle>
             <br />
@@ -148,7 +153,12 @@ export default class Resume extends Component {
                   <h2>Languages</h2>
                   <Item>
                     <ItemName>JavaScript</ItemName>
-                    <ItemMastery mastery={4} projects="6" semesters="6" />
+                    <ItemMastery
+                      mastery={4}
+                      projects="6"
+                      semesters="6"
+                      certificates="2"
+                    />
                   </Item>
                   <Item>
                     <ItemName>Ruby</ItemName>
@@ -156,7 +166,7 @@ export default class Resume extends Component {
                   </Item>
                   <Item>
                     <ItemName>PHP</ItemName>
-                    <ItemMastery mastery={3} projects="8" semesters="0" />
+                    <ItemMastery mastery={3} projects="8" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>C#</ItemName>
@@ -172,7 +182,12 @@ export default class Resume extends Component {
                   <h2>Frameworks</h2>
                   <Item>
                     <ItemName>React.js</ItemName>
-                    <ItemMastery mastery={3} projects="5" semesters="2" />
+                    <ItemMastery
+                      mastery={3}
+                      projects="5"
+                      semesters="2"
+                      certificates="2"
+                    />
                   </Item>
                   <Item>
                     <ItemName>WordPress</ItemName>
@@ -325,9 +340,21 @@ export default class Resume extends Component {
                     Bachelors of Science in Statistics
                   </SchoolTitle>
                   <SchoolInfo>Minor in Computer Science</SchoolInfo>
+
+                  <SchoolInfo>
+                    <A
+                      href="https://stat.illinois.edu/academics/undergraduate-program/degree-programs/certificate-data-science"
+                      target="_blank"
+                    >
+                      Certificate in Data Science
+                    </A>
+                  </SchoolInfo>
                 </Column>
               </Row>
             </Section>
+            <br />
+            <br />
+            <br />
             <Title>Experience</Title>
             <Section flexDirection="column" justifyContent="top">
               <Row>
@@ -337,14 +364,14 @@ export default class Resume extends Component {
                       Enterprise Works
                     </A>
                   </CompanyTitle>
-                  <CompanyInfo>May 2018 - current (10 months)</CompanyInfo>
+                  <CompanyInfo>May 2018 - current (11 months)</CompanyInfo>
                   <CompanyInfo>Champaign, IL</CompanyInfo>
                 </Column>
                 <Column width="70%" textAlign="left">
                   <JobTitle>Web Developer (Internship)</JobTitle>
                   <ul>
                     <Li>
-                      Develop eight websites for startups using WordPress, PHP,
+                      Develop nine websites for startups using WordPress, PHP,
                       JavaScript, and CSS and produce tutorial videos for
                       clients
                     </Li>
@@ -371,7 +398,7 @@ export default class Resume extends Component {
                       Codable
                     </A>
                   </CompanyTitle>
-                  <CompanyInfo>July 2017 - current (21 months)</CompanyInfo>
+                  <CompanyInfo>July 2017 - current (22 months)</CompanyInfo>
                   <CompanyInfo>Champaign, IL</CompanyInfo>
                 </Column>
                 <Column width="70%" textAlign="left">
@@ -401,7 +428,7 @@ export default class Resume extends Component {
                     </A>
                   </CompanyTitle>
                   <CompanyInfo>
-                    September 2016 - current (31 months)
+                    September 2016 - current (32 months)
                   </CompanyInfo>
                   <CompanyInfo>Champaign, IL</CompanyInfo>
                 </Column>
@@ -427,8 +454,6 @@ export default class Resume extends Component {
               </Row>
             </Section>
           </SectionContainer>
-          <br />
-          <br />
           {/* <SectionContainer>
             <Title>Academic</Title>
             <Section flexDirection="column">
@@ -457,7 +482,12 @@ export default class Resume extends Component {
             </Section>
           </SectionContainer> */}
         </ResumeContainer>
-      </>
+        <BottomDiv>
+          <NavButton href="#projects" direction="left">
+            &lt;&lt;&lt; Projects
+          </NavButton>
+        </BottomDiv>
+      </Div>
     );
   }
 }

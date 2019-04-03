@@ -61,7 +61,19 @@ export const NavigationContainer = styled(Flex)`
   right: 2em;
   top: 1.8em;
   z-index: 98;
-  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8ca3a7;
+    border-radius: 10px;
+    opacity: 0.4;
+    filter: blur(2px);
+  }
 `;
 
 export const NavigationItem = styled(Link)`
