@@ -32,7 +32,8 @@ export default class Websites extends Component {
             require("../../assets/yooniverse/yooniverse3.png"),
             require("../../assets/yooniverse/yooniverse4.png")
           ],
-          content: "Portfolio website developed using React.js. ",
+          content:
+            "Portfolio website developed using React.js hosted on GitHub Pages. Key dependencies include Styled-Components, Redux, and Axios.",
           // testimonial: "He is a great man.",
           people: (
             <Text>
@@ -64,7 +65,7 @@ export default class Websites extends Component {
             require("../../assets/simbiosys/simbiosys3.png")
           ],
           content:
-            "Website developed for a cancer treatment bio-tech start-up as the Lead Web Developer at EnterpriseWorks.",
+            "Website developed for a cancer treatment bio-tech start-up as the Lead Web Developer at EnterpriseWorks. Tools used include JavaScript, HTML5, and CSS5 for front-end, PHP for server-side, MySQL and PHPMyAdmin for Database, and WordPress for CMS.",
           testimonial: `"Yoon did a fantastic job translating our idea for a website into practice. He was quick and responsive, went above and beyond in the design, and offered great "after sale" services. Moreover, he took an interest in our technology above and beyond what was required for creating the website. I highly recommend him for web development."\n\n- Joseph Peterson, Co-Founder of SimBioSys Inc.`,
           people: (
             <Text>
@@ -114,7 +115,7 @@ export default class Websites extends Component {
             require("../../assets/native/native4.png")
           ],
           content:
-            "Website developed for a landscaping company as the Lead Web Developer at EnterpriseWorks.",
+            "Website developed for a landscaping company as the Lead Web Developer at EnterpriseWorks. Tools used include Adobe XD for prototyping, JavaScript, HTML5, and CSS5 for front-end, PHP for server-side, MySQL and PHPMyAdmin for Database, and WordPress for CMS.",
           testimonial: `"Yoon has been tremendously helpful in every step of creating my new business website.  He was very professional, kind, and passionate during the whole process. Thank you!"\n\n- Ryan Cox, Owner of Native Roots Landscape Design`,
           people: (
             <Text>
@@ -154,7 +155,7 @@ export default class Websites extends Component {
             require("../../assets/kojobs/kojobs4.png"),
             require("../../assets/kojobs/kojobs5.png")
           ],
-          content: `Website developed for a career development student organization that I have been part of for almost three years.`,
+          content: `Website developed for a career development student organization that I have been part of for almost three years. Tools used include JavaScript, HTML5, and CSS5 for front-end, PHP for server-side, MySQL and PHPMyAdmin for Database, and WordPress for CMS.`,
           // testimonial: "He is a great man.",
           people: (
             <Text>
@@ -190,7 +191,7 @@ export default class Websites extends Component {
             require("../../assets/ability/ability5.png")
           ],
           content:
-            "Website developed for an entrepreneurial agency as the Lead Web Developer at EnterpriseWorks.",
+            "Website developed for an entrepreneurial agency as the Lead Web Developer at EnterpriseWorks. Tools used include JavaScript, HTML5, and CSS5 for front-end, PHP for server-side, MySQL and PHPMyAdmin for Database, and WordPress for CMS.",
           // "I worked on the website for an entreprenurial agency as the Lead Web Developer at EnterpriseWorks"
           testimonial: `"The team for the website includes Zamar El Zimra Rimba, Sophia Anne Presutti, Alyson Gerdes, and Yoon S. Chang... They spent countless hours refining the concept and the message for the website. They became very passionate about the Ability Marketplace. We are so grateful to have them on our team."\n\n-Theresa Grimaldi Olsen, COO of Ability Marketplace`,
           people: (
@@ -236,7 +237,7 @@ export default class Websites extends Component {
             require("../../assets/2xl/2xl4.png")
           ],
           content:
-            "Website developed for a logistics company as the Lead Web Developer at EnterpriseWorks.",
+            "Website developed for a logistics company as the Lead Web Developer at EnterpriseWorks. Tools used include JavaScript, HTML5, and CSS5 for front-end, PHP for server-side, MySQL and PHPMyAdmin for Database, and WordPress for CMS.",
           testimonial: `"On behalf of my brother Le'Mon Bass and myself we would like to take this opportunity to extend our sincere thanks and appreciation to you and your team for the dedication and hard work you all put into the completion of our website. It all came together in a timely fashion and we are confident that this will give our small business the extra edge to successfully compete in the extremely competitive e-commerce and logistical arena in the Midwest corridor."\n\n-LaMar Q. Bass, Owner of 2XL Logistics LLC`,
           people: (
             <Text>
@@ -282,7 +283,7 @@ export default class Websites extends Component {
             require("../../assets/traverse/traverse5.png")
           ],
           content:
-            "Website developed for an clinical research company as the Lead Web Developer at EnterpriseWorks.",
+            "Website developed for an clinical research company as the Lead Web Developer at EnterpriseWorks. Tools used include JavaScript, HTML5, and CSS5 for front-end, PHP for server-side, MySQL and PHPMyAdmin for Database, and WordPress for CMS.",
           testimonial: `“We worked with Yoon as part of the Shared Services Program at EnterpriseWorks where he helped us build our website through Wordpress. Yoon was very professional, responsive, and excellent at communicating. Beyond building the website to specifications, he was always available by phone and worked on off-hours to help bolster the security of our site when we were unable to. We appreciated his ability to distill complex web development issues to a level we could understand.”\n\n- Stephen Flemming, President and Co-founder of Traverse Science Inc.
             `,
           people: (

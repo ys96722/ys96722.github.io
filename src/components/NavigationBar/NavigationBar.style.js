@@ -5,7 +5,10 @@ import { Link, IndexLink } from "react-router";
 
 const NavItemCSS = css`
   position: relative;
-  margin-right: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 1.5em;
   cursor: pointer;
   color: ${black};
@@ -61,6 +64,7 @@ export const NavigationContainer = styled(Flex)`
   right: 2em;
   top: 1.8em;
   z-index: 98;
+  height: 7vh;
 
   &::before {
     content: "";

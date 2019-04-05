@@ -36,6 +36,7 @@ export const Hero = styled.div`
   }
 
   h1 {
+    color: ${black};
     /* text-shadow: 1.5px 1.5px white; */
     /* #247ba0 */
   }
