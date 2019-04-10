@@ -16,13 +16,27 @@ const GlobalStyle = createGlobalStyle`
 
 
 
+  ::-moz-selection {
+    background-color: ${black};
+    color: white;
+  }
+  ::-webkit-selection {
+    background-color: ${black};
+    color: white;
+  }
+  ::selection {
+    background-color: ${black};
+    color: white;
+  }
+
   *, *:before, *:after {
     margin: 0;
     padding: 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    }
+    
+  }
 
   *:focus{
     outline: none;
@@ -32,6 +46,7 @@ const GlobalStyle = createGlobalStyle`
       font-family: 'VT323', monospace;
       font-size: 20px;
       color: ${black};
+      
   }
 
  

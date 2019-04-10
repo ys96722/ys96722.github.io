@@ -73,9 +73,11 @@ export const NavigationContainer = styled(Flex)`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #8ca3a7;
+    /* background-color: #8ca3a7; */
+    /* background-color: ${black}; */
+    background-color: #002366;
     border-radius: 10px;
-    opacity: 0.4;
+    opacity: 0.15;
     filter: blur(2px);
   }
 `;

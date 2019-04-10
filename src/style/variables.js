@@ -6,6 +6,7 @@ export const paddingValue = "2rem";
 export const yellow = "#fdee6c";
 export const red = "#f25f5c";
 export const blue = "#247ba0";
+// export const blue = "#002366";
 export const lightblue = "#60b6db"; //"#44aad5"; //"#7bc3e1";
 export const black = "#424242";
 export const green = "#427F7B";
