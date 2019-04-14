@@ -65,7 +65,7 @@ export default class Games extends Component {
             require("../../assets/space/space4.png")
           ],
           content:
-            "Space Shooter is a 2D shooting-arcade game made with Unity. Backend is written in C# on Unity, and the assets are from the free asset packages in Unity Asset Store. Power up and extend the time limit by picking up cat-faced amenity boxes and shoot for your high score! (The cat's name is BongSook.)",
+            "Space Shooter is a 2D shooting-arcade game made with Unity. Backend is written in C# on Unity, and the assets are from the free asset packages in Unity Asset Store. Power up and extend the time limit by picking up the cat-faced amenity boxes and shoot for your high score! (The cat's name is BongSook.)",
           color: "#996FD6"
         }
       }

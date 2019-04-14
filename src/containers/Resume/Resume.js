@@ -371,8 +371,8 @@ export default class Resume extends Component {
                   <JobTitle>Web Developer (Internship)</JobTitle>
                   <ul>
                     <Li>
-                      Develop nine websites for startups using WordPress, PHP,
-                      JavaScript, and CSS and produce tutorial videos for
+                      Develop ten websites for startups using WordPress, PHP,
+                      JavaScript, and CSS3 and produce tutorial videos for
                       clients
                     </Li>
                     <Li>
@@ -380,13 +380,13 @@ export default class Resume extends Component {
                       cohesive workflow between designers and developers
                     </Li>
                     <Li>
-                      Reduce hours spent per website by approximately 10 hours
+                      Reduce hours spent per website by approximately 20 hours
                       by devising a new SOP for web developers and graphic
                       designers
                     </Li>
                     <Li>
-                      Lead biweekly web development study group on JavaScript,
-                      CSS, and HTML5 to provide a basic development knowledge
+                      Lead biweekly web development study group on ES6, CSS3,
+                      and HTML5 to provide a basic development knowledge
                     </Li>
                   </ul>
                 </Column>
@@ -394,9 +394,9 @@ export default class Resume extends Component {
               <Row marginTop="4rem">
                 <Column width="30%" textAlign="left">
                   <CompanyTitle>
-                    <A href="https://kojobsillinois.com/" target="_blank">
-                      Codable
-                    </A>
+                    {/* <A href="https://kojobsillinois.com/" target="_blank"> */}
+                    Codable
+                    {/* </A> */}
                   </CompanyTitle>
                   <CompanyInfo>July 2017 - current (22 months)</CompanyInfo>
                   <CompanyInfo>Champaign, IL</CompanyInfo>
