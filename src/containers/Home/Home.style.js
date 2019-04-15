@@ -9,6 +9,7 @@ import {
   subtitle_header
 } from "../../style/variables";
 
+import media from "../../style/media";
 import { P } from "../../style/types";
 
 export const Image = styled.img`
@@ -16,36 +17,42 @@ export const Image = styled.img`
 `;
 
 export const Hero = styled.div`
-  height: 100vh;
-  background-image: url(${require("../../assets/finalHero.jpeg")});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+         height: 100vh;
+         background-image: url(${require("../../assets/finalHero.jpeg")});
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
+         display: flex;
+         flex-direction: column;
+         justify-content: top;
 
-  text-align: center;
-  color: black;
-  font-size: ${section_header};
+         text-align: center;
+         color: black;
+         font-size: ${section_header};
 
-  h1,
-  h2 {
-    transform: translateY(-11vh);
-  }
+         h1,
+         h2 {
+           transform: translateY(-11vh);
+          /* ${media.tablet`
+            font-size: 1rem;
+          `}
+          ${media.phone`
+            font-size: 2rem;
+          `} */
+         }
 
-  h1 {
-    color: ${black};
-    /* text-shadow: 1.5px 1.5px white; */
-    /* #247ba0 */
-  }
+         h1 {
+           color: ${black};
+           /* text-shadow: 1.5px 1.5px white; */
+           /* #247ba0 */
+         }
 
-  h2 {
-    color: ${blue};
-    /* text-shadow: 1.5px 1.5px black; */
-  }
-`;
+         h2 {
+           color: ${blue};
+           /* text-shadow: 1.5px 1.5px black; */
+         }
+       `;
 
 export const SubHeader = styled.h2`
   font-size: ${subtitle_header};

@@ -2,13 +2,29 @@ import styled, { css } from "styled-components";
 import { SocialIcon } from "react-social-icons";
 import { blue } from "../../style/variables";
 import { Flex } from "../../style/grid";
+import media from "../../style/media";
 
 export const SideContainer = styled(Flex)`
   position: fixed;
   top: 40%;
   left: 2%;
   flex-direction: column;
-  background-color: white;
+  background-color: transparent;
+
+
+  ${media.tablet`
+    position: relative;
+    bottom: 0;
+    width: fit-content;
+    height: auto;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  `}
+
+  ${media.phone`
+    padding-top: 30px;
+  `}
 `;
 
 export const SocialButton = styled.a`

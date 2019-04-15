@@ -9,6 +9,7 @@ import {
   title_header
 } from "./variables";
 import { Div } from "./grid";
+import media from "./media";
 import { Button } from "reactstrap";
 
 export const P = styled.p`
