@@ -123,31 +123,31 @@ class JuRuMaBle extends Component {
       }
 
       // Get on backtrack
-      // else if (this.state.playerOne === 21) {
-      //   this.setState({
-      //     playerOne: -generatedNumber,
-      //     currentPlayer: 2
-      //   });
-      // }
+      else if (this.state.playerOne === 21) {
+        this.setState({
+          playerOne: -generatedNumber,
+          currentPlayer: 2
+        });
+      }
 
       // If on backtrack, follow back track
-      // else if (Math.sign(this.state.playerOne) === -1) {
-      //   if (this.state.playerOne - generatedNumber <= -9) {
-      //     this.setState(prevState => {
-      //       return {
-      //         playerOne: Math.abs(prevState.playerOne - generatedNumber) - 1,
-      //         currentPlayer: 2
-      //       };
-      //     });
-      //   } else {
-      //     this.setState(prevState => {
-      //       return {
-      //         playerOne: prevState.playerOne - generatedNumber,
-      //         currentPlayer: 2
-      //       };
-      //     });
-      //   }
-      // }
+      else if (Math.sign(this.state.playerOne) === -1) {
+        if (this.state.playerOne - generatedNumber <= -9) {
+          this.setState(prevState => {
+            return {
+              playerOne: Math.abs(prevState.playerOne - generatedNumber) - 1,
+              currentPlayer: 2
+            };
+          });
+        } else {
+          this.setState(prevState => {
+            return {
+              playerOne: prevState.playerOne - generatedNumber,
+              currentPlayer: 2
+            };
+          });
+        }
+      }
 
       // Normally move forward
       else {
@@ -200,31 +200,31 @@ class JuRuMaBle extends Component {
       }
 
       // Get on backtrack
-      // else if (this.state.playerTwo === 21) {
-      //   this.setState({
-      //     playerTwo: -generatedNumber,
-      //     currentPlayer: 3
-      //   });
-      // }
+      else if (this.state.playerTwo === 21) {
+        this.setState({
+          playerTwo: -generatedNumber,
+          currentPlayer: 3
+        });
+      }
 
       // Move on backtrack
-      // else if (Math.sign(this.state.playerTwo) === -1) {
-      //   if (this.state.playerTwo - generatedNumber <= -9) {
-      //     this.setState(prevState => {
-      //       return {
-      //         playerTwo: Math.abs(prevState.playerTwo - generatedNumber) - 1,
-      //         currentPlayer: 3
-      //       };
-      //     });
-      //   } else {
-      //     this.setState(prevState => {
-      //       return {
-      //         playerTwo: prevState.playerTwo - generatedNumber,
-      //         currentPlayer: 3
-      //       };
-      //     });
-      //   }
-      // }
+      else if (Math.sign(this.state.playerTwo) === -1) {
+        if (this.state.playerTwo - generatedNumber <= -9) {
+          this.setState(prevState => {
+            return {
+              playerTwo: Math.abs(prevState.playerTwo - generatedNumber) - 1,
+              currentPlayer: 3
+            };
+          });
+        } else {
+          this.setState(prevState => {
+            return {
+              playerTwo: prevState.playerTwo - generatedNumber,
+              currentPlayer: 3
+            };
+          });
+        }
+      }
 
       // Move normally
       else {
@@ -277,33 +277,32 @@ class JuRuMaBle extends Component {
       }
 
       // Get on backtrack
-      // else if (this.state.playerThree === 21) {
-      //   this.setState({
-      //     playerThree: -generatedNumber,
-      //     currentPlayer: 1
-      //   });
-      // }
+      else if (this.state.playerThree === 21) {
+        this.setState({
+          playerThree: -generatedNumber,
+          currentPlayer: 1
+        });
+      }
 
       // Move on backtrack
-      // else if (Math.sign(this.state.playerThree) === -1) {
-      //   if (this.state.playerThree - generatedNumber <= -9) {
-      //     this.setState(prevState => {
-      //       return {
-      //         playerThree:
-      //           Math.abs(prevState.playerThree - generatedNumber) - 1,
-      //         currentPlayer: 1
-      //       };
-      //     });
-      //   }
-      //   else {
-      //     this.setState(prevState => {
-      //       return {
-      //         playerThree: prevState.playerThree - generatedNumber,
-      //         currentPlayer: 1
-      //       };
-      //     });
-      //   }
-      // }
+      else if (Math.sign(this.state.playerThree) === -1) {
+        if (this.state.playerThree - generatedNumber <= -9) {
+          this.setState(prevState => {
+            return {
+              playerThree:
+                Math.abs(prevState.playerThree - generatedNumber) - 1,
+              currentPlayer: 1
+            };
+          });
+        } else {
+          this.setState(prevState => {
+            return {
+              playerThree: prevState.playerThree - generatedNumber,
+              currentPlayer: 1
+            };
+          });
+        }
+      }
 
       // Move normally
       else {
@@ -353,6 +352,34 @@ class JuRuMaBle extends Component {
             currentPlayer: 1
           };
         });
+      }
+
+      // Get on backtrack
+      else if (this.state.playerThree === 21) {
+        this.setState({
+          playerThree: -generatedNumber,
+          currentPlayer: 1
+        });
+      }
+
+      // Move on backtrack
+      else if (Math.sign(this.state.playerThree) === -1) {
+        if (this.state.playerThree - generatedNumber <= -9) {
+          this.setState(prevState => {
+            return {
+              playerThree:
+                Math.abs(prevState.playerThree - generatedNumber) - 1,
+              currentPlayer: 1
+            };
+          });
+        } else {
+          this.setState(prevState => {
+            return {
+              playerThree: prevState.playerThree - generatedNumber,
+              currentPlayer: 1
+            };
+          });
+        }
       }
 
       // Move normally
@@ -504,13 +531,12 @@ class JuRuMaBle extends Component {
             <Filler />
             <Filler />
             <Filler />
-            <Filler />
-            {/* <Square index="-8">
+            <Square index="-8">
               <h1>술</h1>
               {this.state.playerOne === -8 ? <Player color="red" /> : null}
               {this.state.playerTwo === -8 ? <Player color="blue" /> : null}
               {this.state.playerThree === -8 ? <Player color="green" /> : null}
-            </Square> */}
+            </Square>
             <Filler />
             <Filler />
             <Filler />
@@ -536,14 +562,13 @@ class JuRuMaBle extends Component {
             <Filler />
             <Filler />
             <Filler />
-            <Filler />
             <Filler /> {/* Filler */}
-            {/* <Square index="-7">
+            <Square index="-7">
               <h1>술</h1>
               {this.state.playerOne === -7 ? <Player color="red" /> : null}
               {this.state.playerTwo === -7 ? <Player color="blue" /> : null}
               {this.state.playerThree === -7 ? <Player color="green" /> : null}
-            </Square> */}
+            </Square>
             <Filler />
             <Filler />
             <Filler />
@@ -584,10 +609,8 @@ class JuRuMaBle extends Component {
               </button>
             </DiceSquare>
             <Filler />
-            <Filler /> {/* Filler */}
-            <Filler /> {/* Filler */}
-            <Filler /> {/* Filler */}
-            {/* <Square index="-6">
+
+            <Square index="-6">
               <h1>술</h1>
               {this.state.playerOne === -6 ? <Player color="red" /> : null}
               {this.state.playerTwo === -6 ? <Player color="blue" /> : null}
@@ -604,7 +627,7 @@ class JuRuMaBle extends Component {
               {this.state.playerOne === -4 ? <Player color="red" /> : null}
               {this.state.playerTwo === -4 ? <Player color="blue" /> : null}
               {this.state.playerThree === -4 ? <Player color="green" /> : null}
-            </Square> */}
+            </Square>
             <Filler />
             <Square index="15">
               <h1>다 같이 원샷</h1>
@@ -633,13 +656,13 @@ class JuRuMaBle extends Component {
             <Filler />
             <Filler />
             <Filler />
-            {/* <Square index="-3">
+            <Square index="-3">
               <h1>술</h1>
               {this.state.playerOne === -3 ? <Player color="red" /> : null}
               {this.state.playerTwo === -3 ? <Player color="blue" /> : null}
               {this.state.playerThree === -3 ? <Player color="green" /> : null}
-            </Square> */}
-            <Filler /> {/* Filler */}
+            </Square>
+
             <Filler />
             <Square index="16">
               <h1>훈민 정음</h1>
@@ -666,13 +689,12 @@ class JuRuMaBle extends Component {
             <Filler />
             <Filler />
             <Filler />
-            {/* <Square index="-2">
+            <Square index="-2">
               <h1>술</h1>
               {this.state.playerOne === -2 ? <Player color="red" /> : null}
               {this.state.playerTwo === -2 ? <Player color="blue" /> : null}
               {this.state.playerThree === -2 ? <Player color="green" /> : null}
-            </Square> */}
-            <Filler />
+            </Square>
             <Filler /> {/* Filler */}
             <Square index="17">
               <h1>의리 게임</h1>
@@ -698,14 +720,13 @@ class JuRuMaBle extends Component {
             <Filler />
             <Filler />
             <Filler />
-            <Filler />
             <Filler /> {/* Filler */}
-            {/* <Square index="-1">
+            <Square index="-1">
               <h1>술</h1>
               {this.state.playerOne === -1 ? <Player color="red" /> : null}
               {this.state.playerTwo === -1 ? <Player color="blue" /> : null}
               {this.state.playerThree === -1 ? <Player color="green" /> : null}
-            </Square> */}
+            </Square>
             <Filler />
             <Square index="18">
               <h1>나랑 한잔해</h1>
