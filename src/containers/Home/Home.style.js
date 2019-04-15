@@ -9,7 +9,7 @@ import {
   subtitle_header
 } from "../../style/variables";
 
-import media from "../../style/media";
+import {media} from "../../style/media";
 import { P } from "../../style/types";
 
 export const Image = styled.img`

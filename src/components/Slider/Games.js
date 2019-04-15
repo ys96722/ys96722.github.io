@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CardList from "../Card/CardList";
+import { sizes } from "../../style/media";
 
 export default class Games extends Component {
   state = {
@@ -73,12 +74,25 @@ export default class Games extends Component {
   };
 
   render() {
+    let size = window.innerWidth;
+    let numCols = 3;
+    let numRows = 3;
+    let cardWidth = 31;
+    if (size <= sizes.phone) {
+      numCols = 1;
+      numRows = 7;
+      cardWidth = 100;
+    } else if (size <= sizes.tablet) {
+      numCols = 2;
+      numRows = 4;
+      cardWidth = 50;
+    }
     return (
       <CardList
         infos={this.state.game_infos}
-        numCols="3"
-        numRows="1"
-        cardWidth="31"
+        numCols={numCols}
+        numRows={numRows}
+        cardWidth={cardWidth}
         togglePopup={this.props.togglePopup}
       />
     );

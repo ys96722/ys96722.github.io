@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
-import media from "./media";
+import {media} from "./media";
 
 const fadeIn = keyframes`
   0% {

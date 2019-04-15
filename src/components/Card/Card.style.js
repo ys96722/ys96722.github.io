@@ -11,6 +11,7 @@ import {
   fontSize
 } from "../../style/variables";
 import { A, OpenButton } from "../../style/types";
+import {media} from "../../style/media";
 import { InnerSubscriber } from "rxjs/internal/InnerSubscriber";
 
 const zoomIn = keyframes`
@@ -41,6 +42,16 @@ export const Inner = styled.div`
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
+
+  /* ${media.tablet`
+    padding: 10px;
+  `}
+  ${media.phone`
+    padding: 5px;
+  `} */
+  
+
+  
 `;
 
 export const CardFront = styled.div`

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardList from "../Card/CardList";
 import { blue } from "../../style/variables";
 import { A, Text } from "../../style/types";
+import { sizes } from "../../style/media";
 
 let profile_urls = {
   sophia: "https://sophiapresutti.com/",
@@ -429,12 +430,26 @@ export default class Websites extends Component {
                  };
 
                  render() {
+                   let size = window.innerWidth;
+                   let numCols = 3;
+                   let numRows = 3;
+                   let cardWidth = 31;
+                   if (size <= sizes.phone) {
+                      numCols = 1;
+                      numRows = 7;
+                      cardWidth = 100;
+                   }
+                   else if (size <= sizes.tablet) {
+                      numCols = 2;
+                      numRows = 4;
+                      cardWidth = 50;
+                   }
                    return (
                      <CardList
                        infos={this.state.website_infos}
-                       numCols="3"
-                       numRows="3"
-                       cardWidth="31"
+                       numCols={numCols}
+                       numRows={numRows}
+                       cardWidth={cardWidth}
                        togglePopup={this.props.togglePopup}
                      />
                    );
