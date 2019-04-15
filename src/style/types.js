@@ -47,7 +47,7 @@ export const Text = styled.p`
   /* margin-top: auto; */
   /* duration, animationType, delayFromLoad, IterationCount, animationName */
   /* font-size: 1.4rem; */
-  font-size: 0.95em;
+  font-size: 0.85em;
   animation: 1s ease-in-out 0s 1 ${fadeIn};
   margin-top: auto;
   margin-bottom: auto;

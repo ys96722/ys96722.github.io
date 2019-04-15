@@ -41,6 +41,7 @@ export default class App extends Component {
       <>
         <GlobalStyle />
         {/* <Background /> */}
+
         <Container>
           <NavigationBar />
           {/* <div

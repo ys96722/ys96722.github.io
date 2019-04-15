@@ -57,12 +57,12 @@ export const Container = styled(Div)`
   ${media.tablet`
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 15px;
+    /* padding-top: 15px; */
   `}
   ${media.phone`
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 15px;
+    /* padding-top: 15px; */
   `}
 `;
 

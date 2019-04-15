@@ -18,7 +18,7 @@ class Popup extends Component {
     texts: [
       <Text key="0">{this.props.popupInfo.content}</Text>,
       <Text key="1">{this.props.popupInfo.testimonial}</Text>,
-      <Text key="2" style={{ textAlign: "left" }}>
+      <Text key="2" style={{ textAlign: "left", fontSize: "0.95em" }}>
         {this.props.popupInfo.people}
       </Text>
     ]
