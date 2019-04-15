@@ -71,7 +71,7 @@ export default class Resume extends Component {
 
                   <Item>
                     <ItemName>SQL</ItemName>
-                    <ItemMastery mastery={4} projects="6" semesters="4" />
+                    <ItemMastery mastery={3} projects="6" semesters="4" />
                   </Item>
 
                   <Item>
@@ -95,7 +95,7 @@ export default class Resume extends Component {
 
                   <Item>
                     <ItemName>SQLite3</ItemName>
-                    <ItemMastery mastery={4} projects="8" semesters="4" />
+                    <ItemMastery mastery={3} projects="8" semesters="4" />
                   </Item>
 
                   <Item>
@@ -242,11 +242,11 @@ export default class Resume extends Component {
                   </Item>
                   <Item>
                     <ItemName>C</ItemName>
-                    <ItemMastery mastery={2} projects="0" semesters="1" />
+                    <ItemMastery mastery={1} projects="0" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>C++</ItemName>
-                    <ItemMastery mastery={2} projects="0" semesters="1" />
+                    <ItemMastery mastery={1} projects="0" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>Verilog</ItemName>
