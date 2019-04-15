@@ -1,29 +1,47 @@
 import React, { Component } from "react";
 import CardList from "../Card/CardList";
+import { A, Text } from "../../style/types";
 // import Coverflow from "react-coverflow";
 
 export default class Analytics extends Component {
   state = {
     analytic_infos: [
       {
-        name: "Python Hunters",
+        name: "Suicide",
         tool: "Python",
         tools:
-          "Language: Python\nWrangling: Pandas, Numpy\nVisualization: PyPlot, MatPlot",
+          "Language: Python\nWrangling: Pandas, Numpy\nVisualization: PyPlot, Seaborn\nPresentation: Reveal.js",
         content:
           "A series of Python tutorials I have created to teach basics of Python.",
-        imgPath: require("../../assets/analytic_banners/python.png"),
-        bgSize: "contain",
+        imgPath: require("../../assets/analytic_banners/alone.jpg"),
+        //
+        bgSize: "cover",
         popupInfo: {
-          title: "Python Hunters",
-          link: "#",
+          title: "EDA on Suicide Data",
+          link: "https://yooniverse.me/EDAsuicide/index.slides.html",
           images: [
             require("../../assets/hero.jpeg"),
             require("../../assets/hero.JPG"),
             require("../../assets/hero.JPG")
           ],
-          content:
-            "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum."
+          content: (
+            <div>
+              <Text>
+                Exploratory data analysis on suicide data from
+                <A
+                  href="http://apps.who.int/healthinfo/statistics/mortality/whodpms/"
+                  target="_blank"
+                >
+                  {" "}
+                  WHO Mortality Database.
+                </A>{" "}
+                Used Python on Jupyter Notebook with Pandas, Numpy, PyPlot, and
+                Seaborn.
+              </Text>
+            </div>
+          ),
+
+          color: "#1A2028"
         }
       }
     ]
