@@ -37,6 +37,12 @@ export default class Resume extends Component {
   }
 
   render() {
+    let size = window.innerWidth;
+
+    if (size <= 990) {
+      return (<h1 style={{marginTop: "20%", marginBottom: "20%", textAlign: "center", fontSize: "1.5em"}}>My online resume is not available for smaller viewports. Please contact me at yoonsees@gmail.com for more information!</h1>)
+    }
+    else {
     return (
       <Div style={{ position: "relative" }}>
         <ResumeContainer animation="fadeIn" style={{ position: "relative" }}>
@@ -55,7 +61,7 @@ export default class Resume extends Component {
           <br />
           <br />
 
-          <SectionContainer>
+          <SectionContainer className="skills">
             <Title>Skills</Title>
             {/* <InfoIndex /> */}
             <Section flexDirection="row" justifyContent="space-evenly">
@@ -454,33 +460,7 @@ export default class Resume extends Component {
               </Row>
             </Section>
           </SectionContainer>
-          {/* <SectionContainer>
-            <Title>Academic</Title>
-            <Section flexDirection="column">
-              <Row>
-                <Column width="50%" textAlign="left">
-                  <SchoolTitle>
-                    University of Illinois at Urbana-Champaign
-                  </SchoolTitle>
-                  <SchoolInfo>Graduatation: May 2019</SchoolInfo>
-                </Column>
-                <Column width="50%" textAlign="right">
-                  <SchoolTitle fontWeight="400">
-                    Bachelors of Science in Statistics
-                  </SchoolTitle>
-                  <SchoolInfo>Minor in Computer Science</SchoolInfo>
-                </Column>
-              </Row>
-              <Row marginTop="4rem">
-                <Column width="50%" textAlign="center">
-                  <h1>Analytics</h1>
-                </Column>
-                <Column width="50%" textAlign="center">
-                  <h1>Modeling</h1>
-                </Column>
-              </Row>
-            </Section>
-          </SectionContainer> */}
+        
         </ResumeContainer>
         <BottomDiv>
           <NavButton href="#projects" direction="left">
@@ -488,6 +468,6 @@ export default class Resume extends Component {
           </NavButton>
         </BottomDiv>
       </Div>
-    );
+    );}
   }
 }

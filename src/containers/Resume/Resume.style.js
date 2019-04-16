@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { red, black, blue, Title } from "../../style/variables";
 import { Div, Flex } from "../../style/grid";
+import { media } from "../../style/media";
 
 const leftAmount = 5;
 const topAmount = 8;
@@ -20,6 +21,12 @@ export const SectionContainer = styled(Flex)`
   border: 2px solid rgba(0, 0, 0, 0.16);
   border-radius: 10px;
   padding: 20px;
+
+  .skills {
+    ${media.tablet`
+      display: none;
+    `}
+  }
 `;
 
 export const Section = styled(Flex)`
@@ -33,6 +40,7 @@ export const Section = styled(Flex)`
   /* background-color: yellow; */
   justify-content: ${props => props.justifyContent};
   border-radius: 10px;
+
 `;
 
 export const Row = styled(Flex)`
@@ -50,6 +58,8 @@ export const Column = styled(Flex)`
   left: 0; */
   flex-direction: column;
   width: 100%;
+
+
   ${({ width }) =>
     width &&
     css`

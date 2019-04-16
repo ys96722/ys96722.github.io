@@ -41,18 +41,21 @@ export default class App extends Component {
       <>
         <GlobalStyle />
         {/* <Background /> */}
-
-        <Container>
-          <NavigationBar />
-          {/* <div
+        {/* {(window.innderWidth <= 760) ? (
+          <h1>The website for the smaller viewports is coming soon</h1>
+        ) : ( */}
+          <Container>
+            <NavigationBar />
+            {/* <div
             onLoad={({ loading }) => {
               // if (!loading) doneLoading("appBackground");
             }}
           />
           <LoadingPage loading={waitingToFinishLoading && loading} /> */}
-          {this.props.children}
-          <SideBar />
-        </Container>
+            {this.props.children}
+            <SideBar />
+          </Container>
+        
       </>
     );
   }

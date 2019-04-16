@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { Flex, Div } from "../../style/grid";
 import { blue, yellow, red, black } from "../../style/variables";
 import { Link, IndexLink } from "react-router";
+import { media } from "../../style/media";
 
 const NavItemCSS = css`
   position: relative;
@@ -15,6 +16,15 @@ const NavItemCSS = css`
   text-decoration: none;
   z-index: 100;
   border-radius: 10px;
+
+  ${media.tablet`
+    /* font-size: 1rem; */
+  `}
+  ${media.phone`
+    font-size: 1.5rem;
+  `}
+
+
   &:after {
     content: " ";
     position: absolute;
@@ -65,6 +75,27 @@ export const NavigationContainer = styled(Flex)`
   top: 1.8em;
   z-index: 98;
   height: 7vh;
+
+  ${media.tablet`
+    /* font-size: 1rem; */
+  `}
+  ${media.phone`
+    position: absolute;
+    justify-content: space-evenly;
+    top: 5;
+    width: 100%;
+    right: 0;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 10px; */
+  `}
 
   &::before {
     content: "";

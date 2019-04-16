@@ -9,7 +9,7 @@ import {
   title_header
 } from "./variables";
 import { Div } from "./grid";
-import media from "./media";
+import { media } from "./media";
 import { Button } from "reactstrap";
 
 export const P = styled.p`
@@ -25,11 +25,29 @@ export const P = styled.p`
 export const PageTitle = styled.h1`
   font-size: 3em;
   text-align: center;
+/* 
+  ${media.tablet`
+    position: relative;
+    bottom: 0;
+    width: fit-content;
+    height: auto;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  `} */
+
+  ${media.phone`
+    font-size: 2em;
+  `}
 `;
 
 export const PageSubTitle = styled.h2`
   font-size: 1.5em;
   text-align: center;
+
+  ${media.phone`
+    font-size: 1.2em;
+  `}
 `;
 
 const fadeIn = keyframes`

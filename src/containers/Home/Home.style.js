@@ -8,13 +8,19 @@ import {
   title_header,
   subtitle_header
 } from "../../style/variables";
-
-import {media} from "../../style/media";
+import { Div } from "../../style/grid";
+import { media } from "../../style/media";
 import { P } from "../../style/types";
 
 export const Image = styled.img`
   width: 100%;
 `;
+
+export const HomeContainer = styled(Div)`
+  ${media.phone`
+    padding: 25px;
+  `}
+`
 
 export const Hero = styled.div`
          height: 100vh;
@@ -34,12 +40,13 @@ export const Hero = styled.div`
          h1,
          h2 {
            transform: translateY(-11vh);
-          /* ${media.tablet`
-            font-size: 1rem;
+          ${media.tablet`
+            /* font-size: 1rem; */
           `}
           ${media.phone`
-            font-size: 2rem;
-          `} */
+            font-size: 4rem;
+            transform: translateY(-5vh);
+          `}
          }
 
          h1 {
@@ -58,6 +65,14 @@ export const SubHeader = styled.h2`
   font-size: ${subtitle_header};
   margin-top: 6%;
   margin-bottom: 2%;
+
+  ${media.tablet`
+    /* font-size: 1rem; */
+  `}
+  ${media.phone`
+    font-size: 2rem;
+    text-align: center;
+  `}
 `;
 
 export const RevealP = styled(P)`
@@ -67,6 +82,15 @@ export const RevealP = styled(P)`
 
   transition: all 2s;
   transition-property: opacity, transform;
+
+  ${media.tablet`
+    
+  `}
+  ${media.phone`
+    font-size: 1.0rem;
+    text-align: center;
+  `}
+
 
   span {
     font-family: "VT323", monospace;

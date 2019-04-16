@@ -4,7 +4,7 @@ import WhenInView from "../../components/WhenInView/WhenInView";
 
 // Import Style Components
 // import { Container } from "../../style/grid"; Moved it to App
-import { Hero, SubHeader, RevealP } from "./Home.style";
+import { Hero, SubHeader, RevealP, HomeContainer } from "./Home.style";
 import { A, NavButton, BottomDiv } from "../../style/types";
 import { Div } from "../../style/grid";
 
@@ -19,7 +19,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <Div style={{ position: "relative" }}>
+      <HomeContainer style={{ position: "relative" }}>
         <Hero>
           <Div animation="fadeIn">
             <h1>Yoon Chang</h1>
@@ -251,7 +251,7 @@ export default class Home extends Component {
             </>
           )}
         </WhenInView> */}
-      </Div>
+      </HomeContainer>
     );
   }
 }

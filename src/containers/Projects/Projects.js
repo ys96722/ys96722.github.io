@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import "./Projects.css";
 // Import Styled Components
-import { Button } from "./Projects.style";
+import { Button, ButtonContainer } from "./Projects.style";
 import Websites from "../../components/Slider/Websites";
 import Games from "../../components/Slider/Games";
 import Songs from "../../components/Slider/Songs";
@@ -69,7 +69,7 @@ export default class Projects extends Component {
         <br />
         <br />
 
-        <Flex row justify="center">
+        <ButtonContainer row justify="center">
           <Button
             onClick={e => this.setVisible(0, e)}
             active={this.state.visibleIndex === 0}
@@ -94,7 +94,7 @@ export default class Projects extends Component {
           >
             Songs
           </Button>
-        </Flex>
+        </ButtonContainer>
         {/* Render Active */}
         {this.state.projects[this.state.visibleIndex]}
         {this.state.showPopup ? (
