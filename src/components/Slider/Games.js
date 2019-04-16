@@ -6,28 +6,28 @@ export default class Games extends Component {
   state = {
     showPopup: false,
     game_infos: [
-      {
-        name: "JuruMable",
-        tool: "React",
-        tools: "Framework: React",
-        imgPath: require("../../assets/game_banners/tanks.png"),
-        bgSize: "cover",
-        popupInfo: {
-          title: "JuruMable",
-          link: "http://yooniverse.me/#/jurumable",
-          images: [
-            require("../../assets/space/space1.png"),
-            require("../../assets/space/space2.png"),
-            require("../../assets/space/space3.png"),
-            require("../../assets/space/space4.png")
-          ],
-          content:
-            "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
-          color: "#86D1D6"
-          // color: "#336633"
-          // color: "#292e12" Darker Green. See how this looks with screen shots.
-        }
-      },
+      // {
+      //   name: "JuruMable",
+      //   tool: "React",
+      //   tools: "Framework: React",
+      //   imgPath: require("../../assets/game_banners/tanks.png"),
+      //   bgSize: "cover",
+      //   popupInfo: {
+      //     title: "JuruMable",
+      //     link: "http://yooniverse.me/#/jurumable",
+      //     images: [
+      //       require("../../assets/space/space1.png"),
+      //       require("../../assets/space/space2.png"),
+      //       require("../../assets/space/space3.png"),
+      //       require("../../assets/space/space4.png")
+      //     ],
+      //     content:
+      //       "Culpa adipisicing elit officia ut ea. Aliquip laborum commodo aliqua cupidatat est sint veniam est. Deserunt veniam voluptate labore magna anim nisi quis voluptate et. Ex non incididunt culpa Lorem nostrud mollit consequat ipsum. Do non ea qui nostrud eiusmod laborum Lorem anim dolor reprehenderit minim. Velit mollit commodo ex fugiat voluptate non magna consequat. Velit ex occaecat voluptate laborum nostrud incididunt nostrud mollit enim sint ut esse ipsum.",
+      //     color: "#86D1D6"
+      //     // color: "#336633"
+      //     // color: "#292e12" Darker Green. See how this looks with screen shots.
+      //   }
+      // },
       {
         name: "Tanks!",
         tool: "Unity",
