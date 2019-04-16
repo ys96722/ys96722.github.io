@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "499e818969e4a43d3a69f9728a8b21f5",
-    "url": "/static/media/kojobs4.499e8189.png"
+    "revision": "7258ddfbb5a79db58a169c38690c4d56",
+    "url": "/static/media/ability3.7258ddfb.png"
   },
   {
-    "revision": "71e7005967146458fba4",
-    "url": "/static/css/main.5f70d951.chunk.css"
+    "revision": "2e576e1134f43cbd88c6",
+    "url": "/static/css/main.12ba3720.chunk.css"
   },
   {
-    "revision": "d983616a7e374a8ca234",
-    "url": "/static/js/1.d983616a.chunk.js"
+    "revision": "c14c5a92e8360432ab4a",
+    "url": "/static/js/1.c14c5a92.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -18,26 +18,6 @@ self.__precacheManifest = [
   {
     "revision": "9a4fe352e064d49fb50c79965c8425ef",
     "url": "/static/media/finalHero.9a4fe352.jpeg"
-  },
-  {
-    "revision": "0ef67f19c23efc5eb17d07ecdc9ed34a",
-    "url": "/static/media/tanks.0ef67f19.png"
-  },
-  {
-    "revision": "3c66201d9413eb69e764f046c0cc155e",
-    "url": "/static/media/space1.3c66201d.png"
-  },
-  {
-    "revision": "a0e49b1390bfa9b3354ff2b4c3fd27bd",
-    "url": "/static/media/space2.a0e49b13.png"
-  },
-  {
-    "revision": "90882e2ad49062eee7e859b84e9e83ad",
-    "url": "/static/media/space3.90882e2a.png"
-  },
-  {
-    "revision": "0170e2ebc62897cdccb64590949ad64d",
-    "url": "/static/media/space4.0170e2eb.png"
   },
   {
     "revision": "f92885e52432d28c487299da4e11585f",
@@ -116,8 +96,8 @@ self.__precacheManifest = [
     "url": "/static/media/kojobs3.3cb87b24.png"
   },
   {
-    "revision": "71e7005967146458fba4",
-    "url": "/static/js/main.71e70059.chunk.js"
+    "revision": "499e818969e4a43d3a69f9728a8b21f5",
+    "url": "/static/media/kojobs4.499e8189.png"
   },
   {
     "revision": "f0d2e94f66e1d0c495fab9acf00f3542",
@@ -136,8 +116,8 @@ self.__precacheManifest = [
     "url": "/static/media/ability2.48306035.png"
   },
   {
-    "revision": "7258ddfbb5a79db58a169c38690c4d56",
-    "url": "/static/media/ability3.7258ddfb.png"
+    "revision": "2e576e1134f43cbd88c6",
+    "url": "/static/js/main.2e576e11.chunk.js"
   },
   {
     "revision": "db8ace3970c6cb9fc10ab8e940cc8a73",
@@ -192,6 +172,10 @@ self.__precacheManifest = [
     "url": "/static/media/traverse5.aa12c293.png"
   },
   {
+    "revision": "0ef67f19c23efc5eb17d07ecdc9ed34a",
+    "url": "/static/media/tanks.0ef67f19.png"
+  },
+  {
     "revision": "0a4e89704631d75cbf43ae8d1f2fa678",
     "url": "/static/media/tanks1.0a4e8970.png"
   },
@@ -210,6 +194,22 @@ self.__precacheManifest = [
   {
     "revision": "e650934462ee36f7a20003d7ed382193",
     "url": "/static/media/spaceshooter.e6509344.jpg"
+  },
+  {
+    "revision": "3c66201d9413eb69e764f046c0cc155e",
+    "url": "/static/media/space1.3c66201d.png"
+  },
+  {
+    "revision": "a0e49b1390bfa9b3354ff2b4c3fd27bd",
+    "url": "/static/media/space2.a0e49b13.png"
+  },
+  {
+    "revision": "90882e2ad49062eee7e859b84e9e83ad",
+    "url": "/static/media/space3.90882e2a.png"
+  },
+  {
+    "revision": "0170e2ebc62897cdccb64590949ad64d",
+    "url": "/static/media/space4.0170e2eb.png"
   },
   {
     "revision": "bd45653b30e54b06d06259eb83e4e560",
@@ -232,7 +232,7 @@ self.__precacheManifest = [
     "url": "/static/media/hero.94ec433a.jpeg"
   },
   {
-    "revision": "bda28a4d4eec319edf1236f6b53c600e",
+    "revision": "822546cc405e6b21ead1bb805372249b",
     "url": "/index.html"
   }
 ];
