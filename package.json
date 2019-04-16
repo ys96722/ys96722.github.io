@@ -1,9 +1,11 @@
 {
-  "name": "portfolio_practice",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ys96722.github.io/Portfolio",
   "dependencies": {
     "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
     "i": "^0.3.6",
     "react": "^16.7.0",
     "react-coverflow": "^0.2.17",
@@ -17,11 +19,14 @@
     "reactstrap": "^7.1.0",
     "really-smooth-scroll": "^2.1.1",
     "redux": "^4.0.1",
-    "styled-components": "^4.1.3"
+    "styled-components": "^4.1.3",
+    "yarn": "^1.15.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
