@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "7258ddfbb5a79db58a169c38690c4d56",
-    "url": "/static/media/ability3.7258ddfb.png"
+    "revision": "2a8b25a51ce29d56cd2cfe1bd95b6954",
+    "url": "/static/media/insigna_hero.2a8b25a5.png"
   },
   {
-    "revision": "c4960e43279bafac498d",
+    "revision": "41b1e8102c2540dccb68",
     "url": "/static/css/main.12ba3720.chunk.css"
   },
   {
-    "revision": "c14c5a92e8360432ab4a",
-    "url": "/static/js/1.c14c5a92.chunk.js"
+    "revision": "85f5deb1004b3020547d",
+    "url": "/static/js/1.85f5deb1.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -116,8 +116,8 @@ self.__precacheManifest = [
     "url": "/static/media/ability2.48306035.png"
   },
   {
-    "revision": "c4960e43279bafac498d",
-    "url": "/static/js/main.c4960e43.chunk.js"
+    "revision": "7258ddfbb5a79db58a169c38690c4d56",
+    "url": "/static/media/ability3.7258ddfb.png"
   },
   {
     "revision": "db8ace3970c6cb9fc10ab8e940cc8a73",
@@ -126,6 +126,26 @@ self.__precacheManifest = [
   {
     "revision": "bc0c7cad6e300f0783540755b88cda99",
     "url": "/static/media/ability5.bc0c7cad.png"
+  },
+  {
+    "revision": "41b1e8102c2540dccb68",
+    "url": "/static/js/main.41b1e810.chunk.js"
+  },
+  {
+    "revision": "733c240ca14c4398fd4d991b5b792502",
+    "url": "/static/media/insigna1.733c240c.png"
+  },
+  {
+    "revision": "1f6170ad476e934bacee6a620088b3ee",
+    "url": "/static/media/insigna2.1f6170ad.png"
+  },
+  {
+    "revision": "9828c3c53e00281c4d73bb28657a7343",
+    "url": "/static/media/insigna3.9828c3c5.png"
+  },
+  {
+    "revision": "5fd7a0c4e3857e7a44e3673aad128d6a",
+    "url": "/static/media/insigna4.5fd7a0c4.png"
   },
   {
     "revision": "23b6b207196f02b5bb170ba639a29541",
@@ -232,7 +252,7 @@ self.__precacheManifest = [
     "url": "/static/media/hero.94ec433a.jpeg"
   },
   {
-    "revision": "48b1c42320b2dd4acfcf744a534ba73f",
+    "revision": "a0d1419ff1905b3be4e327903a85011a",
     "url": "/index.html"
   }
 ];
