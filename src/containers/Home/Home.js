@@ -152,7 +152,7 @@ export default class Home extends Component {
         </WhenInView>
         <BottomDiv>
           <NavButton href="#projects" direction="right">
-            Projects >>>
+            Projects >>
           </NavButton>
         </BottomDiv>
         {/* <WhenInView>

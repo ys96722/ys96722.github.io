@@ -11,7 +11,7 @@ import {
   fontSize
 } from "../../style/variables";
 import { A, OpenButton } from "../../style/types";
-import {media} from "../../style/media";
+import { media } from "../../style/media";
 import { InnerSubscriber } from "rxjs/internal/InnerSubscriber";
 
 const zoomIn = keyframes`
@@ -227,6 +227,7 @@ export const CardBack = styled.div`
 `;
 
 export const CardContainer = styled.div`
+  position:relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;

@@ -106,10 +106,10 @@ export default class Projects extends Component {
         ) : null}
         <BottomDiv>
           <NavButton href="#" direction="left">
-            &lt;&lt;&lt; Home
+            &lt;&lt; Home
           </NavButton>
           <NavButton href="#resume" direction="right">
-            Resume >>>
+            Resume &gt;&gt;
           </NavButton>
         </BottomDiv>
       </Div>

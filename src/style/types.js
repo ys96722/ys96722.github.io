@@ -126,9 +126,10 @@ export const NavButton = styled(A)`
   position: absolute;
   bottom: 0;
   font-size: 1.4em;
-  height: "auto";
-  width: "auto";
-  margin: "auto";
+  height: auto;
+  width: auto;
+  width: -webkit-fit-content;
+  margin: auto;
   ${({ direction }) =>
     direction === "left"
       ? css`
