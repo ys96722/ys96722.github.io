@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/ability3.7258ddfb.png"
   },
   {
-    "revision": "2e576e1134f43cbd88c6",
+    "revision": "c4960e43279bafac498d",
     "url": "/static/css/main.12ba3720.chunk.css"
   },
   {
@@ -116,8 +116,8 @@ self.__precacheManifest = [
     "url": "/static/media/ability2.48306035.png"
   },
   {
-    "revision": "2e576e1134f43cbd88c6",
-    "url": "/static/js/main.2e576e11.chunk.js"
+    "revision": "c4960e43279bafac498d",
+    "url": "/static/js/main.c4960e43.chunk.js"
   },
   {
     "revision": "db8ace3970c6cb9fc10ab8e940cc8a73",
@@ -232,7 +232,7 @@ self.__precacheManifest = [
     "url": "/static/media/hero.94ec433a.jpeg"
   },
   {
-    "revision": "822546cc405e6b21ead1bb805372249b",
+    "revision": "48b1c42320b2dd4acfcf744a534ba73f",
     "url": "/index.html"
   }
 ];
