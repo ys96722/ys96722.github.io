@@ -26,20 +26,18 @@ export default class Analytics extends Component {
             require("../../assets/hero.JPG")
           ],
           content: (
-            <div>
-              <Text>
-                Exploratory data analysis on suicide data from
-                <A
-                  href="http://apps.who.int/healthinfo/statistics/mortality/whodpms/"
-                  target="_blank"
-                >
-                  {" "}
-                  WHO Mortality Database.
-                </A>{" "}
-                Used Python on Jupyter Notebook with Pandas, Numpy, PyPlot, and
-                Seaborn.
-              </Text>
-            </div>
+            <>
+              Exploratory data analysis on suicide data from
+              <A
+                href="http://apps.who.int/healthinfo/statistics/mortality/whodpms/"
+                target="_blank"
+              >
+                {" "}
+                WHO Mortality Database.
+              </A>{" "}
+              Used Python on Jupyter Notebook with Pandas, Numpy, PyPlot, and
+              Seaborn.
+            </>
           ),
 
           color: "#1A2028"

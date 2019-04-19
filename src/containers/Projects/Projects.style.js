@@ -9,19 +9,19 @@ import {
   subtitle_header
 } from "../../style/variables";
 
-import {
-  Flex
-} from "../../style/grid";
+import { Flex } from "../../style/grid";
 
 import { media } from "../../style/media";
 
-
 export const ButtonContainer = styled(Flex)`
 
-  ${media.phone`
+  @media (max-width: 600px) {
     flex-direction: column;
-  `}
-`
+  }
+  /* ${media.phone`
+    flex-direction: column;
+  `} */
+`;
 
 export const Button = styled.button`
   background-color: ${black};

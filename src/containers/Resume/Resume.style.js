@@ -7,12 +7,28 @@ const leftAmount = 5;
 const topAmount = 8;
 const fontSize = 3.0;
 
+export const SmallAlert = styled(Div)`
+  h1 {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  @media (min-width: 990px) {
+    display: none;
+  }
+`;
+
 export const ResumeContainer = styled(Div)`
   max-width: 1200px;
   margin: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @media (max-width: 989px) {
+    display: none;
+  }
 `;
 
 export const SectionContainer = styled(Flex)`
@@ -40,7 +56,6 @@ export const Section = styled(Flex)`
   /* background-color: yellow; */
   justify-content: ${props => props.justifyContent};
   border-radius: 10px;
-
 `;
 
 export const Row = styled(Flex)`

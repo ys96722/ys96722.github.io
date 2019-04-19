@@ -2,7 +2,7 @@ import styled, { css, keyframes } from "styled-components";
 import { Flex } from "../../style/grid";
 import { A, P } from "../../style/types";
 import { black, blue, paddingValue } from "../../style/variables";
-import {media} from "../../style/media";
+import { media } from "../../style/media";
 // import { blue, yellow } from "../../style/variables";
 
 // Covers the whole screen
@@ -47,12 +47,16 @@ export const PopupImageContainer = styled.div`
   width: 65%;
   border-right: 2px solid rgba(0, 0, 0, 0.5);
 
-  ${media.tablet`
+  @media (max-width: 1150px) {
+    display: none;
+  }
+
+  /* ${media.tablet`
     display: none;
   `}
   ${media.phone`
     display: none;
-  `}
+  `} */
 
 `;
 // Right Half
@@ -80,13 +84,16 @@ export const PopupContentContainer = styled.div`
     font-size: 1.8rem;
   }
 
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
+/* 
   ${media.tablet`
     width: 100%;
   `}
   ${media.phone`
     
-  `}
-
+  `} */
 `;
 
 // export const TextContainer = styled(Flex)`

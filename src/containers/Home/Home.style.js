@@ -20,46 +20,45 @@ export const HomeContainer = styled(Div)`
   ${media.phone`
     padding: 25px;
   `}
-`
+`;
 
 export const Hero = styled.div`
-         height: 100vh;
-         background-image: url(${require("../../assets/finalHero.jpeg")});
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position: center;
+  height: 100vh;
+  background-image: url(${require("../../assets/finalHero.jpeg")});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-         display: flex;
-         flex-direction: column;
-         justify-content: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
 
-         text-align: center;
-         color: black;
-         font-size: ${section_header};
+  text-align: center;
+  color: black;
+  font-size: ${section_header};
 
-         h1,
-         h2 {
-           transform: translateY(-11vh);
-          ${media.tablet`
+  h1,
+  h2 {
+    transform: translateY(-11vh);
+    ${media.tablet`
             /* font-size: 1rem; */
           `}
-          ${media.phone`
+    ${media.phone`
             font-size: 4rem;
             transform: translateY(-5vh);
           `}
-         }
+  }
 
-         h1 {
-           color: ${black};
-           /* text-shadow: 1.5px 1.5px white; */
-           /* #247ba0 */
-         }
+  h1 {
+    color: ${black};
+    /* text-shadow: 1.5px 1.5px white; */
+    /* #247ba0 */
+  }
 
-         h2 {
-           color: ${blue};
-           /* text-shadow: 1.5px 1.5px black; */
-         }
-       `;
+  h2 {
+    color: ${blue};
+  }
+`;
 
 export const SubHeader = styled.h2`
   font-size: ${subtitle_header};
@@ -95,6 +94,11 @@ export const RevealP = styled(P)`
   span {
     font-family: "VT323", monospace;
     font-size: 1.5rem;
+
+    @media (max-width: 660px) {
+      display: inline-block;
+      text-align: center;
+    }
   }
 
   ${({ hide }) =>
