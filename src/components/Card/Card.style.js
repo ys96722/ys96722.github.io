@@ -262,7 +262,7 @@ export const CardContainer = styled.div`
   /* box-shadow: 8px 8px 8px 8px rgba(163,170,175,0.5); */
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 
-  &:hover {
+  &:hover, &:focus, &:active {
     ${CardFront} {
       /* display: none; */
       &::after {

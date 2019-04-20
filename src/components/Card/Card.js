@@ -8,12 +8,12 @@ const card = props => {
   // Props: (wp or react), img, title, header, content, link
 
   return (
-    <CardContainer cardWidth={props.cardWidth} onClick="">
+    <CardContainer cardWidth={props.cardWidth} onClick={void 0}>
       <CardFront
         imgPath={props.imgPath}
         bgSize={props.bgSize}
         tool={props.tool}
-        onClick=""
+        onClick={void 0}
       >
         <Inner>
           {/* <p>{props.name}</p>
