@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "2a8b25a51ce29d56cd2cfe1bd95b6954",
-    "url": "/static/media/insigna_hero.2a8b25a5.png"
+    "revision": "733c240ca14c4398fd4d991b5b792502",
+    "url": "/static/media/insigna1.733c240c.png"
   },
   {
-    "revision": "78a69e7d44c24564636f",
-    "url": "/static/css/main.12ba3720.chunk.css"
+    "revision": "4a4877a2ff8051c40c0b",
+    "url": "/static/css/main.82d92363.chunk.css"
   },
   {
-    "revision": "85f5deb1004b3020547d",
-    "url": "/static/js/1.85f5deb1.chunk.js"
+    "revision": "6b39488da478b44c2954",
+    "url": "/static/js/1.6b39488d.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -18,10 +18,6 @@ self.__precacheManifest = [
   {
     "revision": "9a4fe352e064d49fb50c79965c8425ef",
     "url": "/static/media/finalHero.9a4fe352.jpeg"
-  },
-  {
-    "revision": "f92885e52432d28c487299da4e11585f",
-    "url": "/static/media/hero.f92885e5.JPG"
   },
   {
     "revision": "afd53a36809c8a4c660490a950f60cc5",
@@ -128,12 +124,12 @@ self.__precacheManifest = [
     "url": "/static/media/ability5.bc0c7cad.png"
   },
   {
-    "revision": "78a69e7d44c24564636f",
-    "url": "/static/js/main.78a69e7d.chunk.js"
+    "revision": "2a8b25a51ce29d56cd2cfe1bd95b6954",
+    "url": "/static/media/insigna_hero.2a8b25a5.png"
   },
   {
-    "revision": "733c240ca14c4398fd4d991b5b792502",
-    "url": "/static/media/insigna1.733c240c.png"
+    "revision": "4a4877a2ff8051c40c0b",
+    "url": "/static/js/main.4a4877a2.chunk.js"
   },
   {
     "revision": "1f6170ad476e934bacee6a620088b3ee",
@@ -248,11 +244,19 @@ self.__precacheManifest = [
     "url": "/static/media/alone.a53d3bd1.jpg"
   },
   {
-    "revision": "94ec433a4146e389173d6b38739940b5",
-    "url": "/static/media/hero.94ec433a.jpeg"
+    "revision": "a090b358934fd496c584cc3433a8bd87",
+    "url": "/static/media/EDAsuicide1.a090b358.png"
   },
   {
-    "revision": "a636797956716712d955935ead5a98b2",
+    "revision": "25a0a07d5cad0d36ac199bc4244eb3b9",
+    "url": "/static/media/EDAsuicide2.25a0a07d.png"
+  },
+  {
+    "revision": "7415bb23df16d9294a1f7a0d046384a9",
+    "url": "/static/media/EDAsuicide3.7415bb23.png"
+  },
+  {
+    "revision": "367bd8fa721d8558233d3afdefd8ad09",
     "url": "/index.html"
   }
 ];
