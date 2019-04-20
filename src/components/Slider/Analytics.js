@@ -21,9 +21,9 @@ export default class Analytics extends Component {
           title: "EDA on Suicide Data",
           link: "https://yooniverse.me/EDAsuicide/index.slides.html",
           images: [
-            require("../../assets/hero.jpeg"),
-            require("../../assets/hero.JPG"),
-            require("../../assets/hero.JPG")
+            require("../../assets/EDAsuicide/EDAsuicide1.png"),
+            require("../../assets/EDAsuicide/EDAsuicide2.png"),
+            require("../../assets/EDAsuicide/EDAsuicide3.png")
           ],
           content: (
             <>
