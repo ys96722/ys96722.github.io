@@ -90,9 +90,9 @@ export default class Games extends Component {
     return (
       <CardList
         infos={this.state.game_infos}
-        numCols={numCols}
-        numRows={numRows}
-        cardWidth={cardWidth}
+        // numCols={numCols}
+        // numRows={numRows}
+        // cardWidth={cardWidth}
         togglePopup={this.props.togglePopup}
       />
     );

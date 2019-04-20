@@ -40,13 +40,14 @@ export const Hero = styled.div`
   h1,
   h2 {
     transform: translateY(-11vh);
-    ${media.tablet`
-            /* font-size: 1rem; */
-          `}
-    ${media.phone`
-            font-size: 4rem;
-            transform: translateY(-5vh);
-          `}
+    @media (max-width: 800px) {
+      font-size: 7rem;
+      transform: translateY(-5vh);
+    }
+
+    @media (max-width: 507px) {
+      font-size: 4rem;
+    }
   }
 
   h1 {
@@ -57,6 +58,11 @@ export const Hero = styled.div`
 
   h2 {
     color: ${blue};
+    @media (max-width: 1037px) {
+      span {
+        display: none;
+      }
+    }
   }
 `;
 

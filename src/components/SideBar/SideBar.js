@@ -25,6 +25,11 @@ class SideBar extends Component {
           url="https://soundcloud.com/yooni-verse"
           target="_blank"
         />
+        <SocialIcon
+          style={{ margin: "0.3rem" }}
+          url="https://github.com/ys96722"
+          target="_blank"
+        />
         {/* <SocialButton
           href="https://www.linkedin.com/in/yoonchang/"
           target="_blank"

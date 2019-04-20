@@ -76,9 +76,16 @@ export const NavigationContainer = styled(Flex)`
   z-index: 98;
   height: 7vh;
 
-  ${media.tablet`
-    /* font-size: 1rem; */
-  `}
+  @media (max-width: 768px) {
+    position: absolute;
+    justify-content: space-evenly;
+    top: 5;
+    width: 100%;
+    right: 0;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
   ${media.phone`
     position: absolute;
     justify-content: space-evenly;

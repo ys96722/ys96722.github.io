@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { SocialIcon } from "react-social-icons";
 import { blue } from "../../style/variables";
 import { Flex } from "../../style/grid";
-import {media} from "../../style/media";
+import { media } from "../../style/media";
 
 export const SideContainer = styled(Flex)`
   position: fixed;
@@ -10,7 +10,6 @@ export const SideContainer = styled(Flex)`
   left: 2%;
   flex-direction: column;
   background-color: transparent;
-
 
   ${media.tablet`
     position: relative;

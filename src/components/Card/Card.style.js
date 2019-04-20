@@ -235,13 +235,28 @@ export const CardContainer = styled.div`
   max-width: 450px;
   overflow: hidden;
   border-radius: 10px;
-  ${({ cardWidth }) =>
+  /* ${({ cardWidth }) =>
     cardWidth &&
     css`
       width: calc(${cardWidth}%);
-    `}
-  margin-left: 1rem;
-  margin-right: 1rem;
+    `} */
+  width: 32%;
+
+  @media (max-width: 1200px) { 
+    width: 48%; 
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  @media (max-width: 800px) {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
+  margin-left: 0.5%;
+  margin-right: 0.5%;
   margin-top: 1rem;
   margin-bottom: 1rem;
   /* box-shadow: 8px 8px 8px 8px rgba(163,170,175,0.5); */

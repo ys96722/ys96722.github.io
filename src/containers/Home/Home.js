@@ -25,7 +25,9 @@ export default class Home extends Component {
             <h1>Yoon Chang</h1>
           </Div>
           <Div animation="fadeIn">
-            <h2>Creator - Developer</h2>
+            <h2>
+              Creator <span>-</span> Developer
+            </h2>
           </Div>
         </Hero>
         <SubHeader>Welcome! I am Yoon.</SubHeader>

@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../../components/Card/Card";
 import { Flex, Div } from "../../style/grid";
+import { CardListContainer } from "./CardList.style.js";
 
 const cardList = props => {
   const numCols = Number(props.numCols);
@@ -19,7 +20,7 @@ const cardList = props => {
         link={item.link}
         imgPath={item.imgPath}
         bgSize={item.bgSize}
-        cardWidth={cardWidth}
+        // cardWidth={cardWidth}
         togglePopup={props.togglePopup}
         popupInfo={item.popupInfo}
       />
@@ -46,7 +47,8 @@ const cardList = props => {
   return (
     //  used to have attribute animation="fadeIn"
     <Div marginTop="4rem" marginBottom="4rem" animation="fadeIn">
-      {rows}
+      {/* {rows} */}
+      <CardListContainer justify="center">{cards}</CardListContainer>
     </Div>
   );
 };

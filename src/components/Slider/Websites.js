@@ -395,9 +395,9 @@ export default class Websites extends Component {
     return (
       <CardList
         infos={this.state.website_infos}
-        numCols={numCols}
-        numRows={numRows}
-        cardWidth={cardWidth}
+        // numCols={numCols}
+        // numRows={numRows}
+        // cardWidth={cardWidth}
         togglePopup={this.props.togglePopup}
       />
     );
