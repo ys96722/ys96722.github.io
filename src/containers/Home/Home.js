@@ -20,7 +20,7 @@ export default class Home extends Component {
   render() {
     return (
       <HomeContainer style={{ position: "relative" }}>
-        <Hero>
+        <Hero className="asyncImage" data-src="../../assets/finalHero.jpeg">
           <Div animation="fadeIn">
             <h1>Yoon Chang</h1>
           </Div>
