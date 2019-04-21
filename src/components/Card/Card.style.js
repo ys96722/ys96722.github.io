@@ -106,6 +106,7 @@ export const CardFront = styled.div`
       `}
     /* -webkit-backface-visibility: hidden;
     backface-visibility: hidden; */
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     border-radius: 10px;
     /* border: 2px solid ${black}; */
@@ -136,6 +137,7 @@ export const CardFront = styled.div`
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-weight: 400;
+    -webkit-transition: color 0.4s;
     transition: color 0.4s;
 
     ${({ tool }) =>
@@ -263,10 +265,11 @@ export const CardContainer = styled.div`
   /* box-shadow: 8px 8px 8px 8px rgba(163,170,175,0.5); */
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 
-  &:hover, &:focus, &:active {
+  &:hover {
     ${CardFront} {
       /* display: none; */
       &::after {
+        -webkit-transform: scale(1.2);
         transform: scale(1.2);
         /* opacity: 0; */
       }
