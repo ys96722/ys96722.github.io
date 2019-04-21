@@ -251,6 +251,7 @@ export const CardContainer = styled.div`
     width: 98%;
     margin-left: 1%;
     margin-right: 1%;
+    cursor: pointer;
   }
 
   /* margin-left: 1rem;

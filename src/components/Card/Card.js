@@ -8,14 +8,14 @@ const card = props => {
   // Props: (wp or react), img, title, header, content, link
 
   return (
-    <CardContainer cardWidth={props.cardWidth} onClick={void 0}>
+    <CardContainer onClick="">
       <CardFront
         className="asyncImage"
         data-src={props.imgPath}
         imgPath={props.imgPath}
         bgSize={props.bgSize}
         tool={props.tool}
-        onClick={void 0}
+        onClick=""
       >
         <Inner>
           {/* <p>{props.name}</p>

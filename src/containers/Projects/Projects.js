@@ -23,13 +23,13 @@ export default class Projects extends Component {
     this.state = {
       visibleIndex: 0,
       showPopup: false,
-      popupInfo: undefined,
-      projects: [
-        <Websites key="0" togglePopup={this.togglePopup} />,
-        <Analytics key="1" togglePopup={this.togglePopup} />,
-        <Games key="2" togglePopup={this.togglePopup} />,
-        <Songs key="3" togglePopup={this.togglePopup} />
-      ]
+      popupInfo: undefined
+      // projects: [
+      //   <Websites key="0" togglePopup={this.togglePopup} />,
+      //   <Analytics key="1" togglePopup={this.togglePopup} />,
+      //   <Games key="2" togglePopup={this.togglePopup} />,
+      //   <Songs key="3" togglePopup={this.togglePopup} />
+      // ]
     };
 
     this.setVisible = this.setVisible.bind(this);
@@ -51,6 +51,12 @@ export default class Projects extends Component {
   };
 
   render() {
+    const projects = [
+        <Websites key="0" togglePopup={this.togglePopup} />,
+        <Analytics key="1" togglePopup={this.togglePopup} />,
+        <Games key="2" togglePopup={this.togglePopup} />,
+        <Songs key="3" togglePopup={this.togglePopup} />
+      ]
     return (
       <Div width="100%" animation="fadeIn" style={{ position: "relative" }}>
         {/* List that captures Active */}
@@ -96,7 +102,7 @@ export default class Projects extends Component {
           </Button>
         </ButtonContainer>
         {/* Render Active */}
-        {this.state.projects[this.state.visibleIndex]}
+        {projects[this.state.visibleIndex]}
         {this.state.showPopup ? (
           <Popup
             closePopup={this.togglePopup}
