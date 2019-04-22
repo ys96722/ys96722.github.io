@@ -6,6 +6,7 @@ import Websites from "../../components/Slider/Websites";
 import Games from "../../components/Slider/Games";
 import Songs from "../../components/Slider/Songs";
 import Analytics from "../../components/Slider/Analytics";
+import { SongDiv } from "../../components/Slider/Songs.style";
 import { Div } from "../../style/grid";
 import {
   PageTitle,
@@ -22,7 +23,8 @@ export default class Projects extends Component {
     this.state = {
       visibleIndex: 0,
       showPopup: false,
-      popupInfo: undefined
+      popupInfo: undefined,
+      songsInfo: undefined
       // projects: [
       //   <Websites key="0" togglePopup={this.togglePopup} />,
       //   <Analytics key="1" togglePopup={this.togglePopup} />,
@@ -34,6 +36,122 @@ export default class Projects extends Component {
     this.setVisible = this.setVisible.bind(this);
     this.togglePopup = this.togglePopup.bind(this);
   }
+
+  // componentWillMount = () => {
+  //   this.setState({
+  //     songsInfo: {
+  //       HapImg: ({ doesShow }) => (
+  //         <SongDiv
+  //           show={doesShow ? "initial" : "hidden"}
+  //           animateIn={doesShow}
+  //           animateOut={!doesShow}
+  //           zVal="1"
+  //         >
+  //           <img
+  //             src={require("../../assets/song_banners/happier_cover.jpeg")}
+  //             alt="Happier"
+  //             style={{
+  //               objectFit: "cover",
+  //               display: "initial",
+  //               width: "100%",
+  //               height: "100%"
+  //             }}
+  //           />
+  //         </SongDiv>
+  //       ),
+  //       ChildImg: ({ doesShow }) => (
+  //         <SongDiv
+  //           show={doesShow ? "initial" : "hidden"}
+  //           animateIn={doesShow}
+  //           animateOut={!doesShow}
+  //           zVal="1"
+  //         >
+  //           <img
+  //             src={require("../../assets/song_banners/child_cover.jpeg")}
+  //             alt="Child"
+  //             style={{
+  //               objectFit: "cover",
+  //               display: "initial",
+  //               width: "100%",
+  //               height: "100%"
+  //             }}
+  //           />
+  //         </SongDiv>
+  //       ),
+  //       ForImg: ({ doesShow }) => (
+  //         <SongDiv
+  //           show={doesShow ? "initial" : "hidden"}
+  //           animateIn={doesShow}
+  //           animateOut={!doesShow}
+  //           zVal="1"
+  //         >
+  //           <img
+  //             src={require("../../assets/song_banners/forever.jpeg")}
+  //             alt="Forever"
+  //             style={{
+  //               objectFit: "cover",
+  //               display: "initial",
+  //               width: "100%",
+  //               height: "100%"
+  //             }}
+  //           />
+  //         </SongDiv>
+  //       ),
+  //       HapFrame: ({ doesShow }) => (
+  //         <SongDiv
+  //           show={doesShow ? "initial" : "hidden"}
+  //           animateIn={doesShow}
+  //           animateOut={!doesShow}
+  //           // zVal="-1"
+  //         >
+  //           <iframe
+  //             title="happier"
+  //             width="100%"
+  //             height="100%"
+  //             scrolling="no"
+  //             frameborder="no"
+  //             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/512176407&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+  //           />
+  //         </SongDiv>
+  //       ),
+  //       ChildFrame: ({ doesShow }) => (
+  //         <SongDiv
+  //           show={doesShow ? "initial" : "hidden"}
+  //           animateIn={doesShow}
+  //           animateOut={!doesShow}
+  //           // zVal="-1"
+  //         >
+  //           <iframe
+  //             title="child"
+  //             width="100%"
+  //             height="100%"
+  //             scrolling="no"
+  //             frameborder="no"
+  //             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/586245420&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+  //           />
+  //         </SongDiv>
+  //       ),
+
+  //       ForFrame: ({ doesShow }) => (
+  //         <SongDiv
+  //           show={doesShow ? "initial" : "hidden"}
+  //           animateIn={doesShow}
+  //           animateOut={!doesShow}
+  //           // zVal="-1"
+  //         >
+  //           <iframe
+  //             title="forever"
+  //             width="100%"
+  //             height="100%"
+  //             scrolling="no"
+  //             frameborder="no"
+  //             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/528417867&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+  //           />
+  //         </SongDiv>
+  //       )
+  //     }
+  //   });
+  // };
 
   setVisible = (index = 0) => {
     this.setState({
@@ -54,12 +172,21 @@ export default class Projects extends Component {
       <Websites key="0" togglePopup={this.togglePopup} />,
       <Analytics key="1" togglePopup={this.togglePopup} />,
       <Games key="2" togglePopup={this.togglePopup} />,
-      <Songs key="3" togglePopup={this.togglePopup} />
+      <Songs
+        key="3"
+        songsInfo={this.state.songsInfo}
+        togglePopup={this.togglePopup}
+      />
     ];
     return (
       <Div width="100%" animation="fadeIn" style={{ position: "relative" }}>
         {/* List that captures Active */}
-        <Div width="60%" marginLeft="auto" marginRight="auto">
+        <Div
+          width="60%"
+          marginLeft="auto"
+          marginRight="auto"
+          marginBottom="4rem"
+        >
           <PageTitle>Recent Work</PageTitle>
           <br />
           <PageSubTitle>
@@ -70,9 +197,6 @@ export default class Projects extends Component {
             </A>
           </PageSubTitle>
         </Div>
-        <br />
-        <br />
-        <br />
 
         <ButtonContainer row justify="center">
           <Button

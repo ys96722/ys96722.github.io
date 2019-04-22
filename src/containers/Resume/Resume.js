@@ -57,7 +57,12 @@ export default class Resume extends Component {
           </h1>
         </SmallAlert>
         <ResumeContainer animation="fadeIn" style={{ position: "relative" }}>
-          <Div width="60%" marginLeft="auto" marginRight="auto">
+          <Div
+            width="60%"
+            marginLeft="auto"
+            marginRight="auto"
+            marginBottom="4rem"
+          >
             <PageTitle>Online Résumé</PageTitle>
             <br />
             <PageSubTitle>
@@ -68,9 +73,6 @@ export default class Resume extends Component {
               </A>
             </PageSubTitle>
           </Div>
-          <br />
-          <br />
-          <br />
 
           <SectionContainer className="skills">
             <Title>Skills</Title>
