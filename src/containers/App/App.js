@@ -4,14 +4,14 @@ import GlobalStyle from "../../style/GlobalStyle";
 import { Container } from "../../style/grid";
 import SideBar from "../../components/SideBar/SideBar";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
-import LoadingPage from "../Loader/LoadingPage";
-import {
-  registerItem,
-  isLoading,
-  doneLoading
-} from "../../redux/modules/loadingStatus";
-import { connect } from "react-redux";
-import { withRouter } from "react-router";
+// import LoadingPage from "../Loader/LoadingPage";
+// import {
+//   registerItem,
+//   isLoading,
+//   doneLoading
+// } from "../../redux/modules/loadingStatus";
+// import { connect } from "react-redux";
+// import { withRouter } from "react-router";
 
 export default class App extends Component {
   state = {

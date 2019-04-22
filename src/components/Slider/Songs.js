@@ -2,120 +2,7 @@ import React, { Component } from "react";
 import Coverflow from "react-coverflow";
 import { Flex } from "../../style/grid";
 import { SongDiv } from "./Songs.style.js";
-
-
-const HapImg = ({ doesShow }) => (
-  <SongDiv
-    show={doesShow ? "initial" : "hidden"}
-    animateIn={doesShow}
-    animateOut={!doesShow}
-    zVal="1"
-  >
-    <img
-      src={require("../../assets/song_banners/happier_cover.jpeg")}
-      alt="Happier"
-      style={{
-        objectFit: "cover",
-        display: "initial",
-        width: "100%",
-        height: "100%"
-      }}
-    />
-  </SongDiv>
-);
-
-const ChildImg = ({ doesShow }) => (
-  <SongDiv
-    show={doesShow ? "initial" : "hidden"}
-    animateIn={doesShow}
-    animateOut={!doesShow}
-    zVal="1"
-  >
-    <img
-      src={require("../../assets/song_banners/child_cover.jpeg")}
-      alt="Child"
-      style={{
-        objectFit: "cover",
-        display: "initial",
-        width: "100%",
-        height: "100%"
-      }}
-    />
-  </SongDiv>
-);
-
-const ForImg = ({ doesShow }) => (
-  <SongDiv
-    show={doesShow ? "initial" : "hidden"}
-    animateIn={doesShow}
-    animateOut={!doesShow}
-    zVal="1"
-  >
-    <img
-      src={require("../../assets/song_banners/forever.jpeg")}
-      alt="Forever"
-      style={{
-        objectFit: "cover",
-        display: "initial",
-        width: "100%",
-        height: "100%"
-      }}
-    />
-  </SongDiv>
-);
-
-const HapFrame = ({ doesShow }) => (
-  <SongDiv
-    show={doesShow ? "initial" : "hidden"}
-    animateIn={doesShow}
-    animateOut={!doesShow}
-    // zVal="-1"
-  >
-    <iframe
-      title="happier"
-      width="100%"
-      height="100%"
-      scrolling="no"
-      frameborder="no"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/512176407&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-    />
-  </SongDiv>
-);
-
-const ChildFrame = ({ doesShow }) => (
-  <SongDiv
-    show={doesShow ? "initial" : "hidden"}
-    animateIn={doesShow}
-    animateOut={!doesShow}
-  // zVal="-1"
-  >
-    <iframe 
-      title = "child" 
-      width="100%" 
-      height="100%" 
-      scrolling="no" 
-      frameborder="no" 
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/586245420&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-  </SongDiv>
-);
-
-const ForFrame = ({ doesShow }) => (
-  <SongDiv
-    show={doesShow ? "initial" : "hidden"}
-    animateIn={doesShow}
-    animateOut={!doesShow}
-    // zVal="-1"
-  >
-    <iframe
-      title="forever"
-      width="100%"
-      height="100%"
-      scrolling="no"
-      frameborder="no"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/528417867&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-    />
-  </SongDiv>
-);
+import "../../containers/Projects/Projects.css";
 
 export default class Songs extends Component {
   state = {
@@ -145,6 +32,120 @@ export default class Songs extends Component {
   };
 
   render() {
+    const HapImg = ({ doesShow }) => (
+      <SongDiv
+        show={doesShow ? "initial" : "hidden"}
+        animateIn={doesShow}
+        animateOut={!doesShow}
+        zVal="1"
+      >
+        <img
+          src={require("../../assets/song_banners/happier_cover.jpeg")}
+          alt="Happier"
+          style={{
+            objectFit: "cover",
+            display: "initial",
+            width: "100%",
+            height: "100%"
+          }}
+        />
+      </SongDiv>
+    );
+
+    const ChildImg = ({ doesShow }) => (
+      <SongDiv
+        show={doesShow ? "initial" : "hidden"}
+        animateIn={doesShow}
+        animateOut={!doesShow}
+        zVal="1"
+      >
+        <img
+          src={require("../../assets/song_banners/child_cover.jpeg")}
+          alt="Child"
+          style={{
+            objectFit: "cover",
+            display: "initial",
+            width: "100%",
+            height: "100%"
+          }}
+        />
+      </SongDiv>
+    );
+
+    const ForImg = ({ doesShow }) => (
+      <SongDiv
+        show={doesShow ? "initial" : "hidden"}
+        animateIn={doesShow}
+        animateOut={!doesShow}
+        zVal="1"
+      >
+        <img
+          src={require("../../assets/song_banners/forever.jpeg")}
+          alt="Forever"
+          style={{
+            objectFit: "cover",
+            display: "initial",
+            width: "100%",
+            height: "100%"
+          }}
+        />
+      </SongDiv>
+    );
+
+    const HapFrame = ({ doesShow }) => (
+      <SongDiv
+        show={doesShow ? "initial" : "hidden"}
+        animateIn={doesShow}
+        animateOut={!doesShow}
+        // zVal="-1"
+      >
+        <iframe
+          title="happier"
+          width="100%"
+          height="100%"
+          scrolling="no"
+          frameborder="no"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/512176407&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        />
+      </SongDiv>
+    );
+
+    const ChildFrame = ({ doesShow }) => (
+      <SongDiv
+        show={doesShow ? "initial" : "hidden"}
+        animateIn={doesShow}
+        animateOut={!doesShow}
+        // zVal="-1"
+      >
+        <iframe
+          title="child"
+          width="100%"
+          height="100%"
+          scrolling="no"
+          frameborder="no"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/586245420&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        />
+      </SongDiv>
+    );
+
+    const ForFrame = ({ doesShow }) => (
+      <SongDiv
+        show={doesShow ? "initial" : "hidden"}
+        animateIn={doesShow}
+        animateOut={!doesShow}
+        // zVal="-1"
+      >
+        <iframe
+          title="forever"
+          width="100%"
+          height="100%"
+          scrolling="no"
+          frameborder="no"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/528417867&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        />
+      </SongDiv>
+    );
+
     return (
       <Coverflow
         width="960"

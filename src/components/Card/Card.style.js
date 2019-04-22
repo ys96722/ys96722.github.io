@@ -5,14 +5,14 @@ import {
   lightblue,
   yellow,
   black,
-  green,
+  // green,
   lightgreen,
   paddingValue,
   fontSize
 } from "../../style/variables";
 import { A, OpenButton } from "../../style/types";
 import { media } from "../../style/media";
-import { InnerSubscriber } from "rxjs/internal/InnerSubscriber";
+// import { InnerSubscriber } from "rxjs/internal/InnerSubscriber";
 
 const zoomIn = keyframes`
   

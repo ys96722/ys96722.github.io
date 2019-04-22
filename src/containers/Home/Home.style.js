@@ -1,11 +1,8 @@
 import styled, { css } from "styled-components";
 import {
-  yellow,
-  red,
   blue,
   black,
   section_header,
-  title_header,
   subtitle_header
 } from "../../style/variables";
 import { Div } from "../../style/grid";

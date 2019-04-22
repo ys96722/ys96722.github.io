@@ -1,13 +1,12 @@
 // Import Dependencies
 import React, { Component } from "react";
-import "./Projects.css";
 // Import Styled Components
 import { Button, ButtonContainer } from "./Projects.style";
 import Websites from "../../components/Slider/Websites";
 import Games from "../../components/Slider/Games";
 import Songs from "../../components/Slider/Songs";
 import Analytics from "../../components/Slider/Analytics";
-import { Div, Flex } from "../../style/grid";
+import { Div } from "../../style/grid";
 import {
   PageTitle,
   PageSubTitle,
@@ -52,11 +51,11 @@ export default class Projects extends Component {
 
   render() {
     const projects = [
-        <Websites key="0" togglePopup={this.togglePopup} />,
-        <Analytics key="1" togglePopup={this.togglePopup} />,
-        <Games key="2" togglePopup={this.togglePopup} />,
-        <Songs key="3" togglePopup={this.togglePopup} />
-      ]
+      <Websites key="0" togglePopup={this.togglePopup} />,
+      <Analytics key="1" togglePopup={this.togglePopup} />,
+      <Games key="2" togglePopup={this.togglePopup} />,
+      <Songs key="3" togglePopup={this.togglePopup} />
+    ];
     return (
       <Div width="100%" animation="fadeIn" style={{ position: "relative" }}>
         {/* List that captures Active */}

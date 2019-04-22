@@ -1,13 +1,5 @@
 import styled from "styled-components";
-import {
-  yellow,
-  red,
-  blue,
-  black,
-  section_header,
-  title_header,
-  subtitle_header
-} from "../../style/variables";
+import { yellow } from "../../style/variables";
 
 export const Background = styled.div`
   position: fixed;
