@@ -6,7 +6,7 @@ import { CardListContainer } from "./CardList.style.js";
 const cardList = props => {
   const numCols = Number(props.numCols);
   const numRows = Number(props.numRows);
-  const cardWidth = props.cardWidth;
+  // const cardWidth = props.cardWidth;
 
   // 1. Create Cards
   const cards = [];

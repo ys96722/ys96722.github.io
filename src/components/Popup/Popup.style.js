@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { css } from "styled-components";
 import { Flex } from "../../style/grid";
 import { A, P } from "../../style/types";
 import { black, blue, paddingValue } from "../../style/variables";
@@ -86,6 +86,10 @@ export const PopupContentContainer = styled.div`
 
   @media (max-width: 1150px) {
     width: 100%;
+  }
+
+  @media (max-width: 450px) {
+    padding: 4rem;
   }
 /* 
   ${media.tablet`

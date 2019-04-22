@@ -1,6 +1,6 @@
 import React from "react";
 import { CardContainer, CardFront, CardBack, Inner } from "./Card.style";
-import { A, OpenButton } from "../../style/types";
+import { OpenButton } from "../../style/types";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // React component for the card (main component)

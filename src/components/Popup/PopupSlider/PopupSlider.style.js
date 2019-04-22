@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { blue, yellow, black, fontSize } from "../../../style/variables";
+import { blue } from "../../../style/variables";
 
 export const PopupSliderContainer = styled.div`
   position: relative;

@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
-import { Flex, Div } from "../../style/grid";
-import { blue, yellow, red, black } from "../../style/variables";
+import { Flex } from "../../style/grid";
+import { blue, black } from "../../style/variables";
 import { Link, IndexLink } from "react-router";
 import { media } from "../../style/media";
 

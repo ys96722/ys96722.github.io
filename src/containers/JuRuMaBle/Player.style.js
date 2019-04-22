@@ -1,21 +1,21 @@
 import styled, { css, keyframes } from "styled-components";
 
-const rotate = keyframes`
+// const rotate = keyframes`
 
-  0%   {opacity:1; }
-  25%  {opacity:0.75;}
-  50%  {opacity:0.5;}
-  75%  {opacity:0.75;}
-  100% {opacity:1; }
+//   0%   {opacity:1; }
+//   25%  {opacity:0.75;}
+//   50%  {opacity:0.5;}
+//   75%  {opacity:0.75;}
+//   100% {opacity:1; }
 
-  /* from {
-    transform: rotate(0deg);
-  }
+//   /* from {
+//     transform: rotate(0deg);
+//   }
 
-  to {
-    transform: rotate(360deg);
-  } */
-`;
+//   to {
+//     transform: rotate(360deg);
+//   } */
+// `;
 
 const slideInFromLeft = keyframes` 
   /* 0% {

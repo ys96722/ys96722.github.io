@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { SocialIcon } from "react-social-icons";
+import styled from "styled-components";
+// import { SocialIcon } from "react-social-icons";
 import { blue } from "../../style/variables";
 import { Flex } from "../../style/grid";
 import { media } from "../../style/media";

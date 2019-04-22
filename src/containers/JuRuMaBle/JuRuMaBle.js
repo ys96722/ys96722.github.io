@@ -8,7 +8,7 @@ import {
 } from "./JuRuMaBle.style";
 import Square from "./Square";
 import Player from "./Player";
-import { Div, Flex } from "../../style/grid";
+import { Div } from "../../style/grid";
 import sound from "../../assets/sounds/diceroll.mp3";
 
 // 1. Add another player

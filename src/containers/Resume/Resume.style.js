@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { red, black, blue, Title } from "../../style/variables";
+import { black } from "../../style/variables";
 import { Div, Flex } from "../../style/grid";
 import { media } from "../../style/media";
 

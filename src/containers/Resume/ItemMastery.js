@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { A, OpenButton, P } from "../../style/types";
-import { Div, Flex } from "../../style/grid";
-import { red, blue, green, black } from "../../style/variables";
+import { Flex } from "../../style/grid";
 import { MasteryContainer, Tooltip } from "./ItemMastery.style";
 
 // React component for the card (main component)

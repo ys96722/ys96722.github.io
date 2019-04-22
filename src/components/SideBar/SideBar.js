@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { SideContainer, SideItem, SocialButton } from "./SideBar.style";
+import { SideContainer } from "./SideBar.style";
 import { SocialIcon } from "react-social-icons";
 import "./SideBar.css";
 

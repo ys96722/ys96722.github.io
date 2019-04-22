@@ -8,8 +8,7 @@ import {
   Title
 } from "./Popup.style";
 import PopupSlider from "./PopupSlider/PopupSlider";
-import TextSlider from "../TextSlider/TextSlider";
-import { CloseButton, A, P, Text } from "../../style/types";
+import { CloseButton, A, Text } from "../../style/types";
 import { Flex } from "../../style/grid";
 
 class Popup extends Component {

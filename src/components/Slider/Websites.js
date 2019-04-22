@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import CardList from "../Card/CardList";
 import { blue } from "../../style/variables";
 import { A, Text } from "../../style/types";
-import { sizes } from "../../style/media";
 
 let profile_urls = {
   sophia: "https://sophiapresutti.com/",
@@ -378,20 +377,20 @@ export default class Websites extends Component {
   };
 
   render() {
-    let size = window.innerWidth;
-    let numCols = 3;
-    let numRows = 3;
-    let cardWidth = 31;
-    // if (size <= sizes.phone)
-    if (size <= 680) {
-      numCols = 1;
-      numRows = 8;
-      cardWidth = 100;
-    } else if (size <= 1150) {
-      numCols = 2;
-      numRows = 4;
-      cardWidth = 50;
-    }
+    // let size = window.innerWidth;
+    // let numCols = 3;
+    // let numRows = 3;
+    // let cardWidth = 31;
+    // // if (size <= sizes.phone)
+    // if (size <= 680) {
+    //   numCols = 1;
+    //   numRows = 8;
+    //   cardWidth = 100;
+    // } else if (size <= 1150) {
+    //   numCols = 2;
+    //   numRows = 4;
+    //   cardWidth = 50;
+    // }
     return (
       <CardList
         infos={this.state.website_infos}

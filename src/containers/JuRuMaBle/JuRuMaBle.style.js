@@ -1,11 +1,10 @@
 import styled, { css, keyframes } from "styled-components";
-import Square from "./Square";
 import { blue } from "../../style/variables";
 
 // const illinoisBlue = "#13294b";
 // const illinoisOrange = "#E84A27";
 
-const pastelBlue = "#D2EFFE";
+// const pastelBlue = "#D2EFFE";
 const unofficialGreen = "#008A2B";
 const katalkGreen = "#86D1D6";
 
@@ -104,7 +103,7 @@ export const CountSquare = styled(Filler)`
   }
 
   ${({ currentTurn }) => {
-    let val = currentTurn + 1;
+    // let val = currentTurn + 1;
     if (currentTurn === 2) {
       return css`
         color: red;

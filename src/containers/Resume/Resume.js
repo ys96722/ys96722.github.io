@@ -74,7 +74,7 @@ export default class Resume extends Component {
             </PageSubTitle>
           </Div>
 
-          <SectionContainer className="skills">
+          <SectionContainer className="skills" marginBottom="3rem">
             <Title>Skills</Title>
             {/* <InfoIndex /> */}
             <Section flexDirection="row" justifyContent="space-evenly">
@@ -311,8 +311,7 @@ export default class Resume extends Component {
               </Column>
             </Section>
           </SectionContainer>
-          <br />
-          <br />
+
           <SectionContainer>
             {/* <Row>
                 <Column width="30%" textAlign="left">

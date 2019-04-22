@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import routes from "./routes";
-import { createStore, compose, applyMiddleware } from "redux";
+import { createStore } from "redux";
 import { Provider } from "react-redux";
 // import ReallySmoothScroll from "really-smooth-scroll";
 import { hashHistory } from "react-router";

@@ -1,13 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
-import {
-  blue,
-  yellow,
-  black,
-  fontSize,
-  section_header,
-  subtitle_header,
-  title_header
-} from "./variables";
+import { blue, yellow, fontSize } from "./variables";
 import { Div } from "./grid";
 import { media } from "./media";
 import { Button } from "reactstrap";

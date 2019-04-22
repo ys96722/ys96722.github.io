@@ -5,7 +5,6 @@ import {
   lightblue,
   yellow,
   black,
-  // green,
   lightgreen,
   paddingValue,
   fontSize
@@ -14,9 +13,6 @@ import { A, OpenButton } from "../../style/types";
 import { media } from "../../style/media";
 // import { InnerSubscriber } from "rxjs/internal/InnerSubscriber";
 
-const zoomIn = keyframes`
-  
-`;
 const fadeIn = keyframes`
   0% {
       opacity: 0;

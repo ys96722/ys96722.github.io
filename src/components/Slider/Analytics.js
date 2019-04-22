@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import CardList from "../Card/CardList";
-import { A, Text } from "../../style/types";
-import { sizes } from "../../style/media";
+import { A } from "../../style/types";
 // import Coverflow from "react-coverflow";
 
 export default class Analytics extends Component {
@@ -47,19 +46,19 @@ export default class Analytics extends Component {
   };
 
   render() {
-    let size = window.innerWidth;
-    let numCols = 1;
-    let numRows = 1;
-    let cardWidth = 31;
-    if (size <= sizes.phone) {
-      numCols = 1;
-      numRows = 1;
-      cardWidth = 100;
-    } else if (size <= sizes.tablet) {
-      numCols = 1;
-      numRows = 1;
-      cardWidth = 50;
-    }
+    // let size = window.innerWidth;
+    // let numCols = 1;
+    // let numRows = 1;
+    // let cardWidth = 31;
+    // if (size <= sizes.phone) {
+    //   numCols = 1;
+    //   numRows = 1;
+    //   cardWidth = 100;
+    // } else if (size <= sizes.tablet) {
+    //   numCols = 1;
+    //   numRows = 1;
+    //   cardWidth = 50;
+    // }
     return (
       <CardList
         infos={this.state.analytic_infos}

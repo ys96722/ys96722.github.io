@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
-import { green } from "../../style/variables";
+// import { green } from "../../style/variables";
 
-const katalkGreen = "#86D1D6";
+// const katalkGreen = "#86D1D6";
 
 export const SquareContainer = styled.div`
   position: relative;

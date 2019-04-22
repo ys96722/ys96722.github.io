@@ -5,10 +5,10 @@ class Square extends Component {
   state = {};
 
   render() {
-    const illinoisBlue = "#13294b";
-    const illinoisOrange = "#E84A27";
-    const lightgreen = "#5baaa5";
-    const lightblue = "#60b6db";
+    // const illinoisBlue = "#13294b";
+    // const illinoisOrange = "#E84A27";
+    // const lightgreen = "#5baaa5";
+    // const lightblue = "#60b6db";
     const katalkGreen = "#86D1D6";
     let bgColor = Number(this.props.index) % 2 === 0 ? katalkGreen : "white";
     let fontColor = Number(this.props.index) % 2 === 0 ? "white" : katalkGreen;
