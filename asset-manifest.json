@@ -1,9 +1,9 @@
 {
   "main.css": "/static/css/main.63fee5f7.chunk.css",
-  "main.js": "/static/js/main.b86fe210.chunk.js",
-  "main.js.map": "/static/js/main.b86fe210.chunk.js.map",
-  "static/js/1.0719fab2.chunk.js": "/static/js/1.0719fab2.chunk.js",
-  "static/js/1.0719fab2.chunk.js.map": "/static/js/1.0719fab2.chunk.js.map",
+  "main.js": "/static/js/main.a2d7f643.chunk.js",
+  "main.js.map": "/static/js/main.a2d7f643.chunk.js.map",
+  "static/js/1.c8271574.chunk.js": "/static/js/1.c8271574.chunk.js",
+  "static/js/1.c8271574.chunk.js.map": "/static/js/1.c8271574.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/2xl3.png": "/static/media/2xl3.45037f5e.png",
@@ -68,6 +68,6 @@
   "static/media/EDAsuicide3.png": "/static/media/EDAsuicide3.7415bb23.png",
   "static/css/main.63fee5f7.chunk.css.map": "/static/css/main.63fee5f7.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.8c92d29b0c927b84188ce70d22a85d01.js": "/precache-manifest.8c92d29b0c927b84188ce70d22a85d01.js",
+  "precache-manifest.7f084e1b19549f2b036161b26e87caa2.js": "/precache-manifest.7f084e1b19549f2b036161b26e87caa2.js",
   "service-worker.js": "/service-worker.js"
 }
