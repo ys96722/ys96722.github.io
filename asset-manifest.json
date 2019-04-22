@@ -1,9 +1,9 @@
 {
-  "main.css": "/static/css/main.82d92363.chunk.css",
-  "main.js": "/static/js/main.00288fdf.chunk.js",
-  "main.js.map": "/static/js/main.00288fdf.chunk.js.map",
-  "static/js/1.819fbdb9.chunk.js": "/static/js/1.819fbdb9.chunk.js",
-  "static/js/1.819fbdb9.chunk.js.map": "/static/js/1.819fbdb9.chunk.js.map",
+  "main.css": "/static/css/main.63fee5f7.chunk.css",
+  "main.js": "/static/js/main.2d3971f0.chunk.js",
+  "main.js.map": "/static/js/main.2d3971f0.chunk.js.map",
+  "static/js/1.0719fab2.chunk.js": "/static/js/1.0719fab2.chunk.js",
+  "static/js/1.0719fab2.chunk.js.map": "/static/js/1.0719fab2.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/2xl3.png": "/static/media/2xl3.45037f5e.png",
@@ -66,8 +66,8 @@
   "static/media/EDAsuicide1.png": "/static/media/EDAsuicide1.a090b358.png",
   "static/media/EDAsuicide2.png": "/static/media/EDAsuicide2.25a0a07d.png",
   "static/media/EDAsuicide3.png": "/static/media/EDAsuicide3.7415bb23.png",
-  "static/css/main.82d92363.chunk.css.map": "/static/css/main.82d92363.chunk.css.map",
+  "static/css/main.63fee5f7.chunk.css.map": "/static/css/main.63fee5f7.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.5a699d654757ca0431db0a878aa180a4.js": "/precache-manifest.5a699d654757ca0431db0a878aa180a4.js",
+  "precache-manifest.e5640151f3562d49aed12a9a2e1c68c2.js": "/precache-manifest.e5640151f3562d49aed12a9a2e1c68c2.js",
   "service-worker.js": "/service-worker.js"
 }
