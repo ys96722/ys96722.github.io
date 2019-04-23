@@ -50,14 +50,6 @@ export const PopupImageContainer = styled.div`
   @media (max-width: 1150px) {
     display: none;
   }
-
-  /* ${media.tablet`
-    display: none;
-  `}
-  ${media.phone`
-    display: none;
-  `} */
-
 `;
 // Right Half
 export const PopupContentContainer = styled.div`
@@ -77,7 +69,6 @@ export const PopupContentContainer = styled.div`
 
   ${Flex} {
     margin-top: 10%;
-    /* margin-bottom: 8%; */
   }
 
   span ${A} {
@@ -90,6 +81,7 @@ export const PopupContentContainer = styled.div`
 
   @media (max-width: 450px) {
     padding: 4rem;
+    font-size: 0.6em;
   }
 /* 
   ${media.tablet`
