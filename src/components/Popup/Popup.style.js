@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { Flex } from "../../style/grid";
-import { A, P } from "../../style/types";
+import { A, P, Text } from "../../style/types";
 import { black, blue, paddingValue } from "../../style/variables";
 import { media } from "../../style/media";
 // import { blue, yellow } from "../../style/variables";
@@ -18,6 +18,12 @@ export const PopupContainer = styled.div`
   /* border-radius: 10px; */
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
+
+  ${Text} {
+    @media (max-width: 450px) {
+      font-size: 0.7em;
+    }
+  }
 `;
 // Isolates the content area
 export const PopupInner = styled(Flex)`
@@ -69,6 +75,10 @@ export const PopupContentContainer = styled.div`
 
   ${Flex} {
     margin-top: 10%;
+
+    /* @media (max-width: 450px) {
+      width: 75%;
+    } */
   }
 
   span ${A} {
@@ -79,10 +89,9 @@ export const PopupContentContainer = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 450px) {
+  /* @media (max-width: 450px) {
     padding: 4rem;
-    font-size: 0.6em;
-  }
+  } */
 /* 
   ${media.tablet`
     width: 100%;
@@ -100,6 +109,7 @@ export const PopupContentContainer = styled.div`
 // `;
 
 export const Title = styled.h1`
+  white-space: nowrap;
   ${({ fontColor }) =>
     fontColor &&
     css`
@@ -155,6 +165,10 @@ export const Button = styled.button`
       /* background-color: black;
       color: white; */
     `}
+
+  @media (max-width: 450px) {
+    font-size: 1.0em !important; 
+  }
 `;
 
 // export const PopupFooter = styled.div`

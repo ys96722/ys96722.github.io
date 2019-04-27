@@ -16,10 +16,10 @@ class Popup extends Component {
     visibleIndex: 0,
     texts: [
       <Text key="0">{this.props.popupInfo.content}</Text>,
-      <Text key="1" style={{ fontSize: "0.8em" }}>
+      <Text key="1" testimonial="true">
         {this.props.popupInfo.testimonial}
       </Text>,
-      <Text key="2" style={{ textAlign: "left", fontSize: "0.95em" }}>
+      <Text key="2" style={{ textAlign: "left" }}>
         {this.props.popupInfo.people}
       </Text>
     ]
@@ -43,7 +43,7 @@ class Popup extends Component {
           {/* Start Right */}
           <PopupContentContainer>
             <Title fontColor={this.props.popupInfo.color}>
-              {this.props.popupInfo.title}
+              <span>{this.props.popupInfo.title}</span>
             </Title>
             <Flex row="row" justify="center">
               {this.props.popupInfo.content ? (

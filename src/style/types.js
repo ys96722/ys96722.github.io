@@ -66,7 +66,11 @@ export const Text = styled.p`
   text-align: ${props => props.align};
   font-family: avenir;
 
-  /* a {
+  ${({ testimonial }) =>
+    testimonial &&
+    css`
+      font-size: 0.7em;
+    `} /* a {
     font-size: inherit;
   } */
 `;

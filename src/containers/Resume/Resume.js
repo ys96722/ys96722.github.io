@@ -351,7 +351,7 @@ export default class Resume extends Component {
                     University of Illinois at Urbana-Champaign
                     {/* </A> */}
                   </SchoolTitle>
-                  <SchoolInfo>Graduatation: May 2019</SchoolInfo>
+                  <SchoolInfo>Graduation: May 2019</SchoolInfo>
                 </Column>
                 <Column width="50%" textAlign="right">
                   <SchoolTitle fontWeight="400">
@@ -389,7 +389,7 @@ export default class Resume extends Component {
                   <JobTitle>Web Developer (Internship)</JobTitle>
                   <ul>
                     <Li>
-                      Develop ten websites for startups using WordPress, PHP,
+                      Develop ten websites for start-ups using WordPress, PHP,
                       JavaScript, and CSS3 and produce tutorial videos for
                       clients
                     </Li>
@@ -427,9 +427,9 @@ export default class Resume extends Component {
                       support for HR, PR, Finance, and Curriculum department
                     </Li>
                     <Li>
-                      Design a Ruby on Rails curriculum with professional full
-                      stack developers to provide an approachable program for
-                      members
+                      Design a Ruby on Rails curriculum with professional
+                      full-stack developers to provide an approachable program
+                      for members
                     </Li>
                     <Li>
                       Educate members by leading weekly Ruby on Rails study
