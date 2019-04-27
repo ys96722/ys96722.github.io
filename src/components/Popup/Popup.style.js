@@ -110,6 +110,8 @@ export const PopupContentContainer = styled.div`
 
 export const Title = styled.h1`
   white-space: nowrap;
+  display: flex;
+  justify-content: center;
   ${({ fontColor }) =>
     fontColor &&
     css`

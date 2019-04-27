@@ -1,7 +1,16 @@
 import React, { Component } from "react";
 import Coverflow from "react-coverflow";
 import { Flex } from "../../style/grid";
-import { SongDiv } from "./Songs.style.js";
+import {
+  // HapImg,
+  // HapFrame,
+  // ForImg,
+  // ForFrame,
+  // ChildImg,
+  // ChildFrame,
+  SongDiv
+} from "./Songs.style.js";
+// import LazyImage from "../LazyImage/LazyImage";
 import "../../containers/Projects/Projects.css";
 
 const HapImg = ({ doesShow }) => (
@@ -165,15 +174,25 @@ export default class Songs extends Component {
           role="menuitem"
           tabIndex="0"
           id="0"
-          style={{ width: "100%", height: "250px", position: "relative" }}
+          style={{
+            width: "100%",
+            height: "250px",
+            position: "relative"
+          }}
         >
           <HapFrame
-            style={{ width: "100%", height: "100%" }}
+            style={{
+              width: "100%",
+              height: "100%"
+            }}
             doesShow={this.state.isActive === 0 && this.state.isHover === 0}
           />
           <HapImg
             doesShow={this.state.isActive !== 0 || this.state.isHover !== 0}
-            style={{ width: "100%", height: "100%" }}
+            style={{
+              width: "100%",
+              height: "100%"
+            }}
           />
         </Flex>
 
@@ -185,7 +204,11 @@ export default class Songs extends Component {
           role="menuitem"
           tabIndex="1"
           id="1"
-          style={{ width: "100%", height: "250px", position: "relative" }}
+          style={{
+            width: "100%",
+            height: "250px",
+            position: "relative"
+          }}
         >
           <ChildFrame
             doesShow={this.state.isActive === 1 && this.state.isHover === 1}
@@ -211,7 +234,11 @@ export default class Songs extends Component {
           role="menuitem"
           tabIndex="2"
           id="2"
-          style={{ width: "100%", height: "250px", position: "relative" }}
+          style={{
+            width: "100%",
+            height: "250px",
+            position: "relative"
+          }}
         >
           <ForFrame
             doesShow={this.state.isActive === 2 && this.state.isHover === 2}

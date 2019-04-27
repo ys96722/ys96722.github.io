@@ -10,8 +10,6 @@ const card = props => {
   return (
     <CardContainer onClick="">
       <CardFront
-        className="asyncImage"
-        data-src={props.imgPath}
         imgPath={props.imgPath}
         bgSize={props.bgSize}
         tool={props.tool}

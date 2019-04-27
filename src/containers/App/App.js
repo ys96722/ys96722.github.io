@@ -22,6 +22,12 @@ export default class App extends Component {
   //   this.props.registerItem("appBackground");
   // }
 
+  componentWillMount = () => {
+    console.log(
+      "Hello there! If you are looking at my website's console, I am assuming that you are here to look for an error. If you find any bug or notice any possible improvements, please kindly do let me know, and I would really appreciate it! Thank you, and have a nice day :D"
+    );
+  };
+
   componentWillReceiveProps(nextProps) {
     if (this.state.waitingToFinishLoading && !nextProps.loading) {
       this.setState({ waitingToFinishLoading: false });
@@ -33,26 +39,6 @@ export default class App extends Component {
       });
     }
   }
-
-  // componentDidMount() {
-  //   (() => {
-  //     // "use strict";
-  //     // Page is loaded
-  //     const objects = document.getElementsByClassName("asyncImage");
-  //     Array.from(objects).map(item => {
-  //       // Start loading image
-  //       const img = new Image();
-  //       img.src = item.dataset.src;
-  //       // Once image is loaded replace the src of the HTML element
-  //       img.onload = () => {
-  //         item.classList.remove("asyncImage");
-  //         return item.nodeName === "IMG"
-  //           ? (item.src = item.dataset.src)
-  //           : (item.style.backgroundImage = `url(${item.dataset.src})`);
-  //       };
-  //     });
-  //   })();
-  // }
 
   render() {
     // const { loading, doneLoading } = this.props;

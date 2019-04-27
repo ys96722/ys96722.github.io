@@ -43,7 +43,7 @@ class Popup extends Component {
           {/* Start Right */}
           <PopupContentContainer>
             <Title fontColor={this.props.popupInfo.color}>
-              <span>{this.props.popupInfo.title}</span>
+              {this.props.popupInfo.title}
             </Title>
             <Flex row="row" justify="center">
               {this.props.popupInfo.content ? (
