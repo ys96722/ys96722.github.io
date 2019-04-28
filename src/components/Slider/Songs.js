@@ -10,7 +10,8 @@ import {
   // ChildFrame,
   SongDiv
 } from "./Songs.style.js";
-// import LazyImage from "../LazyImage/LazyImage";
+import lqip from "lqip.macro";
+import LazyImage from "../LazyImage/LazyImage";
 import "../../containers/Projects/Projects.css";
 
 const HapImg = ({ doesShow }) => (
@@ -20,8 +21,9 @@ const HapImg = ({ doesShow }) => (
     animateOut={!doesShow}
     zVal="1"
   >
-    <img
+    <LazyImage
       src={require("../../assets/song_banners/happier_cover.jpeg")}
+      unloadedSrc={lqip("../../assets/song_banners/happier_cover.jpeg")}
       alt="Happier"
       style={{
         objectFit: "cover",
@@ -39,8 +41,9 @@ const ChildImg = ({ doesShow }) => (
     animateOut={!doesShow}
     zVal="1"
   >
-    <img
+    <LazyImage
       src={require("../../assets/song_banners/child_cover.jpeg")}
+      unloadedSrc={lqip("../../assets/song_banners/child_cover.jpeg")}
       alt="Child"
       style={{
         objectFit: "cover",
@@ -58,8 +61,9 @@ const ForImg = ({ doesShow }) => (
     animateOut={!doesShow}
     zVal="1"
   >
-    <img
+    <LazyImage
       src={require("../../assets/song_banners/forever.jpeg")}
+      unloadedSrc={lqip("../../assets/song_banners/forever.jpeg")}
       alt="Forever"
       style={{
         objectFit: "cover",

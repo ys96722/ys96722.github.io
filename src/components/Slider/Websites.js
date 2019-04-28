@@ -78,24 +78,24 @@ export default class Websites extends Component {
               <br />
               <br />
               Graphic Designer:{" "}
-              <A href={profile_urls.charlotte} target="_blank">
+              <A href={profile_urls.charlotte} target="_blank" rel="noreferrer">
                 Charlotte Peloquin
               </A>{" "}
               <br />
               Graphic Designer:{" "}
-              <A href={profile_urls.sophia} target="_blank">
+              <A href={profile_urls.sophia} target="_blank" rel="noreferrer">
                 Sophia Presutti
               </A>
               <br />
               <br />
               Project Manager:{" "}
-              <A href={profile_urls.zamar} target="_blank">
+              <A href={profile_urls.zamar} target="_blank" rel="noreferrer">
                 Zamar El Zimra Rimba
               </A>
               <br />
               <br />
               Content Developer:{" "}
-              <A href={profile_urls.alia} target="_blank">
+              <A href={profile_urls.alia} target="_blank" rel="noreferrer">
                 Alia Bellwood
               </A>
             </>
@@ -128,13 +128,13 @@ export default class Websites extends Component {
               <br />
               <br />
               Graphic Designer:{" "}
-              <A href={profile_urls.sophia} target="_blank">
+              <A href={profile_urls.sophia} target="_blank" rel="noreferrer">
                 Sophia Presutti
               </A>
               <br />
               <br />
               Project Manager:{" "}
-              <A href={profile_urls.zamar} target="_blank">
+              <A href={profile_urls.zamar} target="_blank" rel="noreferrer">
                 Zamar El Zimra Rimba
               </A>
             </>
@@ -168,7 +168,7 @@ export default class Websites extends Component {
               <br />
               <br />
               Illustrator:{" "}
-              <A href={profile_urls.ina} target="_blank">
+              <A href={profile_urls.ina} target="_blank" rel="noreferrer">
                 Ina Kang
               </A>
               <br />
@@ -206,13 +206,13 @@ export default class Websites extends Component {
               <br />
               <br />
               Graphic Designer:{" "}
-              <A href={profile_urls.sophia} target="_blank">
+              <A href={profile_urls.sophia} target="_blank" rel="noreferrer">
                 Sophia Presutti
               </A>
               <br />
               <br />
               Project Manager:{" "}
-              <A href={profile_urls.zamar} target="_blank">
+              <A href={profile_urls.zamar} target="_blank" rel="noreferrer">
                 Zamar El Zimra Rimba
               </A>
               <br />
@@ -252,29 +252,29 @@ export default class Websites extends Component {
               <br />
               <br />
               Lead Graphic Designer:{" "}
-              <A href={profile_urls.james} target="_blank">
+              <A href={profile_urls.james} target="_blank" rel="noreferrer">
                 James Tran
               </A>{" "}
               <br />
               Graphic Designer:{" "}
-              <A href={profile_urls.haley} target="_blank">
+              <A href={profile_urls.haley} target="_blank" rel="noreferrer">
                 Haley Peterson
               </A>
               <br />
               <br />
               Project Manager:{" "}
-              <A href={profile_urls.zamar} target="_blank">
+              <A href={profile_urls.zamar} target="_blank" rel="noreferrer">
                 Zamar El Zimra Rimba
               </A>
               <br />
               <br />
               Content Developer:{" "}
-              <A href={profile_urls.shreya} target="_blank">
+              <A href={profile_urls.shreya} target="_blank" rel="noreferrer">
                 Shreya Goel
               </A>
               <br />
               Content Developer:{" "}
-              <A href={profile_urls.eugene} target="_blank">
+              <A href={profile_urls.eugene} target="_blank" rel="noreferrer">
                 Eugene White
               </A>
             </>
@@ -307,19 +307,19 @@ export default class Websites extends Component {
               <br />
               <br />
               Graphic Designer:{" "}
-              <A href={profile_urls.alyssa} target="_blank">
+              <A href={profile_urls.alyssa} target="_blank" rel="noreferrer">
                 Alyssa Lenenfeld
               </A>
               <br />
               <br />
               Project Manager:{" "}
-              <A href={profile_urls.zamar} target="_blank">
+              <A href={profile_urls.zamar} target="_blank" rel="noreferrer">
                 Zamar El Zimra Rimba
               </A>
               <br />
               <br />
               Content Developer:{" "}
-              <A href={profile_urls.alyson} target="_blank">
+              <A href={profile_urls.alyson} target="_blank" rel="noreferrer">
                 Alyson Gerdes
               </A>
             </>
@@ -354,19 +354,19 @@ export default class Websites extends Component {
               <br />
               <br />
               Graphic Designer:{" "}
-              <A href={profile_urls.charlotte} target="_blank">
+              <A href={profile_urls.charlotte} target="_blank" rel="noreferrer">
                 Charlotte Peloquin
               </A>
               <br />
               <br />
               Project Manager:{" "}
-              <A href={profile_urls.zamar} target="_blank">
+              <A href={profile_urls.zamar} target="_blank" rel="noreferrer">
                 Zamar El Zimra Rimba
               </A>
               <br />
               <br />
               Content Developer:{" "}
-              <A href={profile_urls.leah} target="_blank">
+              <A href={profile_urls.leah} target="_blank" rel="noreferrer">
                 Leah Lines
               </A>
             </>

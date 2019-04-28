@@ -82,6 +82,7 @@ class Popup extends Component {
               <A
                 href={this.props.popupInfo.link}
                 target="_blank"
+                rel="noreferrer"
                 fontColor={this.props.popupInfo.color}
               >
                 Take a look!

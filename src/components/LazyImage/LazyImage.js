@@ -27,47 +27,21 @@ export default class LazyImage extends Component {
   render() {
     if (this.state.error) {
       return (
-        <img
-          className={this.props.className}
-          style={this.props.style}
-          src={this.props.unloadedSrc}
+        <div
+          style={{ backgroundImage: this.props.unloadedSrc }}
           alt={this.props.alt}
         />
       );
     } else if (!this.state.loaded) {
       return (
         <div
-          style={{
-            display: "flex",
-            height: "100%",
-            justifyContent: "center"
-          }}
-        >
-          <h1
-            style={{
-              display: "flex",
-              marginTop: "auto",
-              marginBottom: "auto"
-            }}
-          >
-            Loading...
-          </h1>
-        </div>
-        // <img
-        //   className={this.props.className}
-        //   style={this.props.style}
-        //   src={this.props.unloadedSrc}
-        //   alt={this.props.alt}
-        // />
+          style={{ backgroundImage: this.props.unloadedSrc }}
+          alt={this.props.alt}
+        />
       );
     }
     return (
-      <img
-        className={this.props.className}
-        style={this.props.style}
-        src={this.props.src}
-        alt={this.props.alt}
-      />
+      <div style={{ backgroundImage: this.props.src }} alt={this.props.alt} />
     );
   }
 }

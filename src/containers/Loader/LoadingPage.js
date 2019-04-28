@@ -11,13 +11,13 @@ import { Motion, spring } from "react-motion";
 import { Container, Headline } from "./LoadingPage.style";
 
 class LoadingPage extends PureComponent {
-  //   static propTypes = {
-  //     loading: PropTypes.bool.isRequired,
-  //     incrementProgress: PropTypes.func.isRequired,
-  //     clearProgress: PropTypes.func.isRequired,
-  //     completeProgress: PropTypes.func.isRequired,
-  //     nearlyCompleteProgress: PropTypes.func.isRequired
-  //   };
+  // static propTypes = {
+  //   loading: PropTypes.bool.isRequired,
+  //   incrementProgress: PropTypes.func.isRequired,
+  //   clearProgress: PropTypes.func.isRequired,
+  //   completeProgress: PropTypes.func.isRequired,
+  //   nearlyCompleteProgress: PropTypes.func.isRequired
+  // };
 
   _inc(_status) {
     if (_status >= 100) {

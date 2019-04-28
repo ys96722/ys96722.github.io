@@ -14,21 +14,25 @@ class SideBar extends Component {
           style={{ margin: "0.3rem" }}
           url="https://www.linkedin.com/in/yoonchang"
           target="_blank"
+          rel="noreferrer"
         />
         <SocialIcon
           style={{ margin: "0.3rem" }}
           url="mailto:yoonsees@gmail.com"
           target="_blank"
+          rel="noreferrer"
         />
         <SocialIcon
           style={{ margin: "0.3rem" }}
           url="https://soundcloud.com/yooni-verse"
           target="_blank"
+          rel="noreferrer"
         />
         <SocialIcon
           style={{ margin: "0.3rem" }}
           url="https://github.com/ys96722"
           target="_blank"
+          rel="noreferrer"
         />
         {/* <SocialButton
           href="https://www.linkedin.com/in/yoonchang/"
