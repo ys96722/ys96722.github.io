@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import lqip from "lqip.macro";
 
 export default class LazyImage extends Component {
   constructor(props) {
@@ -27,21 +28,23 @@ export default class LazyImage extends Component {
   render() {
     if (this.state.error) {
       return (
-        <div
-          style={{ backgroundImage: this.props.unloadedSrc }}
+        <img
+          src={this.props.unloadedSrc}
+          style={this.props.style}
           alt={this.props.alt}
         />
       );
     } else if (!this.state.loaded) {
       return (
-        <div
-          style={{ backgroundImage: this.props.unloadedSrc }}
+        <img
+          src={this.props.unloadedSrc}
+          style={this.props.style}
           alt={this.props.alt}
         />
       );
     }
     return (
-      <div style={{ backgroundImage: this.props.src }} alt={this.props.alt} />
+      <img style={this.props.style} src={this.props.src} alt={this.props.alt} />
     );
   }
 }
