@@ -74,6 +74,7 @@ export const SubHeader = styled.h2`
   ${media.phone`
     font-size: 2rem;
     text-align: center;
+    margin-top: 2rem;
   `}
 `;
 

@@ -209,6 +209,15 @@ export default class Resume extends Component {
                     />
                   </Item>
                   <Item>
+                    <ItemName>Node.js</ItemName>
+                    <ItemMastery
+                      mastery={3}
+                      projects="3"
+                      semesters="2"
+                      certificates="2"
+                    />
+                  </Item>
+                  <Item>
                     <ItemName>WordPress</ItemName>
                     <ItemMastery mastery={4} projects="9" semesters="2" />
                   </Item>
@@ -229,15 +238,15 @@ export default class Resume extends Component {
                 <SubColumn>
                   <h2>Tools</h2>
                   <Item>
+                    <ItemName>Redux</ItemName>
+                    <ItemMastery mastery={3} projects="5" semesters="2" />
+                  </Item>
+                  <Item>
                     <ItemName>BootStrap</ItemName>
                     <ItemMastery mastery={4} projects="6" semesters="1" />
                   </Item>
                   <Item>
                     <ItemName>Webpack</ItemName>
-                    <ItemMastery mastery={2} projects="5" semesters="2" />
-                  </Item>
-                  <Item>
-                    <ItemName>Redux</ItemName>
                     <ItemMastery mastery={2} projects="5" semesters="2" />
                   </Item>
                   <Item>
@@ -378,11 +387,37 @@ export default class Resume extends Component {
               <Row>
                 <Column width="30%" textAlign="left">
                   <CompanyTitle>
+                    <A href="https://www.graybar.com/" target="_blank">
+                      Graybar
+                    </A>
+                  </CompanyTitle>
+                  <CompanyInfo>May 2019 - Current</CompanyInfo>
+                  <CompanyInfo>Champaign, IL</CompanyInfo>
+                </Column>
+                <Column width="70%" textAlign="left">
+                  <JobTitle>Full Stack Developer (Internship)</JobTitle>
+                  <ul>
+                    <Li>
+                      Create Reddit-like discussion forum to facilitate
+                      innovation within the company using React.js, Redux,
+                      Ionic, and Node.js
+                    </Li>
+                    <Li>
+                      Develop client-side stack for an interactive data
+                      visualization application using React.js, Redux, Node.js,
+                      and Python
+                    </Li>
+                  </ul>
+                </Column>
+              </Row>
+              <Row marginTop="4rem">
+                <Column width="30%" textAlign="left">
+                  <CompanyTitle>
                     <A href="http://researchpark.illinois.edu/" target="_blank">
                       Enterprise Works
                     </A>
                   </CompanyTitle>
-                  <CompanyInfo>May 2018 - current (11 months)</CompanyInfo>
+                  <CompanyInfo>May 2018 - May 2019</CompanyInfo>
                   <CompanyInfo>Champaign, IL</CompanyInfo>
                 </Column>
                 <Column width="70%" textAlign="left">
@@ -416,7 +451,7 @@ export default class Resume extends Component {
                     Codable
                     {/* </A> */}
                   </CompanyTitle>
-                  <CompanyInfo>July 2017 - current (22 months)</CompanyInfo>
+                  <CompanyInfo>July 2017 - May 2019</CompanyInfo>
                   <CompanyInfo>Champaign, IL</CompanyInfo>
                 </Column>
                 <Column width="70%" textAlign="left">
@@ -445,9 +480,7 @@ export default class Resume extends Component {
                       KoJobs
                     </A>
                   </CompanyTitle>
-                  <CompanyInfo>
-                    September 2016 - current (32 months)
-                  </CompanyInfo>
+                  <CompanyInfo>September 2016 - May 2019</CompanyInfo>
                   <CompanyInfo>Champaign, IL</CompanyInfo>
                 </Column>
                 <Column width="70%" textAlign="left">
