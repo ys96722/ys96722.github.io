@@ -14,8 +14,6 @@ function fireTracking() {
   ReactGA.pageview(window.location.hash);
 }
 
-hashHistory.listen();
-
 export default (
   <Router onUpdate={fireTracking} history={hashHistory}>
     <Route path="/" component={App}>

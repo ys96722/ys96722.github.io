@@ -136,10 +136,6 @@ export default class Projects extends Component {
           <Popup
             closePopup={this.togglePopup}
             popupInfo={this.state.popupInfo}
-            onClick={e =>
-              this.handleClick(this.state.popupInfo.title + "View More")
-            }
-            // ref={this.setWrapperRef}
           />
         ) : null}
         <BottomDiv>
