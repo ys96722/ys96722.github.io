@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/insigna2.c050902a.png"
   },
   {
-    "revision": "f44a53155d8ed63f48ce",
+    "revision": "f42fc4f0bed91b6bfdeb",
     "url": "/static/css/main.f41397f0.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/static/media/diceroll.afd53a36.mp3"
   },
   {
-    "revision": "2c9d09a5791f7e79a3f549353df0de01",
-    "url": "/static/media/yooniverse1.2c9d09a5.png"
+    "revision": "c1ad934540e7045eb51f15f085de2d81",
+    "url": "/static/media/yooniverse1.c1ad9345.png"
   },
   {
     "revision": "0b2f25e5151a45b72f0c4195f88b7fc8",
@@ -132,8 +132,8 @@ self.__precacheManifest = [
     "url": "/static/media/insigna1.733c240c.png"
   },
   {
-    "revision": "f44a53155d8ed63f48ce",
-    "url": "/static/js/main.f44a5315.chunk.js"
+    "revision": "f42fc4f0bed91b6bfdeb",
+    "url": "/static/js/main.f42fc4f0.chunk.js"
   },
   {
     "revision": "1f6170ad476e934bacee6a620088b3ee",
@@ -260,7 +260,7 @@ self.__precacheManifest = [
     "url": "/static/media/EDAsuicide3.7415bb23.png"
   },
   {
-    "revision": "d7fd351c5bb5cb2e6c119979471563b1",
+    "revision": "a440eb216ca6052f175b469338ab68da",
     "url": "/index.html"
   }
 ];
