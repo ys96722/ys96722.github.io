@@ -7,9 +7,17 @@ import WhenInView from "../../components/WhenInView/WhenInView";
 import { Hero, SubHeader, RevealP, HomeContainer } from "./Home.style";
 import { A, NavButton, BottomDiv } from "../../style/types";
 import { Div } from "../../style/grid";
+import ReactGA from "react-ga";
 
 export default class Home extends Component {
   state = { isLoading: true };
+
+  handleClick = event => {
+    ReactGA.event({
+      category: "Home",
+      action: event
+    });
+  };
 
   componentDidMount() {
     this.setState({
@@ -42,7 +50,12 @@ export default class Home extends Component {
               of July, I aspire to live a life full of opportunities to create
               new things. To view my work,{" "}
               <span>
-                <A href="#projects">click here!</A>
+                <A
+                  href="#projects"
+                  onClick={e => this.handleClick("Projects Link in Intro")}
+                >
+                  click here!
+                </A>
               </span>
             </RevealP>
           )}
@@ -70,6 +83,7 @@ export default class Home extends Component {
                   href="https://www.linkedin.com/in/aliabellwood/"
                   target="_blank"
                   rel="noreferrer"
+                  onClick={e => this.handleClick("Alia")}
                 >
                   Alia Bellwood
                 </A>
@@ -115,6 +129,7 @@ export default class Home extends Component {
                   href="https://www.linkedin.com/in/zamarrimba/"
                   target="_blank"
                   rel="noreferrer"
+                  onClick={e => this.handleClick("Zamar")}
                 >
                   Zamar El Zimra Rimba
                 </A>
@@ -150,6 +165,7 @@ export default class Home extends Component {
                   href="https://sophiapresutti.com/"
                   target="_blank"
                   rel="noreferrer"
+                  onClick={e => this.handleClick("Sophia")}
                 >
                   Sophia Presutti
                 </A>
@@ -159,7 +175,11 @@ export default class Home extends Component {
           )}
         </WhenInView>
         <BottomDiv>
-          <NavButton href="#projects" direction="right">
+          <NavButton
+            href="#projects"
+            direction="right"
+            onClick={e => this.handleClick("Projects Link at Bottom")}
+          >
             Projects >>
           </NavButton>
         </BottomDiv>

@@ -28,6 +28,7 @@ import {
 } from "./Resume.style";
 
 import ItemMastery from "./ItemMastery";
+import ReactGA from "react-ga";
 
 // import { Container } from "../../style/grid"; Moved it to App
 
@@ -36,6 +37,13 @@ export default class Resume extends Component {
     super(props);
     this.state = {};
   }
+
+  handleClick = event => {
+    ReactGA.event({
+      category: "Resume",
+      action: event
+    });
+  };
 
   render() {
     // let size = window.innerWidth;
@@ -68,7 +76,11 @@ export default class Resume extends Component {
             <PageSubTitle>
               A summary of what I have done and what I can do. Looking for a
               more traditional resume? Message me on{"\u00A0"}
-              <A href="https://www.linkedin.com/in/yoonchang" target="_blank">
+              <A
+                href="https://www.linkedin.com/in/yoonchang"
+                target="_blank"
+                onClick={e => this.handleClick("LinkedIn Link in Intro")}
+              >
                 LinkedIn!
               </A>
             </PageSubTitle>
@@ -387,7 +399,11 @@ export default class Resume extends Component {
               <Row>
                 <Column width="30%" textAlign="left">
                   <CompanyTitle>
-                    <A href="https://www.graybar.com/" target="_blank">
+                    <A
+                      href="https://www.graybar.com/"
+                      target="_blank"
+                      onClick={e => this.handleClick("Graybar Link")}
+                    >
                       Graybar
                     </A>
                   </CompanyTitle>
@@ -413,7 +429,11 @@ export default class Resume extends Component {
               <Row marginTop="4rem">
                 <Column width="30%" textAlign="left">
                   <CompanyTitle>
-                    <A href="http://researchpark.illinois.edu/" target="_blank">
+                    <A
+                      href="http://researchpark.illinois.edu/"
+                      target="_blank"
+                      onClick={e => this.handleClick("EW Link")}
+                    >
                       Enterprise Works
                     </A>
                   </CompanyTitle>
@@ -476,7 +496,11 @@ export default class Resume extends Component {
               <Row marginTop="4rem">
                 <Column width="30%" textAlign="left">
                   <CompanyTitle>
-                    <A href="https://kojobsillinois.com/" target="_blank">
+                    <A
+                      href="https://kojobsillinois.com/"
+                      target="_blank"
+                      onClick={e => this.handleClick("KoJobs Link")}
+                    >
                       KoJobs
                     </A>
                   </CompanyTitle>
@@ -507,7 +531,11 @@ export default class Resume extends Component {
           </SectionContainer>
         </ResumeContainer>
         <BottomDiv>
-          <NavButton href="#projects" direction="left">
+          <NavButton
+            href="#projects"
+            direction="left"
+            onClick={e => this.handleClick("Projects Link at the Bottom")}
+          >
             &lt;&lt; Projects
           </NavButton>
         </BottomDiv>
