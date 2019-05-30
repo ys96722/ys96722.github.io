@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import lqip from "lqip.macro";
+// import lqip from "lqip.macro";
 
 export default class LazyImage extends Component {
   constructor(props) {

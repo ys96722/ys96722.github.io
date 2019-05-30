@@ -19,6 +19,7 @@ const cardList = props => {
         tools={item.tools}
         link={item.link}
         imgPath={item.imgPath}
+        unloadedSrc={item.unloadedSrc}
         bgSize={item.bgSize}
         // cardWidth={cardWidth}
         togglePopup={props.togglePopup}

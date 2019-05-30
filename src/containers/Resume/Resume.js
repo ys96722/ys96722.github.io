@@ -35,8 +35,20 @@ import ReactGA from "react-ga";
 export default class Resume extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      firstVisitHover: false
+    };
   }
+
+  handleFirstHover = event => {
+    event.preventDefault();
+    if (this.state.firstVisitHover === false) {
+      console.log("First Hover!");
+      this.setState({
+        firstVisitHover: true
+      });
+    }
+  };
 
   handleClick = event => {
     ReactGA.event({
@@ -125,10 +137,13 @@ export default class Resume extends Component {
                   <h2>Database</h2>
 
                   <Item>
-                    <ItemName>SQLite3</ItemName>
+                    <ItemName>MongoDB</ItemName>
                     <ItemMastery mastery={3} projects="8" semesters="4" />
                   </Item>
-
+                  <Item>
+                    <ItemName>Firebase</ItemName>
+                    <ItemMastery mastery={3} projects="5" semesters="2" />
+                  </Item>
                   <Item>
                     <ItemName>MySQL</ItemName>
                     <ItemMastery mastery={3} projects="5" semesters="4" />
@@ -137,11 +152,6 @@ export default class Resume extends Component {
                     <ItemName>PostgreSQL</ItemName>
                     <ItemMastery mastery={3} projects="4" semesters="1" />
                   </Item>
-                  <Item>
-                    <ItemName>Firebase</ItemName>
-                    <ItemMastery mastery={2} projects="1" semesters="1" />
-                  </Item>
-
                   <Item>
                     <ItemName>RSQLite</ItemName>
                     <ItemMastery mastery={2} projects="1" semesters="1" />
@@ -186,9 +196,10 @@ export default class Resume extends Component {
                     <ItemName>JavaScript</ItemName>
                     <ItemMastery
                       mastery={4}
-                      projects="6"
+                      projects="12"
                       semesters="6"
                       certificates="2"
+                      onMouseOver={() => console.log("hi")}
                     />
                   </Item>
                   <Item>
@@ -400,7 +411,8 @@ export default class Resume extends Component {
                 <Column width="30%" textAlign="left">
                   <CompanyTitle>
                     <A
-                      href="https://www.graybar.com/"
+                      // href="https://www.graybar.com/"
+                      href="http://fortune.com/fortune500/graybar-electric/"
                       target="_blank"
                       onClick={e => this.handleClick("Graybar Link")}
                     >
@@ -430,11 +442,11 @@ export default class Resume extends Component {
                 <Column width="30%" textAlign="left">
                   <CompanyTitle>
                     <A
-                      href="http://researchpark.illinois.edu/"
+                      href="https://researchpark.illinois.edu/"
                       target="_blank"
                       onClick={e => this.handleClick("EW Link")}
                     >
-                      Enterprise Works
+                      EnterpriseWorks
                     </A>
                   </CompanyTitle>
                   <CompanyInfo>May 2018 - May 2019</CompanyInfo>
@@ -444,22 +456,22 @@ export default class Resume extends Component {
                   <JobTitle>Web Developer (Internship)</JobTitle>
                   <ul>
                     <Li>
-                      Develop ten websites for start-ups using WordPress, PHP,
+                      Developed ten websites for start-ups using WordPress, PHP,
                       JavaScript, and CSS3 and produce tutorial videos for
                       clients
                     </Li>
                     <Li>
-                      Coordinate two web development workshops to create a more
+                      Coordinated two web development workshops to create a more
                       cohesive workflow between designers and developers
                     </Li>
                     <Li>
-                      Reduce hours spent per website by approximately 20 hours
+                      Reduced hours spent per website by approximately 20 hours
                       by devising a new SOP for web developers and graphic
                       designers
                     </Li>
                     <Li>
-                      Lead biweekly web development study group on ES6, CSS3,
-                      and HTML5 to provide a basic development knowledge
+                      Led biweekly web development study group on ES6, CSS3, and
+                      HTML5 to provide a basic development knowledge
                     </Li>
                   </ul>
                 </Column>
@@ -478,16 +490,16 @@ export default class Resume extends Component {
                   <JobTitle>Founding President (Student Organization)</JobTitle>
                   <ul>
                     <Li>
-                      Create operating systems and provide administrative
+                      Created operating systems and provide administrative
                       support for HR, PR, Finance, and Curriculum department
                     </Li>
                     <Li>
-                      Design a Ruby on Rails curriculum with professional
+                      Designed a Ruby on Rails curriculum with professional
                       full-stack developers to provide an approachable program
                       for members
                     </Li>
                     <Li>
-                      Educate members by leading weekly Ruby on Rails study
+                      Educated members by leading weekly Ruby on Rails study
                       groups on MVC development, RESTful API, and HTTP methods.
                     </Li>
                   </ul>
@@ -511,17 +523,17 @@ export default class Resume extends Component {
                   <JobTitle>Vice President (Student Organization)</JobTitle>
                   <ul>
                     <Li>
-                      Facilitate workshops with start-up entrepreneurs, content
+                      Facilitated workshops with start-up entrepreneurs, content
                       creators, and web developers to offer insights into
                       start-up industry
                     </Li>
                     <Li>
-                      Arrange mock interviews, resume sessions, and office tours
-                      by contacting professionals at local corporations and
-                      start-ups
+                      Arranged mock interviews, resume sessions, and office
+                      tours by contacting professionals at local corporations
+                      and start-ups
                     </Li>
                     <Li>
-                      Educate members by leading weekly Python study groups on
+                      Educated members by leading weekly Python study groups on
                       OOP, data wrangling, visualization, and machine learning
                     </Li>
                   </ul>

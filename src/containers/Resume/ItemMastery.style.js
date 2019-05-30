@@ -12,7 +12,7 @@ export const Tooltip = styled(Flex)`
   position: absolute;
   bottom: 125%;
   border: 1px solid black;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -29,9 +29,11 @@ export const Tooltip = styled(Flex)`
   font-size: 30px;
   border-radius: 10px;
 
-  display: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* display: none; */
+  display: block;
   opacity: 0;
-  transition: all 0.2s ease-in-out;
 
   &::after {
     position: absolute;

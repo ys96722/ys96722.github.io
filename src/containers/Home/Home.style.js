@@ -21,7 +21,8 @@ export const HomeContainer = styled(Div)`
 
 export const Hero = styled.div`
   height: 100vh;
-  background-image: url(${require("../../assets/finalHero.jpeg")});
+  /* background-image: url(${require("../../assets/finalHero.jpeg")}); */
+  background-image: url(${props => props.src});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardList from "../Card/CardList";
 import { blue } from "../../style/variables";
 import { A } from "../../style/types";
+import lqip from "lqip.macro";
 
 let profile_urls = {
   sophia: "https://sophiapresutti.com/",
@@ -26,6 +27,7 @@ export default class Websites extends Component {
         tool: "React",
         tools: "Front: React.js\nVersion Control: Git",
         imgPath: require("../../assets/finalHero.jpeg"),
+        unloadedSrc: lqip("../../assets/finalHero.jpeg"),
         bgSize: "cover",
         popupInfo: {
           title: "Yooniverse",
@@ -60,6 +62,7 @@ export default class Websites extends Component {
         tools:
           "CMS: WordPress\nFront: JavaScript (jQuery), HTML5, CSS3\nServer: PHP\nDatabase: MySQL, PHPMyAdmin",
         imgPath: require("../../assets/website_banners/simbiosys_hero.png"),
+        unloadedSrc: lqip("../../assets/website_banners/simbiosys_hero.png"),
         bgSize: "cover",
         popupInfo: {
           title: "SimBioSys",
@@ -109,6 +112,7 @@ export default class Websites extends Component {
         tools:
           "CMS: WordPress\nFront: JavaScript (jQuery), HTML5, CSS3\nServer: PHP\nDatabase: MySQL, PHPMyAdmin",
         imgPath: require("../../assets/website_banners/native_hero.png"),
+        unloadedSrc: lqip("../../assets/website_banners/native_hero.png"),
         bgSize: "cover",
         popupInfo: {
           title: "Native Roots",
@@ -149,6 +153,7 @@ export default class Websites extends Component {
         tools:
           "CMS: WordPress\nFront: JavaScript (jQuery), HTML5, CSS3\nServer: PHP\nDatabase: MySQL, PHPMyAdmin",
         imgPath: require("../../assets/website_banners/kojobs_hero2.png"),
+        unloadedSrc: lqip("../../assets/website_banners/kojobs_hero2.png"),
         bgSize: "cover",
         popupInfo: {
           title: "KoJobs",
@@ -185,6 +190,7 @@ export default class Websites extends Component {
         tools:
           "CMS: WordPress\nFront: JavaScript (jQuery), HTML5, CSS3\nServer: PHP\nDatabase: MySQL, PHPMyAdmin",
         imgPath: require("../../assets/website_banners/ability_logo.png"),
+        unloadedSrc: lqip("../../assets/website_banners/ability_logo.png"),
         bgSize: "cover",
         popupInfo: {
           title: "Ability Marketplace",
@@ -232,6 +238,7 @@ export default class Websites extends Component {
         tools:
           "CMS: WordPress\nFront: JavaScript (jQuery), HTML5, CSS3\nServer: PHP\nDatabase: MySQL, PHPMyAdmin",
         imgPath: require("../../assets/website_banners/insigna_hero.png"),
+        unloadedSrc: lqip("../../assets/website_banners/insigna_hero.png"),
         bgSize: "cover",
         popupInfo: {
           title: "Insigna",
@@ -244,7 +251,7 @@ export default class Websites extends Component {
             require("../../assets/insigna/insigna5.png")
           ],
           content:
-            "Website developed for a animal biotechnology start-up as the Lead Web Developer at EnterpriseWorks. Tools used include JavaScript, HTML5, and CSS3 for front-end, PHP for server-side, MySQL and PHPMyAdmin for Database, and WordPress for CMS.",
+            "Website developed for a biotechnology start-up as the Lead Web Developer at EnterpriseWorks. Tools used include JavaScript, HTML5, and CSS3 for front-end, PHP for server-side, MySQL and PHPMyAdmin for Database, and WordPress for CMS.",
           // testimonial: `"Yoon did a fantastic job translating our idea for a website into practice. He was quick and responsive, went above and beyond in the design, and offered great "after sale" services. Moreover, he took an interest in our technology above and beyond what was required for creating the website. I highly recommend him for web development."\n\n- Joseph Peterson, Co-Founder of SimBioSys Inc.`,
           people: (
             <>
@@ -288,6 +295,7 @@ export default class Websites extends Component {
         tools:
           "CMS: WordPress\nFront: JavaScript (jQuery), HTML5, CSS3\nServer: PHP\nDatabase: MySQL, PHPMyAdmin",
         imgPath: require("../../assets/website_banners/2xl_blue_logo.png"),
+        unloadedSrc: lqip("../../assets/website_banners/2xl_blue_logo.png"),
         bgSize: "contain",
         popupInfo: {
           title: "2XL Logistics",
@@ -333,6 +341,7 @@ export default class Websites extends Component {
         tools:
           "CMS: WordPress\nFront: JavaScript (jQuery), HTML5, CSS3\nServer: PHP\nDatabase: MySQL, PHPMyAdmin",
         imgPath: require("../../assets/website_banners/traverse_logo.png"),
+        unloadedSrc: lqip("../../assets/website_banners/traverse_logo.png"),
         bgSize: "contain",
         popupInfo: {
           title: "Traverse Science",
@@ -345,7 +354,7 @@ export default class Websites extends Component {
             require("../../assets/traverse/traverse5.png")
           ],
           content:
-            "Website developed for an clinical research company as the Lead Web Developer at EnterpriseWorks. Tools used include JavaScript, HTML5, and CSS3 for front-end, PHP for server-side, MySQL and PHPMyAdmin for Database, and WordPress for CMS.",
+            "Website developed for a clinical research company as the Lead Web Developer at EnterpriseWorks. Tools used include JavaScript, HTML5, and CSS3 for front-end, PHP for server-side, MySQL and PHPMyAdmin for Database, and WordPress for CMS.",
           testimonial: `“We worked with Yoon as part of the Shared Services Program at EnterpriseWorks where he helped us build our website through Wordpress. Yoon was very professional, responsive, and excellent at communicating. Beyond building the website to specifications, he was always available by phone and worked on off-hours to help bolster the security of our site when we were unable to. We appreciated his ability to distill complex web development issues to a level we could understand.”\n\n- Stephen Flemming, President and Co-founder of Traverse Science Inc.
             `,
           people: (

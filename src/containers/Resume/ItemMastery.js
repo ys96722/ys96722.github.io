@@ -25,6 +25,7 @@ export default class ItemMastery extends Component {
           boxes: [
             ...prevState.boxes,
             <div
+              key={i}
               style={{
                 width: "20px",
                 height: "20px",
@@ -45,6 +46,7 @@ export default class ItemMastery extends Component {
           boxes: [
             ...prevState.boxes,
             <div
+              key={i}
               style={{
                 width: "20px",
                 height: "20px",

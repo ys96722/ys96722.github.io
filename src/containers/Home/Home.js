@@ -8,9 +8,13 @@ import { Hero, SubHeader, RevealP, HomeContainer } from "./Home.style";
 import { A, NavButton, BottomDiv } from "../../style/types";
 import { Div } from "../../style/grid";
 import ReactGA from "react-ga";
+import lqip from "lqip.macro";
 
 export default class Home extends Component {
-  state = { isLoading: true };
+  state = {
+    loaded: false,
+    error: false
+  };
 
   handleClick = event => {
     ReactGA.event({
@@ -20,24 +24,46 @@ export default class Home extends Component {
   };
 
   componentDidMount() {
-    this.setState({
-      isLoading: false
-    });
+    const img = new Image();
+    img.onload = () => {
+      this.setState({
+        loaded: true
+      });
+    };
+    img.onerror = () => {
+      this.setState({
+        error: true
+      });
+    };
+    img.src = require("../../assets/finalHero.jpeg");
   }
 
   render() {
     return (
       <HomeContainer style={{ position: "relative" }}>
-        <Hero>
-          <Div animation="fadeIn">
-            <h1>Yoon Chang</h1>
-          </Div>
-          <Div animation="fadeIn">
-            <h2>
-              Creator <span>-</span> Developer
-            </h2>
-          </Div>
-        </Hero>
+        {this.state.loaded ? (
+          <Hero src={require("../../assets/finalHero.jpeg")}>
+            <Div animation="fadeIn">
+              <h1>Yoon Chang</h1>
+            </Div>
+            <Div animation="fadeIn">
+              <h2>
+                Creator <span>-</span> Developer
+              </h2>
+            </Div>
+          </Hero>
+        ) : (
+          <Hero src={lqip("../../assets/finalHero.jpeg")}>
+            <Div animation="fadeIn">
+              <h1>Yoon Chang</h1>
+            </Div>
+            <Div animation="fadeIn">
+              <h2>
+                Creator <span>-</span> Developer
+              </h2>
+            </Div>
+          </Hero>
+        )}
         <SubHeader>Welcome! I am Yoon.</SubHeader>
         <WhenInView>
           {({ isInView }) => (
