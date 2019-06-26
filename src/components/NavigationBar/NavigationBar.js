@@ -1,38 +1,39 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 import {
   NavigationContainer,
   NavigationItem,
-  IndexNavigationItem
-} from "./NavigationBar.style";
+  IndexNavigationItem,
+  ItemDiv
+} from "./NavigationBar.style"
 
 class NavigationBar extends Component {
-  state = {};
+  state = {}
   render() {
     return (
       <NavigationContainer>
-        <IndexNavigationItem
-          to="/"
-          title="Home"
-          activeClassName="activeIndexItem"
-        />
-        <NavigationItem
-          to="/projects"
-          title="Projects"
-          activeClassName="activeNavItem"
-        />
-        <NavigationItem
-          to="/resume"
-          title="Résumé"
-          activeClassName="activeNavItem"
-        />
+        <ItemDiv>
+          <IndexNavigationItem to="/" activeClassName="activeIndexItem">
+            <span>{"{"}</span> Home <span>{"}"}</span>
+          </IndexNavigationItem>
+        </ItemDiv>
+        <ItemDiv>
+          <NavigationItem to="/projects" activeClassName="activeNavItem">
+            <span>{"{"}</span> Projects <span>{"}"}</span>
+          </NavigationItem>
+        </ItemDiv>
+        <ItemDiv>
+          <NavigationItem to="/resume" activeClassName="activeNavItem">
+            <span>{"{"}</span> Résumé <span>{"}"}</span>
+          </NavigationItem>
+        </ItemDiv>
         {/* <NavigationItem
           to="/jurumable"
           title="주루마블"
           activeClassName="activeNavItem"
         /> */}
       </NavigationContainer>
-    );
+    )
   }
 }
 
-export default NavigationBar;
+export default NavigationBar

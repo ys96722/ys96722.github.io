@@ -79,11 +79,12 @@ export const HeroBanner = styled(Flex)`
 
   h1 {
     font-size: 6em;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 1;
   }
   h3 {
     font-size: 2em;
+    font-weight: 400;
   }
 `
 

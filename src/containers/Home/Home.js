@@ -110,7 +110,7 @@ export default class Home extends Component {
             style={{
               transform: `translateX(${this.state.mouseX / 10}px) 
                           translateY(${this.state.mouseY / 10}px)`,
-              transition: "all 0.1s linear"
+              transition: "all 0.3s ease-out"
             }}
           >
             Yoon
@@ -119,7 +119,7 @@ export default class Home extends Component {
             style={{
               transform: `translateX(${-this.state.mouseX / 10}px) 
                           translateY(${-this.state.mouseY / 10}px)`,
-              transition: "all 0.1s linear"
+              transition: "all 0.3s ease-out"
             }}
           >
             Developer

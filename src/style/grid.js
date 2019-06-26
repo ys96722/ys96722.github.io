@@ -107,6 +107,10 @@ export const PageHeader = styled(Flex)`
   margin-right: auto;
   margin-bottom: 4rem;
   color: white;
+
+  h2 {
+    font-weight: 400;
+  }
 `
 
 export const PageContainer = styled(Flex)`
