@@ -19,9 +19,9 @@ export const ButtonContainer = styled(Flex)`
 
 export const Button = styled.button`
   /* background-color: ${black}; */
-  background-color: ${mint};
+  /* background-color: ${mint}; */
   /* color: white; */
-  color: black;
+  color: white;
   border: none;
   padding: 15px 32px;
   text-align: center;
