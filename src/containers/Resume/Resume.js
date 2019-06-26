@@ -1,14 +1,15 @@
-import React, { Component } from "react";
-import { Title, red, blue, green } from "../../style/variables";
+import React, { Component } from "react"
+import { Title, red, blue, green } from "../../style/variables"
 import {
   A,
   PageTitle,
   PageSubTitle,
   NavButton,
   BottomDiv
-} from "../../style/types";
-import { Div } from "../../style/grid";
+} from "../../style/types"
+import { PageHeader } from "../../style/grid"
 import {
+  ResumePageContainer,
   ResumeContainer,
   SectionContainer,
   Section,
@@ -25,37 +26,37 @@ import {
   SchoolTitle,
   SchoolInfo,
   SmallAlert
-} from "./Resume.style";
+} from "./Resume.style"
 
-import ItemMastery from "./ItemMastery";
-import ReactGA from "react-ga";
+import ItemMastery from "./ItemMastery"
+import ReactGA from "react-ga"
 
 // import { Container } from "../../style/grid"; Moved it to App
 
 export default class Resume extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       firstVisitHover: false
-    };
+    }
   }
 
   handleFirstHover = event => {
-    event.preventDefault();
+    event.preventDefault()
     if (this.state.firstVisitHover === false) {
-      console.log("First Hover!");
+      console.log("First Hover!")
       this.setState({
         firstVisitHover: true
-      });
+      })
     }
-  };
+  }
 
   handleClick = event => {
     ReactGA.event({
       category: "Resume",
       action: event
-    });
-  };
+    })
+  }
 
   render() {
     // let size = window.innerWidth;
@@ -69,7 +70,7 @@ export default class Resume extends Component {
     //   );
     // } else {
     return (
-      <Div style={{ position: "relative" }}>
+      <ResumePageContainer>
         <SmallAlert animation="fadeIn">
           <h1>
             My online resume is not available for smaller viewports. Please
@@ -77,12 +78,7 @@ export default class Resume extends Component {
           </h1>
         </SmallAlert>
         <ResumeContainer animation="fadeIn" style={{ position: "relative" }}>
-          <Div
-            width="60%"
-            marginLeft="auto"
-            marginRight="auto"
-            marginBottom="4rem"
-          >
+          <PageHeader>
             <PageTitle>Online Résumé</PageTitle>
             <br />
             <PageSubTitle>
@@ -96,7 +92,7 @@ export default class Resume extends Component {
                 LinkedIn!
               </A>
             </PageSubTitle>
-          </Div>
+          </PageHeader>
 
           <SectionContainer className="skills" marginBottom="3rem">
             <Title>Skills</Title>
@@ -551,7 +547,7 @@ export default class Resume extends Component {
             &lt;&lt; Projects
           </NavButton>
         </BottomDiv>
-      </Div>
-    );
+      </ResumePageContainer>
+    )
   }
 }

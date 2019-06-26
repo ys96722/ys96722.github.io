@@ -4,3 +4,8 @@ a.social-icon {
 a.social-icon:hover {
   transform: translateX(15%);
 }
+
+g.social-svg-background {
+  /* fill: #b5c8c2 !important; */
+  fill: white !important;
+}

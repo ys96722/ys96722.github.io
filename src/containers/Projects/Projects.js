@@ -1,61 +1,60 @@
 // Import Dependencies
-import React, { Component } from "react";
+import React, { Component } from "react"
 // Import Styled Components
-import { Button, ButtonContainer } from "./Projects.style";
-import Websites from "../../components/Slider/Websites";
-import Games from "../../components/Slider/Games";
-import Songs from "../../components/Slider/Songs";
-import Analytics from "../../components/Slider/Analytics";
-import { Div } from "../../style/grid";
+import { Button, ButtonContainer, ProjectContainer } from "./Projects.style"
+import Websites from "../../components/Slider/Websites"
+import Games from "../../components/Slider/Games"
+import Songs from "../../components/Slider/Songs"
+import Analytics from "../../components/Slider/Analytics"
+import { PageHeader } from "../../style/grid"
 import {
   PageTitle,
   PageSubTitle,
   A,
   NavButton,
   BottomDiv
-} from "../../style/types";
-import Popup from "../../components/Popup/Popup";
-import ReactGA from "react-ga";
+} from "../../style/types"
+import Popup from "../../components/Popup/Popup"
 
 export default class Projects extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       visibleIndex: 0,
       showPopup: false,
-      popupInfo: undefined
+      popupInfo: undefined,
+      fetchInProgress: true
       // projects: [
       //   <Websites key="0" togglePopup={this.togglePopup} />,
       //   <Analytics key="1" togglePopup={this.togglePopup} />,
       //   <Games key="2" togglePopup={this.togglePopup} />,
       //   <Songs key="3" togglePopup={this.togglePopup} />
       // ]
-    };
+    }
 
-    this.setVisible = this.setVisible.bind(this);
-    this.togglePopup = this.togglePopup.bind(this);
+    this.setVisible = this.setVisible.bind(this)
+    this.togglePopup = this.togglePopup.bind(this)
   }
-
-  handleClick = event => {
-    ReactGA.event({
-      category: "Projects",
-      action: event
-    });
-  };
 
   setVisible = (index = 0) => {
     this.setState({
       visibleIndex: index
-    });
-  };
+    })
+  }
 
   togglePopup = infos => {
     // console.log(this);
     this.setState({
       showPopup: !this.state.showPopup,
       popupInfo: infos
-    });
-  };
+    })
+  }
+
+  componentDidMount() {
+    this.setState({
+      fetchInProgress: false
+    })
+  }
 
   render() {
     const projects = [
@@ -67,36 +66,30 @@ export default class Projects extends Component {
         songsInfo={this.state.songsInfo}
         togglePopup={this.togglePopup}
       />
-    ];
-    return (
-      <Div width="100%" animation="fadeIn" style={{ position: "relative" }}>
+    ]
+
+    let { fetchInProgress } = this.state
+    return fetchInProgress ? (
+      <h1>Loading...</h1>
+    ) : (
+      <ProjectContainer animation="fadeIn">
         {/* List that captures Active */}
-        <Div
-          width="60%"
-          marginLeft="auto"
-          marginRight="auto"
-          marginBottom="4rem"
-        >
+        <PageHeader>
           <PageTitle>Recent Work</PageTitle>
           <br />
           <PageSubTitle>
             Here are some of my featured projects that I am proud to have been
             part of. Got any questions? Message me on{"\u00A0"}
-            <A
-              href="https://www.linkedin.com/in/yoonchang"
-              target="_blank"
-              onClick={e => this.handleClick("LinkedIn Link at the Top")}
-            >
+            <A href="https://www.linkedin.com/in/yoonchang" target="_blank">
               LinkedIn!
             </A>
           </PageSubTitle>
-        </Div>
+        </PageHeader>
 
         <ButtonContainer row justify="center">
           <Button
             onClick={e => {
-              this.setVisible(0, e);
-              this.handleClick("Websites Category");
+              this.setVisible(0, e)
             }}
             active={this.state.visibleIndex === 0}
           >
@@ -104,8 +97,7 @@ export default class Projects extends Component {
           </Button>
           <Button
             onClick={e => {
-              this.setVisible(1, e);
-              this.handleClick("Analytics Category");
+              this.setVisible(1, e)
             }}
             active={this.state.visibleIndex === 1}
           >
@@ -113,8 +105,7 @@ export default class Projects extends Component {
           </Button>
           <Button
             onClick={e => {
-              this.setVisible(2, e);
-              this.handleClick("Games Category");
+              this.setVisible(2, e)
             }}
             active={this.state.visibleIndex === 2}
           >
@@ -122,8 +113,7 @@ export default class Projects extends Component {
           </Button>
           <Button
             onClick={e => {
-              this.setVisible(3, e);
-              this.handleClick("Songs Category");
+              this.setVisible(3, e)
             }}
             active={this.state.visibleIndex === 3}
           >
@@ -139,22 +129,14 @@ export default class Projects extends Component {
           />
         ) : null}
         <BottomDiv>
-          <NavButton
-            href="#"
-            direction="left"
-            onClick={e => this.handleClick("Home Link at Bottom")}
-          >
+          <NavButton href="#" direction="left">
             &lt;&lt; Home
           </NavButton>
-          <NavButton
-            href="#resume"
-            direction="right"
-            onClick={e => this.handleClick("Resume Link at Bottom")}
-          >
+          <NavButton href="#resume" direction="right">
             Resume &gt;&gt;
           </NavButton>
         </BottomDiv>
-      </Div>
-    );
+      </ProjectContainer>
+    )
   }
 }

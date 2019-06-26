@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
-import { Flex } from "../../style/grid";
-import { blue, black } from "../../style/variables";
-import { Link, IndexLink } from "react-router";
-import { media } from "../../style/media";
+import styled, { css } from "styled-components"
+import { Flex } from "../../style/grid"
+import { blue, black, mint } from "../../style/variables"
+import { Link, IndexLink } from "react-router"
+import { media } from "../../style/media"
 
 const NavItemCSS = css`
   position: relative;
@@ -12,7 +12,8 @@ const NavItemCSS = css`
   margin-bottom: auto;
   font-size: 1.5em;
   cursor: pointer;
-  color: ${black};
+  /* color: ${black}; */
+  color: white;
   text-decoration: none;
   z-index: 100;
   border-radius: 10px;
@@ -56,10 +57,11 @@ const NavItemCSS = css`
       transform: scale(1.3, 1.5);
     }
   }
-`;
+`
 
 const NavItemActiveCss = css`
   color: ${blue};
+  /* color: ${mint}; */
   &:before {
     content: "{ " attr(title) " }";
   }
@@ -67,7 +69,7 @@ const NavItemActiveCss = css`
   &:hover {
     color: white;
   }
-`;
+`
 
 export const NavigationContainer = styled(Flex)`
   position: fixed;
@@ -111,14 +113,13 @@ export const NavigationContainer = styled(Flex)`
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: #8ca3a7; */
-    /* background-color: ${black}; */
-    background-color: #002366;
+    /* background-color: #002366; */
+    background-color: ${mint};
     border-radius: 10px;
     opacity: 0.15;
     filter: blur(2px);
   }
-`;
+`
 
 export const NavigationItem = styled(Link)`
   ${NavItemCSS}
@@ -126,7 +127,7 @@ export const NavigationItem = styled(Link)`
   &.activeNavItem {
     ${NavItemActiveCss}
   }
-`;
+`
 
 export const IndexNavigationItem = styled(IndexLink)`
   ${NavItemCSS}
@@ -134,4 +135,4 @@ export const IndexNavigationItem = styled(IndexLink)`
   &.activeIndexItem {
     ${NavItemActiveCss}
   }
-`;
+`

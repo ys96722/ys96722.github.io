@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import { black } from "./variables";
+import { createGlobalStyle } from "styled-components"
+import { black } from "./variables"
 
 const GlobalStyle = createGlobalStyle`
 
@@ -46,12 +46,13 @@ const GlobalStyle = createGlobalStyle`
       font-family: 'VT323', monospace;
       font-size: 20px;
       color: ${black};
+      background-color: black;
       
   }
 
  
   
 
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

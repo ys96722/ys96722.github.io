@@ -1,9 +1,11 @@
-import styled, { css } from "styled-components";
-import { blue, black } from "../../style/variables";
+import styled, { css } from "styled-components"
+import { blue, black, mint } from "../../style/variables"
 
-import { Flex } from "../../style/grid";
+import { Flex, PageContainer } from "../../style/grid"
 
-import { media } from "../../style/media";
+import { media } from "../../style/media"
+
+export const ProjectContainer = styled(PageContainer)``
 
 export const ButtonContainer = styled(Flex)`
 
@@ -13,12 +15,14 @@ export const ButtonContainer = styled(Flex)`
   /* ${media.phone`
     flex-direction: column;
   `} */
-`;
+`
 
 export const Button = styled.button`
-  background-color: ${black};
+  /* background-color: ${black}; */
+  background-color: ${mint};
+  /* color: white; */
+  color: black;
   border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -36,7 +40,7 @@ export const Button = styled.button`
       background-color: black;
       color: white;
     `}
-`;
+`
 
 /* 
 export const Index = styled.div`

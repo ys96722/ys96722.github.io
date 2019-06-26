@@ -1,8 +1,8 @@
-import styled, { css, keyframes } from "styled-components";
-import { blue, yellow, fontSize } from "./variables";
-import { Div } from "./grid";
-import { media } from "./media";
-import { Button } from "reactstrap";
+import styled, { css, keyframes } from "styled-components"
+import { blue, yellow, fontSize } from "./variables"
+import { Div } from "./grid"
+import { media } from "./media"
+import { Button } from "reactstrap"
 
 export const P = styled.p`
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -12,7 +12,7 @@ export const P = styled.p`
   margin-top: 1rem;
   line-height: 2rem;
   font-family: avenir;
-`;
+`
 
 export const PageTitle = styled.h1`
   font-size: 3em;
@@ -31,7 +31,7 @@ export const PageTitle = styled.h1`
   ${media.phone`
     font-size: 2em;
   `}
-`;
+`
 
 export const PageSubTitle = styled.h2`
   font-size: 1.5em;
@@ -40,7 +40,7 @@ export const PageSubTitle = styled.h2`
   ${media.phone`
     font-size: 1.2em;
   `}
-`;
+`
 
 const fadeIn = keyframes`
   0% {
@@ -51,7 +51,7 @@ const fadeIn = keyframes`
       opacity: 1;
       transform: translateY(0);
   }
-`;
+`
 
 export const Text = styled.p`
   /* margin-top: auto; */
@@ -73,7 +73,7 @@ export const Text = styled.p`
     `} /* a {
     font-size: inherit;
   } */
-`;
+`
 
 export const A = styled.a`
   font-size: inherit;
@@ -116,7 +116,7 @@ export const A = styled.a`
         transition: height 0.2s;
       }
     `}
-`;
+`
 
 export const NavButton = styled(A)`
   position: absolute;
@@ -134,15 +134,16 @@ export const NavButton = styled(A)`
       : css`
           right: 0;
         `}
-`;
+`
 
 export const BottomDiv = styled(Div)`
-  position: relative;
+  /* position: relative; */
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: auto;
   margin-top: 100px;
-`;
+`
 
 export const OpenButton = styled.button`
   font-size: ${fontSize};
@@ -168,7 +169,7 @@ export const OpenButton = styled.button`
     height: 40%;
     background-color: ${yellow};
   }
-`;
+`
 
 export const CloseButton = styled(Button)`
   position: absolute;
@@ -192,7 +193,7 @@ export const CloseButton = styled(Button)`
     background-color: rgba(0, 0, 0, 0.79);
     color: ${blue};
   }
-`;
+`
 
 // export const P = styled.p`
 //   color: white;
