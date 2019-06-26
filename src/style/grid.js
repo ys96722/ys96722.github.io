@@ -84,6 +84,7 @@ export const Container = styled(Div)`
   padding-right: 120px;
   padding-top: 120px;
   padding-bottom: 120px;
+  justify-content: center;
 
   transition: all 1s;
 
@@ -112,6 +113,8 @@ export const PageContainer = styled(Flex)`
   position: relative;
   width: 100%;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: column;
   text-align: center;
   overflow: hidden;
