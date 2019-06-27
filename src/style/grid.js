@@ -76,9 +76,10 @@ export const Flex = styled(Div)`
 
 export const Container = styled(Div)`
   /* background-color: ${props => props.bgColor}; */
-  background-color: black;
+  background-color: ${props=>props.bgColor};
   max-width: 100vw;
-  min-height: 100vh; 
+  height: 100vh;
+  /* min-height: 100vh;  */
 
   padding-left: 120px;
   padding-right: 120px;

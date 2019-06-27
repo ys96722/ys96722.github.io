@@ -423,12 +423,11 @@ export default class Resume extends Component {
                   <ul>
                     <Li>
                       Create Reddit-like discussion forum to facilitate
-                      innovation within the company using React.js, Redux,
-                      Ionic, and Node.js
+                      innovation within the company using React.js, Redux, and Node.js
                     </Li>
                     <Li>
                       Develop client-side stack for an interactive data
-                      visualization application using React.js, Redux, Node.js,
+                      visualization application using React.js, Redux, Okta, Node.js,
                       and Python
                     </Li>
                   </ul>

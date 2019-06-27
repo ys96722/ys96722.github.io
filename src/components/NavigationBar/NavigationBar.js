@@ -7,7 +7,6 @@ import {
 } from "./NavigationBar.style"
 
 class NavigationBar extends Component {
-  state = {}
   render() {
     return (
       <NavigationContainer>

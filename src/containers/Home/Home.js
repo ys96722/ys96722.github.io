@@ -125,7 +125,7 @@ export default class Home extends Component {
             Developer
           </h3>
         </HeroBanner>
-
+        
         <BottomDiv>
           <NavButton href="#projects" direction="right">
             Projects >>

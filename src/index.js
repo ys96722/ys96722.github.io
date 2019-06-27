@@ -6,7 +6,6 @@ import { Provider } from "react-redux"
 // import ReallySmoothScroll from "really-smooth-scroll"
 import { hashHistory } from "react-router"
 import rootReducer from "./redux/modules/reducer"
-import ReactGA from "react-ga"
 // import createRoutes from "./routes";
 // import createHistory from "history/createHashHistory";
 
@@ -20,7 +19,7 @@ hashHistory.listen(() => {
 // ReallySmoothScroll.shim()
 
 const store = createStore(rootReducer)
-
+window.store = store;
 // injectTapEventPlugin();
 
 ReactDOM.render(
