@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 import {
   PopupContainer,
   PopupInner,
@@ -6,11 +6,10 @@ import {
   PopupImageContainer,
   Button,
   Title
-} from "./Popup.style";
-import PopupSlider from "./PopupSlider/PopupSlider";
-import { CloseButton, A, Text } from "../../style/types";
-import { Flex } from "../../style/grid";
-import ReactGA from "react-ga";
+} from "./Popup.style"
+import PopupSlider from "./PopupSlider/PopupSlider"
+import { CloseButton, A, Text } from "../../style/types"
+import { Flex } from "../../style/grid"
 
 class Popup extends Component {
   state = {
@@ -24,20 +23,13 @@ class Popup extends Component {
         {this.props.popupInfo.people}
       </Text>
     ]
-  };
-
-  handleClick = event => {
-    ReactGA.event({
-      category: "Popup",
-      action: event
-    });
-  };
+  }
 
   setVisible = (index = 0) => {
     this.setState({
       visibleIndex: index
-    });
-  };
+    })
+  }
 
   render() {
     return (
@@ -57,8 +49,7 @@ class Popup extends Component {
               {this.props.popupInfo.content ? (
                 <Button
                   onClick={e => {
-                    this.setVisible(0, e);
-                    this.handleClick(this.props.popupInfo.title + " About Tab");
+                    this.setVisible(0, e)
                   }}
                   active={this.state.visibleIndex === 0}
                   fontColor={this.props.popupInfo.color}
@@ -70,10 +61,7 @@ class Popup extends Component {
               {this.props.popupInfo.testimonial ? (
                 <Button
                   onClick={e => {
-                    this.setVisible(1, e);
-                    this.handleClick(
-                      this.props.popupInfo.title + " Testimonial Tab"
-                    );
+                    this.setVisible(1, e)
                   }}
                   active={this.state.visibleIndex === 1}
                   fontColor={this.props.popupInfo.color}
@@ -84,10 +72,7 @@ class Popup extends Component {
               {this.props.popupInfo.people ? (
                 <Button
                   onClick={e => {
-                    this.setVisible(2, e);
-                    this.handleClick(
-                      this.props.popupInfo.title + " Members Tab"
-                    );
+                    this.setVisible(2, e)
                   }}
                   active={this.state.visibleIndex === 2}
                   fontColor={this.props.popupInfo.color}
@@ -105,9 +90,6 @@ class Popup extends Component {
                 target="_blank"
                 rel="noreferrer"
                 fontColor={this.props.popupInfo.color}
-                onClick={this.handleClick(
-                  this.props.popupInfo.title + " Link in Popup"
-                )}
               >
                 Take a look!
               </A>
@@ -118,8 +100,8 @@ class Popup extends Component {
           <CloseButton close onClick={this.props.closePopup} />
         </PopupInner>
       </PopupContainer>
-    );
+    )
   }
 }
 
-export default Popup;
+export default Popup

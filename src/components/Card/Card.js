@@ -1,7 +1,6 @@
-import React, { Component } from "react";
-import { CardContainer, CardFront, CardBack, Inner } from "./Card.style";
-import { OpenButton } from "../../style/types";
-import ReactGA from "react-ga";
+import React, { Component } from "react"
+import { CardContainer, CardFront, CardBack, Inner } from "./Card.style"
+import { OpenButton } from "../../style/types"
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // React component for the card (main component)
@@ -10,29 +9,23 @@ export default class Card extends Component {
   state = {
     loaded: false,
     error: false
-  };
+  }
 
   componentDidMount() {
-    const img = new Image();
+    const img = new Image()
     img.onload = () => {
       this.setState({
         loaded: true
-      });
-    };
+      })
+    }
     img.onerror = () => {
       this.setState({
         error: true
-      });
-    };
-    img.src = this.props.imgPath;
+      })
+    }
+    img.src = this.props.imgPath
   }
 
-  handleClick(event) {
-    ReactGA.event({
-      category: "Card",
-      action: event
-    });
-  }
   render() {
     return (
       <CardContainer onClick="">
@@ -65,8 +58,7 @@ export default class Card extends Component {
             <p>{this.props.tools}</p>
             <OpenButton
               onClick={() => {
-                this.props.togglePopup(this.props.popupInfo);
-                this.handleClick(this.props.name + " Read More");
+                this.props.togglePopup(this.props.popupInfo)
               }}
             >
               Read more
@@ -77,6 +69,6 @@ export default class Card extends Component {
           </Inner>
         </CardBack>
       </CardContainer>
-    );
+    )
   }
 }

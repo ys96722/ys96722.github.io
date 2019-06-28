@@ -28,17 +28,20 @@ export const Button = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
+  transition: 0.5s;
 
   &:hover {
     /* background-color: ${blue}; */
-    background-color: black;
+    /* background-color: black; */
+    background-color: ${props => props.theme.color};
+      color: ${props => props.theme.background};
   }
 
   ${({ active }) =>
     active &&
     css`
-      background-color: black;
-      color: white;
+      background-color: ${props => props.theme.color};
+      color: ${props => props.theme.background};
     `}
 `
 

@@ -7,7 +7,7 @@ import AppReducer from "../../containers/App/AppReducer"
 export default combineReducers({
   // routing: routerReducer,
   // form: formReducer,
-  AppReducer
+  app: AppReducer
   // audios: audiosReducer,
   // scroll
   // scroll: scrollReducer,

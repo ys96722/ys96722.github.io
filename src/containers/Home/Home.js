@@ -56,7 +56,7 @@ export default class Home extends Component {
 
   handleMouseMove = e => {
     // if (this.state.count % 5 === 0) {
-    console.log(this.state.mouseX)
+    // console.log(this.state.mouseX)
     this.setState({
       mouseX:
         (window.innerWidth - this.state.width) / 2 +
