@@ -5,7 +5,6 @@
   "homepage": "https://ys96722.github.io",
   "dependencies": {
     "axios": "^0.18.0",
-    "connected-react-router": "^6.4.0",
     "gh-pages": "^2.0.1",
     "history": "^4.9.0",
     "i": "^0.3.6",

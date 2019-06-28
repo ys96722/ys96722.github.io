@@ -86,6 +86,11 @@ export const HeroBanner = styled(Flex)`
     font-size: 2em;
     font-weight: 400;
   }
+
+  ${media.phone`
+    width: 300px;
+    height: 200px;
+  `}
 `
 
 export const HeroText = styled(Div)`

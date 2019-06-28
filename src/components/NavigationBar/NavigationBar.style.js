@@ -28,6 +28,11 @@ const NavItemCSS = css`
     font-size: 1.5rem;
   `}
 
+  @media (max-width: 330px) {
+    font-size: 1.3rem;
+  }
+
+
 
   &:after {
     transition: all 0.2s ease-in-out;
@@ -108,6 +113,9 @@ export const IndexNavigationItem = styled(IndexLink)`
 
 export const ItemDiv = styled.li`
   display: flex;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   transition: background-color 0.2s ease-in-out;
 
