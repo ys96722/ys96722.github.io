@@ -1,25 +1,33 @@
-import { CHANGE_COLOR } from "../../redux/app-const";
-
-
+import { TOGGLE_BLACK, TOGGLE_WHITE } from "../../redux/app-const"
 
 const initialState = {
-    toggleWhite: false
+  theme: {
+    background: "black",
+    color: "white"
+  }
 }
 
-
-function AppReducer(state = initialState, action) {
-    switch (action.type) {
-        case CHANGE_COLOR:
-            return {...state,
-                toggleWhite: !state.toggleWhite}
-        default:
-            return state
-    }
+const AppReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case TOGGLE_WHITE:
+      return Object.assign({}, state, {
+        theme: {
+          name: "white",
+          background: "white",
+          color: "black"
+        }
+      })
+    case TOGGLE_BLACK:
+      return Object.assign({}, state, {
+        theme: {
+          name: "black",
+          background: "black",
+          color: "white"
+        }
+      })
+    default:
+      return state
+  }
 }
 
-// return Object.assign({}, state, {
-//     cartOpen: !state.cartOpen
-// });
-
-
-export default AppReducer;
+export default AppReducer

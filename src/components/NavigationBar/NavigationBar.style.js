@@ -14,7 +14,7 @@ const NavItemCSS = css`
   font-size: 1.5em;
   cursor: pointer;
   /* color: ${black}; */
-  color: white;
+  color: ${props => props.theme.color};
   text-decoration: none;
   z-index: 100;
   transition: all 0.2s ease-in-out;

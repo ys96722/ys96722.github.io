@@ -1,11 +1,13 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import routes from "./routes"
-import { createStore } from "redux"
+import { createStore, applyMiddleware } from "redux"
+import logger from "redux-logger"
 import { Provider } from "react-redux"
 // import ReallySmoothScroll from "really-smooth-scroll"
-import { hashHistory } from "react-router"
+import { hashHistory, withRouter } from "react-router"
 import rootReducer from "./redux/modules/reducer"
+
 // import createRoutes from "./routes";
 // import createHistory from "history/createHashHistory";
 
@@ -18,8 +20,8 @@ hashHistory.listen(() => {
 
 // ReallySmoothScroll.shim()
 
-const store = createStore(rootReducer)
-window.store = store;
+const store = createStore(rootReducer, applyMiddleware(logger))
+
 // injectTapEventPlugin();
 
 ReactDOM.render(

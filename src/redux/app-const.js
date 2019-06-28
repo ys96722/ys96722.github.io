@@ -1,8 +1,12 @@
 export const CHANGE_COLOR = "CHANGE_COLOR"
 
-export const DEFAULT_STATE = {
-   
-};
+export const CHANGE_THEME = "CHANGE_THEME"
+
+export const TOGGLE_WHITE = "TOGGLE_WHITE"
+
+export const TOGGLE_BLACK = "TOGGLE_BLACK"
+
+export const DEFAULT_STATE = {}
 
 // export const WEBSITES_DATA = [
 //         {
@@ -169,7 +173,7 @@ export const DEFAULT_STATE = {
 //         }
 //     ];
 
-// export const GAMES_DATA = 
+// export const GAMES_DATA =
 //     [
 //         {
 //             name: "Tanks!",

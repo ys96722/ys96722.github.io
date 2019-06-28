@@ -1,54 +1,73 @@
-import React, { Component } from "react"
+import React from "react"
 import GlobalStyle from "../../style/GlobalStyle"
 import { Container } from "../../style/grid"
 import SideBar from "../../components/SideBar/SideBar"
 import NavigationBar from "../../components/NavigationBar/NavigationBar"
-import { connect } from "react-redux";
-import { changeColor } from "../../redux/modules/actions"
-import { withRouter } from 'react-router';
+import { connect } from "react-redux"
+import { toggleWhite, toggleBlack } from "../../redux/modules/actions"
+import { withRouter } from "react-router"
+import { ThemeProvider } from "styled-components"
+import { SwitchButton, SwitchButtonContainer, SVGContainer } from "./App.style"
 
-const mapDispatch = dispatch => {
+const mapDispatchToProps = dispatch => {
   return {
-    changeColor: () => dispatch(changeColor())
-  };
+    toggleWhite: () => dispatch(toggleWhite),
+    toggleBlack: () => dispatch(toggleBlack)
+  }
 }
 
-const mapState = state => {
-  return { toggleWhite: state.toggleWhite };
-};
-
-class App extends Component {
-  state = {
-    bgColor: "black"
+const mapStateToProps = state => {
+  return {
+    ...state
   }
+}
 
-  
+const App = props => {
+  const [theme, setTheme] = React.useState({
+    name: "black",
+    background: "black",
+    color: "white"
+  })
 
-  handleClick = e => {
-    if (this.state.bgColor === "black") {
-      this.setState({
-        bgColor: "white"
-      })
+  const switchTheme = e => {
+    if (theme.name === "black") {
+      const newTheme = {
+        name: "white",
+        background: "white",
+        color: "black"
+      }
+      setTheme(newTheme)
+      // theme = Object.assign({}, newTheme)
     } else {
-      this.setState({
-        bgColor: "black"
-      })
+      const newTheme = {
+        name: "black",
+        background: "black",
+        color: "white"
+      }
+      // theme = Object.assign({}, newTheme)
+      setTheme(newTheme)
     }
   }
-  render(){
-      return (
+  return (
+    <ThemeProvider theme={theme}>
       <>
         <GlobalStyle />
-        <Container bgColor={this.state.bgColor}>
-          <NavigationBar/>
-          {this.props.children}
+        <Container>
+          <NavigationBar />
+          {props.children}
           <SideBar />
-          <button onClick={this.handleClick}>Hi</button>
+          <SwitchButtonContainer>
+            <SwitchButton type="checkbox" onClick={switchTheme} />
+          </SwitchButtonContainer>
         </Container>
       </>
-    )
-  }
+    </ThemeProvider>
+  )
 }
 
-export default withRouter(connect(mapState, mapDispatch)(App));
-
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(App)
+)

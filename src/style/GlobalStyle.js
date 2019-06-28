@@ -46,8 +46,8 @@ const GlobalStyle = createGlobalStyle`
       font-family: 'VT323', monospace;
       font-size: 20px;
       color: ${black};
-      background-color: black;
-      
+      background-color: ${props => props.theme.background};
+      /* transition: background-color 1s; */
   }
 
  

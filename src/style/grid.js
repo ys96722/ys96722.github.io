@@ -76,10 +76,10 @@ export const Flex = styled(Div)`
 
 export const Container = styled(Div)`
   /* background-color: ${props => props.bgColor}; */
-  background-color: ${props=>props.bgColor};
+  background-color: ${props => props.theme.background};
   max-width: 100vw;
-  height: 100vh;
-  /* min-height: 100vh;  */
+  /* height: 100vh; */
+  min-height: 100vh; 
 
   padding-left: 120px;
   padding-right: 120px;
@@ -107,7 +107,7 @@ export const PageHeader = styled(Flex)`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4rem;
-  color: white;
+  color: ${props => props.theme.color};
 
   h2 {
     font-weight: 400;
