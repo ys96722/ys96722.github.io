@@ -260,7 +260,7 @@ self.__precacheManifest = [
     "url": "/static/media/EDAsuicide3.7415bb23.png"
   },
   {
-    "revision": "5edaea2ab714f0acb99327fd63a7361c",
+    "revision": "dd11914a0fa2296994211c33a42781da",
     "url": "/index.html"
   }
 ];
