@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/insigna2.c050902a.png"
   },
   {
-    "revision": "5e05e392c25732dec711",
-    "url": "/static/css/main.9a259c1b.chunk.css"
+    "revision": "824fe7eea9ed4bde67c6",
+    "url": "/static/css/main.8b01c637.chunk.css"
   },
   {
     "revision": "9ced27d76866110bf55a",
@@ -132,8 +132,8 @@ self.__precacheManifest = [
     "url": "/static/media/insigna1.733c240c.png"
   },
   {
-    "revision": "5e05e392c25732dec711",
-    "url": "/static/js/main.5e05e392.chunk.js"
+    "revision": "824fe7eea9ed4bde67c6",
+    "url": "/static/js/main.824fe7ee.chunk.js"
   },
   {
     "revision": "1f6170ad476e934bacee6a620088b3ee",
@@ -260,7 +260,7 @@ self.__precacheManifest = [
     "url": "/static/media/EDAsuicide3.7415bb23.png"
   },
   {
-    "revision": "85eb272a56206691c0071ba25f955888",
+    "revision": "49cf7faaf3bf2e9c9274eb67a92d0c9a",
     "url": "/index.html"
   }
 ];
