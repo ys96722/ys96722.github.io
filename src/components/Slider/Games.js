@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import CardList from "../Card/CardList";
+import React, { Component } from "react"
+import CardList from "../Card/CardList"
+import lqip from "lqip.macro"
 
 export default class Games extends Component {
   state = {
@@ -32,6 +33,7 @@ export default class Games extends Component {
         tool: "Unity",
         tools: "Framework: Unity Studio\nBackend: C#",
         imgPath: require("../../assets/game_banners/tanks.png"),
+        unloadedSrc: lqip("../../assets/game_banners/tanks.png"),
         bgSize: "cover",
         popupInfo: {
           title: "Tanks!",
@@ -54,6 +56,7 @@ export default class Games extends Component {
         tool: "Unity",
         tools: "Framework: Unity Studio\nBackend: C#",
         imgPath: require("../../assets/game_banners/spaceshooter.jpg"),
+        unloadedSrc: lqip("../../assets/game_banners/spaceshooter.jpg"),
         bgSize: "cover",
         popupInfo: {
           title: "Space Shooter",
@@ -70,7 +73,7 @@ export default class Games extends Component {
         }
       }
     ]
-  };
+  }
 
   render() {
     // let size = window.innerWidth;
@@ -94,6 +97,6 @@ export default class Games extends Component {
         // cardWidth={cardWidth}
         togglePopup={this.props.togglePopup}
       />
-    );
+    )
   }
 }

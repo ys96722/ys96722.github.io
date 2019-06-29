@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from "styled-components"
-import { blue, yellow, fontSize } from "./variables"
+import { blue, yellow, fontSize, mint } from "./variables"
 import { Div } from "./grid"
 import { media } from "./media"
 import { Button } from "reactstrap"
@@ -126,6 +126,7 @@ export const NavButton = styled(A)`
   width: auto;
   width: -webkit-fit-content;
   margin: auto;
+  /* color: ${mint}; */
   ${({ direction }) =>
     direction === "left"
       ? css`
@@ -186,7 +187,7 @@ export const CloseButton = styled(Button)`
   background-color: rgba(0, 0, 0, 0.8);
   transition: background-color 0.1s linear;
   color: rgba(255, 255, 255, 1);
-  transition: color 0.1s linear;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     font-size: 1.8rem;

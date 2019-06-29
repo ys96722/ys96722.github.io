@@ -55,6 +55,7 @@ const NavItemCSS = css`
   }
 
   &:hover {
+    color: white;
     span {
       opacity: 1;
     }
@@ -63,6 +64,7 @@ const NavItemCSS = css`
 
 const NavItemActiveCss = css`
   color: ${blue};
+  /* color: ${mint} */
   span {
     opacity: 1;
   }

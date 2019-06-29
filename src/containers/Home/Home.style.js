@@ -41,7 +41,9 @@ export const HeroBanner = styled(Flex)`
   align-items: center;
   /* border: 0.125em solid ${mint}; */
   border: 1rem solid ${mint};
+  /* border: 1rem solid ${blue}; */
   color: ${mint};
+  /* color: ${blue}; */
   border-radius: 10px;
   margin-bottom: 4rem;
   margin-top: 4rem;

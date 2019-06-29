@@ -9,3 +9,9 @@ g.social-svg-background {
   /* fill: #b5c8c2 !important; */
   fill: white !important;
 }
+
+g.social-svg-mask {
+  fill: #b5c8c2 !important;
+  /* fill: #247ba0 !important; */
+  /* fill: #fdee6c !important; */
+}

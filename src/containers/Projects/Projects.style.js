@@ -28,7 +28,7 @@ export const Button = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
-  transition: 0.5s;
+  transition: 0.3s;
 
   &:hover {
     /* background-color: ${blue}; */

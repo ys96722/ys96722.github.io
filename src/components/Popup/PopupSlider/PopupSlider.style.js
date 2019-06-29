@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { blue } from "../../../style/variables";
+import styled, { css } from "styled-components"
+import { blue } from "../../../style/variables"
 
 export const PopupSliderContainer = styled.div`
   position: relative;
@@ -7,7 +7,7 @@ export const PopupSliderContainer = styled.div`
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-`;
+`
 
 export const PopupSlide = styled.div`
   background-image: url(${props => props.image});
@@ -19,7 +19,7 @@ export const PopupSlide = styled.div`
   display: inline-block;
   height: 100%;
   width: 100%;
-`;
+`
 
 export const SlideWrapper = styled.div`
   position: relative;
@@ -27,19 +27,19 @@ export const SlideWrapper = styled.div`
   width: 100%;
   transform: translateX(${props => props.translateValue}px);
   transition: transform ease-out 0.45s;
-`;
+`
 
 export const SlideIndex = styled.span`
   font-size: 1.5rem;
   position: relative;
   padding: 10px;
   top: 3%;
-  left: 3%;
+  left: -42%;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
   border-color: transparent;
   border-radius: 10px;
-`;
+`
 
 export const Arrow = styled.button`
   position: absolute;
@@ -63,4 +63,4 @@ export const Arrow = styled.button`
     background-color: rgba(0, 0, 0, 0.79);
     color: ${blue};
   }
-`;
+`

@@ -87,7 +87,7 @@ export const Container = styled(Div)`
   padding-bottom: 120px;
   justify-content: center;
 
-  transition: all 1s;
+  transition: background 0.5s;
 
   ${media.tablet`
     padding-left: 30px;

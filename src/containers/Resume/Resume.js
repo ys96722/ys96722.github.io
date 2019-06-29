@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Title, red, blue, green } from "../../style/variables"
+import { Title, red, blue, green, yellow, mint } from "../../style/variables"
 import {
   A,
   PageTitle,
@@ -99,7 +99,7 @@ export default class Resume extends Component {
             {/* <InfoIndex /> */}
             <Section flexDirection="row" justifyContent="space-evenly">
               <Column bgColor={red}>
-                <ColumnTitle bgColor={red}>Data</ColumnTitle>
+                <ColumnTitle bgColor={blue}>Data</ColumnTitle>
                 <br />
                 <SubColumn>
                   <h2>Languages</h2>
@@ -279,7 +279,7 @@ export default class Resume extends Component {
                 </SubColumn>
               </Column>
               <Column bgColor={green}>
-                <ColumnTitle bgColor={green}>General</ColumnTitle>
+                <ColumnTitle bgColor={blue}>General</ColumnTitle>
                 <br />
                 <SubColumn>
                   <h2>Languages</h2>
@@ -370,7 +370,7 @@ export default class Resume extends Component {
                   </ul>
                 </Column>
               </Row> */}
-            <Title>Academic</Title>
+            <Title>Academics</Title>
             <Section flexDirection="column">
               <Row>
                 <Column width="50%" textAlign="left">
@@ -423,12 +423,13 @@ export default class Resume extends Component {
                   <ul>
                     <Li>
                       Create Reddit-like discussion forum to facilitate
-                      innovation within the company using React.js, Redux, and Node.js
+                      innovation within the company using React.js, Redux, and
+                      Node.js
                     </Li>
                     <Li>
                       Develop client-side stack for an interactive data
-                      visualization application using React.js, Redux, Okta, Node.js,
-                      and Python
+                      visualization application using React.js, Redux, Okta,
+                      Node.js, and Python
                     </Li>
                   </ul>
                 </Column>

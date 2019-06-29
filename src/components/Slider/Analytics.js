@@ -1,6 +1,7 @@
-import React, { Component } from "react";
-import CardList from "../Card/CardList";
-import { A } from "../../style/types";
+import React, { Component } from "react"
+import CardList from "../Card/CardList"
+import { A } from "../../style/types"
+import lqip from "lqip.macro"
 // import Coverflow from "react-coverflow";
 
 export default class Analytics extends Component {
@@ -14,6 +15,7 @@ export default class Analytics extends Component {
         content:
           "A series of Python tutorials I have created to teach basics of Python.",
         imgPath: require("../../assets/analytic_banners/alone.jpg"),
+        unloadedSrc: lqip("../../assets/analytic_banners/alone.jpg"),
         //
         bgSize: "cover",
         popupInfo: {
@@ -43,7 +45,7 @@ export default class Analytics extends Component {
         }
       }
     ]
-  };
+  }
 
   render() {
     // let size = window.innerWidth;
@@ -67,7 +69,7 @@ export default class Analytics extends Component {
         // cardWidth={cardWidth}
         togglePopup={this.props.togglePopup}
       />
-    );
+    )
     // return (
     //   <CardList
     //     infos={this.state.analytic_infos}

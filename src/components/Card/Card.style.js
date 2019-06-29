@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components"
 import {
   blue,
   red,
@@ -8,9 +8,9 @@ import {
   lightgreen,
   paddingValue,
   fontSize
-} from "../../style/variables";
-import { A, OpenButton } from "../../style/types";
-import { media } from "../../style/media";
+} from "../../style/variables"
+import { A, OpenButton } from "../../style/types"
+import { media } from "../../style/media"
 // import { InnerSubscriber } from "rxjs/internal/InnerSubscriber";
 
 const fadeIn = keyframes`
@@ -22,7 +22,7 @@ const fadeIn = keyframes`
       opacity: 1;
       /* transform: translateY(0); */
   }
-`;
+`
 
 export const Inner = styled.div`
   /* -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
@@ -48,7 +48,7 @@ export const Inner = styled.div`
   
 
   
-`;
+`
 
 export const CardFront = styled.div`
 
@@ -64,7 +64,7 @@ export const CardFront = styled.div`
   min-height: 320px;
   max-height: 380px;
   height: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   color: #fff;
   font-size: ${fontSize};
   /* &::before {
@@ -161,7 +161,7 @@ export const CardFront = styled.div`
       `}
 
   }
-`;
+`
 
 export const CardBack = styled.div`
   background-size: cover;
@@ -180,7 +180,7 @@ export const CardBack = styled.div`
   min-height: 320px;
   max-height: 380px;
   height: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   color: #fff;
   font-size: ${fontSize};
   z-index: 2;
@@ -222,7 +222,7 @@ export const CardBack = styled.div`
       bottom: ${paddingValue};
     }
   }
-`;
+`
 
 export const CardContainer = styled.div`
   position:relative;
@@ -317,4 +317,4 @@ export const CardContainer = styled.div`
       color: white;
     }
   } */
-`;
+`

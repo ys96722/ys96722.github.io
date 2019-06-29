@@ -45,7 +45,7 @@ class Popup extends Component {
             <Title fontColor={this.props.popupInfo.color}>
               {this.props.popupInfo.title}
             </Title>
-            <Flex row="row" justify="center">
+            <Flex row="row" justify="center" marginBottom="10px">
               {this.props.popupInfo.content ? (
                 <Button
                   onClick={e => {

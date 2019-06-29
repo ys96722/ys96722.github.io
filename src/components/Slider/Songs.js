@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Coverflow from "react-coverflow";
-import { Flex } from "../../style/grid";
+import React, { Component } from "react"
+import Coverflow from "react-coverflow"
+import { Flex } from "../../style/grid"
 import {
   // HapImg,
   // HapFrame,
@@ -9,10 +9,10 @@ import {
   // ChildImg,
   // ChildFrame,
   SongDiv
-} from "./Songs.style.js";
-import lqip from "lqip.macro";
-import LazyImage from "../LazyImage/LazyImage";
-import "../../containers/Projects/Projects.css";
+} from "./Songs.style.js"
+import lqip from "lqip.macro"
+import LazyImage from "../LazyImage/LazyImage"
+import "../../containers/Projects/Projects.css"
 
 const HapImg = ({ doesShow }) => (
   <SongDiv
@@ -33,7 +33,7 @@ const HapImg = ({ doesShow }) => (
       }}
     />
   </SongDiv>
-);
+)
 const ChildImg = ({ doesShow }) => (
   <SongDiv
     show={doesShow ? "initial" : "hidden"}
@@ -53,7 +53,7 @@ const ChildImg = ({ doesShow }) => (
       }}
     />
   </SongDiv>
-);
+)
 const ForImg = ({ doesShow }) => (
   <SongDiv
     show={doesShow ? "initial" : "hidden"}
@@ -73,7 +73,7 @@ const ForImg = ({ doesShow }) => (
       }}
     />
   </SongDiv>
-);
+)
 const HapFrame = ({ doesShow }) => (
   <SongDiv
     show={doesShow ? "initial" : "hidden"}
@@ -90,7 +90,7 @@ const HapFrame = ({ doesShow }) => (
       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/512176407&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
     />
   </SongDiv>
-);
+)
 const ChildFrame = ({ doesShow }) => (
   <SongDiv
     show={doesShow ? "initial" : "hidden"}
@@ -107,7 +107,7 @@ const ChildFrame = ({ doesShow }) => (
       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/586245420&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
     />
   </SongDiv>
-);
+)
 
 const ForFrame = ({ doesShow }) => (
   <SongDiv
@@ -125,36 +125,36 @@ const ForFrame = ({ doesShow }) => (
       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/528417867&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
     />
   </SongDiv>
-);
+)
 
 export default class Songs extends Component {
   state = {
     isActive: 1,
     isHover: undefined
-  };
+  }
 
   handleCarousal(e) {
     // console.log(e.currentTarget.id);
     // var text = e.currentTarget.id;
-    var number = Number(e.currentTarget.id);
+    let number = Number(e.currentTarget.id)
     this.setState({
       isActive: number
-    });
+    })
   }
 
   handleEnter = index => {
     this.setState({
       isHover: index
-    });
-  };
+    })
+  }
 
   handleLeave = () => {
     this.setState({
       isHover: undefined
-    });
-  };
+    })
+  }
 
-  componentDidMount = () => {};
+  componentDidMount = () => {}
 
   render() {
     return (
@@ -260,6 +260,6 @@ export default class Songs extends Component {
           />
         </Flex>
       </Coverflow>
-    );
+    )
   }
 }

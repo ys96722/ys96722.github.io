@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
-import { Flex } from "../../style/grid";
-import { A, P, Text } from "../../style/types";
-import { black, blue, paddingValue } from "../../style/variables";
-import { media } from "../../style/media";
+import styled, { css } from "styled-components"
+import { Flex } from "../../style/grid"
+import { A, P, Text } from "../../style/types"
+import { black, blue, paddingValue } from "../../style/variables"
+import { media } from "../../style/media"
 // import { blue, yellow } from "../../style/variables";
 
 // Covers the whole screen
@@ -24,7 +24,7 @@ export const PopupContainer = styled.div`
       font-size: 0.7em;
     }
   }
-`;
+`
 // Isolates the content area
 export const PopupInner = styled(Flex)`
   position: absolute;
@@ -43,7 +43,7 @@ export const PopupInner = styled(Flex)`
   margin: auto;
   background: white;
   overflow: hidden;
-`;
+`
 // Left Half
 export const PopupImageContainer = styled.div`
   position: relative;
@@ -56,7 +56,7 @@ export const PopupImageContainer = styled.div`
   @media (max-width: 1150px) {
     display: none;
   }
-`;
+`
 // Right Half
 export const PopupContentContainer = styled.div`
   position: relative;
@@ -67,6 +67,7 @@ export const PopupContentContainer = styled.div`
   text-align: center;
   padding: ${paddingValue};
   white-space: pre-wrap;
+  overflow: scroll;
 
   ${P} {
     font-size: 1.6rem;
@@ -99,7 +100,7 @@ export const PopupContentContainer = styled.div`
   ${media.phone`
     
   `} */
-`;
+`
 
 // export const TextContainer = styled(Flex)`
 //   min-height: 400px;
@@ -117,7 +118,7 @@ export const Title = styled.h1`
     css`
       color: ${fontColor};
     `}
-`;
+`
 
 export const Button = styled.button`
   /* background-color: ${black}; */
@@ -171,7 +172,12 @@ export const Button = styled.button`
   @media (max-width: 450px) {
     font-size: 1.0em !important; 
   }
-`;
+
+  ${media.phone`
+    font-size: 0.9em !important;
+    padding: 10px 20px;
+  `}
+`
 
 // export const PopupFooter = styled.div`
 //   margin-top: auto;

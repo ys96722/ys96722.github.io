@@ -96,13 +96,16 @@ export const SwitchButton = styled.input`
     background-color: ${mint};
     border-radius: 50%;
     transition: all 0.5s;
+    box-shadow: 0 0 5px #B5C8C2, 0 0 15px #B5C9C2, 0 0 25px #B5D0C2,
+      inset 0 0 10px #B5C8C2, 0 5px 20px #B5C8C2, inset 0 0 15px rgba(0, 0, 0, 0.2);
   }
 
-  /* Eye Sliding Animation */
+  /* Eye Slided */
   &:checked::after {
     /* background: ${mint}; */
     background: linear-gradient(0deg, #6b6b6b, #000);
     left: 90%;
+    box-shadow: none;
     /* box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b4ff; move this up and fix color (currently blue) */
   }
 `
