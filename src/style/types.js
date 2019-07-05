@@ -70,6 +70,12 @@ export const Text = styled.p`
     testimonial &&
     css`
       font-size: 0.7em;
+      &::before {
+        content: open-quote;
+      }
+      &::after {
+        content: close-quote;
+      }
     `} /* a {
     font-size: inherit;
   } */

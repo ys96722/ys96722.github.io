@@ -7,6 +7,7 @@ import App from "./containers/App/App"
 import Home from "./containers/Home/Home"
 import Projects from "./containers/Projects/Projects"
 import Resume from "./containers/Resume/Resume"
+import JuRuMaBle from "./containers/JuRuMaBle/JuRuMaBle"
 // import JuRuMaBle from "./containers/JuRuMaBle/JuRuMaBle";
 
 export default (
@@ -15,7 +16,7 @@ export default (
       <IndexRoute component={Home} />
       <Route path="/projects" component={Projects} />
       <Route path="/resume" component={Resume} />
-      {/* <Route path="/jurumable" component={JuRuMaBle} /> */}
+      <Route path="/jurumable" component={JuRuMaBle} />
     </Route>
   </Router>
 )

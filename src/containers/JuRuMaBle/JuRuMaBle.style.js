@@ -1,12 +1,12 @@
-import styled, { css, keyframes } from "styled-components";
-import { blue } from "../../style/variables";
+import styled, { css, keyframes } from "styled-components"
+import { blue } from "../../style/variables"
 
 // const illinoisBlue = "#13294b";
 // const illinoisOrange = "#E84A27";
 
 // const pastelBlue = "#D2EFFE";
-const unofficialGreen = "#008A2B";
-const katalkGreen = "#86D1D6";
+const unofficialGreen = "#008A2B"
+const katalkGreen = "#86D1D6"
 
 export const MableContainer = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ export const MableContainer = styled.div`
   border: 2px solid black;
   /* outline: 1px solid black; */
   border-radius: 10px;
-`;
+`
 
 export const Row = styled.div`
   align-self: flex-start;
@@ -28,13 +28,13 @@ export const Row = styled.div`
   width: 100%;
   height: 12.5%;
   flex-direction: row;
-`;
+`
 
 export const Filler = styled.div`
   display: flex;
   width: ${100 / 12}%;
   /* flex-grow: 1; */
-`;
+`
 
 export const DiceSquare = styled(Filler)`
   display: flex;
@@ -65,7 +65,7 @@ export const DiceSquare = styled(Filler)`
       color: ${blue};
     }
   }
-`;
+`
 
 const rotate = keyframes`
 
@@ -82,7 +82,7 @@ const rotate = keyframes`
   to {
     transform: rotate(360deg);
   } */
-`;
+`
 
 export const CountSquare = styled(Filler)`
   display: flex;
@@ -107,19 +107,19 @@ export const CountSquare = styled(Filler)`
     if (currentTurn === 2) {
       return css`
         color: red;
-      `;
+      `
     } else if (currentTurn === 3) {
       return css`
         color: blue;
-      `;
+      `
     } else if (currentTurn === 4) {
       return css`
         color: green;
-      `;
+      `
     } else {
       return css`
         color: black;
-      `;
+      `
     }
   }}
-`;
+`

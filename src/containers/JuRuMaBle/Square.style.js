@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from "styled-components"
 // import { green } from "../../style/variables";
 
 // const katalkGreen = "#86D1D6";
@@ -17,7 +17,7 @@ export const SquareContainer = styled.div`
   text-align: center;
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: ${props => props.fontColor};
     ${({ form }) =>
       form &&
@@ -31,4 +31,4 @@ export const SquareContainer = styled.div`
         font-size: 2rem;
       `}
   }
-`;
+`
