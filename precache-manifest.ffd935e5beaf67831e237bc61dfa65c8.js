@@ -1,43 +1,55 @@
 self.__precacheManifest = [
   {
-    "revision": "c050902ade2ce550bf1584ba97fbf405",
-    "url": "/static/media/insigna2.c050902a.png"
+    "revision": "2a8b25a51ce29d56cd2cfe1bd95b6954",
+    "url": "/static/media/insigna_hero.2a8b25a5.png"
   },
   {
-    "revision": "824fe7eea9ed4bde67c6",
-    "url": "/static/css/main.8b01c637.chunk.css"
+    "revision": "465a7ec635f7f0959228",
+    "url": "/static/css/main.89a4a5f3.chunk.css"
   },
   {
-    "revision": "9ced27d76866110bf55a",
-    "url": "/static/js/1.9ced27d7.chunk.js"
+    "revision": "567db61d3ff4c0035908",
+    "url": "/static/js/1.567db61d.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "9a4fe352e064d49fb50c79965c8425ef",
-    "url": "/static/media/finalHero.9a4fe352.jpeg"
+    "revision": "afd53a36809c8a4c660490a950f60cc5",
+    "url": "/static/media/diceroll.afd53a36.mp3"
   },
   {
     "revision": "94ec433a4146e389173d6b38739940b5",
     "url": "/static/media/hero.94ec433a.jpeg"
   },
   {
-    "revision": "c1ad934540e7045eb51f15f085de2d81",
-    "url": "/static/media/yooniverse1.c1ad9345.png"
+    "revision": "9a4fe352e064d49fb50c79965c8425ef",
+    "url": "/static/media/finalHero.9a4fe352.jpeg"
   },
   {
-    "revision": "0b2f25e5151a45b72f0c4195f88b7fc8",
-    "url": "/static/media/yooniverse2.0b2f25e5.png"
+    "revision": "1d30c09619496f0bdcd4f8d42b56712e",
+    "url": "/static/media/yooniverse_hero.1d30c096.png"
   },
   {
-    "revision": "0d08f0d8be948003549e10559b10907d",
-    "url": "/static/media/yooniverse3.0d08f0d8.png"
+    "revision": "75275109ddd0bb543b7ae9b6d8d420c2",
+    "url": "/static/media/yooniverse1.75275109.png"
   },
   {
-    "revision": "ae39ad14285cde9e00ed8c89f7a8e338",
-    "url": "/static/media/yooniverse4.ae39ad14.png"
+    "revision": "0cada088853e14f3df7f191236b5deb4",
+    "url": "/static/media/yooniverse2.0cada088.png"
+  },
+  {
+    "revision": "8713d5a89ff39f0d0bfc53fe7e783db5",
+    "url": "/static/media/yooniverse3.8713d5a8.png"
+  },
+  {
+    "revision": "485502d6afe63c58e7bde4e14bada65f",
+    "url": "/static/media/yooniverse4.485502d6.png"
+  },
+  {
+    "revision": "aa475bf5783022b28dbe73b8d7a15a2f",
+    "url": "/static/media/yooniverse5.aa475bf5.png"
   },
   {
     "revision": "b4159cab1b13f7feb87275bb7bac5783",
@@ -124,16 +136,16 @@ self.__precacheManifest = [
     "url": "/static/media/ability5.bc0c7cad.png"
   },
   {
-    "revision": "2a8b25a51ce29d56cd2cfe1bd95b6954",
-    "url": "/static/media/insigna_hero.2a8b25a5.png"
+    "revision": "465a7ec635f7f0959228",
+    "url": "/static/js/main.465a7ec6.chunk.js"
   },
   {
     "revision": "733c240ca14c4398fd4d991b5b792502",
     "url": "/static/media/insigna1.733c240c.png"
   },
   {
-    "revision": "824fe7eea9ed4bde67c6",
-    "url": "/static/js/main.824fe7ee.chunk.js"
+    "revision": "c050902ade2ce550bf1584ba97fbf405",
+    "url": "/static/media/insigna2.c050902a.png"
   },
   {
     "revision": "1f6170ad476e934bacee6a620088b3ee",
@@ -260,7 +272,7 @@ self.__precacheManifest = [
     "url": "/static/media/EDAsuicide3.7415bb23.png"
   },
   {
-    "revision": "dd11914a0fa2296994211c33a42781da",
+    "revision": "8c6f55bc8fe76153ff369b0b91e19d32",
     "url": "/index.html"
   }
 ];
