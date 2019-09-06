@@ -408,14 +408,38 @@ export default class Resume extends Component {
                   <CompanyTitle>
                     <A
                       // href="https://www.graybar.com/"
+                      href="http://seamgen.com"
+                      target="_blank"
+                    >
+                      Seamgen
+                    </A>
+                  </CompanyTitle>
+                  <CompanyInfo>August 2019 - Current</CompanyInfo>
+                  <CompanyInfo>San Diego, CA</CompanyInfo>
+                </Column>
+                <Column width="70%" textAlign="left">
+                  <JobTitle>Front End Developer (Internship)</JobTitle>
+                  <ul>
+                    <Li>
+                      Develop client-side stack for websites using tools such as
+                      React.js, TypeScript, Redux, Formik, Yup, Material UI,
+                      Styled-Components, and Axios
+                    </Li>
+                  </ul>
+                </Column>
+              </Row>
+              <Row marginTop="4rem">
+                <Column width="30%" textAlign="left">
+                  <CompanyTitle>
+                    <A
+                      // href="https://www.graybar.com/"
                       href="http://fortune.com/fortune500/graybar-electric/"
                       target="_blank"
-                      onClick={e => this.handleClick("Graybar Link")}
                     >
                       Graybar
                     </A>
                   </CompanyTitle>
-                  <CompanyInfo>May 2019 - Current</CompanyInfo>
+                  <CompanyInfo>May 2019 - August 2019</CompanyInfo>
                   <CompanyInfo>Champaign, IL</CompanyInfo>
                 </Column>
                 <Column width="70%" textAlign="left">
@@ -428,8 +452,8 @@ export default class Resume extends Component {
                     </Li>
                     <Li>
                       Develop client-side stack for an interactive data
-                      visualization application using React.js, Redux, Okta,
-                      Node.js, and Python
+                      visualization application using React.js, Redux, Firebase,
+                      Okta, Node.js, and Python
                     </Li>
                   </ul>
                 </Column>

@@ -26,8 +26,10 @@ export default class Websites extends Component {
         name: "Yooniverse",
         tool: "React",
         tools: "Front: React.js\nVersion Control: Git",
-        imgPath: require("../../assets/finalHero.jpeg"),
-        unloadedSrc: lqip("../../assets/finalHero.jpeg"),
+        imgPath: require("../../assets/website_banners/yooniverse_hero.png"),
+        unloadedSrc: lqip("../../assets/website_banners/yooniverse_hero.png"),
+        // imgPath: require("../../assets/finalHero.jpeg"),
+        // unloadedSrc: lqip("../../assets/finalHero.jpeg"),
         bgSize: "cover",
         popupInfo: {
           title: "Yooniverse",
@@ -36,7 +38,8 @@ export default class Websites extends Component {
             require("../../assets/yooniverse/yooniverse1.png"),
             require("../../assets/yooniverse/yooniverse2.png"),
             require("../../assets/yooniverse/yooniverse3.png"),
-            require("../../assets/yooniverse/yooniverse4.png")
+            require("../../assets/yooniverse/yooniverse4.png"),
+            require("../../assets/yooniverse/yooniverse5.png")
           ],
           content:
             "Portfolio website developed using React.js hosted on GitHub Pages. Key dependencies include Styled-Components, Redux, and Axios.",
