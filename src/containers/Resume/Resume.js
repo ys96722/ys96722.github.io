@@ -414,16 +414,23 @@ export default class Resume extends Component {
                       Seamgen
                     </A>
                   </CompanyTitle>
-                  <CompanyInfo>August 2019 - Current</CompanyInfo>
+                  <CompanyInfo>August 2019 - June 2023</CompanyInfo>
                   <CompanyInfo>San Diego, CA</CompanyInfo>
                 </Column>
                 <Column width="70%" textAlign="left">
-                  <JobTitle>Front End Developer (Internship)</JobTitle>
+                  <JobTitle>Software Engineer</JobTitle>
                   <ul>
                     <Li>
-                      Develop client-side stack for websites using tools such as
-                      React.js, TypeScript, Redux, Formik, Yup, Material UI,
-                      Styled-Components, and Axios
+                      Architected client-side applications from the ground up for enterprise-level and consumer-level software 
+                    </Li>
+                    <Li>
+                    Managed frontend applications by overseeing engineering efforts and designing a technology plan in an agile environment
+                    </Li>
+                    <Li>
+                    Developed responsive, mobile-first web applications with SEO, cross-browser compatibility, accessibility, and specificity
+                    </Li>
+                    <Li>
+                    Used tools such as React.js, TypeScript, Redux, Next.js, Storybook, Material-UI, Styled-Components, Bitbucket, and JIRA
                     </Li>
                   </ul>
                 </Column>
