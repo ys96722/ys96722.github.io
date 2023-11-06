@@ -5,7 +5,6 @@
   "homepage": "https://ys96722.github.io",
   "dependencies": {
     "axios": "^0.18.0",
-    "gh-pages": "^2.2.0",
     "history": "^4.10.1",
     "i": "^0.3.6",
     "lqip.macro": "^0.1.5",
@@ -28,8 +27,8 @@
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -b source -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,6 +42,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "redux-logger": "^3.0.6"
   }
 }
