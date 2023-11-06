@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://ys96722.github.io",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^1.6.0",
     "history": "^4.10.1",
     "i": "^0.3.6",
     "lqip.macro": "^0.1.5",
@@ -16,7 +16,7 @@
     "react-redux": "^7.2.0",
     "react-redux-router": "0.0.14",
     "react-router": "^3.2.6",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^5.0.1",
     "react-social-icons": "^4.1.0",
     "react-waypoint": "^8.1.0",
     "reactstrap": "^7.1.0",
@@ -25,7 +25,7 @@
     "yarn": "^1.22.4"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
