@@ -424,13 +424,13 @@ export default class Resume extends Component {
                       Architected client-side applications from the ground up for enterprise-level and consumer-level software 
                     </Li>
                     <Li>
-                    Managed frontend applications by overseeing engineering efforts and designing a technology plan in an agile environment
+                      Managed frontend applications by overseeing engineering efforts and designing a technology plan in an agile environment
                     </Li>
                     <Li>
-                    Developed responsive, mobile-first web applications with SEO, cross-browser compatibility, accessibility, and specificity
+                      Developed responsive, mobile-first web applications with SEO, cross-browser compatibility, accessibility, and specificity
                     </Li>
                     <Li>
-                    Used tools such as React.js, TypeScript, Redux, Next.js, Storybook, Material-UI, Styled-Components, Bitbucket, and JIRA
+                      Used tools such as React.js, TypeScript, Redux, Next.js, Storybook, Material-UI, Styled-Components, Bitbucket, and JIRA
                     </Li>
                   </ul>
                 </Column>
@@ -461,6 +461,9 @@ export default class Resume extends Component {
                       Develop client-side stack for an interactive data
                       visualization application using React.js, Redux, Firebase,
                       Okta, Node.js, and Python
+                    </Li>
+                    <Li>
+                      Refactored existing mobile applications into React Native, Node.js, and MongoDB stack to improve design and performance 
                     </Li>
                   </ul>
                 </Column>
