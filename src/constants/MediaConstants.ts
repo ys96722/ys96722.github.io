@@ -12,7 +12,3 @@ export const sizes = {
     giant: `@media (max-width: ${sizes.giant}px)`,
   }
 
-type IOverload = {
-  (param: number): number[];
-  (param: object): object[];
-}
