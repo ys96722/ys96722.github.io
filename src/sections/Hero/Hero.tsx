@@ -18,12 +18,14 @@ const Hero: React.FC = () => {
         <S.FadeUp delay={50}><S.HeroEyebrow>Full-Stack Software Engineer</S.HeroEyebrow></S.FadeUp>
         <S.FadeUp delay={200}><S.HeroName>Yoon Chang</S.HeroName></S.FadeUp>
         <S.FadeUp delay={350}>
-          <S.HeroSubtitle>
-            {displayText}<S.Cursor />
-          </S.HeroSubtitle>
-          <S.HeroJoke>
-            {jokeText}<S.Cursor />
-          </S.HeroJoke>
+          <S.SubtitleBlock>
+            <S.HeroSubtitle>
+              {displayText}<S.Cursor />
+            </S.HeroSubtitle>
+            <S.HeroJoke>
+              {jokeText}<S.Cursor />
+            </S.HeroJoke>
+          </S.SubtitleBlock>
         </S.FadeUp>
         <S.FadeUp delay={500}>
           <S.HeroBio>
