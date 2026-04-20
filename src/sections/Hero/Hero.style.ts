@@ -27,18 +27,20 @@ export const HeroSection = styled.section`
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 0 40px;
+  padding: 60px 40px 0;
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
 
   @media (max-width: ${sizes.tablet}px) {
-    padding: 0 24px;
+    padding: 60px 24px 0;
   }
 
   @media (max-width: ${sizes.phone}px) {
-    padding: 0 16px;
+    padding: 60px 16px 0;
+    align-items: flex-start;
+    padding-top: 80px;
   }
 `
 

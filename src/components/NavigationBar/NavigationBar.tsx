@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import {
   NavigationContainer,
+  NavLinks,
   NavAnchor,
   ThemeToggle,
 } from "./NavigationBar.style"
@@ -46,15 +47,17 @@ const NavigationBar: React.FC<INavigationBarProps> = ({ onThemeToggle, isDark })
 
   return (
     <NavigationContainer>
-      {NAV_ITEMS.map(item => (
-        <NavAnchor
-          key={item.label}
-          href={item.href}
-          className={activeSection === item.href.slice(1) ? "active" : ""}
-        >
-          {item.label}
-        </NavAnchor>
-      ))}
+      <NavLinks>
+        {NAV_ITEMS.map(item => (
+          <NavAnchor
+            key={item.label}
+            href={item.href}
+            className={activeSection === item.href.slice(1) ? "active" : ""}
+          >
+            {item.label}
+          </NavAnchor>
+        ))}
+      </NavLinks>
       <ThemeToggle onClick={onThemeToggle} aria-label="Toggle theme" {...{ isDark }} />
     </NavigationContainer>
   )

@@ -20,12 +20,27 @@ export const NavigationContainer = styled.nav`
   gap: 0.25rem;
 
   ${media.tablet`
-    padding: 0 1.25rem;
+    padding: 0 1rem 0 0.75rem;
     gap: 0;
+    justify-content: space-between;
   `}
+`
 
-  ${media.phone`
-    justify-content: center;
+export const NavLinks = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  ${media.tablet`
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex: 1;
+    gap: 0;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   `}
 `
 
@@ -40,6 +55,7 @@ const NavItemCSS = css`
   opacity: 0.55;
   transition: opacity 0.2s ease-in-out;
   white-space: nowrap;
+  flex-shrink: 0;
   border-radius: 6px;
 
   &:hover {
