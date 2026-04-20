@@ -24,22 +24,24 @@ const NavigationBar: React.FC<INavigationBarProps> = ({ onThemeToggle, isDark })
 
   useEffect(() => {
     const sectionIds = [Sec.HERO, Sec.EXPERIENCE, Sec.PROJECTS, Sec.SKILLS, Sec.CONTACT]
-    const observers: IntersectionObserver[] = []
 
-    sectionIds.forEach(id => {
-      const el = document.getElementById(id)
-      if (!el) return
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) setActiveSection(id)
-        },
-        { threshold: 0.35 }
-      )
-      observer.observe(el)
-      observers.push(observer)
-    })
+    const handleScroll = () => {
+      const scrollY = window.scrollY
+      const offset = 80
 
-    return () => observers.forEach(o => o.disconnect())
+      let current = sectionIds[0]
+      for (const id of sectionIds) {
+        const el = document.getElementById(id)
+        if (el && el.offsetTop - offset <= scrollY) {
+          current = id
+        }
+      }
+      setActiveSection(current)
+    }
+
+    handleScroll()
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   return (
@@ -53,9 +55,7 @@ const NavigationBar: React.FC<INavigationBarProps> = ({ onThemeToggle, isDark })
           {item.label}
         </NavAnchor>
       ))}
-      <ThemeToggle onClick={onThemeToggle} aria-label="Toggle theme">
-        {isDark ? "☀" : "●"}
-      </ThemeToggle>
+      <ThemeToggle onClick={onThemeToggle} aria-label="Toggle theme" {...{ isDark }} />
     </NavigationContainer>
   )
 }

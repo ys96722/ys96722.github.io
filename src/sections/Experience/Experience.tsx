@@ -3,6 +3,7 @@ import * as S from "./Experience.style"
 import { SectionWrapper, SectionTitle } from "style/grid"
 import * as Sec from "constants/SectionConstants"
 import experience from "data/experience"
+import AnimateIn from "components/AnimateIn/AnimateIn"
 
 const Experience: React.FC = () => {
   return (
@@ -10,8 +11,9 @@ const Experience: React.FC = () => {
       <SectionTitle>Experience</SectionTitle>
       <S.TimelineList>
         {experience.map((entry, i) => (
-          <S.TimelineItem key={i}>
-            <S.TimelineDot />
+          <AnimateIn key={i} delay={i * 80}>
+          <S.TimelineItem>
+            <S.TimelineDot isActive={i === 0 || i === 4} />
             <S.TimelineCard>
               <S.CardHeader>
                 <S.OrgName>{entry.org}</S.OrgName>
@@ -39,6 +41,7 @@ const Experience: React.FC = () => {
               )}
             </S.TimelineCard>
           </S.TimelineItem>
+          </AnimateIn>
         ))}
       </S.TimelineList>
     </SectionWrapper>

@@ -63,18 +63,31 @@ export const NavAnchor = styled.a`
 
 export const ThemeToggle = styled.button`
   margin-left: 1rem;
-  padding: 0.35rem 0.6rem;
-  background: none;
-  border: 1px solid ${props => props.theme.color}30;
-  border-radius: 6px;
-  color: ${props => props.theme.color};
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  font-size: 0.85rem;
-  opacity: 0.7;
-  transition: opacity 0.2s ease-in-out;
+  position: relative;
+  flex-shrink: 0;
+  background-color: ${props => props.isDark ? props.theme.accent : `${props.theme.color}30`};
+  transition: background-color 0.3s ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: ${props => props.isDark ? props.theme.background : props.theme.color};
+    top: 3px;
+    left: ${props => props.isDark ? '23px' : '3px'};
+    transition: left 0.25s ease, background 0.3s ease;
+  }
 
   &:hover {
-    opacity: 1;
+    opacity: 0.85;
   }
 
   ${media.phone`

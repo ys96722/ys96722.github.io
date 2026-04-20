@@ -3,6 +3,7 @@ import * as S from "./Skills.style"
 import { SectionWrapper, SectionTitle } from "style/grid"
 import * as Sec from "constants/SectionConstants"
 import { skillGroups, certificates } from "data/skills"
+import AnimateIn from "components/AnimateIn/AnimateIn"
 
 const Skills: React.FC = () => {
   return (
@@ -10,7 +11,8 @@ const Skills: React.FC = () => {
       <SectionTitle>Skills</SectionTitle>
       <S.SkillsGrid>
         {skillGroups.map((group, i) => (
-          <S.SkillGroup key={i}>
+          <AnimateIn key={i} delay={i * 60}>
+          <S.SkillGroup>
             <S.GroupLabel>{group.category}</S.GroupLabel>
             <S.PillRow>
               {group.skills.map((skill, j) => (
@@ -18,6 +20,7 @@ const Skills: React.FC = () => {
               ))}
             </S.PillRow>
           </S.SkillGroup>
+          </AnimateIn>
         ))}
       </S.SkillsGrid>
       <S.CertSection>

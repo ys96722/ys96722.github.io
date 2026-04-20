@@ -160,4 +160,14 @@ export const SectionTitle = styled.h2`
   color: ${props => props.theme.color};
   margin-bottom: 3rem;
   letter-spacing: -0.02em;
+
+  &::before {
+    content: "{ ";
+    color: ${props => props.theme.accent};
+  }
+
+  &::after {
+    content: " }";
+    color: ${props => props.theme.accent};
+  }
 `

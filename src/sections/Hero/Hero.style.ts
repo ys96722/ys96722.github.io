@@ -1,5 +1,27 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import { sizes } from "constants/MediaConstants"
+import { BLACK_THEME_NAME } from "constants/ColorConstants"
+
+const blink = keyframes`
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+`
+
+const slideUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+
+const bounce = keyframes`
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+`
 
 export const HeroSection = styled.section`
   min-height: 100vh;
@@ -8,6 +30,8 @@ export const HeroSection = styled.section`
   padding: 0 40px;
   max-width: 1100px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 
   @media (max-width: ${sizes.tablet}px) {
     padding: 0 24px;
@@ -18,10 +42,51 @@ export const HeroSection = styled.section`
   }
 `
 
+
 export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+  padding: 2rem 2.5rem;
+
+  &::before {
+    content: "{";
+    position: absolute;
+    top: -0.25rem;
+    left: -0.25rem;
+    font-size: 3.5rem;
+    font-family: monospace;
+    font-weight: 700;
+    color: ${props => props.theme.accent};
+    opacity: 0.45;
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "}";
+    position: absolute;
+    bottom: -0.25rem;
+    right: -0.25rem;
+    font-size: 3.5rem;
+    font-family: monospace;
+    font-weight: 700;
+    color: ${props => props.theme.accent};
+    opacity: 0.45;
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  @media (max-width: ${sizes.phone}px) {
+    padding: 1.5rem 1.75rem;
+  }
+`
+
+export const FadeUp = styled.div<{ delay?: number }>`
+  animation: ${slideUp} 0.6s ease both;
+  animation-delay: ${props => props.delay ?? 0}ms;
 `
 
 export const HeroEyebrow = styled.p`
@@ -35,9 +100,15 @@ export const HeroEyebrow = styled.p`
 export const HeroName = styled.h1`
   font-size: clamp(2.8rem, 6vw, 5rem);
   font-weight: 700;
-  color: ${props => props.theme.color};
   letter-spacing: -0.03em;
   line-height: 1.05;
+  background: ${props =>
+    props.theme.name === BLACK_THEME_NAME
+      ? "linear-gradient(135deg, #e8e8e8 0%, #B5C8C2 100%)"
+      : "linear-gradient(135deg, #1a1a1a 0%, #427F7B 100%)"};
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 `
 
 export const HeroSubtitle = styled.p`
@@ -57,11 +128,38 @@ export const HeroBio = styled.p`
   line-height: 1.7;
 `
 
+export const StatRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+`
+
+export const StatPill = styled.span`
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+  border: 1px solid ${props => props.theme.accent}50;
+  color: ${props => props.theme.accent};
+  background: ${props => props.theme.accent}0F;
+  letter-spacing: 0.02em;
+`
+
 export const HeroCTAs = styled.div`
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 0.5rem;
+`
+
+export const Cursor = styled.span`
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: ${props => props.theme.accent};
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: ${blink} 0.8s step-start infinite;
 `
 
 export const CTAPrimary = styled.a`
@@ -94,5 +192,37 @@ export const CTASecondary = styled.a`
 
   &:hover {
     opacity: 1;
+  }
+`
+
+export const ScrollIndicator = styled.a`
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: ${props => props.theme.color};
+  opacity: 0.25;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  animation: ${bounce} 2.2s ease-in-out infinite;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.55;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (max-width: ${sizes.phone}px) {
+    display: none;
   }
 `
