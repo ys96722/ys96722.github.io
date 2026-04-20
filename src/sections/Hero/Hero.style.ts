@@ -113,6 +113,14 @@ export const HeroName = styled.h1`
   color: transparent;
 `
 
+export const SubtitleBlock = styled.div`
+  min-height: 3.8rem;
+
+  @media (max-width: ${sizes.tablet}px) {
+    min-height: 4.8rem;
+  }
+`
+
 export const HeroSubtitle = styled.p`
   font-size: clamp(1rem, 2vw, 1.25rem);
   color: ${props => props.theme.color};
