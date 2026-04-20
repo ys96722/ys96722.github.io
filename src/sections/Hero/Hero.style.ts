@@ -120,6 +120,17 @@ export const HeroSubtitle = styled.p`
   line-height: 1.6;
 `
 
+export const HeroJoke = styled.p`
+  font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+  color: ${props => props.theme.accent};
+  opacity: 0.5;
+  font-weight: 400;
+  max-width: 560px;
+  line-height: 1.6;
+  margin-top: 0.25rem;
+  font-style: italic;
+`
+
 export const HeroBio = styled.p`
   font-size: 1rem;
   color: ${props => props.theme.color};
