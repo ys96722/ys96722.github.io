@@ -33,7 +33,7 @@ export default class Websites extends Component {
         bgSize: "cover",
         popupInfo: {
           title: "Yooniverse",
-          link: "#",
+          link: "/",
           images: [
             require("../../assets/yooniverse/yooniverse1.png"),
             require("../../assets/yooniverse/yooniverse2.png"),

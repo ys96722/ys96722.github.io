@@ -4,17 +4,11 @@ import { black } from "./variables"
 const GlobalStyle = createGlobalStyle`
 
   /* Import Fonts*/
-  /* font-family: 'VT323', monospace; */
-  @import url('https://fonts.googleapis.com/css?family=VT323');  
-  /*
-   * {
-      padding: 0;
-      margin: 0;
-      border: 1px solid red !important; 
-  } 
-  */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-
+  html {
+    scroll-behavior: smooth;
+  }
 
   ::-moz-selection {
     background-color: ${black};
@@ -35,7 +29,6 @@ const GlobalStyle = createGlobalStyle`
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    
   }
 
   *:focus{
@@ -43,15 +36,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body, button{
-      font-family: 'VT323', monospace;
-      font-size: 20px;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
       color: ${black};
       background-color: ${props => props.theme.background};
-      /* transition: background-color 1s; */
+      transition: background 0.5s;
   }
 
- 
-  
 
 `
 
