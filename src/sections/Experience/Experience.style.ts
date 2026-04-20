@@ -1,5 +1,16 @@
-import styled from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 import { sizes } from "constants/MediaConstants"
+
+const pulse = keyframes`
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(181, 200, 194, 0.6);
+  }
+  50% {
+    transform: scale(1.4);
+    box-shadow: 0 0 0 6px rgba(181, 200, 194, 0);
+  }
+`
 
 export const TimelineList = styled.div`
   position: relative;
@@ -38,7 +49,7 @@ export const TimelineItem = styled.div`
   }
 `
 
-export const TimelineDot = styled.div`
+export const TimelineDot = styled.div<{ isActive?: boolean }>`
   flex-shrink: 0;
   width: 17px;
   height: 17px;
@@ -47,6 +58,7 @@ export const TimelineDot = styled.div`
   margin-top: 4px;
   position: relative;
   z-index: 1;
+  ${props => props.isActive && css`animation: ${pulse} 2s ease-in-out infinite;`}
 
   @media (max-width: ${sizes.phone}px) {
     display: none;

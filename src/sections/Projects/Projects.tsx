@@ -3,6 +3,7 @@ import * as S from "./Projects.style"
 import { SectionWrapper, SectionTitle } from "style/grid"
 import * as Sec from "constants/SectionConstants"
 import projects from "data/projects"
+import AnimateIn from "components/AnimateIn/AnimateIn"
 
 const Projects: React.FC = () => {
   return (
@@ -10,7 +11,8 @@ const Projects: React.FC = () => {
       <SectionTitle>Projects</SectionTitle>
       <S.ProjectsGrid>
         {projects.map((project, i) => (
-          <S.ProjectCard key={i}>
+          <AnimateIn key={i} delay={i * 100}>
+          <S.ProjectCard>
             <S.ProjectClient>{project.client}</S.ProjectClient>
             <S.ProjectName>{project.name}</S.ProjectName>
             <S.ProjectDescription>{project.description}</S.ProjectDescription>
@@ -20,6 +22,7 @@ const Projects: React.FC = () => {
               ))}
             </S.TechTags>
           </S.ProjectCard>
+          </AnimateIn>
         ))}
       </S.ProjectsGrid>
     </SectionWrapper>
