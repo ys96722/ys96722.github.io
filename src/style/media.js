@@ -7,6 +7,7 @@ export const sizes = {
   giant: 1170
 };
 
+
 export const media = Object.keys(sizes).reduce((finalMedia, size) => {
   return {
     ...finalMedia,

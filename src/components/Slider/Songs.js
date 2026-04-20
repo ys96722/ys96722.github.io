@@ -12,7 +12,7 @@ import {
 } from "./Songs.style.js"
 import lqip from "lqip.macro"
 import LazyImage from "../LazyImage/LazyImage"
-import "../../containers/Projects/Projects.css"
+import "../../views/Projects/Projects.css"
 
 const HapImg = ({ doesShow }) => (
   <SongDiv
