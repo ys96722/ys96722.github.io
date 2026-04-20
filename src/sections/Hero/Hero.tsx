@@ -3,10 +3,14 @@ import * as S from "./Hero.style"
 import * as Sec from "constants/SectionConstants"
 import useTypewriter from "hooks/useTypewriter"
 
-const TITLES = ["Senior Software Engineer @Capital One", "Software Engineer @Seamgen", "Song Writer"]
+const TITLES = ["Senior Software Engineer @Capital One", "M.S. in Computer Science @Georgia Tech", "B.S. in Statistics @UIUC"]
+const JOKES = ["Burning Tokens @Claude Code", "Professional Overthinker @3AM", "Bench Warmer @Sunday League", "Principal Song Writer @Bedroom", "Senior Reserve Member @Starbucks"]
+// Song Writer
+// Software Engineer @Seamgen
 
 const Hero: React.FC = () => {
   const { displayText } = useTypewriter(TITLES)
+  const { displayText: jokeText } = useTypewriter(JOKES, 45, 20, 2200)
 
   return (
     <S.HeroSection id={Sec.HERO}>
@@ -17,6 +21,9 @@ const Hero: React.FC = () => {
           <S.HeroSubtitle>
             {displayText}<S.Cursor />
           </S.HeroSubtitle>
+          <S.HeroJoke>
+            {jokeText}<S.Cursor />
+          </S.HeroJoke>
         </S.FadeUp>
         <S.FadeUp delay={500}>
           <S.HeroBio>
